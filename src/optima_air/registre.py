@@ -24,6 +24,7 @@ from pathlib import Path
 
 from optima_air import disque
 from optima_air.erreurs import ArchiveAbimee, ErreurBornes, ErreurDisque
+from optima_air.i18n import _
 
 FONCTIONS_A_L_ESSAI = ("annonce", "usine", "preset-enregistrer", "preset-restaurer", "manual")
 # Attente maximale du verrou du registre, puis ErreurDisque.
@@ -38,14 +39,18 @@ _CLES_REGISTRE = ("format", "validees")
 def verifier_fonction(nom: str) -> None:
     if nom not in FONCTIONS_A_L_ESSAI:
         raise ErreurBornes(
-            f"Fonction « {nom} » inconnue. Connues : {', '.join(FONCTIONS_A_L_ESSAI)}."
+            _("Unknown function “{name}”. Known: {known}.").format(
+                name=nom, known=", ".join(FONCTIONS_A_L_ESSAI)
+            )
         )
 
 
 def _validees_depuis(brut: bytes) -> frozenset[str]:
     contenu = disque.charger_json(brut)
     if type(contenu) is not dict:
-        raise disque.Illisible(f"objet JSON attendu, reçu {type(contenu).__name__}")
+        raise disque.Illisible(
+            _("JSON object expected, got {type}").format(type=type(contenu).__name__)
+        )
     disque.controler_format_et_cles(contenu, _CLES_REGISTRE)
     validees = contenu["validees"]
     if (
@@ -53,7 +58,7 @@ def _validees_depuis(brut: bytes) -> frozenset[str]:
         or not all(type(nom) is str and nom in FONCTIONS_A_L_ESSAI for nom in validees)
         or validees != sorted(set(validees))
     ):
-        raise disque.Illisible("liste triée de fonctions connues, sans doublon, attendue")
+        raise disque.Illisible(_("sorted list of known functions, without duplicates, expected"))
     return frozenset(validees)
 
 
@@ -67,7 +72,7 @@ def lire_registre(racine: Path) -> frozenset[str]:
         return frozenset()
     except disque.Illisible as erreur:
         raise ArchiveAbimee(
-            f"Registre des vérifications illisible : {chemin} ({erreur})"
+            _("Unreadable trial register: {file} ({error})").format(file=chemin, error=erreur)
         ) from erreur
 
 
@@ -88,13 +93,17 @@ def _verrou_registre(racine: Path) -> Iterator[None]:
             except BlockingIOError:
                 if time.monotonic() >= echeance:
                     raise ErreurDisque(
-                        f"Registre des vérifications verrouillé par un autre processus "
-                        f"({chemin}) : réessayer une fois l'autre commande terminée."
+                        _(
+                            "Trial register locked by another process ({file}): try again "
+                            "once the other command has finished."
+                        ).format(file=chemin)
                     ) from None
                 time.sleep(_PAUSE_VERROU)
             except OSError as erreur:
                 raise ErreurDisque(
-                    f"Impossible de verrouiller {chemin} : {disque.texte_systeme(erreur)}"
+                    _("Cannot lock {file}: {error}").format(
+                        file=chemin, error=disque.texte_systeme(erreur)
+                    )
                 ) from erreur
         yield
     finally:

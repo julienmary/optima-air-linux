@@ -10,6 +10,7 @@ from enum import Enum
 
 from optima_air import codec
 from optima_air.erreurs import ErreurBornes
+from optima_air.i18n import _
 
 ENTETE = bytes([0xF0, 0x00, 0x11, 0x22, 0x61, 0x00])
 FIN = 0xF7
@@ -90,7 +91,11 @@ def corps_bloc_de_fin(somme: bytes, slot: int) -> bytes:
     """somme : les 4 octets de 7 bits de la somme pondérée (enc28)."""
     taille = SOMME_FIN.stop - SOMME_FIN.start
     if len(somme) != taille:
-        raise ErreurBornes(f"somme de fin de {len(somme)} octets au lieu de {taille}")
+        raise ErreurBornes(
+            _("end sum of {size} bytes instead of {expected}").format(
+                size=len(somme), expected=taille
+            )
+        )
     corps = bytearray(TAILLE_CORPS)
     corps[FANION] = FANION_FIN
     corps[SOMME_FIN] = somme
@@ -109,9 +114,9 @@ def imprimable(octet: int) -> bool:
 
 def refus_zone_nom(zone: bytes) -> str | None:
     """Zone de nom de 32 octets : 1 à 32 caractères ASCII imprimables, puis des zéros."""
-    nom, _, suite = zone.partition(b"\x00")
+    nom, _separateur, suite = zone.partition(b"\x00")
     if not nom or not all(imprimable(octet) for octet in nom):
-        return "nom de slot vide ou hors ASCII imprimable"
+        return _("slot name empty or outside printable ASCII")
     if any(suite):
-        return "octets non nuls après la fin du nom de slot"
+        return _("non-zero bytes after the end of the slot name")
     return None

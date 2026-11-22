@@ -4,3 +4,5 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .pytest_cache/
+src/optima_air/locale/
+po/optima-air.pot

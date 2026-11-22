@@ -10,6 +10,8 @@ import os
 import re
 from pathlib import Path
 
+from optima_air.i18n import _
+
 COULEUR_PAR_DEFAUT = "#2c75ff"  # bleu électrique
 NOM = "preferences.json"
 _COULEUR = re.compile(r"#[0-9a-f]{6}")
@@ -43,7 +45,9 @@ def lire_couleur(dossier: Path) -> str:
 def ecrire_couleur(dossier: Path, couleur: str) -> bool:
     """Retient la couleur. Rend faux si elle n'a pas pu être écrite."""
     if not est_couleur(couleur):
-        raise ValueError(f"couleur {couleur!r} : « #rrggbb » en minuscules attendu")
+        raise ValueError(
+            _("colour {colour!r}: lowercase “#rrggbb” expected").format(colour=couleur)
+        )
     try:
         dossier.mkdir(parents=True, exist_ok=True)
         provisoire = dossier / (NOM + ".tmp")
@@ -57,7 +61,9 @@ def ecrire_couleur(dossier: Path, couleur: str) -> bool:
 def composantes(couleur: str) -> tuple[float, float, float]:
     """« #rrggbb » en trois nombres de 0 à 1."""
     if not est_couleur(couleur):
-        raise ValueError(f"couleur {couleur!r} : « #rrggbb » en minuscules attendu")
+        raise ValueError(
+            _("colour {colour!r}: lowercase “#rrggbb” expected").format(colour=couleur)
+        )
     return (
         int(couleur[1:3], 16) / 255,
         int(couleur[3:5], 16) / 255,

@@ -18,6 +18,7 @@ from typing import Any
 
 from optima_air import disque, messages
 from optima_air.erreurs import ArchiveAbimee, ErreurDisque
+from optima_air.i18n import _
 
 NOM = "ecriture-en-cours.json"
 # Après une écriture interrompue, la pédale est laissée tranquille ce temps-là (une note
@@ -75,7 +76,7 @@ class Journal:
 
 def _date(quand: datetime) -> str:
     if quand.utcoffset() is None:
-        raise ValueError("une date de journal porte un fuseau horaire")
+        raise ValueError(_("a journal date must carry a time zone"))
     return quand.isoformat(timespec="seconds")
 
 
@@ -104,28 +105,30 @@ def _est_date(texte: Any) -> bool:
 
 def _refus(contenu: Any) -> str | None:
     if type(contenu) is not dict:
-        return f"objet JSON attendu, reçu {type(contenu).__name__}"
+        return _("JSON object expected, got {type}").format(type=type(contenu).__name__)
     try:
         disque.controler_format_et_cles(contenu, _CLES)
     except disque.Illisible as erreur:
         return str(erreur)
     if type(contenu["slot"]) is not int or not 0 <= contenu["slot"] < messages.NB_SLOTS:
-        return "slot hors bornes"
+        return _("slot out of range")
     if not _est_date(contenu["debut"]):
-        return "debut : date ISO avec fuseau attendue"
+        return _("{field}: ISO date with time zone expected").format(field="debut")
     if contenu["derniere_trame"] is not None and not _est_date(contenu["derniere_trame"]):
-        return "derniere_trame : date ISO avec fuseau, ou null, attendue"
+        return _("{field}: ISO date with time zone, or null, expected").format(
+            field="derniere_trame"
+        )
     if type(contenu["archive"]) is not str or _NOM_ARCHIVE.fullmatch(contenu["archive"]) is None:
-        return "archive : nom de dossier d'archive attendu"
+        return _("{field}: backup folder name expected").format(field="archive")
     if type(contenu["sha256"]) is not str or _SHA256.fullmatch(contenu["sha256"]) is None:
-        return "sha256 : 64 chiffres hexadécimaux attendus"
+        return _("{field}: 64 hexadecimal digits expected").format(field="sha256")
     if type(contenu["nom_hex"]) is not str or _NOM_HEX.fullmatch(contenu["nom_hex"]) is None:
-        return "nom_hex : 32 octets en hexadécimal attendus"
+        return _("{field}: 32 bytes in hexadecimal expected").format(field="nom_hex")
     identifiant = contenu["identifiant"]
     if type(identifiant) is not int or not 0 <= identifiant <= _IDENTIFIANT_MAX:
-        return "identifiant hors bornes"
+        return _("identifier out of range")
     if type(contenu["altere"]) is not bool:
-        return "altere : booléen attendu"
+        return _("{field}: boolean expected").format(field="altere")
     return None
 
 
@@ -138,10 +141,14 @@ def lire(racine: Path) -> Journal | None:
     except FileNotFoundError:
         return None
     except disque.Illisible as erreur:
-        raise ArchiveAbimee(f"Journal d'écriture illisible : {chemin} ({erreur})") from erreur
+        raise ArchiveAbimee(
+            _("Unreadable write journal: {file} ({error})").format(file=chemin, error=erreur)
+        ) from erreur
     refus = _refus(contenu)
     if refus is not None:
-        raise ArchiveAbimee(f"Journal d'écriture illisible : {chemin} ({refus})")
+        raise ArchiveAbimee(
+            _("Unreadable write journal: {file} ({error})").format(file=chemin, error=refus)
+        )
     return Journal(**{cle: contenu[cle] for cle in _CLES if cle != "format"})
 
 
@@ -162,7 +169,9 @@ def supprimer(racine: Path) -> None:
         return
     except OSError as erreur:
         raise ErreurDisque(
-            f"Impossible de retirer le journal {chemin} : {disque.texte_systeme(erreur)}"
+            _("Cannot remove the journal {file}: {error}").format(
+                file=chemin, error=disque.texte_systeme(erreur)
+            )
         ) from erreur
     with contextlib.suppress(ErreurDisque):
         disque.synchroniser_dossier(racine)

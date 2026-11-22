@@ -24,6 +24,7 @@ from optima_air.erreurs import (
     PedaleDebranchee,
     PortOccupe,
 )
+from optima_air.i18n import _
 
 
 class Transport(Protocol):
@@ -45,7 +46,7 @@ def trouver_port(cartes: str) -> str:
         trouve = _LIGNE_CARTE.match(ligne)
         if trouve and trouve.group(2) == "NAI5":
             return f"/dev/snd/midiC{trouve.group(1)}D0"
-    raise PedaleAbsente("Pédale introuvable : aucune carte « NAI5 ». Vérifie le câble USB.")
+    raise PedaleAbsente(_("Pedal not found: no “NAI5” sound card. Check the USB cable."))
 
 
 def _refus_du_verrou(chemin: Path, erreur: OSError) -> str:
@@ -55,7 +56,7 @@ def _refus_du_verrou(chemin: Path, erreur: OSError) -> str:
     if erreur.errno == errno.ELOOP:
         with contextlib.suppress(OSError):
             if stat.S_ISLNK(os.lstat(chemin).st_mode):
-                return "est un lien symbolique"
+                return _("is a symbolic link")
     return str(erreur)
 
 
@@ -77,9 +78,7 @@ class Verrou:
         self._confie = False
         dossier = os.environ.get("XDG_RUNTIME_DIR")
         if not dossier:
-            raise ErreurOptimaAir(
-                "XDG_RUNTIME_DIR n'est pas défini : impossible de poser le verrou."
-            )
+            raise ErreurOptimaAir(_("XDG_RUNTIME_DIR is not set: cannot take the lock."))
         chemin = Path(dossier) / "optima-air.lock"
         descripteur = -1
         try:
@@ -96,7 +95,9 @@ class Verrou:
             # Contrôlé sur le descripteur ouvert, avant tout flock.
             if not stat.S_ISREG(os.fstat(descripteur).st_mode):
                 raise ErreurOptimaAir(
-                    f"Impossible de poser le verrou {chemin} : n'est pas un fichier ordinaire."
+                    _("Cannot take the lock {file}: {error}").format(
+                        file=chemin, error=_("not a regular file")
+                    )
                 )
             fcntl.flock(descripteur, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BaseException as erreur:
@@ -106,11 +107,13 @@ class Verrou:
                     os.close(descripteur)
                 if isinstance(erreur, BlockingIOError):  # flock : verrou déjà pris
                     raise PortOccupe(
-                        "La pédale est déjà utilisée par une autre instance d'optima-air."
+                        _("The pedal is already used by another instance of optima-air.")
                     ) from None
             if isinstance(erreur, OSError):
                 raise ErreurOptimaAir(
-                    f"Impossible de poser le verrou {chemin} : {_refus_du_verrou(chemin, erreur)}"
+                    _("Cannot take the lock {file}: {error}").format(
+                        file=chemin, error=_refus_du_verrou(chemin, erreur)
+                    )
                 ) from erreur
             raise
         self._fd = descripteur
@@ -135,11 +138,11 @@ class Verrou:
         """
         if self._fd < 0:
             raise ErreurOptimaAir(
-                "Le verrou a déjà été libéré : il ne peut plus être confié à un port."
+                _("The lock has already been released: it can no longer be given to a port.")
             )
         if self._confie:
             raise ErreurOptimaAir(
-                "Ce verrou appartient déjà à un port : il ne peut pas être confié à un second."
+                _("This lock already belongs to a port: it cannot be given to a second one.")
             )
         self._confie = True
 
@@ -155,7 +158,9 @@ class Verrou:
                 # La fermeture relâche le verrou de toute façon.
                 os.close(descripteur)
         except OSError as erreur:
-            raise ErreurOptimaAir(f"Impossible de relâcher le verrou : {erreur}") from erreur
+            raise ErreurOptimaAir(
+                _("Cannot release the lock: {error}").format(error=erreur)
+            ) from erreur
 
 
 _VIDAGE = 0x40045731  # SNDRV_RAWMIDI_IOCTL_DRAIN = _IOW('W', 0x31, int)
@@ -177,9 +182,12 @@ _ATTENTE_MAX_S = 3600.0
 _REPRISES_MAX_DU_VIDAGE = 100
 _SONDAGE_EN_ERREUR = select.POLLERR | select.POLLHUP | select.POLLNVAL
 _ERRNO_DEBRANCHE = (errno.ENODEV, errno.EIO, errno.EBADFD)
+
+
 # EIO n'est pas forcément un débranchement : un délai dépassé pendant le vidage du port
 # le rend aussi, pédale branchée.
-_MESSAGE_DEBRANCHE = "La pédale ne répond plus : débranchée ou bloquée."
+def _message_debranche() -> str:
+    return _("The pedal no longer answers: unplugged or stuck.")
 
 
 class PortRawmidi:
@@ -235,7 +243,7 @@ class PortRawmidi:
                 os.set_blocking(self._ecriture, True)
             except OSError as erreur:
                 raise ErreurOptimaAir(
-                    f"Impossible de configurer le port {chemin} : {erreur}"
+                    _("Cannot configure the port {port}: {error}").format(port=chemin, error=erreur)
                 ) from erreur
             # Armement de l'entrée : le noyau ne met en tampon ce que la pédale envoie
             # qu'à partir du premier poll ou read sur le descripteur de lecture ; avant,
@@ -245,7 +253,9 @@ class PortRawmidi:
             try:
                 self._sonder(0)
             except OSError as erreur:
-                raise self._traduire(erreur, "l'armement de l'entrée") from erreur
+                raise self._traduire(
+                    erreur, _("Cannot arm the input of port {port}: {error}")
+                ) from erreur
         except BaseException:
             # L'erreur d'origine prime sur un éventuel échec de la fermeture. fermer
             # libère aussi le verrou, après les descripteurs, même si l'un d'eux résiste.
@@ -258,26 +268,33 @@ class PortRawmidi:
         try:
             return os.open(chemin, drapeaux)
         except FileNotFoundError:
-            raise PedaleAbsente(f"Le port {chemin} n'existe pas.") from None
+            raise PedaleAbsente(_("The port {port} does not exist.").format(port=chemin)) from None
         except PermissionError:
             raise AccesRefuse(
-                f"Accès refusé à {chemin}. Vérifie que tu es dans le groupe « audio » "
-                "(commande : id)."
+                _(
+                    "Access denied to {port}. Check that you are in the “audio” group "
+                    "(command: id)."
+                ).format(port=chemin)
             ) from None
         except OSError as erreur:
             if erreur.errno in (errno.EBUSY, errno.EAGAIN):
                 raise PortOccupe(
-                    f"Le port {chemin} est déjà utilisé par un autre programme."
+                    _("The port {port} is already used by another program.").format(port=chemin)
                 ) from None
             # ENXIO : la carte n'est plus disponible.
             if erreur.errno in (errno.ENODEV, errno.ENXIO):
-                raise PedaleAbsente(f"Le port {chemin} n'est plus disponible.") from None
-            raise ErreurOptimaAir(f"Impossible d'ouvrir le port {chemin} : {erreur}") from erreur
+                raise PedaleAbsente(
+                    _("The port {port} is no longer available.").format(port=chemin)
+                ) from None
+            raise ErreurOptimaAir(
+                _("Cannot open the port {port}: {error}").format(port=chemin, error=erreur)
+            ) from erreur
 
-    def _traduire(self, erreur: OSError, operation: str) -> ErreurOptimaAir:
+    def _traduire(self, erreur: OSError, message: str) -> ErreurOptimaAir:
+        """`message` : phrase entière, déjà traduite, avec les champs {port} et {error}."""
         if erreur.errno in _ERRNO_DEBRANCHE:
-            return PedaleDebranchee(_MESSAGE_DEBRANCHE)
-        return ErreurOptimaAir(f"Échec de {operation} sur le port {self._chemin} : {erreur}")
+            return PedaleDebranchee(_message_debranche())
+        return ErreurOptimaAir(message.format(port=self._chemin, error=erreur))
 
     def ecrire(self, octets: bytes) -> None:
         """Écrit une trame entière puis attend qu'elle soit partie sur le fil.
@@ -287,7 +304,7 @@ class PortRawmidi:
         pédale a pu recevoir une trame tronquée, son état est alors inconnu.
         """
         if self._ecriture < 0:
-            raise ErreurOptimaAir("Écriture impossible : le port est fermé.")
+            raise ErreurOptimaAir(_("Cannot write: the port is closed."))
         try:
             reste = memoryview(octets)
             while reste:
@@ -295,14 +312,16 @@ class PortRawmidi:
                 if ecrits <= 0:
                     # Jamais vu en écriture bloquante : on refuse de boucler sans fin.
                     raise ErreurOptimaAir(
-                        f"Échec de l'écriture sur le port {self._chemin} : aucun octet accepté."
+                        _("Writing to port {port} failed: no byte accepted.").format(
+                            port=self._chemin
+                        )
                     )
                 reste = reste[ecrits:]
             self._vider()
         except OSError as erreur:
             # EIO donne PedaleDebranchee : le noyau a jeté la fin de la trame, l'état de la
             # pédale est inconnu.
-            raise self._traduire(erreur, "l'écriture") from erreur
+            raise self._traduire(erreur, _("Writing to port {port} failed: {error}")) from erreur
 
     def _vider(self) -> None:
         """Attend que la sortie soit partie sur le fil.
@@ -320,9 +339,11 @@ class PortRawmidi:
             except InterruptedError as erreur:
                 if reprises >= _REPRISES_MAX_DU_VIDAGE:
                     raise ErreurOptimaAir(
-                        f"Le vidage du port {self._chemin} a été interrompu "
-                        f"{reprises + 1} fois de suite : la trame est confiée au noyau, "
-                        "mais son départ n'a pas pu être attendu."
+                        _(
+                            "Draining the port {port} was interrupted {count} times in a row: "
+                            "the message is handed to the kernel, but its departure could not "
+                            "be awaited."
+                        ).format(port=self._chemin, count=reprises + 1)
                     ) from erreur
                 reprises += 1
 
@@ -341,10 +362,12 @@ class PortRawmidi:
         """
         if not math.isfinite(attente_s) or attente_s > _ATTENTE_MAX_S:
             raise ErreurBornes(
-                f"Attente hors bornes : {attente_s} s (au plus {_ATTENTE_MAX_S:g} s)."
+                _("Wait out of range: {wait} s (at most {max} s).").format(
+                    wait=attente_s, max=f"{_ATTENTE_MAX_S:g}"
+                )
             )
         if self._lecture < 0:
-            raise ErreurOptimaAir("Lecture impossible : le port est fermé.")
+            raise ErreurOptimaAir(_("Cannot read: the port is closed."))
         # Pour poll, un délai négatif veut dire « infini » : plancher à 0. Millisecondes
         # entières arrondies vers le haut, pour ne pas tourner à vide sur une attente
         # inférieure à la milliseconde.
@@ -356,11 +379,11 @@ class PortRawmidi:
         except BlockingIOError:
             return []
         except OSError as erreur:
-            raise self._traduire(erreur, "la lecture") from erreur
+            raise self._traduire(erreur, _("Reading from port {port} failed: {error}")) from erreur
         if not octets:
             # Branche défensive : read sur un rawmidi rend plus de 0 octet ou EAGAIN, jamais
             # 0. Un 0 voudrait dire que ce n'est plus le port attendu.
-            raise PedaleDebranchee(_MESSAGE_DEBRANCHE)
+            raise PedaleDebranchee(_message_debranche())
         try:
             perdus = self._octets_perdus()
             evenements = self._decoupeur.alimenter(octets)
@@ -386,12 +409,12 @@ class PortRawmidi:
         sondeur = select.poll()
         sondeur.register(self._lecture, select.POLLIN)
         revenus = 0
-        for _, evenements in sondeur.poll(delai_ms):
+        for _descripteur, evenements in sondeur.poll(delai_ms):
             revenus |= evenements
         if revenus & select.POLLIN:
             return True
         if revenus & _SONDAGE_EN_ERREUR:
-            raise PedaleDebranchee(_MESSAGE_DEBRANCHE)
+            raise PedaleDebranchee(_message_debranche())
         return False
 
     def _octets_perdus(self) -> int:
@@ -402,11 +425,15 @@ class PortRawmidi:
         except OSError as erreur:
             if erreur.errno in (errno.ENOTTY, errno.EINVAL):
                 raise ErreurOptimaAir(
-                    f"Le port {self._chemin} ne donne pas l'état de son entrée ({erreur}) : "
-                    "impossible de détecter une perte d'octets, on s'arrête là."
+                    _(
+                        "The port {port} does not report the state of its input ({error}): "
+                        "byte loss cannot be detected, stopping here."
+                    ).format(port=self._chemin, error=erreur)
                 ) from erreur
-            raise self._traduire(erreur, "la lecture de l'état") from erreur
-        _, _, _, _, perdus = _FORMAT_ETAT.unpack(etat)
+            raise self._traduire(
+                erreur, _("Reading the state of port {port} failed: {error}")
+            ) from erreur
+        *_champs, perdus = _FORMAT_ETAT.unpack(etat)
         return int(perdus)
 
     def fermer(self) -> None:
@@ -447,5 +474,5 @@ class PortRawmidi:
             os.close(descripteur)
         except OSError as erreur:
             raise ErreurOptimaAir(
-                f"Échec de la fermeture du port {self._chemin} : {erreur}"
+                _("Closing the port {port} failed: {error}").format(port=self._chemin, error=erreur)
             ) from erreur

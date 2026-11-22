@@ -17,6 +17,7 @@ import soundfile
 
 from optima_air import codec
 from optima_air.erreurs import ErreurBornes
+from optima_air.i18n import _, decimal
 
 FREQUENCE_HZ = 48000
 NB_ECHANTILLONS = codec.TAILLE_IR // 4
@@ -28,7 +29,11 @@ PLANCHER_DB = -120.0
 def impulsion_naturelle(donnees: bytes) -> npt.NDArray[np.float64]:
     """Les 2048 échantillons dans l'ordre du temps (t = 0 en premier)."""
     if len(donnees) != codec.TAILLE_IR:
-        raise ErreurBornes(f"une IR fait {codec.TAILLE_IR} octets, reçu {len(donnees)}")
+        raise ErreurBornes(
+            _("an IR is {expected} bytes, got {got}").format(
+                expected=codec.TAILLE_IR, got=len(donnees)
+            )
+        )
     stockee = np.frombuffer(donnees, dtype="<f4")
     return stockee[::-1].astype(np.float64)
 
@@ -39,7 +44,7 @@ def reponse_en_frequence(
     """Module de la réponse, en dB, sur nb_points fréquences réparties en échelle
     logarithmique de f_min à f_max. Calculé sur les coefficients que la pédale applique."""
     if nb_points < 2 or not 0 < f_min < f_max <= FREQUENCE_HZ / 2:
-        raise ErreurBornes("plage de fréquences ou nombre de points invalide")
+        raise ErreurBornes(_("invalid frequency range or number of points"))
     entendue = impulsion_naturelle(donnees)[:COEFFICIENTS_APPLIQUES]
     module = np.abs(np.fft.rfft(entendue, TAILLE_FFT))
     frequences = np.geomspace(f_min, f_max, nb_points)
@@ -78,53 +83,74 @@ def preparer_wav(chemin: Path) -> IrPreparee:
     try:
         echantillons, frequence = soundfile.read(str(chemin), dtype="float64", always_2d=True)
     except Exception as erreur:  # soundfile lève ses propres types selon le défaut du fichier
-        raise ErreurBornes(f"Fichier audio illisible : {chemin} ({erreur})") from erreur
+        raise ErreurBornes(
+            _("Unreadable audio file: {file} ({error})").format(file=chemin, error=erreur)
+        ) from erreur
     avertissements: list[str] = []
     if echantillons.shape[1] > 1:
         avertissements.append(
-            f"Le fichier a {echantillons.shape[1]} canaux : seul le premier est gardé."
+            _("The file has {count} channels: only the first one is kept.").format(
+                count=echantillons.shape[1]
+            )
         )
     signal = np.ascontiguousarray(echantillons[:, 0])
     if len(signal) == 0:
-        raise ErreurBornes(f"Fichier audio vide : {chemin}")
+        raise ErreurBornes(_("Empty audio file: {file}").format(file=chemin))
     if not np.all(np.isfinite(signal)):
-        raise ErreurBornes(f"Le fichier contient des échantillons non finis : {chemin}")
+        raise ErreurBornes(_("The file contains non-finite samples: {file}").format(file=chemin))
     if frequence != FREQUENCE_HZ:
         diviseur = math.gcd(FREQUENCE_HZ, int(frequence))
         signal = scipy.signal.resample_poly(
             signal, FREQUENCE_HZ // diviseur, int(frequence) // diviseur
         )
         avertissements.append(
-            f"Fréquence de {frequence} Hz : le fichier a été rééchantillonné en 48 kHz."
+            _("Sample rate of {rate} Hz: the file was resampled to {target} kHz.").format(
+                rate=frequence, target=FREQUENCE_HZ // 1000
+            )
         )
     if len(signal) > NB_ECHANTILLONS:
         avertissements.append(
-            f"Le fichier dure {len(signal) / FREQUENCE_HZ * 1000:.0f} ms : seuls les "
-            f"{NB_ECHANTILLONS} premiers échantillons (42,7 ms) sont gardés."
+            _(
+                "The file lasts {duration} ms: only the first {count} samples ({limit} ms) "
+                "are kept."
+            ).format(
+                duration=decimal(len(signal) / FREQUENCE_HZ * 1000, 0),
+                count=NB_ECHANTILLONS,
+                limit=decimal(NB_ECHANTILLONS / FREQUENCE_HZ * 1000, 1),
+            )
         )
     naturelle = np.zeros(NB_ECHANTILLONS, dtype=np.float64)
     utile = min(len(signal), NB_ECHANTILLONS)
     naturelle[:utile] = signal[:utile]
     if np.any(naturelle[COEFFICIENTS_APPLIQUES:] != 0.0):
         avertissements.append(
-            "La pédale ne joue que les 1024 premiers échantillons (21,3 ms) : la suite de "
-            "cette IR sera stockée mais pas entendue."
+            _(
+                "The pedal only plays the first {count} samples ({limit} ms): the rest of "
+                "this IR will be stored but not heard."
+            ).format(
+                count=COEFFICIENTS_APPLIQUES,
+                limit=decimal(COEFFICIENTS_APPLIQUES / FREQUENCE_HZ * 1000, 1),
+            )
         )
     module = np.abs(np.fft.rfft(naturelle, TAILLE_FFT))[BINS_NORMALISATION]
     produit = float(module.max() * module.min())
     if not math.isfinite(produit) or produit <= 0.0:
         raise ErreurBornes(
-            f"Impossible de normaliser {chemin} : aucun signal entre 400 Hz et 3 kHz."
+            _("Cannot normalise {file}: no signal between 400 Hz and 3 kHz.").format(file=chemin)
         )
     normalisee = (naturelle / math.sqrt(produit)).astype("<f4")
     if not np.all(np.isfinite(normalisee)):
-        raise ErreurBornes(f"La normalisation de {chemin} dépasse la plage des flottants.")
+        raise ErreurBornes(
+            _("Normalising {file} exceeds the range of floating-point numbers.").format(file=chemin)
+        )
     crete = float(np.max(np.abs(normalisee)))
     if crete > CRETE_INHABITUELLE:
         avertissements.append(
-            f"Après normalisation, l'IR atteint {crete:.0f} en crête (les IR habituelles "
-            "restent sous 10) : le fichier a un creux très profond entre 400 Hz et 3 kHz, "
-            "et le niveau de sortie risque d'être très élevé."
+            _(
+                "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the "
+                "file has a very deep dip between 400 Hz and 3 kHz, and the output level may "
+                "be very high."
+            ).format(peak=decimal(crete, 0))
         )
     return IrPreparee(normalisee[::-1].tobytes(), tuple(avertissements))
 
@@ -133,6 +159,10 @@ def contenu_wav(donnees: bytes) -> bytes:
     """Le fichier WAV que l'appli officielle exporte pour cette IR : 8260 octets, temps
     remis à l'endroit, sans gain."""
     if len(donnees) != codec.TAILLE_IR:
-        raise ErreurBornes(f"une IR fait {codec.TAILLE_IR} octets, reçu {len(donnees)}")
+        raise ErreurBornes(
+            _("an IR is {expected} bytes, got {got}").format(
+                expected=codec.TAILLE_IR, got=len(donnees)
+            )
+        )
     stockee = np.frombuffer(donnees, dtype="<f4")
     return EN_TETE_WAV + stockee[::-1].tobytes()

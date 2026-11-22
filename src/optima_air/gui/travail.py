@@ -27,6 +27,7 @@ from optima_air.device import (
     Session,
 )
 from optima_air.erreurs import ErreurOptimaAir
+from optima_air.i18n import _
 from optima_air.messages import NB_SLOTS, Tableau
 from optima_air.messages_reception import Etat
 from optima_air.midi import ControlChange
@@ -347,13 +348,13 @@ class Travailleur(threading.Thread):
         """Le rappel donné à une opération longue : publie l'avancement, et arrête
         l'opération entre deux slots si la fenêtre se ferme."""
         if self._arret.is_set():
-            raise _ArretDemande("Arrêt demandé.")
+            raise _ArretDemande(_("Stop requested."))
         self._publier(Progres(operation, fait, total))
 
     def _sauvegarder(self, session: Session) -> None:
         try:
             sauvegarde = session.sauvegarder_tout(
-                sur_progres=lambda slot: self._progres("Sauvegarde", slot, NB_SLOTS)
+                sur_progres=lambda slot: self._progres(_("Backup"), slot, NB_SLOTS)
             )
         except ErreurOptimaAir as erreur:
             self._publier(SauvegardeEchouee(str(erreur)))

@@ -3,6 +3,7 @@
 import hashlib
 
 from optima_air.erreurs import ErreurCodec
+from optima_air.i18n import _
 
 TAILLE_IR = 8192
 TAILLE_BLOC = 98
@@ -56,7 +57,7 @@ def dec7(encode: bytes) -> bytes:
     sortie = bytearray()
     for octet in encode:
         if octet > 0x7F:
-            raise ErreurCodec(f"octet {octet:#04x} hors des 7 bits")
+            raise ErreurCodec(_("byte {byte} outside 7 bits").format(byte=f"{octet:#04x}"))
         accumulateur |= octet << nb_bits
         nb_bits += 7
         while nb_bits >= 8:
@@ -65,11 +66,12 @@ def dec7(encode: bytes) -> bytes:
             nb_bits -= 8
     if nb_bits >= 7:
         raise ErreurCodec(
-            f"{len(encode)} octets de 7 bits laissent {nb_bits} bits de bourrage, "
-            "enc7 n'en produit jamais plus de 6"
+            _(
+                "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+            ).format(count=len(encode), bits=nb_bits)
         )
     if accumulateur:
-        raise ErreurCodec("bits de bourrage non nuls en fin de flux de 7 bits")
+        raise ErreurCodec(_("non-zero padding bits at the end of a 7-bit stream"))
     return bytes(sortie)
 
 
@@ -81,13 +83,16 @@ def _somme_encodee(somme: int) -> bytes:
 def enc_msb(brut: bytes) -> bytes:
     """98 octets bruts vers 115 : 14 octets de poids forts, 98 données, 3 de somme."""
     if len(brut) != TAILLE_BLOC:
-        raise ErreurCodec(f"un bloc fait {TAILLE_BLOC} octets, reçu {len(brut)}")
+        raise ErreurCodec(
+            _("a block is {expected} bytes, got {got}").format(expected=TAILLE_BLOC, got=len(brut))
+        )
     somme = sum(brut)
     if somme > SOMME_BLOC_MAX:
         raise ErreurCodec(
-            f"somme de bloc {somme} ({somme:#06x}) au-delà des 14 bits transmis "
-            f"(max {SOMME_BLOC_MAX:#06x}) : cas jamais observé sur la pédale, "
-            "refusé tant qu'il n'est pas vérifié"
+            _(
+                "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never "
+                "seen on the pedal, refused until verified"
+            ).format(sum=somme, hex=f"{somme:#06x}", max=f"{SOMME_BLOC_MAX:#06x}")
         )
     poids_forts = bytearray(NB_POIDS_FORTS)
     donnees = bytearray(TAILLE_BLOC)
@@ -101,25 +106,33 @@ def enc_msb(brut: bytes) -> bytes:
 def dec_msb(encode: bytes) -> bytes:
     """Inverse de enc_msb. Vérifie la somme du bloc."""
     if len(encode) != TAILLE_BLOC_ENCODE:
-        raise ErreurCodec(f"un bloc encodé fait {TAILLE_BLOC_ENCODE} octets, reçu {len(encode)}")
+        raise ErreurCodec(
+            _("an encoded block is {expected} bytes, got {got}").format(
+                expected=TAILLE_BLOC_ENCODE, got=len(encode)
+            )
+        )
     if any(octet > 0x7F for octet in encode):
-        raise ErreurCodec("octet hors des 7 bits dans un bloc encodé")
+        raise ErreurCodec(_("byte outside 7 bits in an encoded block"))
     poids_forts = encode[:NB_POIDS_FORTS]
     brut = bytearray(encode[NB_POIDS_FORTS : NB_POIDS_FORTS + TAILLE_BLOC])
     for i in range(TAILLE_BLOC):
         if poids_forts[i // GROUPE] & (1 << (GROUPE - 1 - i % GROUPE)):
             brut[i] |= 0x80
     if encode[NB_POIDS_FORTS + TAILLE_BLOC :] != _somme_encodee(sum(brut)):
-        raise ErreurCodec("somme de contrôle du bloc incorrecte")
+        raise ErreurCodec(_("wrong block checksum"))
     return bytes(brut)
 
 
 def somme_ponderee(blocs: bytes) -> int:
     """Somme de fin de transfert, sur un ou plusieurs blocs complets de 98 octets. 28 bits."""
     if not blocs:
-        raise ErreurCodec("la somme de fin de transfert porte sur au moins un bloc")
+        raise ErreurCodec(_("the end-of-transfer sum covers at least one block"))
     if len(blocs) % TAILLE_BLOC:
-        raise ErreurCodec(f"longueur {len(blocs)} non multiple de {TAILLE_BLOC}")
+        raise ErreurCodec(
+            _("length {length} not a multiple of {block}").format(
+                length=len(blocs), block=TAILLE_BLOC
+            )
+        )
     total = 0
     for debut in range(0, len(blocs), TAILLE_BLOC):
         cumul = 0
@@ -134,7 +147,7 @@ def somme_ponderee(blocs: bytes) -> int:
 def enc28(valeur: int) -> bytes:
     """Entier de 28 bits sur 4 octets de 7 bits, poids fort d'abord."""
     if not 0 <= valeur <= 0x0FFFFFFF:
-        raise ErreurCodec(f"valeur {valeur} hors des 28 bits")
+        raise ErreurCodec(_("value {value} outside 28 bits").format(value=valeur))
     return bytes(
         [(valeur >> 21) & 0x7F, (valeur >> 14) & 0x7F, (valeur >> 7) & 0x7F, valeur & 0x7F]
     )
@@ -143,10 +156,12 @@ def enc28(valeur: int) -> bytes:
 def dec28(octets: bytes) -> int:
     """Inverse de enc28 : 4 octets de 7 bits, poids fort d'abord, vers un entier de 28 bits."""
     if len(octets) != 4:
-        raise ErreurCodec(f"une somme de 28 bits tient sur 4 octets, reçu {len(octets)}")
+        raise ErreurCodec(_("a 28-bit sum takes 4 bytes, got {got}").format(got=len(octets)))
     for octet in octets:
         if octet > 0x7F:
-            raise ErreurCodec(f"octet {octet:#04x} hors des 7 bits dans une somme de 28 bits")
+            raise ErreurCodec(
+                _("byte {byte} outside 7 bits in a 28-bit sum").format(byte=f"{octet:#04x}")
+            )
     return (octets[0] << 21) | (octets[1] << 14) | (octets[2] << 7) | octets[3]
 
 
@@ -154,7 +169,7 @@ def _table_crc() -> tuple[int, ...]:
     table = []
     for i in range(256):
         registre = i << 24
-        for _ in range(8):
+        for _bit in range(8):
             if registre & 0x80000000:
                 registre = ((registre << 1) ^ CRC_POLYNOME) & 0xFFFFFFFF
             else:
@@ -169,7 +184,9 @@ _TABLE_CRC = _table_crc()
 def identifiant(ir: bytes) -> int:
     """Identifiant de slot posé par l'appli : CRC maison sur les 8192 octets, bit 31 à zéro."""
     if len(ir) != TAILLE_IR:
-        raise ErreurCodec(f"une IR fait {TAILLE_IR} octets, reçu {len(ir)}")
+        raise ErreurCodec(
+            _("an IR is {expected} bytes, got {got}").format(expected=TAILLE_IR, got=len(ir))
+        )
     registre = CRC_VALEUR_INITIALE
     for octet in ir:
         registre = ((registre << 8) & 0xFFFFFFFF) ^ _TABLE_CRC[(registre >> 24) ^ octet]
@@ -182,5 +199,7 @@ def md5_entete(ir: bytes) -> bytes:
     Bogue de l'appli officielle, reproduit volontairement (voir MD5_NB_OCTETS).
     """
     if len(ir) != TAILLE_IR:
-        raise ErreurCodec(f"une IR fait {TAILLE_IR} octets, reçu {len(ir)}")
+        raise ErreurCodec(
+            _("an IR is {expected} bytes, got {got}").format(expected=TAILLE_IR, got=len(ir))
+        )
     return hashlib.md5(ir[:MD5_NB_OCTETS]).hexdigest().encode("ascii")

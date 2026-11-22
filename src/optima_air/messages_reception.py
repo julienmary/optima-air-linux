@@ -12,6 +12,7 @@ from enum import IntEnum
 
 from optima_air import codec, messages
 from optima_air.erreurs import ErreurBornes, ErreurCodec, ErreurReponse
+from optima_air.i18n import _
 
 NB_MESSAGES_LECTURE = 87
 
@@ -32,11 +33,11 @@ _CORPS_ENTETE_LECTURE = bytes(messages.TAILLE_CORPS)
 def _refus_nux(message: bytes) -> str | None:
     """Encadrement SysEx NUX et octets de 7 bits, comme controler_trame à l'émission."""
     if message[: len(messages.ENTETE)] != messages.ENTETE:
-        return "en-tête SysEx NUX absent"
+        return _("NUX SysEx header missing")
     if message[-1] != messages.FIN:
-        return "pas de F7 final"
+        return _("no final F7")
     if any(octet > 0x7F for octet in message[1:-1]):
-        return "octet hors des 7 bits"
+        return _("byte outside 7 bits")
     return None
 
 
@@ -48,12 +49,16 @@ def _refus_forme(
     if refus is not None:
         return refus
     if len(message) != longueur:
-        return f"{len(message)} octets au lieu de {longueur}"
+        return _("{size} bytes instead of {expected}").format(size=len(message), expected=longueur)
     if message[messages.TYPE] != type_:
-        return f"type {message[messages.TYPE]:02X} au lieu de {type_:02X}"
+        return _("type {found} instead of {expected}").format(
+            found=f"{message[messages.TYPE]:02X}", expected=f"{type_:02X}"
+        )
     if commandes is not None and message[messages.COMMANDE] not in commandes:
         attendues = "/".join(f"{commande:02X}" for commande in sorted(commandes))
-        return f"commande {message[messages.COMMANDE]:02X} au lieu de {attendues}"
+        return _("command {found} instead of {expected}").format(
+            found=f"{message[messages.COMMANDE]:02X}", expected=attendues
+        )
     return None
 
 
@@ -79,11 +84,15 @@ def est_accuse(message: bytes) -> bool:
 def decoder_accuse(message: bytes) -> tuple[int, Statut]:
     """Commande acquittée et statut. Un statut inconnu lève ErreurReponse."""
     if not est_accuse(message):
-        raise ErreurReponse("accusé d'upload inattendu")
+        raise ErreurReponse(_("unexpected upload acknowledgement"))
     try:
         statut = Statut(message[_POSITION_STATUT])
     except ValueError:
-        raise ErreurReponse(f"statut d'accusé inconnu : {message[_POSITION_STATUT]:#04x}") from None
+        raise ErreurReponse(
+            _("unknown acknowledgement status: {status}").format(
+                status=f"{message[_POSITION_STATUT]:#04x}"
+            )
+        ) from None
     return message[messages.COMMANDE], statut
 
 
@@ -98,7 +107,7 @@ def est_reponse_version(message: bytes) -> bool:
 def decoder_version(message: bytes) -> int:
     refus = _refus_version(message)
     if refus is not None:
-        raise ErreurReponse(f"réponse de version inattendue : {refus}")
+        raise ErreurReponse(_("unexpected version answer: {error}").format(error=refus))
     return message[messages.COMMANDE]
 
 
@@ -128,8 +137,9 @@ class InfoSlot:
 def _commande_infos(commande: int) -> int:
     if commande not in (messages.CMD_INFOS, messages.CMD_NOM):
         raise ErreurBornes(
-            f"commande {commande:#04x} : seules 0x5c (lecture d'infos) et 0x5b (écho du nom) "
-            "portent des infos de slot"
+            _(
+                "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+            ).format(command=f"{commande:#04x}")
         )
     return commande
 
@@ -139,8 +149,8 @@ def _refus_infos(message: bytes, commande: int) -> str | None:
     if refus is not None:
         return refus
     if message[messages.CORPS] != messages.LONGUEUR_ENCODEE_54:
-        return (
-            f"longueur encodée {message[messages.CORPS]} au lieu de {messages.LONGUEUR_ENCODEE_54}"
+        return _("encoded length {found} instead of {expected}").format(
+            found=message[messages.CORPS], expected=messages.LONGUEUR_ENCODEE_54
         )
     return None
 
@@ -154,14 +164,14 @@ def decoder_infos_slot(message: bytes, commande: int = messages.CMD_INFOS) -> In
     """commande : 0x5C pour une lecture d'infos, 0x5B pour l'écho d'écriture du nom."""
     refus = _refus_infos(message, _commande_infos(commande))
     if refus is not None:
-        raise ErreurReponse(f"réponse d'infos de slot inattendue : {refus}")
+        raise ErreurReponse(_("unexpected slot info answer: {error}").format(error=refus))
     try:
         source = codec.dec7(message[messages.ZONE_54])
     except ErreurCodec as erreur:
-        raise ErreurReponse(f"infos de slot illisibles : {erreur}") from erreur
+        raise ErreurReponse(_("unreadable slot info: {error}").format(error=erreur)) from erreur
     slot = int.from_bytes(source[messages.INFO_SLOT], "little")
     if slot >= messages.NB_SLOTS:
-        raise ErreurReponse(f"la pédale annonce le slot {slot}")
+        raise ErreurReponse(_("the pedal announces slot {slot}").format(slot=slot + 1))
     identifiant = int.from_bytes(source[messages.INFO_IDENTIFIANT], "little")
     return InfoSlot(slot, identifiant, source[messages.INFO_NOM])
 
@@ -183,11 +193,17 @@ def decoder_tableau(
 ) -> tuple[int, ...]:
     refus = _refus_tableau(message, tableau, ecriture)
     if refus is not None:
-        raise ErreurReponse(f"réponse inattendue pour le tableau {tableau.name} : {refus}")
+        raise ErreurReponse(
+            _("unexpected answer for table {table}: {error}").format(
+                table=tableau.name, error=refus
+            )
+        )
     valeurs = tuple(message[messages.CORPS : -1])
     for valeur in valeurs:
         if valeur > 100:
-            raise ErreurReponse(f"tableau {tableau.name} : valeur {valeur} supérieure à 100")
+            raise ErreurReponse(
+                _("table {table}: value {value} above 100").format(table=tableau.name, value=valeur)
+            )
     return valeurs
 
 
@@ -221,7 +237,7 @@ def est_reponse_etat(message: bytes) -> bool:
 def decoder_etat(message: bytes) -> Etat:
     refus = _refus_etat(message)
     if refus is not None:
-        raise ErreurReponse(f"réponse d'état inattendue : {refus}")
+        raise ErreurReponse(_("unexpected state answer: {error}").format(error=refus))
     return Etat(
         preset=message[8],
         nom_brut=message[9:41],
@@ -267,76 +283,96 @@ def est_pied_de_transfert(message: bytes) -> bool:
 def _exiger_entete_de_lecture(message: bytes) -> None:
     if message[messages.COMMANDE] != messages.CMD_CADRE:
         raise ErreurReponse(
-            f"en-tête de lecture : commande {message[messages.COMMANDE]:02X} "
-            f"au lieu de {messages.CMD_CADRE:02X}"
+            _("read header: command {found} instead of {expected}").format(
+                found=f"{message[messages.COMMANDE]:02X}", expected=f"{messages.CMD_CADRE:02X}"
+            )
         )
     corps = message[messages.CORPS : -1]
     if corps[messages.FANION] == messages.FANION_FIN:
-        raise ErreurReponse("en-tête de lecture porteur du fanion de fin")
+        raise ErreurReponse(_("read header carries the end flag"))
     if corps != _CORPS_ENTETE_LECTURE:
-        raise ErreurReponse("en-tête de lecture non nul, forme jamais observée")
+        raise ErreurReponse(_("non-zero read header, never seen in this form"))
 
 
 def _bloc_de_lecture(k: int, message: bytes) -> bytes:
     """Les 98 octets bruts du bloc k, après contrôle exact de sa forme et de sa somme."""
     if message[messages.COMMANDE] != messages.CMD_BLOC:
         raise ErreurReponse(
-            f"bloc {k} : commande {message[messages.COMMANDE]:02X} "
-            f"au lieu de {messages.CMD_BLOC:02X}"
+            _("block {block}: command {found} instead of {expected}").format(
+                block=k,
+                found=f"{message[messages.COMMANDE]:02X}",
+                expected=f"{messages.CMD_BLOC:02X}",
+            )
         )
     corps = message[messages.CORPS : -1]
     if corps[messages.DRAPEAU] != 0:
-        raise ErreurReponse(f"bloc {k} : drapeau {corps[messages.DRAPEAU]:02X} non nul")
+        raise ErreurReponse(
+            _("block {block}: non-zero flag {flag}").format(
+                block=k, flag=f"{corps[messages.DRAPEAU]:02X}"
+            )
+        )
     if corps[messages.ADRESSE] != messages.adresse_bloc(k):
         raise ErreurReponse(
-            f"bloc {k} : adresse {corps[messages.ADRESSE].hex().upper()} "
-            f"au lieu de {messages.adresse_bloc(k).hex().upper()}"
+            _("block {block}: address {found} instead of {expected}").format(
+                block=k,
+                found=corps[messages.ADRESSE].hex().upper(),
+                expected=messages.adresse_bloc(k).hex().upper(),
+            )
         )
     if corps[messages.COMPTEUR] != k:
-        raise ErreurReponse(f"bloc {k} : compteur {corps[messages.COMPTEUR]} au lieu de {k}")
+        raise ErreurReponse(
+            _("block {block}: counter {found} instead of {expected}").format(
+                block=k, found=corps[messages.COMPTEUR], expected=k
+            )
+        )
     try:
         return codec.dec_msb(corps[messages.ZONE_ENCODEE])
     except ErreurCodec as erreur:
-        raise ErreurReponse(f"bloc {k} illisible : {erreur}") from erreur
+        raise ErreurReponse(
+            _("block {block} unreadable: {error}").format(block=k, error=erreur)
+        ) from erreur
 
 
 def _exiger_bloc_de_fin_de_lecture(message: bytes, blocs: bytes) -> None:
     if message[messages.COMMANDE] != messages.CMD_BLOC:
         raise ErreurReponse(
-            f"bloc de fin : commande {message[messages.COMMANDE]:02X} "
-            f"au lieu de {messages.CMD_BLOC:02X}"
+            _("end block: command {found} instead of {expected}").format(
+                found=f"{message[messages.COMMANDE]:02X}", expected=f"{messages.CMD_BLOC:02X}"
+            )
         )
     corps = message[messages.CORPS : -1]
     if corps[messages.FANION] != messages.FANION_FIN:
-        raise ErreurReponse("bloc de fin sans fanion")
+        raise ErreurReponse(_("end block without flag"))
     if corps[messages.COMPTEUR] != codec.NB_BLOCS:
         raise ErreurReponse(
-            f"bloc de fin : compteur {corps[messages.COMPTEUR]} au lieu de {codec.NB_BLOCS}"
+            _("end block: counter {found} instead of {expected}").format(
+                found=corps[messages.COMPTEUR], expected=codec.NB_BLOCS
+            )
         )
     if corps != messages.corps_bloc_de_fin(corps[messages.SOMME_FIN], _SLOT_FIN_LECTURE):
-        raise ErreurReponse(
-            "bloc de fin : octet parasite hors du fanion, de la somme et du compteur"
-        )
+        raise ErreurReponse(_("end block: stray byte outside the flag, the sum and the counter"))
     try:
         annoncee = codec.dec28(corps[messages.SOMME_FIN])
     except ErreurCodec as erreur:
         # Garde inatteignable : dec28 ne refuse qu'un octet de plus de 7 bits, déjà refusé
         # par _refus_nux. Gardée pour qu'une ErreurCodec ne s'échappe jamais d'ici.
-        raise ErreurReponse(f"somme de fin illisible : {erreur}") from erreur
+        raise ErreurReponse(_("unreadable end sum: {error}").format(error=erreur)) from erreur
     if annoncee != codec.somme_ponderee(blocs):
-        raise ErreurReponse("somme de fin de lecture incorrecte")
+        raise ErreurReponse(_("wrong end-of-read sum"))
 
 
 def _exiger_pied_de_lecture(message: bytes) -> None:
     if message[messages.COMMANDE] != messages.CMD_CADRE:
         raise ErreurReponse(
-            f"pied : commande {message[messages.COMMANDE]:02X} au lieu de {messages.CMD_CADRE:02X}"
+            _("footer: command {found} instead of {expected}").format(
+                found=f"{message[messages.COMMANDE]:02X}", expected=f"{messages.CMD_CADRE:02X}"
+            )
         )
     corps = message[messages.CORPS : -1]
     if corps[messages.FANION] != messages.FANION_FIN:
-        raise ErreurReponse("pied sans fanion")
+        raise ErreurReponse(_("footer without flag"))
     if corps != messages.CORPS_PIED:
-        raise ErreurReponse("pied : octet parasite après le fanion")
+        raise ErreurReponse(_("footer: stray byte after the flag"))
 
 
 def assembler_lecture(recus: Sequence[bytes]) -> bytes:
@@ -347,11 +383,19 @@ def assembler_lecture(recus: Sequence[bytes]) -> bytes:
     somme de fin, puis sont écartés.
     """
     if len(recus) != NB_MESSAGES_LECTURE:
-        raise ErreurReponse(f"{len(recus)} messages reçus au lieu de {NB_MESSAGES_LECTURE}")
+        raise ErreurReponse(
+            _("{count} messages received instead of {expected}").format(
+                count=len(recus), expected=NB_MESSAGES_LECTURE
+            )
+        )
     for numero, message in enumerate(recus):
         refus = _refus_transfert(message)
         if refus is not None:
-            raise ErreurReponse(f"message {numero} étranger à une lecture d'IR : {refus}")
+            raise ErreurReponse(
+                _("message {number} foreign to an IR read: {error}").format(
+                    number=numero, error=refus
+                )
+            )
     _exiger_entete_de_lecture(recus[0])
     blocs = b"".join(_bloc_de_lecture(k, message) for k, message in enumerate(recus[1:-2]))
     _exiger_bloc_de_fin_de_lecture(recus[-2], blocs)

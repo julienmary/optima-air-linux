@@ -40,6 +40,7 @@ from pathlib import Path
 from typing import Any
 
 from optima_air.erreurs import ErreurDisque
+from optima_air.i18n import _
 
 FORMAT = 1  # version du format du registre et des fiches
 # Taille maximale relue d'un registre ou d'une fiche. Une fiche écrite fait moins de
@@ -67,12 +68,13 @@ def texte_systeme(erreur: OSError) -> str:
 
 
 @contextlib.contextmanager
-def envelopper(operation: str, chemin: Path) -> Iterator[None]:
-    """Enveloppe toute OSError en ErreurDisque nommant l'opération et le chemin."""
+def envelopper(message: str, chemin: Path) -> Iterator[None]:
+    """Enveloppe toute OSError en ErreurDisque. `message` est une phrase entière, déjà
+    traduite, avec les champs {file} (le chemin) et {error} (la raison du système)."""
     try:
         yield
     except OSError as erreur:
-        raise ErreurDisque(f"Impossible {operation} {chemin} : {texte_systeme(erreur)}") from erreur
+        raise ErreurDisque(message.format(file=chemin, error=texte_systeme(erreur))) from erreur
 
 
 def _refus_d_ouverture(chemin: Path, erreur: OSError) -> str:
@@ -82,7 +84,7 @@ def _refus_d_ouverture(chemin: Path, erreur: OSError) -> str:
     if erreur.errno == errno.ELOOP:
         with contextlib.suppress(OSError):
             if stat.S_ISLNK(os.lstat(chemin).st_mode):
-                return "est un lien symbolique"
+                return _("is a symbolic link")
     return texte_systeme(erreur)
 
 
@@ -107,11 +109,17 @@ def lire_fichier(chemin: Path, taille: int, *, exacte: bool = False) -> bytes:
     try:
         etat = os.fstat(descripteur)
         if not stat.S_ISREG(etat.st_mode):
-            raise Illisible("pas un fichier ordinaire")
+            raise Illisible(_("not a regular file"))
         if exacte and etat.st_size != taille:
-            raise Illisible(f"{etat.st_size} octets au lieu de {taille}")
+            raise Illisible(
+                _("{size} bytes instead of {expected}").format(size=etat.st_size, expected=taille)
+            )
         if etat.st_size > taille:
-            raise Illisible(f"{etat.st_size} octets, plus que les {taille} permis")
+            raise Illisible(
+                _("{size} bytes, more than the {allowed} allowed").format(
+                    size=etat.st_size, allowed=taille
+                )
+            )
         morceaux: list[bytes] = []
         reste = etat.st_size + 1  # un octet de plus : un fichier qui a grossi se voit
         while reste > 0:
@@ -122,7 +130,7 @@ def lire_fichier(chemin: Path, taille: int, *, exacte: bool = False) -> bytes:
             reste -= len(morceau)
         contenu = b"".join(morceaux)
         if len(contenu) != etat.st_size:
-            raise Illisible("taille changée pendant la lecture")
+            raise Illisible(_("size changed while reading"))
         return contenu
     except OSError as erreur:
         raise Illisible(texte_systeme(erreur)) from erreur
@@ -150,14 +158,18 @@ def ouvrir_verrou(chemin: Path) -> int:
         )
     except OSError as erreur:
         raise ErreurDisque(
-            f"Impossible de créer le verrou {chemin} : {_refus_d_ouverture(chemin, erreur)}"
+            _("Cannot create the lock {file}: {error}").format(
+                file=chemin, error=_refus_d_ouverture(chemin, erreur)
+            )
         ) from erreur
     try:
-        with envelopper("de créer le verrou", chemin):
+        with envelopper(_("Cannot create the lock {file}: {error}"), chemin):
             etat = os.fstat(descripteur)
         if not stat.S_ISREG(etat.st_mode):
             raise ErreurDisque(
-                f"Impossible de créer le verrou {chemin} : n'est pas un fichier ordinaire"
+                _("Cannot create the lock {file}: {error}").format(
+                    file=chemin, error=_("not a regular file")
+                )
             )
     except BaseException:
         # L'erreur d'origine prime sur un éventuel échec de la fermeture.
@@ -171,13 +183,13 @@ def _sans_doublon(paires: list[tuple[str, Any]]) -> dict[str, Any]:
     objet: dict[str, Any] = {}
     for cle, valeur in paires:
         if cle in objet:
-            raise ValueError(f"clé « {montrer(cle)} » en double")
+            raise ValueError(_("duplicate key “{key}”").format(key=montrer(cle)))
         objet[cle] = valeur
     return objet
 
 
 def _refuser_constante(nom: str) -> Any:
-    raise ValueError(f"{nom} n'est pas du JSON standard")
+    raise ValueError(_("{name} is not standard JSON").format(name=nom))
 
 
 def charger_json(brut: bytes) -> Any:
@@ -190,28 +202,28 @@ def charger_json(brut: bytes) -> Any:
             parse_constant=_refuser_constante,
         )
     except (ValueError, RecursionError) as erreur:
-        raise Illisible(f"n'est pas du JSON : {erreur}") from erreur
+        raise Illisible(_("not JSON: {error}").format(error=erreur)) from erreur
 
 
 def controler_format_et_cles(contenu: dict[str, Any], cles: tuple[str, ...]) -> None:
     """Champ format égal à FORMAT, chaque clé attendue présente, aucune autre."""
     if "format" not in contenu:
-        raise Illisible("champ « format » absent")
+        raise Illisible(_("field “{field}” missing").format(field="format"))
     valeur = contenu["format"]
     # type(x) is int, exprès : True == 1 en Python.
     if type(valeur) is not int or valeur != FORMAT:
-        raise Illisible(f"format {valeur!r} inconnu")
+        raise Illisible(_("unknown format {value!r}").format(value=valeur))
     for cle in cles:
         if cle not in contenu:
-            raise Illisible(f"champ « {cle} » absent")
+            raise Illisible(_("field “{field}” missing").format(field=cle))
     for cle in contenu:
         if cle not in cles:
-            raise Illisible(f"champ « {montrer(cle)} » inconnu")
+            raise Illisible(_("unknown field “{field}”").format(field=montrer(cle)))
 
 
 def synchroniser_dossier(dossier: Path) -> None:
     """Rend durables les entrées du dossier (fichier mis en place, dossier créé)."""
-    with envelopper("de synchroniser le dossier", dossier):
+    with envelopper(_("Cannot synchronise the folder {file}: {error}"), dossier):
         descripteur = os.open(dossier, os.O_RDONLY | os.O_DIRECTORY | os.O_CLOEXEC)
         try:
             os.fsync(descripteur)
@@ -230,18 +242,24 @@ def creer_dossiers(dossier: Path) -> None:
         except (FileNotFoundError, NotADirectoryError) as erreur:
             if courant.parent == courant:
                 raise ErreurDisque(
-                    f"Impossible de créer le dossier {dossier} : {texte_systeme(erreur)}"
+                    _("Cannot create the folder {folder}: {error}").format(
+                        folder=dossier, error=texte_systeme(erreur)
+                    )
                 ) from erreur
             a_creer.append(courant)
             courant = courant.parent
             continue
         except OSError as erreur:
             raise ErreurDisque(
-                f"Impossible de créer le dossier {dossier} : {texte_systeme(erreur)}"
+                _("Cannot create the folder {folder}: {error}").format(
+                    folder=dossier, error=texte_systeme(erreur)
+                )
             ) from erreur
         if not stat.S_ISDIR(etat.st_mode):
             raise ErreurDisque(
-                f"Impossible de créer le dossier {dossier} : {courant} n'est pas un dossier"
+                _("Cannot create the folder {folder}: {path} is not a folder").format(
+                    folder=dossier, path=courant
+                )
             )
         break
     for chemin in reversed(a_creer):
@@ -251,11 +269,15 @@ def creer_dossiers(dossier: Path) -> None:
             if os.path.isdir(chemin):
                 continue  # créé entre-temps par un autre
             raise ErreurDisque(
-                f"Impossible de créer le dossier {dossier} : {chemin} n'est pas un dossier"
+                _("Cannot create the folder {folder}: {path} is not a folder").format(
+                    folder=dossier, path=chemin
+                )
             ) from erreur
         except OSError as erreur:
             raise ErreurDisque(
-                f"Impossible de créer le dossier {chemin} : {texte_systeme(erreur)}"
+                _("Cannot create the folder {folder}: {error}").format(
+                    folder=chemin, error=texte_systeme(erreur)
+                )
             ) from erreur
         synchroniser_dossier(chemin.parent)
 
@@ -263,13 +285,13 @@ def creer_dossiers(dossier: Path) -> None:
 def _ecrire_provisoire(chemin: Path, contenu: bytes) -> Path:
     """Écrit le contenu dans un fichier caché à côté de `chemin`, en mode 0600, et le
     synchronise. En cas d'échec, le fichier provisoire est effacé."""
-    with envelopper("d'écrire", chemin):
+    with envelopper(_("Cannot write {file}: {error}"), chemin):
         descripteur, nom = tempfile.mkstemp(
             dir=chemin.parent, prefix=f".{chemin.name}.", suffix=".tmp"
         )
     provisoire = Path(nom)
     try:
-        with envelopper("d'écrire", chemin):
+        with envelopper(_("Cannot write {file}: {error}"), chemin):
             try:
                 os.fchmod(descripteur, MODE_FICHIER)  # exact, quel que soit l'umask
                 vue = memoryview(contenu)
@@ -292,7 +314,7 @@ def ecrire_en_remplacant(chemin: Path, contenu: bytes) -> None:
     entièrement sur le disque."""
     provisoire = _ecrire_provisoire(chemin, contenu)
     try:
-        with envelopper("de mettre en place", chemin):
+        with envelopper(_("Cannot put {file} in place: {error}"), chemin):
             os.replace(provisoire, chemin)
     except BaseException:
         with contextlib.suppress(OSError):
@@ -313,7 +335,9 @@ def ecrire_une_fois(chemin: Path, contenu: bytes) -> None:
             raise DejaPresent(chemin) from erreur
         except OSError as erreur:
             raise ErreurDisque(
-                f"Impossible de mettre en place {chemin} : {texte_systeme(erreur)}"
+                _("Cannot put {file} in place: {error}").format(
+                    file=chemin, error=texte_systeme(erreur)
+                )
             ) from erreur
     finally:
         # Si l'effacement échoue, le fichier caché reste : voir la docstring du module.

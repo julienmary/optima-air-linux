@@ -13,7 +13,12 @@ gi.require_version("Gdk", "4.0")
 from gi.repository import Gdk, Gio, GLib, Gtk, Pango  # noqa: E402
 
 from optima_air import echelles, ir  # noqa: E402
-from optima_air.device import Connexion, Constat, LectureSlot  # noqa: E402
+from optima_air.device import (  # noqa: E402
+    SILENCE_APRES_ECHEC_S,
+    Connexion,
+    Constat,
+    LectureSlot,
+)
 from optima_air.erreurs import ErreurOptimaAir  # noqa: E402
 from optima_air.gui.dialogues import (  # noqa: E402
     BoutonCouleur,
@@ -40,6 +45,7 @@ from optima_air.gui.travail import (  # noqa: E402
     TableauLu,
 )
 from optima_air.gui.widgets import Barre, Courbe, Potard  # noqa: E402
+from optima_air.i18n import _, decimal, decimal_signe  # noqa: E402
 from optima_air.messages import Tableau  # noqa: E402
 from optima_air.messages_reception import Etat, InfoSlot  # noqa: E402
 from optima_air.store import Magasin  # noqa: E402
@@ -71,7 +77,7 @@ def _nom_preset(preset: int) -> str:
         return "MANUAL"
     if 0 <= preset < len(PRESETS):
         return f"{preset + 1}. {PRESETS[preset]}"
-    return f"inconnu ({preset})"
+    return _("unknown ({preset})").format(preset=preset)
 
 
 def _panneau(titre: str, contenu: Gtk.Widget) -> Gtk.Frame:
@@ -103,11 +109,11 @@ class Fenetre(Gtk.ApplicationWindow):
         self._slot_actif: int | None = None
         self._lignes: list[Gtk.ListBoxRow] = []
 
-        self._etat = Gtk.Label(label="Recherche de la pédale…", xalign=0)
+        self._etat = Gtk.Label(label=_("Looking for the pedal…"), xalign=0)
         self._etat.add_css_class("etat")
 
         self._info = Gtk.Label(xalign=0, wrap=True)
-        self._restaurer = Gtk.Button(label="Restaurer l'état d'avant")
+        self._restaurer = Gtk.Button(label=_("Restore the previous state"))
         self._restaurer.set_halign(Gtk.Align.START)
         self._restaurer.set_visible(False)
         self._restaurer.connect("clicked", self._sur_restaurer)
@@ -122,9 +128,9 @@ class Fenetre(Gtk.ApplicationWindow):
         for marge in ("top", "bottom", "start", "end"):
             getattr(boite, f"set_margin_{marge}")(10)
         # Ce qui concerne toute la pédale, et non le slot actif, est sur la ligne du haut.
-        sauvegarder = Gtk.Button(label="Sauvegarder tout")
+        sauvegarder = Gtk.Button(label=_("Back up everything"))
         sauvegarder.connect("clicked", lambda _b: self._travail.demander_sauvegarde())
-        sauvegardes = Gtk.Button(label="Sauvegardes…")
+        sauvegardes = Gtk.Button(label=_("Backups…"))
         sauvegardes.connect("clicked", self._sur_sauvegardes)
         self._boutons_du_haut = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
         self._boutons_du_haut.append(sauvegarder)
@@ -152,7 +158,7 @@ class Fenetre(Gtk.ApplicationWindow):
             for nom, attribut in POTARDS
         }
         rangee = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=4)
-        for _, attribut in POTARDS:
+        for _nom, attribut in POTARDS:
             rangee.append(self._potards[attribut])
         self._preset = Gtk.Label(xalign=0)
         self._preamp_actif = self._interrupteur("preamp_actif")
@@ -212,17 +218,21 @@ class Fenetre(Gtk.ApplicationWindow):
         self._volume = Potard(
             "VOLUME",
             sur_changement=lambda v: self._sur_reglage_slot(Tableau.VOLUME, v),
-            afficher=lambda v: f"{echelles.volume_db(v):+.1f} dB",
+            afficher=lambda v: _("{value} dB").format(
+                value=decimal_signe(echelles.volume_db(v), 1)
+            ),
         )
         self._low_cut = Potard(
             "LOW CUT",
             sur_changement=lambda v: self._sur_reglage_slot(Tableau.LOW_CUT, v),
-            afficher=lambda v: f"{echelles.low_cut_hz(v)} Hz",
+            afficher=lambda v: _("{value} Hz").format(value=echelles.low_cut_hz(v)),
         )
         self._high_cut = Potard(
             "HIGH CUT",
             sur_changement=lambda v: self._sur_reglage_slot(Tableau.HIGH_CUT, v),
-            afficher=lambda v: f"{echelles.high_cut_hz(v) / 1000:.1f} kHz",
+            afficher=lambda v: _("{value} kHz").format(
+                value=decimal(echelles.high_cut_hz(v) / 1000, 1)
+            ),
         )
         self._potards_slot = {
             Tableau.VOLUME: self._volume,
@@ -243,9 +253,9 @@ class Fenetre(Gtk.ApplicationWindow):
         entete.append(self._ligne("IR", self._ir_marche))
         self._courbe = Courbe()
         self._accepter_les_fichiers(self._courbe, None)  # sur la courbe : le slot actif
-        charger = Gtk.Button(label="Charger un WAV…")
+        charger = Gtk.Button(label=_("Load a WAV…"))
         charger.connect("clicked", self._sur_charger)
-        exporter = Gtk.Button(label="Exporter en WAV…")
+        exporter = Gtk.Button(label=_("Export as WAV…"))
         exporter.connect("clicked", self._sur_exporter)
         actions = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
         actions.append(charger)
@@ -296,12 +306,12 @@ class Fenetre(Gtk.ApplicationWindow):
         if self._connexion is None or self._slot_actif is None:
             return
         filtre = Gtk.FileFilter()
-        filtre.set_name("Fichiers WAV")
+        filtre.set_name(_("WAV files"))
         filtre.add_pattern("*.wav")
         filtre.add_pattern("*.WAV")
         filtres = Gio.ListStore.new(Gtk.FileFilter)
         filtres.append(filtre)
-        dialogue = Gtk.FileDialog(title="Choisir un fichier WAV")
+        dialogue = Gtk.FileDialog(title=_("Choose a WAV file"))
         dialogue.set_filters(filtres)
         dialogue.open(self, None, self._fichier_choisi)
 
@@ -347,7 +357,7 @@ class Fenetre(Gtk.ApplicationWindow):
         if vise is None or self._connexion is None or not chemins:
             return False
         if len(chemins) > 1:
-            self._dire("Un seul fichier à la fois : un slot ne contient qu'une IR.", erreur=True)
+            self._dire(_("One file at a time: a slot holds a single IR."), erreur=True)
             return False
         # La confirmation s'ouvre une fois le glisser terminé, pas pendant.
         GLib.idle_add(self._apres_depot, vise, Path(chemins[0]))
@@ -361,7 +371,7 @@ class Fenetre(Gtk.ApplicationWindow):
         lecture = self._lecture_active
         if lecture is None:
             return
-        dialogue = Gtk.FileDialog(title="Exporter en WAV")
+        dialogue = Gtk.FileDialog(title=_("Export as WAV"))
         dialogue.set_initial_name(f"{lecture.infos.nom or 'slot'}.wav")
         dialogue.save(self, None, self._cible_choisie)
 
@@ -377,9 +387,15 @@ class Fenetre(Gtk.ApplicationWindow):
         try:
             cible.write_bytes(ir.contenu_wav(lecture.donnees))
         except OSError as erreur:
-            self._dire(f"Impossible d'écrire {cible} : {erreur}", erreur=True)
+            self._dire(
+                _("Cannot write {file}: {error}").format(file=cible, error=erreur), erreur=True
+            )
             return
-        self._dire(f"Slot {lecture.infos.slot + 1} « {lecture.infos.nom} » exporté dans {cible}")
+        self._dire(
+            _("Slot {slot} “{name}” exported to {file}").format(
+                slot=lecture.infos.slot + 1, name=lecture.infos.nom, file=cible
+            )
+        )
 
     def _sur_sauvegardes(self, _bouton: Gtk.Button) -> None:
         if self._connexion is not None:
@@ -389,15 +405,20 @@ class Fenetre(Gtk.ApplicationWindow):
 
     def _afficher_restauration(self, message: RestaurationTerminee) -> None:
         def liste(slots: tuple[int, ...]) -> str:
-            return ", ".join(str(slot + 1) for slot in slots) or "aucun"
+            return ", ".join(str(slot + 1) for slot in slots) or _("none")
 
         bilan = message.bilan
         self._restauration = None
         self._restaurer.set_visible(False)
         self._dire(
-            f"Restauration terminée. Slots réécrits puis relus à l'identique : "
-            f"{liste(bilan.reecrits)}. Réglages seuls remis : {liste(bilan.regles)}. "
-            f"Déjà identiques à l'archive : {len(bilan.inchanges)}."
+            _(
+                "Restore finished. Slots rewritten and read back identical: {rewritten}. "
+                "Settings only: {settings}. Already identical to the backup: {unchanged}."
+            ).format(
+                rewritten=liste(bilan.reecrits),
+                settings=liste(bilan.regles),
+                unchanged=len(bilan.inchanges),
+            )
         )
 
     def _sur_restaurer(self, _bouton: Gtk.Button) -> None:
@@ -408,17 +429,25 @@ class Fenetre(Gtk.ApplicationWindow):
     def _afficher_constat(self, constat: Constat) -> None:
         numero = constat.slot + 1
         if constat.issue == "aboutie":
-            self._dire(f"Slot {numero} : l'écriture interrompue avait abouti. Rien à faire.")
+            self._dire(
+                _("Slot {slot}: the interrupted write had completed. Nothing to do.").format(
+                    slot=numero
+                )
+            )
         elif constat.issue == "inchange":
             self._dire(
-                f"Slot {numero} : après l'écriture interrompue, il contient toujours ce "
-                "qu'il y avait avant. Rien à faire."
+                _(
+                    "Slot {slot}: after the interrupted write, it still holds what it held "
+                    "before. Nothing to do."
+                ).format(slot=numero)
             )
         else:
             self._dire(
-                f"Slot {numero} : après l'écriture interrompue, son contenu n'est ni l'ancien "
-                "ni le nouveau. Tant qu'il n'est pas remis d'aplomb, c'est le seul slot "
-                "qu'on puisse écrire.",
+                _(
+                    "Slot {slot}: after the interrupted write, it holds neither the old nor "
+                    "the new content. Until it is put right, it is the only slot that can be "
+                    "written."
+                ).format(slot=numero),
                 erreur=True,
             )
             self._restauration = (constat.archive, constat.slot)
@@ -433,11 +462,15 @@ class Fenetre(Gtk.ApplicationWindow):
             self._slots[message.slot] = infos
             self._etiquettes[message.slot].set_label(f"{infos.slot + 1}. {infos.nom}")
         if message.slot == self._slot_actif:
-            self._ir_active.set_label(f"Slot {infos.slot + 1} : {infos.nom}")
+            self._ir_active.set_label(
+                _("Slot {slot}: {name}").format(slot=infos.slot + 1, name=infos.nom)
+            )
             self._afficher_ir(IrLue(message.lecture))
         self._dire(
-            f"Slot {infos.slot + 1} : « {infos.nom} » écrit, puis relu à l'identique. "
-            f"Ancien contenu archivé dans {message.archive}"
+            _(
+                "Slot {slot}: “{name}” written and read back identical. Previous content "
+                "backed up in {backup}"
+            ).format(slot=infos.slot + 1, name=infos.nom, backup=message.archive)
         )
 
     # --- mise à jour ---
@@ -460,31 +493,47 @@ class Fenetre(Gtk.ApplicationWindow):
             self._wet.fixer(message.wet)
         elif isinstance(message, EcritureCommencee):
             self._rendre_disponible(False)
-            self._dire(f"Écriture du slot {message.slot + 1} en cours…")
+            self._dire(_("Writing slot {slot}…").format(slot=message.slot + 1))
         elif isinstance(message, EcritureTerminee):
             self._afficher_ecriture_terminee(message)
         elif isinstance(message, EcritureEchouee):
             self._dire(
-                f"L'écriture du slot {message.slot + 1} a échoué : {message.raison} La pédale "
-                "est laissée tranquille 35 s, puis l'état du slot sera constaté.",
+                _(
+                    "Writing slot {slot} failed: {reason} The pedal is left alone for "
+                    "{seconds} s, then the state of the slot will be checked."
+                ).format(
+                    slot=message.slot + 1,
+                    reason=message.raison,
+                    seconds=decimal(SILENCE_APRES_ECHEC_S, 0),
+                ),
                 erreur=True,
             )
         elif isinstance(message, RepriseConstatee):
             self._afficher_constat(message.constat)
         elif isinstance(message, Progres):
             self._rendre_disponible(False)
-            self._dire(f"{message.operation} : {message.fait + 1} sur {message.total}…")
+            self._dire(
+                _("{operation}: {done} of {total}…").format(
+                    operation=message.operation, done=message.fait + 1, total=message.total
+                )
+            )
         elif isinstance(message, SauvegardeTerminee):
             self._rendre_disponible(True)
-            self._dire(f"Les 23 slots sont sauvegardés dans {message.sauvegarde.archive}")
+            self._dire(
+                _("All 23 slots are backed up in {backup}").format(
+                    backup=message.sauvegarde.archive
+                )
+            )
         elif isinstance(message, SauvegardeEchouee):
-            self._dire(f"La sauvegarde a échoué : {message.raison}", erreur=True)
+            self._dire(_("The backup failed: {reason}").format(reason=message.raison), erreur=True)
         elif isinstance(message, RestaurationTerminee):
             self._afficher_restauration(message)
         elif isinstance(message, RestaurationEchouee):
             self._dire(
-                f"La restauration s'est arrêtée : {message.raison} Les slots déjà traités "
-                "sont en ordre ; l'état de la pédale va être relu.",
+                _(
+                    "The restore stopped: {reason} The slots already handled are in order; "
+                    "the state of the pedal will be read again."
+                ).format(reason=message.raison),
                 erreur=True,
             )
 
@@ -498,7 +547,11 @@ class Fenetre(Gtk.ApplicationWindow):
             Tableau.HIGH_CUT: list(connexion.high_cuts),
         }
         self._etat.remove_css_class("deconnecte")
-        self._etat.set_label(f"Connectée, firmware {echelles.version_texte(connexion.firmware)}")
+        self._etat.set_label(
+            _("Connected, firmware {version}").format(
+                version=echelles.version_texte(connexion.firmware)
+            )
+        )
         for ligne in self._lignes:
             self._liste.remove(ligne)
         self._lignes = []
@@ -519,7 +572,7 @@ class Fenetre(Gtk.ApplicationWindow):
         self._lecture_active = None
         self._rendre_disponible(False)
         self._etat.add_css_class("deconnecte")
-        self._etat.set_label(f"Déconnectée : {raison}")
+        self._etat.set_label(_("Disconnected: {reason}").format(reason=raison))
         for potard in (*self._potards.values(), self._volume, self._low_cut, self._high_cut):
             potard.fixer(None)
         self._usb_in.fixer(None)
@@ -532,9 +585,9 @@ class Fenetre(Gtk.ApplicationWindow):
     def _afficher_etat(self, etat: Etat) -> None:
         self._maj_en_cours = True
         try:
-            for _, attribut in POTARDS:
+            for _nom, attribut in POTARDS:
                 self._potards[attribut].fixer(getattr(etat, attribut))
-            self._preset.set_label(f"Preset : {_nom_preset(etat.preset)}")
+            self._preset.set_label(_("Preset: {preset}").format(preset=_nom_preset(etat.preset)))
             self._preamp_actif.set_active(etat.preamp_actif)
             if 0 <= etat.routing < len(ROUTINGS):
                 self._routing.set_selected(etat.routing)
@@ -555,7 +608,7 @@ class Fenetre(Gtk.ApplicationWindow):
         self._lignes[slot].add_css_class("actif")
         self._slot_actif = slot
         nom = self._slots[slot].nom
-        self._ir_active.set_label(f"Slot {slot + 1} : {nom}")
+        self._ir_active.set_label(_("Slot {slot}: {name}").format(slot=slot + 1, name=nom))
         for tableau, potard in self._potards_slot.items():
             potard.fixer(self._tableaux[tableau][slot])
 
@@ -569,6 +622,5 @@ class Fenetre(Gtk.ApplicationWindow):
             self._avertissement.set_label("")
         else:
             self._avertissement.set_label(
-                "Attention : l'identifiant annoncé par la pédale ne correspond pas aux "
-                "données lues."
+                _("Warning: the identifier announced by the pedal does not match the data read.")
             )

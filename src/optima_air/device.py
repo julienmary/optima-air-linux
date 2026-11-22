@@ -30,6 +30,7 @@ from optima_air.erreurs import (
     FirmwareInconnu,
     FonctionALEssai,
 )
+from optima_air.i18n import _, decimal, ngettext
 from optima_air.messages import Tableau
 from optima_air.messages_emission import Categorie, EtapeUpload, Trame
 from optima_air.messages_reception import Etat, InfoSlot, Statut
@@ -182,29 +183,35 @@ class Session:
                     self._silence_jusqu_a = self._horloge() + reste
         if self._horloge() < self._silence_jusqu_a:
             raise EcritureInterrompue(
-                "Une écriture a été interrompue : la pédale est laissée tranquille encore "
-                f"{self._silence_jusqu_a - self._horloge():.0f} s."
+                _(
+                    "A write was interrupted: the pedal is left alone for another {seconds} s."
+                ).format(seconds=decimal(self._silence_jusqu_a - self._horloge(), 0))
             )
         if trame.categorie is Categorie.ECRITURE and not self._ecriture_ouverte:
             # Une trame d'écriture ne part que de ecrire_slot, après archive et journal.
             raise ErreurBornes(
-                f"« {trame.nom} » : une trame d'écriture ne peut partir que d'une écriture "
-                "de slot complète (archive, journal, relecture)."
+                _(
+                    "“{message}”: a write message can only be sent by a complete slot write "
+                    "(backup, journal, read back)."
+                ).format(message=trame.nom)
             )
         if trame.categorie is not Categorie.LECTURE and not self._autres_que_lecture_permis():
             if self.firmware is None:
                 raise FirmwareInconnu(
-                    "La version du firmware n'a pas encore été lue : seules les lectures "
-                    "sont permises."
+                    _("The firmware version has not been read yet: only reads are allowed.")
                 )
             raise FirmwareInconnu(
-                f"Firmware {self.firmware:#04x} inconnu (protocole vérifié sur "
-                f"{FIRMWARE_VERIFIE:#04x}) : seules les lectures sont permises."
+                _(
+                    "Unknown firmware {found} (protocol verified on {verified}): only reads "
+                    "are allowed."
+                ).format(found=f"{self.firmware:#04x}", verified=f"{FIRMWARE_VERIFIE:#04x}")
             )
         if trame.essai is not None and not essai and not self._magasin.est_validee(trame.essai):
             raise FonctionALEssai(
-                f"« {trame.nom} » est une fonction à l'essai (« {trame.essai} »), "
-                "pas encore validée sur la pédale."
+                _(
+                    "“{message}” is a trial function (“{function}”), not yet validated on the "
+                    "pedal."
+                ).format(message=trame.nom, function=trame.essai)
             )
         self._transport.ecrire(trame.octets)
 
@@ -232,14 +239,18 @@ class Session:
     def _requete(self, trame: Trame, accepte: Callable[[bytes], bool]) -> bytes:
         """Demande de lecture : réémise jusqu'à deux fois si la réponse ne vient pas."""
         if trame.categorie is not Categorie.LECTURE:
-            raise ErreurBornes(f"« {trame.nom} » : seule une lecture peut être réémise.")
-        for _ in range(ENVOIS_PAR_LECTURE):
+            raise ErreurBornes(
+                _("“{message}”: only a read can be sent again.").format(message=trame.nom)
+            )
+        for _envoi in range(ENVOIS_PAR_LECTURE):
             self._emettre(trame)
             reponse = self._attendre(accepte, DELAI_S)
             if reponse is not None:
                 return reponse
         raise DelaiDepasse(
-            f"Pas de réponse de la pédale à « {trame.nom} » après {ENVOIS_PAR_LECTURE} envois."
+            _("No answer from the pedal to “{message}” after {count} attempts.").format(
+                message=trame.nom, count=ENVOIS_PAR_LECTURE
+            )
         )
 
     # --- lectures ---
@@ -288,7 +299,7 @@ class Session:
         limite = self._horloge() + PATIENCE_SILENCE_S
         while self._attendre(lambda _message: True, SILENCE_AVANT_RELECTURE_S) is not None:
             if self._horloge() > limite:
-                raise ErreurReponse("La pédale émet des SysEx sans interruption.")
+                raise ErreurReponse(_("The pedal keeps sending SysEx without a break."))
 
     def lire_ir(self, slot: int) -> bytes:
         """Les 8192 octets du slot, toutes sommes vérifiées. Sans effet sur la pédale."""
@@ -302,20 +313,24 @@ class Session:
                 return reception.assembler_lecture(self._collecter_transfert())
             except ErreurReponse as erreur:
                 derniere = erreur
-        raise ErreurReponse(f"Lecture du slot {slot} impossible : {derniere}")
+        raise ErreurReponse(
+            _("Cannot read slot {slot}: {error}").format(slot=slot + 1, error=derniere)
+        )
 
     def lire_ir_verifiee(self, slot: int) -> bytes:
         """Deux lectures de suite, qui doivent être identiques."""
         premiere = self.lire_ir(slot)
         if self.lire_ir(slot) != premiere:
-            raise ErreurReponse(f"Deux lectures du slot {slot} donnent des données différentes.")
+            raise ErreurReponse(
+                _("Two reads of slot {slot} give different data.").format(slot=slot + 1)
+            )
         return premiere
 
     def lire_slot(self, slot: int) -> LectureSlot:
         """Infos et IR du slot, l'IR étant lue deux fois. Si l'identifiant recalculé ne
         correspond pas à l'identifiant annoncé, tout est relu une fois ; un écart qui
         persiste est rendu tel quel, à charge pour l'appelant de le signaler."""
-        for _ in range(LECTURES_DE_SLOT):
+        for _lecture in range(LECTURES_DE_SLOT):
             infos = self.lire_infos_slot(slot)
             donnees = self.lire_ir_verifiee(slot)
             lecture = LectureSlot(infos, donnees, codec.identifiant(donnees))
@@ -356,18 +371,24 @@ class Session:
             reste = (en_cours.fin_du_silence() - maintenant()).total_seconds()
             if reste > 0:
                 raise EcritureInterrompue(
-                    f"Une écriture du slot {en_cours.slot} a été interrompue : attendre "
-                    f"encore {reste:.0f} s avant d'émettre quoi que ce soit."
+                    _(
+                        "A write to slot {slot} was interrupted: wait another {seconds} s "
+                        "before sending anything."
+                    ).format(slot=en_cours.slot + 1, seconds=decimal(reste, 0))
                 )
             if en_cours.slot != slot:
                 raise EcritureInterrompue(
-                    f"Une écriture du slot {en_cours.slot} a été interrompue : tant que ce "
-                    "slot n'est pas remis d'aplomb, il est le seul qu'on puisse écrire."
+                    _(
+                        "A write to slot {slot} was interrupted: until that slot is put right, "
+                        "it is the only one that can be written."
+                    ).format(slot=en_cours.slot + 1)
                 )
         if not self._autres_que_lecture_permis():
             raise FirmwareInconnu(
-                "Écriture refusée : le firmware n'est pas lu, ou n'est pas celui sur lequel "
-                "le protocole a été vérifié."
+                _(
+                    "Write refused: the firmware has not been read, or is not the one the "
+                    "protocol was verified on."
+                )
             )
         if identifiant is None:
             identifiant = codec.identifiant(donnees)
@@ -415,7 +436,9 @@ class Session:
                 or apres.infos.identifiant != identifiant
             ):
                 raise ErreurReponse(
-                    f"Après l'écriture, le slot {slot} ne contient pas ce qui a été émis."
+                    _("After the write, slot {slot} does not hold what was sent.").format(
+                        slot=slot + 1
+                    )
                 )
         except BaseException:
             self._silence_jusqu_a = self._horloge() + SILENCE_APRES_ECHEC_S
@@ -472,15 +495,18 @@ class Session:
         lève alors ErreurReponse), ou un statut inattendu pour un bloc."""
         for commande, statut in self._accuses(recus):
             if statut is Statut.ERREUR:
-                raise ErreurReponse("La pédale signale une erreur pendant l'écriture de l'IR.")
+                raise ErreurReponse(_("The pedal reports an error while writing the IR."))
             if commande == messages.CMD_BLOC and statut is not Statut.OK:
-                raise ErreurReponse(f"Accusé de bloc inattendu : {statut.name}.")
+                raise ErreurReponse(
+                    _("Unexpected block acknowledgement: {status}.").format(status=statut.name)
+                )
 
     def _bilan_complet(self, recus: Sequence[bytes]) -> bool:
         accuses = self._accuses(recus)
         return (
-            sum(1 for commande, _ in accuses if commande == messages.CMD_BLOC) >= NB_ACCUSES_DE_BLOC
-            and sum(1 for commande, _ in accuses if commande == messages.CMD_CADRE)
+            sum(1 for commande, _statut in accuses if commande == messages.CMD_BLOC)
+            >= NB_ACCUSES_DE_BLOC
+            and sum(1 for commande, _statut in accuses if commande == messages.CMD_CADRE)
             >= NB_ACCUSES_DE_CADRE
             and any(reception.est_reponse_infos(m, messages.CMD_NOM) for m in recus)
             and any(reception.est_reponse_infos(m, messages.CMD_INFOS) for m in recus)
@@ -494,20 +520,42 @@ class Session:
         cadres = [statut for commande, statut in accuses if commande == messages.CMD_CADRE]
         if len(blocs) != NB_ACCUSES_DE_BLOC:
             raise ErreurReponse(
-                f"{len(blocs)} accusés de bloc reçus au lieu de {NB_ACCUSES_DE_BLOC}."
+                ngettext(
+                    "{count} block acknowledgement received instead of {expected}.",
+                    "{count} block acknowledgements received instead of {expected}.",
+                    len(blocs),
+                ).format(count=len(blocs), expected=NB_ACCUSES_DE_BLOC)
             )
         if len(cadres) < NB_ACCUSES_DE_CADRE or not STATUTS_DE_CADRE.issuperset(cadres):
-            raise ErreurReponse("Accusés de l'en-tête et du pied manquants ou inattendus.")
+            raise ErreurReponse(_("Header and footer acknowledgements missing or unexpected."))
         attendu = InfoSlot(slot, identifiant, nom_brut)
-        for commande, quoi in (
-            (messages.CMD_NOM, "l'écho du nom"),
-            (messages.CMD_INFOS, "les infos"),
+        # Phrases entières par réponse : un fragment (« l'écho du nom ») ne se traduit pas.
+        combien: Callable[[int], str]
+        for commande, combien, discordance in (
+            (
+                messages.CMD_NOM,
+                lambda n: ngettext(
+                    "After the write, the name echo came {count} time instead of once.",
+                    "After the write, the name echo came {count} times instead of once.",
+                    n,
+                ),
+                _("After the write, the name echo does not match what was sent."),
+            ),
+            (
+                messages.CMD_INFOS,
+                lambda n: ngettext(
+                    "After the write, the slot info came {count} time instead of once.",
+                    "After the write, the slot info came {count} times instead of once.",
+                    n,
+                ),
+                _("After the write, the slot info does not match what was sent."),
+            ),
         ):
             reponses = [m for m in recus if reception.est_reponse_infos(m, commande)]
             if len(reponses) != 1:
-                raise ErreurReponse(f"Après l'écriture, {quoi} : {len(reponses)} réponse(s).")
+                raise ErreurReponse(combien(len(reponses)).format(count=len(reponses)))
             if reception.decoder_infos_slot(reponses[0], commande) != attendu:
-                raise ErreurReponse(f"Après l'écriture, {quoi} ne correspondent pas à l'émission.")
+                raise ErreurReponse(discordance)
 
     def constater_reprise(
         self, *, maintenant: Callable[[], datetime] | None = None
@@ -524,8 +572,10 @@ class Session:
         reste = (en_cours.fin_du_silence() - maintenant()).total_seconds()
         if reste > 0:
             raise EcritureInterrompue(
-                f"Une écriture du slot {en_cours.slot} a été interrompue : attendre encore "
-                f"{reste:.0f} s avant d'émettre quoi que ce soit."
+                _(
+                    "A write to slot {slot} was interrupted: wait another {seconds} s before "
+                    "sending anything."
+                ).format(slot=en_cours.slot + 1, seconds=decimal(reste, 0))
             )
         archive = racine / "sauvegardes" / en_cours.archive
         lecture = self.lire_slot(en_cours.slot)
@@ -597,12 +647,12 @@ class Session:
         if slots is None:
             slots = self._magasin.slots_presents(archive)
         if not slots:
-            raise ArchiveAbimee(f"L'archive {archive} ne contient aucun slot.")
+            raise ArchiveAbimee(_("The backup {backup} holds no slot.").format(backup=archive))
         contenus = {slot: self._magasin.lire_slot(archive, slot) for slot in slots}
         a_reecrire: list[int] = []
         for rang, slot in enumerate(slots):
             if sur_progres is not None:
-                sur_progres("Comparaison", rang, len(slots))
+                sur_progres(_("Comparing"), rang, len(slots))
             fiche, donnees = contenus[slot]
             nom_brut = bytes.fromhex(fiche.nom_hex).ljust(messages.LONGUEUR_NOM, b"\x00")
             actuel = self.lire_slot(slot)
@@ -618,8 +668,10 @@ class Session:
                 )
             except ErreurBornes as erreur:
                 raise ErreurBornes(
-                    f"Le slot {slot} de l'archive {archive.name} diffère de la pédale mais "
-                    f"ne peut pas être réécrit tel quel ({erreur}). Rien n'a été écrit."
+                    _(
+                        "Slot {slot} of the backup {backup} differs from the pedal but cannot "
+                        "be rewritten as it is ({error}). Nothing was written."
+                    ).format(slot=slot + 1, backup=archive.name, error=erreur)
                 ) from erreur
             a_reecrire.append(slot)
         reecrits: list[int] = []
@@ -627,12 +679,12 @@ class Session:
         inchanges: list[int] = []
         for rang, slot in enumerate(slots):
             if sur_progres is not None:
-                sur_progres("Restauration", rang, len(slots))
+                sur_progres(_("Restoring"), rang, len(slots))
             if slot in a_reecrire:
                 self.restaurer_slot(archive, slot, maintenant=maintenant)
                 reecrits.append(slot)
                 continue
-            fiche, _ = contenus[slot]
+            fiche, _donnees = contenus[slot]
             voulus = (
                 (Tableau.VOLUME, fiche.volume),
                 (Tableau.LOW_CUT, fiche.low_cut),
@@ -692,13 +744,15 @@ class Session:
         slot demandé après quelques relectures, ErreurReponse est levée.
         """
         self._emettre(emission.activer_slot(slot))
-        for _ in range(RELECTURES_APRES_REGLAGE):
+        for _relecture in range(RELECTURES_APRES_REGLAGE):
             self._attendre(lambda _message: False, PAUSE_APRES_REGLAGE_S)
             etat = self.lire_etat()
             if etat.slot_actif == slot:
                 return etat
         raise ErreurReponse(
-            f"La pédale annonce le slot {etat.slot_actif} après la demande du slot {slot}."
+            _("The pedal announces slot {announced} after slot {requested} was requested.").format(
+                announced=etat.slot_actif + 1, requested=slot + 1
+            )
         )
 
     def regler_slot(self, tableau: Tableau, slot: int, valeur: int) -> tuple[int, ...]:
@@ -710,7 +764,9 @@ class Session:
         n'est jamais réémise.
         """
         if not 0 <= slot < messages.NB_SLOTS:
-            raise ErreurBornes(f"slot {slot} hors de 0..{messages.NB_SLOTS - 1}")
+            raise ErreurBornes(
+                _("slot {slot} out of 1..{count}").format(slot=slot + 1, count=messages.NB_SLOTS)
+            )
         valeurs = list(self.lire_tableau(tableau))
         valeurs[slot] = valeur
         self._emettre(emission.ecrire_tableau(tableau, valeurs))
@@ -719,10 +775,18 @@ class Session:
             DELAI_S,
         )
         if echo is None:
-            raise DelaiDepasse(f"Pas d'écho de la pédale à l'écriture du tableau {tableau.name}.")
+            raise DelaiDepasse(
+                _("No echo from the pedal to the write of table {table}.").format(
+                    table=tableau.name
+                )
+            )
         recues = reception.decoder_tableau(echo, tableau, ecriture=True)
         if list(recues) != valeurs:
-            raise ErreurReponse(f"L'écho du tableau {tableau.name} diffère de ce qui a été émis.")
+            raise ErreurReponse(
+                _("The echo of table {table} differs from what was sent.").format(
+                    table=tableau.name
+                )
+            )
         return recues
 
     def regler(self, nom: str, valeur: int) -> None:

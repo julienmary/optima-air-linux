@@ -40,6 +40,7 @@ from typing import Any
 
 from optima_air import codec, disque, messages
 from optima_air.erreurs import ArchiveAbimee, ErreurBornes, ErreurDisque
+from optima_air.i18n import _
 
 MOTIFS = ("avant-ecriture", "manuelle", "complete", "import", "altere")
 REGLAGE_MAX = 100  # volume, low cut et high cut d'un slot : 0..100
@@ -50,7 +51,9 @@ IDENTIFIANT_MAX = 0xFFFFFFFF
 
 def _nombre(valeur: int) -> str:
     """Entier pour un message ; str() d'un entier de plus de 4300 chiffres lève."""
-    return str(valeur) if valeur.bit_length() <= 64 else f"de {valeur.bit_length()} bits"
+    if valeur.bit_length() <= 64:
+        return str(valeur)
+    return _("of {bits} bits").format(bits=valeur.bit_length())
 
 
 _HEXADECIMAL = re.compile(r"(?:[0-9a-f]{2})*")
@@ -136,29 +139,45 @@ def _refus_valeurs(
     for nom, valeur in entiers.items():
         # type(x) is int, exprès : True est un int, et serait écrit « true » dans la fiche.
         if type(valeur) is not int:
-            return f"{nom} : entier attendu, reçu {type(valeur).__name__}"
+            return _("{field}: integer expected, got {type}").format(
+                field=nom, type=type(valeur).__name__
+            )
     if firmware is not None and type(firmware) is not int:
-        return f"firmware : entier ou rien attendu, reçu {type(firmware).__name__}"
+        return _("{field}: integer or nothing expected, got {type}").format(
+            field="firmware", type=type(firmware).__name__
+        )
     if type(nom_brut) is not bytes:
-        return f"nom de slot : octets attendus, reçu {type(nom_brut).__name__}"
+        return _("slot name: bytes expected, got {type}").format(type=type(nom_brut).__name__)
     if type(motif) is not str:
-        return f"motif : texte attendu, reçu {type(motif).__name__}"
+        return _("{field}: text expected, got {type}").format(
+            field="motif", type=type(motif).__name__
+        )
     if not 0 <= slot < messages.NB_SLOTS:
-        return f"slot {_nombre(slot)} hors de 0..{messages.NB_SLOTS - 1}"
+        return _("slot {slot} out of 1..{count}").format(
+            slot=_nombre(slot + 1), count=messages.NB_SLOTS
+        )
     if len(nom_brut) != messages.LONGUEUR_NOM:
-        return f"nom de slot de {len(nom_brut)} octets au lieu de {messages.LONGUEUR_NOM}"
+        return _("slot name of {size} bytes instead of {expected}").format(
+            size=len(nom_brut), expected=messages.LONGUEUR_NOM
+        )
     if not 0 <= identifiant <= IDENTIFIANT_MAX:
-        return f"identifiant {_nombre(identifiant)} hors de 0..{IDENTIFIANT_MAX:#x}"
+        return _("identifier {value} out of 0..{max}").format(
+            value=_nombre(identifiant), max=f"{IDENTIFIANT_MAX:#x}"
+        )
     for nom, valeur in (("volume", volume), ("low_cut", low_cut), ("high_cut", high_cut)):
         if not 0 <= valeur <= REGLAGE_MAX:
-            return f"{nom} {_nombre(valeur)} hors de 0..{REGLAGE_MAX}"
+            return _("{field} {value} out of 0..{max}").format(
+                field=nom, value=_nombre(valeur), max=REGLAGE_MAX
+            )
     if firmware is not None and not 0 <= firmware <= FIRMWARE_MAX:
-        return f"firmware {_nombre(firmware)} hors de 0..{FIRMWARE_MAX}"
+        return _("{field} {value} out of 0..{max}").format(
+            field="firmware", value=_nombre(firmware), max=FIRMWARE_MAX
+        )
     if motif not in MOTIFS:
-        return f"Motif d'archive « {disque.montrer(motif)} » inconnu."
+        return _("Unknown backup reason “{reason}”.").format(reason=disque.montrer(motif))
     # La session connaît toujours le firmware ; seul un import peut l'ignorer.
     if firmware is None and motif != "import":
-        return "firmware absent : seul le motif « import » l'admet"
+        return _("firmware missing: only the reason “{reason}” allows it").format(reason="import")
     return None
 
 
@@ -169,45 +188,62 @@ def _refus_archive(nom_archive: str, motif: str, date: str) -> str | None:
     ne dépend pas du fuseau de la machine."""
     morceaux = _NOM_ARCHIVE.fullmatch(nom_archive)
     if morceaux is None:
-        return f"nom d'archive « {disque.montrer(nom_archive)} » mal formé"
+        return _("malformed backup name “{name}”").format(name=disque.montrer(nom_archive))
     if motif != morceaux["motif"]:
-        return (
-            f"motif « {disque.montrer(motif)} » différent de celui de l'archive "
-            f"{disque.montrer(nom_archive)}, du motif « {morceaux['motif']} »"
+        return _(
+            "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+        ).format(
+            reason=disque.montrer(motif),
+            name=disque.montrer(nom_archive),
+            expected=morceaux["motif"],
         )
     try:
         instant = datetime.fromisoformat(date)
     except ValueError:
-        return f"date {date!r} illisible"
+        return _("unreadable date {date!r}").format(date=date)
     if instant.utcoffset() is None:
-        return f"date {date!r} sans fuseau horaire"
+        return _("date {date!r} without time zone").format(date=date)
     if instant.isoformat(timespec="seconds") != date:
-        return f"date {date!r} non canonique"
+        return _("non-canonical date {date!r}").format(date=date)
     if _horodatage(instant) != morceaux["horodatage"]:
-        return f"date {date!r} différente de l'heure de l'archive {disque.montrer(nom_archive)}"
+        return _("date {date!r} differs from the time of the backup {name}").format(
+            date=date, name=disque.montrer(nom_archive)
+        )
     return None
 
 
 def _controler_quand(quand: datetime) -> None:
     if not isinstance(quand, datetime):
-        raise ErreurBornes(f"quand : date attendue, reçu {type(quand).__name__}")
+        raise ErreurBornes(
+            _("{field}: date expected, got {type}").format(field="quand", type=type(quand).__name__)
+        )
     if quand.utcoffset() is None:
         raise ErreurBornes(
-            "quand doit porter un fuseau horaire (par exemple datetime.now().astimezone())"
+            _("{field} must carry a time zone (for example datetime.now().astimezone())").format(
+                field="quand"
+            )
         )
 
 
 def _controler_slot(slot: int) -> None:
     if type(slot) is not int or not 0 <= slot < messages.NB_SLOTS:
-        raise ErreurBornes(f"slot {slot!r} hors de 0..{messages.NB_SLOTS - 1}")
+        raise ErreurBornes(
+            _("slot {slot} out of 1..{count}").format(
+                slot=slot + 1 if type(slot) is int else repr(slot), count=messages.NB_SLOTS
+            )
+        )
 
 
 def _controler_dossier(dossier: Path) -> None:
     """ErreurDisque si le dossier n'existe pas ou n'est pas un dossier."""
-    with disque.envelopper("d'écrire dans le dossier", dossier):
+    with disque.envelopper(_("Cannot write in the folder {file}: {error}"), dossier):
         etat = os.stat(dossier)
     if not stat.S_ISDIR(etat.st_mode):
-        raise ErreurDisque(f"Impossible d'écrire dans {dossier} : ce n'est pas un dossier")
+        raise ErreurDisque(
+            _("Cannot write in the folder {file}: {error}").format(
+                file=dossier, error=_("not a folder")
+            )
+        )
 
 
 def _existe(chemin: Path) -> bool:
@@ -218,14 +254,16 @@ def _existe(chemin: Path) -> bool:
         return False
     except OSError as erreur:
         raise ErreurDisque(
-            f"Impossible de vérifier {chemin} : {disque.texte_systeme(erreur)}"
+            _("Cannot check {file}: {error}").format(
+                file=chemin, error=disque.texte_systeme(erreur)
+            )
         ) from erreur
     return True
 
 
 def creer_archive(racine: Path, motif: str, quand: datetime) -> Path:
     if motif not in MOTIFS:
-        raise ErreurBornes(f"Motif d'archive « {motif} » inconnu.")
+        raise ErreurBornes(_("Unknown backup reason “{reason}”.").format(reason=motif))
     _controler_quand(quand)
     dossier = racine / "sauvegardes"
     disque.creer_dossiers(dossier)
@@ -242,7 +280,9 @@ def creer_archive(racine: Path, motif: str, quand: datetime) -> Path:
             numero += 1
         except OSError as erreur:
             raise ErreurDisque(
-                f"Impossible de créer l'archive {archive} : {disque.texte_systeme(erreur)}"
+                _("Cannot create the backup {backup}: {error}").format(
+                    backup=archive, error=disque.texte_systeme(erreur)
+                )
             ) from erreur
     disque.synchroniser_dossier(dossier)
     return archive
@@ -276,9 +316,15 @@ def _preparer_fiche(
     if refus is not None:
         raise ErreurBornes(refus)
     if type(donnees) is not bytes:
-        raise ErreurBornes(f"données : octets attendus, reçu {type(donnees).__name__}")
+        raise ErreurBornes(
+            _("data: bytes expected, got {type}").format(type=type(donnees).__name__)
+        )
     if len(donnees) != codec.TAILLE_IR:
-        raise ErreurBornes(f"une IR fait {codec.TAILLE_IR} octets, reçu {len(donnees)}")
+        raise ErreurBornes(
+            _("an IR is {expected} bytes, got {got}").format(
+                expected=codec.TAILLE_IR, got=len(donnees)
+            )
+        )
     _controler_quand(quand)
     date = quand.isoformat(timespec="seconds")
     refus = _refus_archive(archive.name, motif, date)
@@ -335,8 +381,10 @@ def ecrire_slot(
     chemin_donnees = archive / f"slot{fiche.slot:02d}.f32"
     chemin_fiche = archive / f"slot{fiche.slot:02d}.json"
     deja = ErreurBornes(
-        f"slot {fiche.slot} déjà archivé dans {archive} : une archive ne s'écrit qu'une "
-        "fois, faire une nouvelle archive."
+        _(
+            "slot {slot} already backed up in {backup}: a backup is written only once, make a "
+            "new backup."
+        ).format(slot=fiche.slot + 1, backup=archive)
     )
     if _existe(chemin_donnees) or _existe(chemin_fiche):
         raise deja
@@ -354,18 +402,22 @@ def _fiche_depuis(contenu: Any, chemin: Path) -> FicheSlot:
     """Fiche lue d'un objet JSON : sceau d'abord, puis format, clés et types."""
 
     def illisible(raison: str) -> ArchiveAbimee:
-        return ArchiveAbimee(f"Fiche illisible : {chemin} ({raison})")
+        return ArchiveAbimee(
+            _("Unreadable slot record: {file} ({error})").format(file=chemin, error=raison)
+        )
 
     if type(contenu) is not dict:
-        raise illisible(f"objet JSON attendu, reçu {type(contenu).__name__}")
+        raise illisible(_("JSON object expected, got {type}").format(type=type(contenu).__name__))
     if type(contenu.get("sceau")) is not str:
-        raise illisible("champ « sceau » absent ou pas un texte")
+        raise illisible(_("field “{field}” missing or not text").format(field="sceau"))
     try:
         sceau = _sceau(contenu)
     except (ValueError, RecursionError) as erreur:
-        raise illisible(f"sceau incalculable : {erreur}") from erreur
+        raise illisible(_("seal cannot be computed: {error}").format(error=erreur)) from erreur
     if sceau != contenu["sceau"]:
-        raise ArchiveAbimee(f"Fiche retouchée ou abîmée : {chemin} (sceau incorrect)")
+        raise ArchiveAbimee(
+            _("Slot record altered or damaged: {file} (wrong seal)").format(file=chemin)
+        )
     try:
         disque.controler_format_et_cles(contenu, _CHAMPS)
     except disque.Illisible as erreur:
@@ -373,21 +425,23 @@ def _fiche_depuis(contenu: Any, chemin: Path) -> FicheSlot:
     for cle in _CHAMPS_ENTIERS:
         # type(x) is int, exprès : en Python, true (bool) est un int.
         if type(contenu[cle]) is not int:
-            raise illisible(f"champ « {cle} » : entier attendu")
+            raise illisible(_("field “{field}”: integer expected").format(field=cle))
     for cle in _CHAMPS_TEXTES:
         if type(contenu[cle]) is not str:
-            raise illisible(f"champ « {cle} » : texte attendu")
+            raise illisible(_("field “{field}”: text expected").format(field=cle))
     firmware = contenu["firmware"]
     if firmware is not None and type(firmware) is not int:
-        raise illisible("champ « firmware » : entier ou null attendu")
+        raise illisible(_("field “{field}”: integer or null expected").format(field="firmware"))
     return FicheSlot(**{cle: contenu[cle] for cle in _CHAMPS})
 
 
 def _refus_fiche_relue(fiche: FicheSlot, archive: Path, slot: int) -> str | None:
     if fiche.slot != slot:
-        return f"fiche du slot {fiche.slot} rangée sous le slot {slot}"
+        return _("record of slot {record} filed under slot {slot}").format(
+            record=_nombre(fiche.slot + 1), slot=slot + 1
+        )
     if _HEXADECIMAL.fullmatch(fiche.nom_hex) is None:
-        return "nom_hex : hexadécimal en minuscules attendu"
+        return _("{field}: lowercase hexadecimal expected").format(field="nom_hex")
     refus = _refus_valeurs(
         slot=fiche.slot,
         nom_brut=bytes.fromhex(fiche.nom_hex),
@@ -401,9 +455,8 @@ def _refus_fiche_relue(fiche: FicheSlot, archive: Path, slot: int) -> str | None
     if refus is not None:
         return refus
     if fiche.archive != archive.name:
-        return (
-            f"fiche de l'archive « {disque.montrer(fiche.archive)} » trouvée dans "
-            f"« {disque.montrer(archive.name)} »"
+        return _("record of the backup “{record}” found in “{backup}”").format(
+            record=disque.montrer(fiche.archive), backup=disque.montrer(archive.name)
         )
     return _refus_archive(fiche.archive, fiche.motif, fiche.date)
 
@@ -427,7 +480,9 @@ def lister(racine: Path) -> list[Path]:
         return []
     except OSError as erreur:
         raise ErreurDisque(
-            f"Impossible de lire {dossier} : {disque.texte_systeme(erreur)}"
+            _("Cannot read {file}: {error}").format(
+                file=dossier, error=disque.texte_systeme(erreur)
+            )
         ) from erreur
     return [dossier / nom for nom in sorted(noms, reverse=True)]
 
@@ -439,7 +494,9 @@ def slots_presents(archive: Path) -> tuple[int, ...]:
         noms = os.listdir(archive)
     except OSError as erreur:
         raise ArchiveAbimee(
-            f"Archive illisible : {archive} ({disque.texte_systeme(erreur)})"
+            _("Unreadable backup: {backup} ({error})").format(
+                backup=archive, error=disque.texte_systeme(erreur)
+            )
         ) from erreur
     slots = set()
     for nom in noms:
@@ -456,25 +513,43 @@ def lire_slot(archive: Path, slot: int) -> tuple[FicheSlot, bytes]:
     try:
         contenu = disque.charger_json(disque.lire_fichier(chemin_fiche, disque.TAILLE_MAX_JSON))
     except FileNotFoundError as erreur:
-        raise ArchiveAbimee(f"Fiche illisible : {chemin_fiche} (absente)") from erreur
+        raise ArchiveAbimee(
+            _("Unreadable slot record: {file} ({error})").format(
+                file=chemin_fiche, error=_("missing")
+            )
+        ) from erreur
     except disque.Illisible as erreur:
-        raise ArchiveAbimee(f"Fiche illisible : {chemin_fiche} ({erreur})") from erreur
+        raise ArchiveAbimee(
+            _("Unreadable slot record: {file} ({error})").format(file=chemin_fiche, error=erreur)
+        ) from erreur
     fiche = _fiche_depuis(contenu, chemin_fiche)
     refus = _refus_fiche_relue(fiche, archive, slot)
     if refus is not None:
-        raise ArchiveAbimee(f"Fiche incohérente : {chemin_fiche} ({refus})")
+        raise ArchiveAbimee(
+            _("Inconsistent slot record: {file} ({error})").format(file=chemin_fiche, error=refus)
+        )
     try:
         donnees = disque.lire_fichier(chemin_donnees, codec.TAILLE_IR, exacte=True)
     except FileNotFoundError as erreur:
-        raise ArchiveAbimee(f"Données illisibles : {chemin_donnees} (absentes)") from erreur
+        raise ArchiveAbimee(
+            _("Unreadable data: {file} ({error})").format(file=chemin_donnees, error=_("missing"))
+        ) from erreur
     except disque.Illisible as erreur:
-        raise ArchiveAbimee(f"Données illisibles : {chemin_donnees} ({erreur})") from erreur
+        raise ArchiveAbimee(
+            _("Unreadable data: {file} ({error})").format(file=chemin_donnees, error=erreur)
+        ) from erreur
     if hashlib.sha256(donnees).hexdigest() != fiche.sha256:
-        raise ArchiveAbimee(f"Empreinte incorrecte : {chemin_donnees} ne sera pas utilisé.")
+        raise ArchiveAbimee(
+            _("Wrong fingerprint: {file} will not be used.").format(file=chemin_donnees)
+        )
     calcule = codec.identifiant(donnees)
     if calcule != fiche.identifiant_calcule:
         raise ArchiveAbimee(
-            f"Fiche incohérente : {chemin_fiche} (identifiant recalculé {calcule:#010x}, "
-            f"la fiche porte {fiche.identifiant_calcule:#010x})"
+            _("Inconsistent slot record: {file} ({error})").format(
+                file=chemin_fiche,
+                error=_("identifier recomputed as {computed}, the record says {recorded}").format(
+                    computed=f"{calcule:#010x}", recorded=f"{fiche.identifiant_calcule:#010x}"
+                ),
+            )
         )
     return fiche, donnees

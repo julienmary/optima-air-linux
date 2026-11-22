@@ -30,17 +30,17 @@ files = ["src/optima_air"]
 [tool.ruff]
 line-length = 100
 target-version = "py313"
-src = ["src", "tests", "outils"]
+src = ["src", "tests", "tools"]
 extend-exclude = ["docs"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP"]
 
 [tool.ruff.lint.per-file-ignores]
-"outils/pcap_sysex.py" = ["E", "F", "W", "I", "B", "UP"]
+"tools/pcap_sysex.py" = ["E", "F", "W", "I", "B", "UP"]
 
 [tool.ruff.format]
-exclude = ["outils/pcap_sysex.py"]
+exclude = ["tools/pcap_sysex.py"]
 
 [[tool.mypy.overrides]]
 module = ["gi", "gi.*", "soundfile", "scipy", "scipy.*"]

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Optima Air
+GenericName=Éditeur de pédale
+Comment=Éditeur pour la pédale NUX Optima Air : réglages, IR, sauvegardes
+Exec=@LANCEUR@ fenetre
+Icon=io.github.julienmary.OptimaAirLinux
+Terminal=false
+Categories=AudioVideo;Audio;Music;
+Keywords=NUX;Optima;IR;guitare;
+StartupWMClass=io.github.julienmary.OptimaAirLinux
+StartupNotify=true

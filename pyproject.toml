@@ -1,0 +1,58 @@
+[project]
+name = "optima-air"
+version = "0.1.0"
+description = "Éditeur Linux pour la pédale NUX Optima Air (NAI-5)"
+requires-python = ">=3.13"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+dependencies = ["numpy", "scipy", "soundfile"]
+
+[project.scripts]
+optima-air = "optima_air.cli:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "tests"]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
+python_version = "3.13"
+mypy_path = "src"
+files = ["src/optima_air"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+src = ["src", "tests", "outils"]
+extend-exclude = ["docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"outils/pcap_sysex.py" = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.format]
+exclude = ["outils/pcap_sysex.py"]
+
+[[tool.mypy.overrides]]
+module = ["gi", "gi.*", "soundfile", "scipy", "scipy.*"]
+ignore_missing_imports = true
+
+# La fenêtre s'appuie sur PyGObject, qui n'a pas de types installés : ces modules
+# sont hors du contrôle strict. Le fil de travail (gui.travail) reste contrôlé.
+[[tool.mypy.overrides]]
+module = [
+    "optima_air.gui.widgets",
+    "optima_air.gui.fenetre",
+    "optima_air.gui.app",
+    "optima_air.gui.dialogues",
+]
+ignore_errors = true

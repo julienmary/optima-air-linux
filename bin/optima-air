@@ -1,0 +1,4 @@
+#!/bin/sh
+# Lance optima-air depuis le dépôt, sans installation.
+ici=$(dirname "$(readlink -f "$0")")
+PYTHONPATH="$ici/../src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m optima_air "$@"

@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} bitti"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: oodati täisarvu, saadi {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: oodati täisarvu või mitte midagi, saadi {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "pesa nimi: oodati baite, saadi {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: oodati teksti, saadi {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "pesa {slot} on väljaspool vahemikku 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "pesa nimi on {size} baiti, oodati {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "tunnus {value} on väljaspool vahemikku 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} on väljaspool vahemikku 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Tundmatu varukoopia põhjus “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "püsivara puudub: seda lubab ainult põhjus “{reason}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "vigane varukoopia nimi “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "põhjus “{reason}” erineb varukoopia {name} põhjusest “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "kuupäeva {date!r} ei saa lugeda"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "kuupäeval {date!r} puudub ajavöönd"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "kuupäev {date!r} ei ole kanoonilisel kujul"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "kuupäev {date!r} erineb varukoopia {name} ajast"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: oodati kuupäeva, saadi {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} peab sisaldama ajavööndit (näiteks datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Kausta {file} ei saa kirjutada: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ei ole kaust"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Faili {file} ei saa kontrollida: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Varukoopiat {backup} ei saa luua: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "andmed: oodati baite, saadi {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR on {expected} baiti, saadi {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "pesa {slot} on juba varundatud kausta {backup}: varukoopia kirjutatakse ainult üks kord, tehke uus varukoopia."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Pesa kirjet ei saa lugeda: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "oodati JSON-objekti, saadi {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "väli “{field}” puudub või ei ole tekst"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "pitserit ei saa arvutada: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Pesa kirjet on muudetud või see on kahjustatud: {file} (vale pitser)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "väli “{field}”: oodati täisarvu"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "väli “{field}”: oodati teksti"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "väli “{field}”: oodati täisarvu või väärtust null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "pesa {record} kirje on salvestatud pesa {slot} alla"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: oodati kuueteistkümnendarvu väiketähtedega"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "varukoopia “{record}” kirje leiti varukoopiast “{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Faili {file} ei saa lugeda: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Varukoopiat ei saa lugeda: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "puudub"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Pesa kirje on vastuoluline: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Andmeid ei saa lugeda: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Vale sõrmejälg: faili {file} ei kasutata."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "tunnus arvutati ümber väärtuseks {computed}, kirjes on {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Aktiivne pesa"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR sees/väljas"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Eelvõimendi sees/väljas"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” ei ole pesa number"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Pesa {slot} kirjutamine katkestati: pedaali ei puututa veel {seconds} s. Seejärel käivitage: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "tundmatu ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "tundmatu ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Püsivara {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Eelseadistus: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "pesa {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "tundmatu pesa ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: sees, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: väljas, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Eelvõimendi: sees"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Eelvõimendi: väljas"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Nimi"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Tunnus"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Helitugevus"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Madalalõige"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Kõrgalõige"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Hoiatus: pedaali teatatud tunnus ({announced}) ei vasta loetud andmetele ({computed}), isegi pärast uuesti lugemist. Varukoopia tehakse sellegipoolest."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Pesa {slot} “{name}” varundati kausta {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} baiti: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change kanal {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[kanal {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, ehk {converted} sajast"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} max {max} ({count} sõnumit)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "tasemed"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Hoiatus: {count} SysEx-sõnum jäeti vastuvõtu ajal ära."
+msgstr[1] "Hoiatus: {count} SysEx-sõnumit jäeti vastuvõtu ajal ära."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Hoiatus: {count} sisendpuhvri ületäitumine, baite läks kaotsi."
+msgstr[1] "Hoiatus: {count} sisendpuhvri ületäitumist, baite läks kaotsi."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "j"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "jah"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [j/E] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Tühistatud: midagi ei kirjutatud."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Kas saata ühendusteade, katsefunktsioon “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Tühistatud: midagi ei saadetud."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Ühendusjada on teate juba saatnud: seda ei saadeta kaks korda."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Teade saadetud: vastus saadud"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Teade saadetud: vastust ei tulnud"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: kinnitatud"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: katsetusel"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” ootab funktsiooni nime."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Nimi “{name}” lükati tagasi ({error}). Andke nimi valikuga --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Hoiatus: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Kas kirjutada pesa {slot} “{current}” üle nimega “{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Pesa {slot}: “{name}” kirjutatud ja identsena tagasi loetud."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Eelmine sisu (“{name}”) varundati kausta {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} on juba olemas. Selle ülekirjutamiseks lisage --yes."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Faili {file} ei saa kirjutada: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Pesa {slot} “{name}” eksporditud faili {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Lugemine: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Hoiatus: pesa {slot} jaoks teatatud tunnus ei vasta loetud andmetele, isegi pärast uuesti lugemist. See varundatakse sellegipoolest."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Kõik 23 pesa on varundatud kausta {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Varukoopiaid pole."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} pesa"
+msgstr[1] "{count} pesa"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "KAHJUSTATUD ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "puudub"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name kehtib ainult ühe pesa taastamisel."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Kas viia pedaal tagasi varukoopia {backup} olekusse ({count} pesa)? Uuesti kirjutatakse ainult erinevad pesad ja nende sisu varundatakse enne."
+msgstr[1] "Kas viia pedaal tagasi varukoopia {backup} olekusse ({count} pesa)? Uuesti kirjutatakse ainult erinevad pesad ja nende sisu varundatakse enne."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Uuesti kirjutatud ja identsena tagasi loetud pesad: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Pesad, mille puhul taastati ainult seaded: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Pesad, mis olid varukoopiaga juba identsed: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Kas kirjutada pesa {slot} “{current}” varukoopiast {backup} uuesti (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Pesa {slot} taastatud varukoopiast {backup} ja identsena tagasi loetud."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Asendatud sisu (“{name}”) varundati kausta {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Katkestatud kirjutamist pole."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Pesa {slot}: katkestatud kirjutamine oli lõpule jõudnud. Pole midagi teha."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Pesa {slot}: selles on endiselt sama, mis enne. Pole midagi teha."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Pesa {slot}: selle sisu ei ole ei vana ega uus. Algseisu taastamiseks: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "luba muud kui lugemised kontrollimata püsivaral"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "luba katsefunktsioon"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "ära küsi kinnitust"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "pesa number, 1 kuni {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Linuxi redaktor NUX Optima Air pedaalile."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "andmekaust (vaikimisi: XDG andmekaust)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "ava aken"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "püsivara versioon, eelseadistus ja seaded"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 IR-pesa"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "varunda pesa IR"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "prindi, mida pedaal saadab"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "kuulamise sekundid"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "loe esmalt olek"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "saada esmalt teade (katse)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "kirjuta WAV pessa"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV-fail"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "pesa nimi (vaikimisi: faili nimi)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "ekspordi pesa WAV-failina"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "kirjutatav WAV-fail"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "kirjuta pesa või kõik pesad varukoopiast uuesti"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "varukoopia kaust"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "pesa number, 1 kuni {count} (vaikimisi: kõik)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "asenda varundatud nimi"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "varunda kõik 23 pesa"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "loetle varukoopiad"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "kontrolli katkestatud kirjutamist"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "katsefunktsioonide register"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Pesa {slot} kirjutamine jäi pooleli. Pedaali ei puututa mõnda aega; seejärel käivitage: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Viga: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Katkestatud."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "bait {byte} ületab 7 bitti"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 7-bitist baiti jätab {bits} täitebitti, enc7 ei tekita kunagi üle 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "nullist erinevad täitebitid 7-bitise voo lõpus"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "plokk on {expected} baiti, saadi {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "ploki summa {sum} ({hex}) ületab 14 edastatud bitti (max {max}): pedaalil pole seda kunagi nähtud, tagasi lükatud kuni kontrollimiseni"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "kodeeritud plokk on {expected} baiti, saadi {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "bait ületab kodeeritud plokis 7 bitti"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "vale ploki kontrollsumma"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "ülekande lõpusumma hõlmab vähemalt ühte plokki"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "pikkus {length} ei ole arvu {block} kordne"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "väärtus {value} ületab 28 bitti"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "28-bitine summa võtab 4 baiti, saadi {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "bait {byte} ületab 28-bitises summas 7 bitti"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Kirjutamine katkestati: pedaali ei puututa veel {seconds} s."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: kirjutamissõnumi võib saata ainult täielik pesa kirjutamine (varukoopia, logi, tagasilugemine)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Püsivara versiooni pole veel loetud: lubatud on ainult lugemine."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Tundmatu püsivara {found} (protokoll kontrollitud versioonil {verified}): lubatud on ainult lugemine."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” on katsefunktsioon (“{function}”), mida pole pedaalil veel kinnitatud."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: uuesti saab saata ainult lugemist."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Pedaal ei vasta sõnumile “{message}” pärast {count} katset."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedaal saadab SysEx-sõnumeid katkematult."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Pesa {slot} ei saa lugeda: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Pesa {slot} kaks lugemist annavad erinevad andmed."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Pesa {slot} kirjutamine katkestati: oodake veel {seconds} s enne millegi saatmist."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Pesa {slot} kirjutamine katkestati: kuni see pesa on korda tehtud, on see ainus, millesse saab kirjutada."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Kirjutamine lükati tagasi: püsivara pole loetud või see ei ole see, millel protokoll kontrolliti."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Pärast kirjutamist ei sisalda pesa {slot} seda, mis saadeti."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedaal teatab IR-i kirjutamisel veast."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Ootamatu ploki kinnitus: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "Saadi {count} ploki kinnitus oodatud {expected} asemel."
+msgstr[1] "Saadi {count} ploki kinnitust oodatud {expected} asemel."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Päise ja jaluse kinnitused puuduvad või on ootamatud."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Pärast kirjutamist tuli nime kaja {count} kord, mitte ühe korra."
+msgstr[1] "Pärast kirjutamist tuli nime kaja {count} korda, mitte ühe korra."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Pärast kirjutamist ei vasta nime kaja saadetule."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Pärast kirjutamist tuli pesa teave {count} kord, mitte ühe korra."
+msgstr[1] "Pärast kirjutamist tuli pesa teave {count} korda, mitte ühe korra."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Pärast kirjutamist ei vasta pesa teave saadetule."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Varukoopia {backup} ei sisalda ühtegi pesa."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Võrdlemine"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Varukoopia {backup} pesa {slot} erineb pedaalil olevast, kuid seda ei saa sellisena uuesti kirjutada ({error}). Midagi ei kirjutatud."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Taastamine"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedaal teatab pesa {announced} pärast pesa {requested} taotlemist."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Pedaal ei kaja tabeli {table} kirjutamist."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Tabeli {table} kaja erineb saadetust."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "on sümbolilink"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "ei ole tavaline fail"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} baiti, oodati {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} baiti, rohkem kui lubatud {allowed}"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "suurus muutus lugemise ajal"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Lukku {file} ei saa luua: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "korduv võti “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} ei ole standardne JSON"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "ei ole JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "väli “{field}” puudub"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "tundmatu vorming {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "tundmatu väli “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Kausta {file} ei saa sünkroonida: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Kausta {folder} ei saa luua: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Kausta {folder} ei saa luua: {path} ei ole kaust"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Faili {file} ei saa paigale panna: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "enne kirjutamist"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "pesa lugemine"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "täielik varukoopia"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "import"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "kahjustatud pesa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Laadi WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Kas kirjutada pesa <b>{slot}</b> “{name}” üle failiga <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Pesa praegune sisu varundatakse enne kirjutamist."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Pesa nimi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Tühista"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Kirjuta pedaalile"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Varukoopiad"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Taasta see pesa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Taasta kogu varukoopia"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Sulge"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Varukoopiaid pole veel."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: pesa {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} pesa"
+msgstr[1] "{backup}: {count} pesa"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: ei saa lugeda"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Seda varukoopiat ei saa kasutada: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Kas viia pedaali {count} pesa tagasi selle varukoopia olekusse?"
+msgstr[1] "Kas viia pedaali {count} pesa tagasi selle varukoopia olekusse?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Kas viia pedaali pesa {slot} tagasi selle varukoopia olekusse (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nUuesti kirjutatakse ainult varukoopiast erinev pesa ja selle praegune sisu varundatakse vahetult enne."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Taasta"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Elektrisinine"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Tsüaan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Roheline"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Kollane"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Oranž"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Punane"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Roosa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Lilla"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Murtud valge"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Liidese värv"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Värvikood, näiteks #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Oodatud: # ja kuus kuueteistkümnendnumbrit"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Pedaali otsimine…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Taasta eelmine olek"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Varunda kõik"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Varukoopiad…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Laadi WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Ekspordi WAV-failina…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV-failid"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Valige WAV-fail"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Üks fail korraga: pesa mahutab ainult ühe IR-i."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Ekspordi WAV-failina"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Taastamine lõpetatud. Uuesti kirjutatud ja identsena tagasi loetud pesad: {rewritten}. Ainult seaded: {settings}. Varukoopiaga juba identsed: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Pesa {slot}: pärast katkestatud kirjutamist on selles endiselt sama, mis enne. Pole midagi teha."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Pesa {slot}: pärast katkestatud kirjutamist ei ole selles ei vana ega uut sisu. Kuni see on korda tehtud, on see ainus pesa, millesse saab kirjutada."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Pesa {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Pesa {slot}: “{name}” kirjutatud ja identsena tagasi loetud. Eelmine sisu varundati kausta {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Pesa {slot} kirjutamine…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Pesa {slot} kirjutamine ebaõnnestus: {reason} Pedaali ei puututa {seconds} s, seejärel kontrollitakse pesa olekut."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Varundamine ebaõnnestus: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Taastamine peatus: {reason} Juba töödeldud pesad on korras; pedaali olek loetakse uuesti."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Ühendatud, püsivara {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Ühendus katkes: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Hoiatus: pedaali teatatud tunnus ei vasta loetud andmetele."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Peatamist taotletud."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Varukoopia"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "vigane sagedusvahemik või punktide arv"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Helifaili ei saa lugeda: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Failis on {count} kanalit: säilitatakse ainult esimene."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Tühi helifail: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Fail sisaldab mittelõplikke näidiseid: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Diskreetimissagedus {rate} Hz: fail diskreetiti uuesti sagedusele {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Faili kestus on {duration} ms: säilitatakse ainult esimesed {count} näidist ({limit} ms)."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedaal esitab ainult esimesed {count} näidist ({limit} ms): selle IR-i ülejäänud osa salvestatakse, kuid seda ei kuulda."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Faili {file} ei saa normaliseerida: signaali pole vahemikus 400 Hz kuni 3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Faili {file} normaliseerimine ületab ujukomaarvude vahemiku."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Pärast normaliseerimist on IR-i tipp {peak} (tavalised IR-id jäävad alla 10): failis on vahemikus 400 Hz kuni 3 kHz väga sügav lohk ja väljundtase võib olla väga kõrge."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "logi kuupäev peab sisaldama ajavööndit"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "pesa väljaspool vahemikku"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: oodati ISO-kuupäeva ajavööndiga"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: oodati ISO-kuupäeva ajavööndiga või väärtust null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: oodati varukoopia kausta nime"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: oodati 64 kuueteistkümnendnumbrit"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: oodati 32 baiti kuueteistkümnendsüsteemis"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "tunnus väljaspool vahemikku"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: oodati tõeväärtust"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Kirjutamislogi ei saa lugeda: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Logi {file} ei saa eemaldada: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 on {size} baiti, oodati {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "kodeeritud plokk on {size} baiti, oodati {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "sõnum “{message}”: vigane Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "sõnum “{message}”: Control Change on seade"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "sõnum “{message}”: Control Change ei kuulu suletud loendisse"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "sõnum “{message}”: väärtus {value} ületab {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "sõnumi “{message}” raamistus on vigane"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "sõnum “{message}”: bait ületab 7 bitti"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "sõnum “{message}” ei kuulu suletud loendisse"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "sõnum “{message}”: {size} baiti, oodati {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "sõnum “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "ootamatu versioonipäring"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "lubatud on ainult teade 70 05 01, katsetusel"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "lubatud on ainult lugemine 70 26 7F"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "tabelipäring nullist erineva kehaga"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "tabeli kirjutamine: oodati seadet, väärtused 0 kuni 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "vigane lugemispäring"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "pesa väljaspool vahemikku või nullist erinev keha"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "käsul {command} puudub sisureegel"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "üleslaadimissõnum väljaspool kirjutamiskategooriat"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "kirjutamiskäsul {command} puudub sisureegel"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "vigane pesa nimi"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "tunnus, mille bitt 31 on seatud (tehase IR): funktsioon pole veel avatud"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "üleslaadimise päis: pesa väljaspool vahemikku"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "üleslaadimise päis: MD5 ei koosne kuueteistkümnendnumbritest väiketähtedega"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "üleslaadimise päis väljaspool täheldatud vormi"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "üleslaadimise jalus: nullist erinev bait lipu järel"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "lõpuplokk: pesa väljaspool vahemikku"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "lõpuplokk väljaspool täheldatud vormi"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "andmeplokk: aadress või loendur väljaspool vahemikku"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "andmeplokk: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "andmeplokk: andmemaht väljaspool enc_msb loodud vormi"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "andmeplokk: nullist erinev täide IR-i {size} baidi järel"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "tunnus {value} väljaspool vahemikku 0..{max}: bitt 31 on varutud tehase IR-idele, funktsioon pole veel avatud"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "nimi on {size} baiti, kuni {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "keha on {size} baiti, oodati {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "pesa {slot} teave"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "tabel {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "praegune olek"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "pesa {slot} IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "pesa {slot} aktiveerimine"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "tabelis on {count} väärtust, saadi {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "tabel {table}: väärtus {value!r} väljaspool vahemikku 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "tabeli {table} kirjutamine"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "tundmatu seade “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "seade “{name}”: väärtus {value!r} väljaspool vahemikku 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "seade {name} väärtusele {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "ühendusteade"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "pesa nimes on 1 kuni {max} märki"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "pesa nimi sisaldab ainult prinditavaid ASCII-märke"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR sisaldab mittelõplikku näidist"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "pesa {slot} üleslaadimine, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "päis"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "plokk {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "lõpp"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "jalus"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "nimi"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "teave"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "lõpusumma on {size} baiti, oodati {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "pesa nimi on tühi või väljaspool prinditavat ASCII-d"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "nullist erinevad baidid pesa nime lõpu järel"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "NUX SysEx päis puudub"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "lõpu-F7 puudub"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "bait ületab 7 bitti"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "tüüp {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "käsk {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "ootamatu üleslaadimise kinnitus"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "tundmatu kinnituse olek: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "ootamatu versioonivastus: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "käsk {command}: pesa teavet kannavad ainult 0x5c (teabe lugemine) ja 0x5b (nime kaja)"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "kodeeritud pikkus {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "ootamatu pesa teabe vastus: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "pesa teavet ei saa lugeda: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedaal teatab pesa {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "ootamatu vastus tabelile {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "tabel {table}: väärtus {value} ületab 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "ootamatu olekuvastus: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "lugemispäis: käsk {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "lugemispäises on lõpulipp"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "lugemispäis on nullist erinev, seda vormi pole kunagi nähtud"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "plokk {block}: käsk {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "plokk {block}: nullist erinev lipp {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "plokk {block}: aadress {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "plokk {block}: loendur {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "plokki {block} ei saa lugeda: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "lõpuplokk: käsk {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "lõpuplokis puudub lipp"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "lõpuplokk: loendur {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "lõpuplokk: kõrvaline bait väljaspool lippu, summat ja loendurit"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "lõpusummat ei saa lugeda: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "vale lugemise lõpusumma"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "jalus: käsk {found}, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "jalusel puudub lipp"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "jalus: kõrvaline bait lipu järel"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "saadi {count} sõnumit, oodati {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "sõnum {number} ei kuulu IR-i lugemisse: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "värv {colour!r}: oodati väiketähtedega kujul “#rrggbb”"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Tundmatu funktsioon “{name}”. Tuntud: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "oodati tuntud funktsioonide sorteeritud loendit ilma duplikaatideta"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Katseregistrit ei saa lugeda: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Katseregister on teise protsessi poolt lukustatud ({file}): proovige uuesti, kui teine käsk on lõppenud."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Faili {file} ei saa lukustada: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Pedaali ei leitud: “NAI5” helikaarti pole. Kontrollige USB-kaablit."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR pole seatud: lukku ei saa võtta."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Lukku {file} ei saa võtta: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedaali kasutab juba teine optima-air eksemplar."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Lukk on juba vabastatud: seda ei saa enam pordile anda."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "See lukk kuulub juba pordile: seda ei saa anda teisele."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Lukku ei saa vabastada: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedaal ei vasta enam: lahti ühendatud või hangunud."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Porti {port} ei saa seadistada: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Pordi {port} sisendit ei saa ette valmistada: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Porti {port} ei ole olemas."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Juurdepääs pordile {port} keelatud. Kontrollige, et kuulute rühma “audio” (käsk: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Port {port} on juba teise programmi kasutuses."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Port {port} ei ole enam saadaval."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Porti {port} ei saa avada: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Kirjutamine ei õnnestu: port on suletud."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Kirjutamine porti {port} ebaõnnestus: ühtegi baiti ei aktsepteeritud."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Kirjutamine porti {port} ebaõnnestus: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Pordi {port} tühjendamine katkestati {count} korda järjest: sõnum on antud tuumale, kuid selle väljumist ei saanud oodata."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Ooteaeg väljaspool vahemikku: {wait} s (kuni {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Lugemine ei õnnestu: port on suletud."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Lugemine pordist {port} ebaõnnestus: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Port {port} ei teata oma sisendi olekut ({error}): baitide kadu ei saa tuvastada, peatutakse siin."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Pordi {port} oleku lugemine ebaõnnestus: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Pordi {port} sulgemine ebaõnnestus: {error}"

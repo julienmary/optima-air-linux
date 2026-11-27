@@ -1,3 +1,10 @@
+optima-air (0.2.0-1) unstable; urgency=medium
+
+  * Interface translated into the 75 other languages of the Debian installer
+    (machine translations, not reviewed by native speakers).
+
+ -- Julien MARY <julien.mary@gmail.com>  Sat, 28 Nov 2026 09:00:00 +0100
+
 optima-air (0.1.0-1) unstable; urgency=medium
 
   * First release: settings, impulse responses, backups and restore for the

@@ -1,0 +1,1956 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "de {bits} giotán"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: bhíothas ag súil le slánuimhir, fuarthas {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: bhíothas ag súil le slánuimhir nó rud ar bith, fuarthas {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "ainm sliotáin: bhíothas ag súil le bearta, fuarthas {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: bhíothas ag súil le téacs, fuarthas {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "sliotán {slot} lasmuigh de 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "ainm sliotáin de {size} beart in ionad {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "aitheantóir {value} lasmuigh de 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} lasmuigh de 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Cúis anaithnid cúltaca “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "firmware ar iarraidh: ní cheadaíonn ach an chúis “{reason}” é"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "ainm cúltaca ar mhíchruth “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "tá an chúis “{reason}” difriúil ó chúis an chúltaca {name}, is é sin “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "dáta do-léite {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "dáta {date!r} gan crios ama"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "dáta neamhchanónach {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "tá an dáta {date!r} difriúil ó am an chúltaca {name}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: bhíothas ag súil le dáta, fuarthas {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "caithfidh crios ama a bheith ag {field} (mar shampla datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Ní féidir scríobh sa fhillteán {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ní fillteán é"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Ní féidir {file} a sheiceáil: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Ní féidir an cúltaca {backup} a chruthú: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data: bhíothas ag súil le bearta, fuarthas {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "is {expected} beart é IR, fuarthas {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "Tá sliotán {slot} cúltacaithe cheana sa chúltaca {backup}: ní scríobhtar cúltaca ach uair amháin, déan cúltaca nua."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Taifead sliotáin do-léite: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "bhíothas ag súil le réad JSON, fuarthas {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "tá an réimse “{field}” ar iarraidh nó ní téacs é"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "Ní féidir an séala a ríomh: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Taifead sliotáin athraithe nó damáistithe: {file} (séala mícheart)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "réimse “{field}”: bhíothas ag súil le slánuimhir"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "réimse “{field}”: bhíothas ag súil le téacs"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "réimse “{field}”: bhíothas ag súil le slánuimhir nó null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "taifead sliotáin {record} comhdaithe faoi shliotán {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: bhíothas ag súil le sé dheachúlach i gcás íseal"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "fuarthas taifead an chúltaca “{record}” i “{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Ní féidir {file} a léamh: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Cúltaca do-léite: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "ar iarraidh"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Taifead sliotáin neamhréireach: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Sonraí do-léite: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Marc méire mícheart: ní úsáidfear {file}."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "aitheantóir athríofa mar {computed}, deir an taifead {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Sliotán gníomhach"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR air/as"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Réamhmhéadaitheoir air/as"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "Ní uimhir sliotáin é “{text}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Cuireadh isteach ar scríobh i sliotán {slot}: fágfar an troitheán ina aonar ar feadh {seconds} s eile. Ansin rith: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "anaithnid ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "anaithnid ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Réamhshocrú: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "sliotán {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "sliotán anaithnid ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: air, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: as, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Réamhmhéadaitheoir: air"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Réamhmhéadaitheoir: as"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Ainm"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Aitheant."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Toirt"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Gearradh íseal"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Gearradh ard"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Rabhadh: ní hionann an t-aitheantóir a d’fhógair an troitheán ({announced}) agus na sonraí a léadh ({computed}), fiú tar éis é a léamh arís. Déantar an cúltaca ar aon nós."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Sliotán {slot} “{name}” cúltacaithe sa chúltaca {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} beart: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change cainéal {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[cainéal {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, is é sin {converted} as 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: íos {min} uas {max} ({count} teachtaireacht)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "leibhéil"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Rabhadh: cailleadh {count} SysEx agus é á fháil."
+msgstr[1] "Rabhadh: cailleadh {count} SysEx agus iad á bhfáil."
+msgstr[2] "Rabhadh: cailleadh {count} SysEx agus iad á bhfáil."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Rabhadh: {count} thar maoil de maolán ionchuir, cailleadh bearta."
+msgstr[1] "Rabhadh: {count} thar maoil de mhaolán ionchuir, cailleadh bearta."
+msgstr[2] "Rabhadh: {count} thar maoil de mhaolán ionchuir, cailleadh bearta."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "t"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "tá"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [t/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Cealaithe: níor scríobhadh aon rud."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "An seolfar fógra na ceangail, feidhm thrialach “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Cealaithe: níor seoladh aon rud."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Seoladh an fógra cheana ag seicheamh na ceangail: ní sheoltar faoi dhó é."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Fógra seolta: freagra faighte"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Fógra seolta: gan freagra"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: bailíochtaithe"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: á thriail"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "Tá ainm feidhme ag teastáil ó “trials {action}”."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Diúltaíodh don ainm “{name}” ({error}). Tabhair ceann le --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Rabhadh: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "An bhforscríobhfar sliotán {slot} “{current}” le “{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Sliotán {slot}: “{name}” scríofa agus comhionann nuair a léadh arís é."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Cúltacaíodh an t-ábhar roimhe seo (“{name}”) sa chúltaca {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "Tá {file} ann cheana. Cuir --yes leis chun é a fhorscríobh."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Ní féidir {file} a scríobh: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Sliotán {slot} “{name}” easpórtáilte go {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Á léamh: {done} as {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Rabhadh: ní hionann an t-aitheantóir a fógraíodh do shliotán {slot} agus na sonraí a léadh, fiú tar éis é a léamh arís. Cúltacaithe ar aon nós."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Tá na 23 sliotán go léir cúltacaithe sa chúltaca {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Níl aon chúltaca ann."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} sliotán"
+msgstr[1] "{count} shliotán"
+msgstr[2] "{count} sliotán"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "DAMÁISTITHE ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "ceann ar bith"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "Ní bhaineann --name ach le sliotán amháin a athchóiriú."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "An gcuirfear an troitheán ar ais sa riocht a bhí ag an gcúltaca {backup} ({count} sliotán)? Ní athscríobhfar ach na sliotáin atá difriúil, tar éis a n-ábhar a chúltacú."
+msgstr[1] "An gcuirfear an troitheán ar ais sa riocht a bhí ag an gcúltaca {backup} ({count} shliotán)? Ní athscríobhfar ach na sliotáin atá difriúil, tar éis a n-ábhar a chúltacú."
+msgstr[2] "An gcuirfear an troitheán ar ais sa riocht a bhí ag an gcúltaca {backup} ({count} sliotán)? Ní athscríobhfar ach na sliotáin atá difriúil, tar éis a n-ábhar a chúltacú."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} as {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Sliotáin athscríofa agus comhionann nuair a léadh arís iad: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Sliotáin nár athchóiríodh ach a socruithe: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Sliotáin atá comhionann leis an gcúltaca cheana: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "An athscríobhfar sliotán {slot} “{current}” ón gcúltaca {backup} (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Sliotán {slot} athchóirithe ón gcúltaca {backup}, ansin comhionann nuair a léadh arís é."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Cúltacaíodh an t-ábhar a athraíodh (“{name}”) sa chúltaca {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Níl aon scríobh idir lámha."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Sliotán {slot}: bhí an scríobh a cuireadh isteach air críochnaithe. Níl aon rud le déanamh."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Sliotán {slot}: tá an t-ábhar a bhí ann roimhe fós ann. Níl aon rud le déanamh."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Sliotán {slot}: níl a ábhar ar aon dul leis an sean-ábhar ná leis an ábhar nua. Chun é a chur ar ais mar a bhí: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "níos mó ná léamha a cheadú ar firmware nár fíoraíodh"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "feidhm thrialach a cheadú"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "gan deimhniú a iarraidh"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "uimhir sliotáin, ó 1 go {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Eagarthóir Linux don troitheán NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "fillteán sonraí (réamhshocrú: fillteán sonraí XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "an fhuinneog a oscailt"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "leagan firmware, réamhshocrú agus socruithe"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "na 23 sliotán IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "IR sliotáin a chúltacú"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "an rud a sheolann an troitheán a phriontáil"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "soicindí éisteachta"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "an staid a léamh ar dtús"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "an fógra a sheoladh ar dtús (trialach)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "WAV a scríobh i sliotán"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "comhad WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "ainm an tsliotáin (réamhshocrú: ainm an chomhaid)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "sliotán a easpórtáil mar WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "comhad WAV le scríobh"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "sliotán, nó iad uile, a athscríobh ó chúltaca"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "fillteán cúltaca"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "uimhir sliotáin, ó 1 go {count} (réamhshocrú: iad uile)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "an t-ainm cúltacaithe a athsholáthar"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "na 23 sliotán a chúltacú"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "na cúltacaí a liostú"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "scríobh a cuireadh isteach air a sheiceáil"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "clár na bhfeidhmeanna trialacha"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Fágadh scríobh i sliotán {slot} gan chríochnú. Fágfar an troitheán ina aonar ar feadh tamaill; ansin rith: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Earráid: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Idirbhriste."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "beart {byte} lasmuigh de 7 ngiotán"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "fágann {count} bheart 7-ghiotán {bits} giotán ceirtlithe, ní tháirgeann enc7 níos mó ná 6 riamh"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "giotáin cheirtlithe neamh-nialasacha ag deireadh sruth 7-ghiotán"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "is {expected} beart é bloc, fuarthas {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "tá suim an bhloic {sum} ({hex}) thar na 14 ghiotán a tarchuireadh (uas {max}): ní fheicthear riamh ar an troitheán é, diúltaítear dó go dtí go bhfíorófar é"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "is {expected} beart é bloc ionchódaithe, fuarthas {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "beart lasmuigh de 7 ngiotán i mbloc ionchódaithe"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "seicsuim bhloic mhícheart"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "clúdaíonn suim dheireadh an aistrithe bloc amháin ar a laghad"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "ní iolraí de {block} é fad {length}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "luach {value} lasmuigh de 28 giotán"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "glacann suim 28-giotán 4 bheart, fuarthas {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "beart {byte} lasmuigh de 7 ngiotán i suim 28-giotán"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Cuireadh isteach ar scríobh: fágfar an troitheán ina aonar ar feadh {seconds} s eile."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: ní féidir teachtaireacht scríofa a sheoladh ach le scríobh iomlán sliotáin (cúltaca, dialann, athléamh)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Níor léadh leagan an firmware go fóill: ní cheadaítear ach léamha."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Firmware anaithnid {found} (fíoraíodh an prótacal ar {verified}): ní cheadaítear ach léamha."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "Feidhm thrialach is ea “{message}” (“{function}”), nár bailíochtaíodh ar an troitheán go fóill."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: ní féidir ach léamh a sheoladh arís."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Níor fhreagair an troitheán “{message}” tar éis {count} iarracht."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Coinníonn an troitheán air ag seoladh SysEx gan sos."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Ní féidir sliotán {slot} a léamh: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Tugann dhá léamh de shliotán {slot} sonraí éagsúla."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Cuireadh isteach ar scríobh i sliotán {slot}: fan {seconds} s eile sula seolann tú aon rud."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Cuireadh isteach ar scríobh i sliotán {slot}: go dtí go gcuirfear an sliotán sin ina cheart, is é an t-aon cheann amháin is féidir a scríobh."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Scríobh diúltaithe: níor léadh an firmware, nó ní hé an ceann ar fíoraíodh an prótacal air."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Tar éis an scríofa, níl an méid a seoladh i sliotán {slot}."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Tuairiscíonn an troitheán earráid agus an IR á scríobh."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Admháil bloic gan choinne: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "Fuarthas {count} admháil bloic in ionad {expected}."
+msgstr[1] "Fuarthas {count} admháil bloic in ionad {expected}."
+msgstr[2] "Fuarthas {count} admháil bloic in ionad {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Admhálacha an chinn agus an bhonn ar iarraidh nó gan choinne."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Tar éis an scríofa, tháinig macalla an ainm {count} uair, in ionad uair amháin."
+msgstr[1] "Tar éis an scríofa, tháinig macalla an ainm {count} uair, in ionad uair amháin."
+msgstr[2] "Tar éis an scríofa, tháinig macalla an ainm {count} uair, in ionad uair amháin."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Tar éis an scríofa, ní hionann macalla an ainm agus an méid a seoladh."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Tar éis an scríofa, tháinig eolas an tsliotáin {count} uair, in ionad uair amháin."
+msgstr[1] "Tar éis an scríofa, tháinig eolas an tsliotáin {count} uair, in ionad uair amháin."
+msgstr[2] "Tar éis an scríofa, tháinig eolas an tsliotáin {count} uair, in ionad uair amháin."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Tar éis an scríofa, ní hionann eolas an tsliotáin agus an méid a seoladh."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Níl aon sliotán sa chúltaca {backup}."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Á chur i gcomparáid"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Tá sliotán {slot} den chúltaca {backup} difriúil ón troitheán ach ní féidir é a athscríobh mar atá ({error}). Níor scríobhadh aon rud."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Á athchóiriú"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Fógraíonn an troitheán sliotán {announced} tar éis sliotán {requested} a iarraidh."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Níor tháinig macalla ón troitheán ar scríobh tábla {table}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Tá macalla tábla {table} difriúil ón méid a seoladh."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "is nasc siombalach é"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "ní gnáthchomhad é"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} beart in ionad {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} beart, níos mó ná na {allowed} a cheadaítear"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "d’athraigh an méid agus é á léamh"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Ní féidir an glas {file} a chruthú: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "eochair dhúblach “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "ní JSON caighdeánach é {name}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "ní JSON é: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "tá an réimse “{field}” ar iarraidh"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "formáid anaithnid {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "réimse anaithnid “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Ní féidir an fillteán {file} a shioncronú: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Ní féidir an fillteán {folder} a chruthú: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Ní féidir an fillteán {folder} a chruthú: ní fillteán é {path}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Ní féidir {file} a chur i bhfeidhm: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "roimh scríobh"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "sliotán léite"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "cúltaca iomlán"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "iompórtáil"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "sliotán damáistithe"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "WAV a luchtú"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "An bhforscríobhfar sliotán <b>{slot}</b> “{name}” le <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Cúltacófar ábhar reatha an tsliotáin roimh an scríobh."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Ainm sliotáin"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Cealaigh"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Scríobh chuig an troitheán"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Cúltacaí"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "An sliotán seo a athchóiriú"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "An cúltaca iomlán a athchóiriú"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Dún"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Níl aon chúltaca ann go fóill."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: sliotán {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} sliotán"
+msgstr[1] "{backup}: {count} shliotán"
+msgstr[2] "{backup}: {count} sliotán"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: do-léite"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Ní féidir an cúltaca seo a úsáid: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "An gcuirfear {count} sliotán den troitheán ar ais sa riocht a bhí ag an gcúltaca seo?"
+msgstr[1] "An gcuirfear {count} shliotán den troitheán ar ais sa riocht a bhí ag an gcúltaca seo?"
+msgstr[2] "An gcuirfear {count} sliotán den troitheán ar ais sa riocht a bhí ag an gcúltaca seo?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "An gcuirfear sliotán {slot} den troitheán ar ais sa riocht a bhí ag an gcúltaca seo (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nNí athscríobhtar ach sliotán atá difriúil ón gcúltaca, agus cúltacaítear a ábhar reatha díreach roimhe sin."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Athchóirigh"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Gormghlas leictreach"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Cian"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Glas"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Buí"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Oráiste"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Dearg"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Bándearg"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Corcra"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Bán briste"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Dath an chomhéadain"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Cód datha, mar shampla #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Ag súil le: # agus sé dhigit heicsidheachúlach"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Ag lorg an troitheáin…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "An staid roimhe seo a athchóiriú"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Cúltaca a dhéanamh de gach rud"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Cúltacaí…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "WAV a luchtú…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Easpórtáil mar WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "Comhaid WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Roghnaigh comhad WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Comhad amháin ag an am: ní choinníonn sliotán ach IR amháin."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Easpórtáil mar WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Athchóiriú críochnaithe. Sliotáin athscríofa agus comhionann nuair a léadh arís iad: {rewritten}. Socruithe amháin: {settings}. Comhionann leis an gcúltaca cheana: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Sliotán {slot}: tar éis an scríofa a cuireadh isteach air, tá an t-ábhar a bhí ann roimhe fós ann. Níl aon rud le déanamh."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Sliotán {slot}: tar éis an scríofa a cuireadh isteach air, níl a ábhar ar aon dul leis an sean-ábhar ná leis an ábhar nua. Go dtí go gcuirfear ina cheart é, is é an t-aon sliotán amháin is féidir a scríobh."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Sliotán {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Sliotán {slot}: “{name}” scríofa agus comhionann nuair a léadh arís é. Cúltacaíodh an t-ábhar roimhe seo sa chúltaca {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Sliotán {slot} á scríobh…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Theip ar scríobh sliotáin {slot}: {reason} Fágfar an troitheán ina aonar ar feadh {seconds} s, ansin seiceálfar staid an tsliotáin."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Theip ar an gcúltacú: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Stop an t-athchóiriú: {reason} Tá na sliotáin a láimhsíodh cheana in ord; léifear staid an troitheáin arís."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Ceangailte, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Dícheangailte: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Rabhadh: ní hionann an t-aitheantóir a d’fhógair an troitheán agus na sonraí a léadh."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Iarradh stop."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Cúltaca"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "raon minicíochta nó líon pointí neamhbhailí"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Comhad fuaime do-léite: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Tá {count} cainéal sa chomhad: ní choinnítear ach an chéad cheann."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Comhad fuaime folamh: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Tá samplaí neamhfhoircneacha sa chomhad: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Ráta samplála {rate} Hz: athsamplaíodh an comhad go {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Maireann an comhad {duration} ms: ní choinnítear ach na chéad {count} sampla ({limit} ms)."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Ní sheinneann an troitheán ach na chéad {count} sampla ({limit} ms): stórálfar an chuid eile den IR seo ach ní chloisfear é."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Ní féidir {file} a normalú: níl comhartha idir 400 Hz agus 3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Sáraíonn normalú {file} raon na n-uimhreacha snámhphointe."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Tar éis an normalaithe, bíonn buaic {peak} ag an IR (fanann IRanna comónta faoi bhun 10): tá cuasán an-domhain sa chomhad idir 400 Hz agus 3 kHz, agus d’fhéadfadh an leibhéal aschuir a bheith an-ard."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "caithfidh crios ama a bheith ar dháta dialainne"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "sliotán lasmuigh den raon"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: bhíothas ag súil le dáta ISO le crios ama"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: bhíothas ag súil le dáta ISO le crios ama, nó null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: bhíothas ag súil le hainm fillteáin cúltaca"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: bhíothas ag súil le 64 digit heicsidheachúlach"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: bhíothas ag súil le 32 beart i heicsidheachúlach"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "aitheantóir lasmuigh den raon"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: bhíothas ag súil le luach booleach"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Dialann scríofa do-léite: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Ní féidir an dialann {file} a bhaint: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 de {size} beart in ionad {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "bloc ionchódaithe de {size} beart in ionad {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "teachtaireacht “{message}”: Control Change ar mhíchruth"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "teachtaireacht “{message}”: is socrú é Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "teachtaireacht “{message}”: níl Control Change sa liosta dúnta"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "teachtaireacht “{message}”: luach {value} os cionn {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "teachtaireacht “{message}” mícheart frámaithe"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "teachtaireacht “{message}”: beart lasmuigh de 7 ngiotán"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "níl teachtaireacht “{message}” sa liosta dúnta"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "teachtaireacht “{message}”: {size} beart in ionad {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "teachtaireacht “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "iarraidh leagain gan choinne"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "ní cheadaítear ach an fógra 70 05 01, ar triail"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "ní cheadaítear ach an léamh 70 26 7F"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "iarraidh tábla le corp neamh-nialasach"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "scríobh tábla: bhíothas ag súil le socrú, luachanna ó 0 go 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "iarraidh léite ar mhíchruth"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "sliotán lasmuigh den raon nó corp neamh-nialasach"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "ordú {command} gan riail ábhair"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "teachtaireacht uaslódála lasmuigh den chatagóir scríofa"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "ordú scríofa {command} gan riail ábhair"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "ainm sliotáin ar mhíchruth"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "aitheantóir le giotán 31 socraithe (IR monarchan): feidhm nach bhfuil oscailte go fóill"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "ceanntásc uaslódála: sliotán lasmuigh den raon"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "ceanntásc uaslódála: MD5 lasmuigh de dhigití heicsidheachúlacha i gcás íseal"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "ceanntásc uaslódála lasmuigh den fhoirm a breathnaíodh"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "buntásc uaslódála: beart neamh-nialasach tar éis na brataí"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "bloc deiridh: sliotán lasmuigh den raon"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "bloc deiridh lasmuigh den fhoirm a breathnaíodh"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "bloc sonraí: seoladh nó cuntar lasmuigh den raon"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "bloc sonraí: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "bloc sonraí: ualach lasmuigh den fhoirm a tháirgeann enc_msb"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "bloc sonraí: ceirtliú neamh-nialasach taobh thiar de {size} beart an IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "aitheantóir {value} lasmuigh de 0..{max}: tá giotán 31 curtha in áirithe d’IRanna monarchan, feidhm nach bhfuil oscailte go fóill"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "ainm de {size} beart, {max} ar a mhéad"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "corp de {size} beart in ionad {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "eolas sliotáin {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "tábla {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "staid reatha"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR sliotáin {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "gníomhachtú sliotáin {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "tá {count} luach i dtábla, fuarthas {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "tábla {table}: luach {value!r} lasmuigh de 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "scríobh tábla {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "socrú anaithnid “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "socrú “{name}”: luach {value!r} lasmuigh de 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "socrú {name} a leagan ar {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "fógra ceangail"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "tá 1 go {max} carachtar in ainm sliotáin"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "ní bhíonn in ainm sliotáin ach carachtair ASCII inphriontáilte"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "tá sampla neamhfhoircneach san IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "uaslódáil sliotáin {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "ceanntásc"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "bloc {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "deireadh"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "buntásc"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "ainm"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "eolas"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "suim dheiridh de {size} beart in ionad {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "ainm sliotáin folamh nó lasmuigh d’ASCII inphriontáilte"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "bearta neamh-nialasacha tar éis dheireadh ainm an tsliotáin"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "ceanntásc NUX SysEx ar iarraidh"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "gan F7 deiridh"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "beart lasmuigh de 7 ngiotán"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "cineál {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "ordú {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "admháil uaslódála gan choinne"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "stádas admhála anaithnid: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "freagra leagain gan choinne: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "ordú {command}: ní iompraíonn ach 0x5c (léamh eolais) agus 0x5b (macalla ainm) eolas sliotáin"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "fad ionchódaithe {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "freagra eolais sliotáin gan choinne: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "eolas sliotáin do-léite: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "fógraíonn an troitheán sliotán {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "freagra gan choinne do tábla {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "tábla {table}: luach {value} os cionn 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "freagra staide gan choinne: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "ceanntásc léite: ordú {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "iompraíonn an ceanntásc léite brat an chríochnaithe"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "ceanntásc léite neamh-nialasach, nach bhfacthas riamh san fhoirm seo"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "bloc {block}: ordú {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "bloc {block}: brat neamh-nialasach {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "bloc {block}: seoladh {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "bloc {block}: cuntar {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "bloc {block} do-léite: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "bloc deiridh: ordú {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "bloc deiridh gan brat"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "bloc deiridh: cuntar {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "bloc deiridh: beart ar strae lasmuigh den bhrat, den suim agus den chuntar"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "suim dheiridh do-léite: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "suim dheiridh léite mícheart"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "buntásc: ordú {found} in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "buntásc gan brat"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "buntásc: beart ar strae tar éis na brataí"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "fuarthas {count} teachtaireacht in ionad {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "teachtaireacht {number} coimhthíoch do léamh IR: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "dath {colour!r}: bhíothas ag súil le “#rrggbb” i gcás íseal"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Feidhm anaithnid “{name}”. Feidhmeanna aitheanta: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "bhíothas ag súil le liosta sórtáilte d’fheidhmeanna aitheanta, gan dúbailtí"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Clár trialacha do-léite: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Tá clár na dtrialacha faoi ghlas ag próiseas eile ({file}): bain triail eile as nuair a bheidh an t-ordú eile críochnaithe."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Ní féidir {file} a ghlasáil: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Troitheán gan aimsiú: níl cárta fuaime “NAI5” ann. Seiceáil an cábla USB."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "Níl XDG_RUNTIME_DIR socraithe: ní féidir an glas a ghlacadh."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Ní féidir an glas {file} a ghlacadh: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Tá an troitheán in úsáid cheana ag cás eile de optima-air."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Scaoileadh an glas cheana: ní féidir é a thabhairt do chalafort a thuilleadh."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Baineann an glas seo le calafort cheana: ní féidir é a thabhairt do dhara calafort."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Ní féidir an glas a scaoileadh: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Ní fhreagraíonn an troitheán a thuilleadh: dícheangailte nó greamaithe."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Ní féidir an calafort {port} a chumrú: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Ní féidir ionchur an chalafoirt {port} a armáil: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Níl an calafort {port} ann."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Rochtain diúltaithe do {port}. Seiceáil go bhfuil tú sa ghrúpa “audio” (ordú: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Tá an calafort {port} in úsáid cheana ag clár eile."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Níl an calafort {port} ar fáil a thuilleadh."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Ní féidir an calafort {port} a oscailt: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Ní féidir scríobh: tá an calafort dúnta."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Theip ar scríobh chuig calafort {port}: níor glacadh le beart ar bith."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Theip ar scríobh chuig calafort {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Cuireadh isteach ar fholmhú an chalafoirt {port} {count} uair as a chéile: tá an teachtaireacht tugtha don eithne, ach níorbh fhéidir fanacht lena himeacht."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Fanacht lasmuigh den raon: {wait} s (uasmhéid {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Ní féidir léamh: tá an calafort dúnta."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Theip ar léamh ó chalafort {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Ní thuairiscíonn an calafort {port} staid a ionchuir ({error}): ní féidir cailliúint bearta a bhrath, stopann sé anseo."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Theip ar staid an chalafoirt {port} a léamh: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Theip ar an gcalafort {port} a dhúnadh: {error}"

@@ -1,0 +1,1950 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "på {bits} bit"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: heltal forventet, fik {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: heltal eller intet forventet, fik {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "navn på pladsen: bytes forventet, fik {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: tekst forventet, fik {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "plads {slot} uden for 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "pladsnavn på {size} bytes i stedet for {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "identifikator {value} uden for 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} uden for 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Ukendt årsag til sikkerhedskopi “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "firmware mangler: kun årsagen “{reason}” tillader det"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "ugyldigt navn på sikkerhedskopi “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "årsagen “{reason}” afviger fra sikkerhedskopien {name}s årsag “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "ulæselig dato {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "dato {date!r} uden tidszone"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "ikke-kanonisk dato {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "dato {date!r} afviger fra tidspunktet for sikkerhedskopien {name}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: dato forventet, fik {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} skal have en tidszone (for eksempel datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Kan ikke skrive i mappen {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ikke en mappe"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Kan ikke kontrollere {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Kan ikke oprette sikkerhedskopien {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data: bytes forventet, fik {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "en IR er {expected} bytes, fik {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "plads {slot} er allerede sikkerhedskopieret i {backup}: en sikkerhedskopi skrives kun én gang, lav en ny sikkerhedskopi."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Ulæselig pladspost: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "JSON-objekt forventet, fik {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "feltet “{field}” mangler eller er ikke tekst"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "segl kan ikke beregnes: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Pladspost ændret eller beskadiget: {file} (forkert segl)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "feltet “{field}”: heltal forventet"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "feltet “{field}”: tekst forventet"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "feltet “{field}”: heltal eller null forventet"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "post for plads {record} lagt under plads {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: hexadecimal med små bogstaver forventet"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "post for sikkerhedskopien “{record}” fundet i “{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Kan ikke læse {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Ulæselig sikkerhedskopi: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "mangler"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Inkonsistent pladspost: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Ulæselige data: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Forkert fingeraftryk: {file} bruges ikke."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "identifikator genberegnet til {computed}, posten angiver {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Aktiv plads"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR til/fra"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamp til/fra"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” er ikke et pladsnummer"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "En skrivning til plads {slot} blev afbrudt: pedalen lades i fred i yderligere {seconds} s. Kør derefter: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "ukendt ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "ukendt ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Preset: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "plads {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "ukendt plads ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: til, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: fra, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamp: til"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamp: fra"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Navn"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Ident."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Lydstyrke"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Low cut"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "High cut"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Advarsel: den identifikator, pedalen har meldt ({announced}), svarer ikke til de læste data ({computed}), heller ikke efter en ny læsning. Sikkerhedskopien oprettes alligevel."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Plads {slot} “{name}” sikkerhedskopieret i {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} bytes: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change kanal {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[kanal {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, det vil sige {converted} ud af 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} maks {max} ({count} medd.)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "niveauer"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Advarsel: {count} SysEx gik tabt under modtagelsen."
+msgstr[1] "Advarsel: {count} SysEx gik tabt under modtagelsen."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Advarsel: {count} overløb af inputbufferen, bytes gik tabt."
+msgstr[1] "Advarsel: {count} overløb af inputbufferen, bytes gik tabt."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "j"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "ja"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [j/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Annulleret: der blev ikke skrevet noget."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Sende forbindelsesannonceringen, prøvefunktion “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Annulleret: der blev ikke sendt noget."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Annonceringen er allerede sendt af forbindelsessekvensen: sendes ikke to gange."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Annoncering sendt: svar modtaget"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Annoncering sendt: intet svar"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: valideret"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: på prøve"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” forventer navnet på en funktion."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Navnet “{name}” afvist ({error}). Angiv et med --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Advarsel: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Overskrive plads {slot} “{current}” med “{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Plads {slot}: “{name}” skrevet og læst tilbage identisk."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Tidligere indhold (“{name}”) sikkerhedskopieret i {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} findes allerede. Tilføj --yes for at overskrive den."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Kan ikke skrive {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Plads {slot} “{name}” eksporteret til {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Læser: {done} af {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Advarsel: den identifikator, der er meldt for plads {slot}, svarer ikke til de læste data, heller ikke efter en ny læsning. Der tages alligevel en sikkerhedskopi."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Alle 23 pladser er sikkerhedskopieret i {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Ingen sikkerhedskopier."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} plads"
+msgstr[1] "{count} pladser"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "BESKADIGET ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "ingen"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name gælder kun ved gendannelse af én plads."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Sætte pedalen tilbage til tilstanden i sikkerhedskopien {backup} ({count} plads)? Kun de pladser, der afviger, skrives om, efter at deres indhold er sikkerhedskopieret."
+msgstr[1] "Sætte pedalen tilbage til tilstanden i sikkerhedskopien {backup} ({count} pladser)? Kun de pladser, der afviger, skrives om, efter at deres indhold er sikkerhedskopieret."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} af {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Pladser skrevet om og læst tilbage identisk: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Pladser, hvor kun indstillingerne blev gendannet: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Pladser, der allerede er identiske med sikkerhedskopien: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Skrive plads {slot} “{current}” om fra sikkerhedskopien {backup} (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Plads {slot} gendannet fra {backup} og derefter læst tilbage identisk."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Erstattet indhold (“{name}”) sikkerhedskopieret i {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Ingen afbrudt skrivning."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Plads {slot}: den afbrudte skrivning var gennemført. Intet at gøre."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Plads {slot}: indeholder stadig det, den indeholdt før. Intet at gøre."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Plads {slot}: indholdet er hverken det gamle eller det nye. For at sætte den tilbage, som den var: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "tillad mere end læsning på en firmware, der ikke er verificeret"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "tillad en prøvefunktion"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "bed ikke om bekræftelse"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "pladsnummer, fra 1 til {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Linux-editor til NUX Optima Air-pedalen."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "datamappe (standard: XDG-datamappen)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "åbn vinduet"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "firmwareversion, preset og indstillinger"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "de 23 IR-pladser"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "sikkerhedskopiér IR'en på en plads"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "vis, hvad pedalen sender"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "sekunders lytning"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "læs tilstanden først"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "send annonceringen først (prøve)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "skriv en WAV til en plads"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV-fil"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "pladsens navn (standard: filens navn)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "eksportér en plads som WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "WAV-fil, der skal skrives"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "skriv en plads, eller alle, om fra en sikkerhedskopi"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "mappe med sikkerhedskopi"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "pladsnummer, fra 1 til {count} (standard: alle)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "erstat det sikkerhedskopierede navn"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "sikkerhedskopiér de 23 pladser"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "vis sikkerhedskopierne"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "kontrollér en afbrudt skrivning"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "register over prøvefunktionerne"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "En skrivning til plads {slot} blev ikke fuldført. Pedalen lades i fred et stykke tid; kør derefter: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Fejl: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Afbrudt."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "byte {byte} uden for 7 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 7-bit-bytes efterlader {bits} udfyldningsbit, enc7 frembringer aldrig flere end 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "udfyldningsbit forskellige fra nul i slutningen af en 7-bit-strøm"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "en blok er {expected} bytes, fik {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "blokssum {sum} ({hex}) ud over de 14 sendte bit (maks {max}): aldrig set på pedalen, afvist indtil verificeret"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "en kodet blok er {expected} bytes, fik {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "byte uden for 7 bit i en kodet blok"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "forkert kontrolsum for blokken"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "slutsummen for overførslen dækker mindst én blok"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "længden {length} er ikke et multiplum af {block}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "værdien {value} uden for 28 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "en sum på 28 bit fylder 4 bytes, fik {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "byte {byte} uden for 7 bit i en sum på 28 bit"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "En skrivning blev afbrudt: pedalen lades i fred i yderligere {seconds} s."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: en skrivebesked kan kun sendes af en komplet skrivning til en plads (sikkerhedskopi, journal, tilbagelæsning)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Firmwareversionen er endnu ikke læst: kun læsning er tilladt."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Ukendt firmware {found} (protokol verificeret på {verified}): kun læsning er tilladt."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” er en prøvefunktion (“{function}”), endnu ikke valideret på pedalen."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: kun en læsning kan sendes igen."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Intet svar fra pedalen på “{message}” efter {count} forsøg."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedalen bliver ved med at sende SysEx uden pause."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Kan ikke læse plads {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "To læsninger af plads {slot} giver forskellige data."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "En skrivning til plads {slot} blev afbrudt: vent yderligere {seconds} s, før du sender noget."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "En skrivning til plads {slot} blev afbrudt: indtil den plads er bragt i orden, er det den eneste, der kan skrives til."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Skrivning afvist: firmwaren er ikke læst, eller er ikke den, protokollen er verificeret på."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Efter skrivningen indeholder plads {slot} ikke det, der blev sendt."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedalen melder en fejl under skrivning af IR'en."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Uventet kvittering for blok: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{count} blokkvittering modtaget i stedet for {expected}."
+msgstr[1] "{count} blokkvitteringer modtaget i stedet for {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Kvitteringer for header og footer mangler eller er uventede."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Efter skrivningen kom navneekkoet {count} gang i stedet for én gang."
+msgstr[1] "Efter skrivningen kom navneekkoet {count} gange i stedet for én gang."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Efter skrivningen svarer navneekkoet ikke til det, der blev sendt."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Efter skrivningen kom pladsinfoen {count} gang i stedet for én gang."
+msgstr[1] "Efter skrivningen kom pladsinfoen {count} gange i stedet for én gang."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Efter skrivningen svarer pladsinfoen ikke til det, der blev sendt."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Sikkerhedskopien {backup} indeholder ingen plads."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Sammenligner"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Plads {slot} i sikkerhedskopien {backup} afviger fra pedalen, men kan ikke skrives om, som den er ({error}). Der blev ikke skrevet noget."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Gendanner"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedalen melder plads {announced}, efter at plads {requested} blev anmodet om."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Intet ekko fra pedalen på skrivningen af tabel {table}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Ekkoet af tabel {table} afviger fra det, der blev sendt."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "er et symbolsk link"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "ikke en almindelig fil"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} bytes i stedet for {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} bytes, mere end de tilladte {allowed}"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "størrelsen ændrede sig under læsningen"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Kan ikke oprette låsen {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "dubleret nøgle “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} er ikke standard-JSON"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "ikke JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "feltet “{field}” mangler"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "ukendt format {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "ukendt felt “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Kan ikke synkronisere mappen {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Kan ikke oprette mappen {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Kan ikke oprette mappen {folder}: {path} er ikke en mappe"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Kan ikke lægge {file} på plads: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "før en skrivning"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "læsning af en plads"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "fuld sikkerhedskopi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "import"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "beskadiget plads"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Indlæs en WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Overskrive plads <b>{slot}</b> “{name}” med <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Pladsens nuværende indhold sikkerhedskopieres, før der skrives."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Pladsnavn"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Annullér"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Skriv til pedalen"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Sikkerhedskopier"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Gendan denne plads"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Gendan hele sikkerhedskopien"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Luk"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Ingen sikkerhedskopier endnu."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: plads {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} plads"
+msgstr[1] "{backup}: {count} pladser"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: ulæselig"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Denne sikkerhedskopi kan ikke bruges: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Sætte pedalens {count} plads tilbage til tilstanden i denne sikkerhedskopi?"
+msgstr[1] "Sætte pedalens {count} pladser tilbage til tilstanden i denne sikkerhedskopi?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Sætte pedalens plads {slot} tilbage til tilstanden i denne sikkerhedskopi (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr ""
+"{backup}.\n"
+"\n"
+"Kun en plads, der afviger fra sikkerhedskopien, skrives om, og dens nuværende indhold sikkerhedskopieres lige før."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Gendan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Elektrisk blå"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Cyan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Grøn"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Gul"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Orange"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Rød"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Pink"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Lilla"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Råhvid"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Grænsefladefarve"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Farvekode, for eksempel #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Forventet: # og seks hexadecimale cifre"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Søger efter pedalen…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Gendan den forrige tilstand"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Sikkerhedskopiér alt"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Sikkerhedskopier…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Indlæs en WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Eksportér som WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV-filer"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Vælg en WAV-fil"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Én fil ad gangen: en plads rummer kun én IR."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Eksportér som WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Gendannelsen er færdig. Pladser skrevet om og læst tilbage identisk: {rewritten}. Kun indstillinger: {settings}. Allerede identiske med sikkerhedskopien: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Plads {slot}: efter den afbrudte skrivning indeholder den stadig det, den indeholdt før. Intet at gøre."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Plads {slot}: efter den afbrudte skrivning indeholder den hverken det gamle eller det nye indhold. Indtil den er bragt i orden, er den den eneste plads, der kan skrives til."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Plads {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Plads {slot}: “{name}” skrevet og læst tilbage identisk. Tidligere indhold sikkerhedskopieret i {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Skriver plads {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Skrivning af plads {slot} mislykkedes: {reason} Pedalen lades i fred i {seconds} s, derefter kontrolleres pladsens tilstand."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Sikkerhedskopieringen mislykkedes: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Gendannelsen stoppede: {reason} De pladser, der allerede er behandlet, er i orden; pedalens tilstand læses igen."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Forbundet, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Afbrudt: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Advarsel: den identifikator, pedalen har meldt, svarer ikke til de læste data."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Stop anmodet."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Sikkerhedskopi"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "ugyldigt frekvensområde eller antal punkter"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Ulæselig lydfil: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Filen har {count} kanaler: kun den første beholdes."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Tom lydfil: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Filen indeholder ikke-endelige samples: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Samplingfrekvens på {rate} Hz: filen blev resamplet til {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Filen varer {duration} ms: kun de første {count} samples ({limit} ms) beholdes."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedalen afspiller kun de første {count} samples ({limit} ms): resten af denne IR gemmes, men høres ikke."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Kan ikke normalisere {file}: intet signal mellem 400 Hz og 3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Normalisering af {file} overskrider intervallet for flydende kommatal."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Efter normalisering topper IR'en ved {peak} (almindelige IR'er forbliver under 10): filen har et meget dybt dyk mellem 400 Hz og 3 kHz, og udgangsniveauet kan være meget højt."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "en journaldato skal have en tidszone"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "plads uden for intervallet"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: ISO-dato med tidszone forventet"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: ISO-dato med tidszone, eller null, forventet"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: navn på en mappe med sikkerhedskopi forventet"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: 64 hexadecimale cifre forventet"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: 32 bytes i hexadecimal forventet"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "identifikator uden for intervallet"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: boolesk værdi forventet"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Ulæselig skrivejournal: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Kan ikke fjerne journalen {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 på {size} bytes i stedet for {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "kodet blok på {size} bytes i stedet for {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "meddelelse “{message}”: ugyldig Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "meddelelse “{message}”: en Control Change er en indstilling"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "meddelelse “{message}”: Control Change findes ikke på den lukkede liste"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "meddelelse “{message}”: værdien {value} over {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "meddelelse “{message}” er dårligt indrammet"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "meddelelse “{message}”: byte uden for 7 bit"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "meddelelse “{message}” findes ikke på den lukkede liste"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "meddelelse “{message}”: {size} bytes i stedet for {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "meddelelse “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "uventet versionsforespørgsel"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "kun annonceringen 70 05 01, på prøve, er tilladt"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "kun læsningen 70 26 7F er tilladt"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "tabelforespørgsel med et indhold forskelligt fra nul"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "skrivning af tabel: indstilling forventet, værdier fra 0 til 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "ugyldig læseforespørgsel"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "plads uden for intervallet eller indhold forskelligt fra nul"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "kommando {command} uden indholdsregel"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "uploadmeddelelse uden for skrivekategorien"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "skrivekommando {command} uden indholdsregel"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "ugyldigt pladsnavn"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "identifikator med bit 31 sat (fabriks-IR): funktion endnu ikke åben"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "upload-header: plads uden for intervallet"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "upload-header: MD5 indeholder andet end hexadecimale cifre med små bogstaver"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "upload-header uden for den observerede form"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "upload-footer: byte forskellig fra nul efter flaget"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "slutblok: plads uden for intervallet"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "slutblok uden for den observerede form"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "datablok: adresse eller tæller uden for intervallet"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "datablok: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "datablok: nyttelast uden for den form, enc_msb frembringer"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "datablok: udfyldning forskellig fra nul ud over IR'ens {size} bytes"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "identifikator {value} uden for 0..{max}: bit 31 er reserveret til fabriks-IR'er, en funktion, der endnu ikke er åben"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "navn på {size} bytes, højst {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "indhold på {size} bytes i stedet for {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "info om plads {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "tabel {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "nuværende tilstand"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR på plads {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "aktivering af plads {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "en tabel har {count} værdier, fik {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "tabel {table}: værdi {value!r} uden for 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "skrivning af tabel {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "ukendt indstilling “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "indstilling “{name}”: værdi {value!r} uden for 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "sætter indstillingen {name} til {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "forbindelsesannoncering"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "et pladsnavn har 1 til {max} tegn"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "et pladsnavn indeholder kun synlige ASCII-tegn"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR'en indeholder en ikke-endelig sample"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "upload af plads {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "header"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "blok {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "slut"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "footer"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "navn"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "info"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "slutsum på {size} bytes i stedet for {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "pladsnavn tomt eller uden for synlig ASCII"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "bytes forskellige fra nul efter pladsnavnets slutning"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "NUX SysEx-header mangler"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "ingen afsluttende F7"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "byte uden for 7 bit"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "type {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "kommando {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "uventet kvittering for upload"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "ukendt kvitteringsstatus: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "uventet versionssvar: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "kommando {command}: kun 0x5c (læsning af info) og 0x5b (navneekko) bærer pladsinfo"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "kodet længde {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "uventet svar med pladsinfo: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "ulæselig pladsinfo: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedalen melder plads {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "uventet svar for tabel {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "tabel {table}: værdien {value} over 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "uventet svar om tilstanden: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "læse-header: kommando {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "læse-headeren bærer slutflaget"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "læse-header forskellig fra nul, aldrig set i denne form"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "blok {block}: kommando {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "blok {block}: flag {flag} forskelligt fra nul"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "blok {block}: adresse {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "blok {block}: tæller {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "blok {block} ulæselig: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "slutblok: kommando {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "slutblok uden flag"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "slutblok: tæller {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "slutblok: løs byte uden for flaget, summen og tælleren"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "ulæselig slutsum: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "forkert slutsum for læsningen"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "footer: kommando {found} i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "footer uden flag"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "footer: løs byte efter flaget"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{count} meddelelser modtaget i stedet for {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "meddelelse {number} hører ikke hjemme i en IR-læsning: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "farve {colour!r}: “#rrggbb” med små bogstaver forventet"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Ukendt funktion “{name}”. Kendte: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "sorteret liste over kendte funktioner uden dubletter forventet"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Ulæseligt register over prøvefunktioner: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Registeret over prøvefunktioner er låst af en anden proces ({file}): prøv igen, når den anden kommando er færdig."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Kan ikke låse {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Pedalen blev ikke fundet: intet lydkort “NAI5”. Kontrollér USB-kablet."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR er ikke sat: kan ikke tage låsen."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Kan ikke tage låsen {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedalen bruges allerede af en anden instans af optima-air."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Låsen er allerede frigivet: den kan ikke længere gives til en port."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Denne lås tilhører allerede en port: den kan ikke gives til en anden."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Kan ikke frigive låsen: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedalen svarer ikke længere: frakoblet eller hængt."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Kan ikke konfigurere porten {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Kan ikke aktivere inputtet på porten {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Porten {port} findes ikke."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Adgang til {port} nægtet. Kontrollér, at du er i gruppen “audio” (kommando: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Porten {port} bruges allerede af et andet program."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Porten {port} er ikke længere tilgængelig."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Kan ikke åbne porten {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Kan ikke skrive: porten er lukket."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Skrivning til porten {port} mislykkedes: ingen byte blev accepteret."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Skrivning til porten {port} mislykkedes: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Tømning af porten {port} blev afbrudt {count} gange i træk: beskeden er afleveret til kernen, men dens afsendelse kunne ikke afventes."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Ventetid uden for intervallet: {wait} s (højst {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Kan ikke læse: porten er lukket."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Læsning fra porten {port} mislykkedes: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Porten {port} rapporterer ikke tilstanden af sit input ({error}): bytetab kan ikke registreres, stopper her."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Læsning af porten {port}s tilstand mislykkedes: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Lukning af porten {port} mislykkedes: {error}"

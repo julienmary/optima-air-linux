@@ -1,0 +1,1956 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "de {bits} biți"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: se aștepta un număr întreg, s-a primit {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: se aștepta un număr întreg sau nimic, s-a primit {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "numele slotului: se așteptau octeți, s-a primit {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: se aștepta text, s-a primit {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "slotul {slot} în afara intervalului 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "nume de slot de {size} octeți în loc de {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "identificatorul {value} în afara intervalului 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} în afara intervalului 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Motiv de copie de rezervă necunoscut „{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "firmware lipsă: doar motivul „{reason}” îl permite"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "nume de copie de rezervă malformat „{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "motivul „{reason}” diferă de cel al copiei de rezervă {name}, motivul „{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "data {date!r} nu poate fi citită"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "data {date!r} fără fus orar"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "data {date!r} necanonică"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "data {date!r} diferă de ora copiei de rezervă {name}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: se aștepta o dată, s-a primit {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} trebuie să poarte un fus orar (de exemplu datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Nu se poate scrie în folderul {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "nu este un folder"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Nu se poate verifica {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Nu se poate crea copia de rezervă {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "date: se așteptau octeți, s-a primit {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "un IR are {expected} octeți, s-au primit {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "slotul {slot} este deja salvat în {backup}: o copie de rezervă se scrie o singură dată, faceți o copie de rezervă nouă."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Înregistrare de slot ilizibilă: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "se aștepta un obiect JSON, s-a primit {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "câmpul „{field}” lipsește sau nu este text"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "sigiliul nu poate fi calculat: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Înregistrarea slotului este alterată sau deteriorată: {file} (sigiliu greșit)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "câmpul „{field}”: se aștepta un număr întreg"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "câmpul „{field}”: se aștepta text"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "câmpul „{field}”: se aștepta un număr întreg sau null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "înregistrarea slotului {record} arhivată la slotul {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: se aștepta hexazecimal cu litere mici"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "înregistrarea copiei de rezervă „{record}” găsită în „{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Nu se poate citi {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Copie de rezervă ilizibilă: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "lipsă"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Înregistrare de slot inconsistentă: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Date ilizibile: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Amprentă greșită: {file} nu va fi folosit."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "identificator recalculat ca {computed}, înregistrarea indică {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Slot activ"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR activat/dezactivat"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamplificator activat/dezactivat"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "„{text}” nu este un număr de slot"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "O scriere în slotul {slot} a fost întreruptă: pedala este lăsată în pace încă {seconds} s. Apoi rulați: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "necunoscut ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "necunoscut ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Preset: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "slotul {slot} „{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "slot necunoscut ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: activ, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: dezactivat, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamplificator: activ"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamplificator: dezactivat"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Nume"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Id."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Volum"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Tăiere joase"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Tăiere înalte"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Atenție: identificatorul anunțat de pedală ({announced}) nu corespunde datelor citite ({computed}), chiar și după o nouă citire. Copia de rezervă se face oricum."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Slotul {slot} „{name}” salvat în {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx de {size} octeți: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change canalul {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[canalul {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, adică {converted} din 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} max {max} ({count} msg)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "niveluri"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Atenție: {count} SysEx abandonat la recepție."
+msgstr[1] "Atenție: {count} SysEx abandonate la recepție."
+msgstr[2] "Atenție: {count} de SysEx abandonate la recepție."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Atenție: {count} depășire a bufferului de intrare, s-au pierdut octeți."
+msgstr[1] "Atenție: {count} depășiri ale bufferului de intrare, s-au pierdut octeți."
+msgstr[2] "Atenție: {count} de depășiri ale bufferului de intrare, s-au pierdut octeți."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "d"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "da"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [d/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Anulat: nu s-a scris nimic."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Trimiteți anunțul de conexiune, funcția de probă „{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Anulat: nu s-a trimis nimic."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Anunț deja trimis de secvența de conexiune: nu se trimite de două ori."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Anunț trimis: răspuns primit"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Anunț trimis: niciun răspuns"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: validată"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: în probă"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "„trials {action}” așteaptă numele unei funcții."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Numele „{name}” a fost refuzat ({error}). Indicați unul cu --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Atenție: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Suprascrieți slotul {slot} „{current}” cu „{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Slotul {slot}: „{name}” scris și recitit identic."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Conținutul anterior („{name}”) salvat în {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} există deja. Adăugați --yes pentru a-l suprascrie."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Nu se poate scrie {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Slotul {slot} „{name}” exportat în {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Citire: {done} din {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Atenție: identificatorul anunțat pentru slotul {slot} nu corespunde datelor citite, chiar și după o nouă citire. Se salvează oricum."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Toate cele 23 de sloturi sunt salvate în {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Nicio copie de rezervă."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} slot"
+msgstr[1] "{count} sloturi"
+msgstr[2] "{count} de sloturi"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "DETERIORAT ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "niciunul"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name se aplică doar la restaurarea unui singur slot."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Readuceți pedala la starea copiei de rezervă {backup} ({count} slot)? Doar sloturile diferite vor fi rescrise, după salvarea conținutului lor."
+msgstr[1] "Readuceți pedala la starea copiei de rezervă {backup} ({count} sloturi)? Doar sloturile diferite vor fi rescrise, după salvarea conținutului lor."
+msgstr[2] "Readuceți pedala la starea copiei de rezervă {backup} ({count} de sloturi)? Doar sloturile diferite vor fi rescrise, după salvarea conținutului lor."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} din {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Sloturi rescrise și recitite identic: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Sloturi ale căror setări au fost doar restaurate: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Sloturi deja identice cu copia de rezervă: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Rescrieți slotul {slot} „{current}” din copia de rezervă {backup} („{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Slotul {slot} restaurat din {backup}, apoi recitit identic."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Conținutul înlocuit („{name}”) salvat în {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Nicio scriere întreruptă."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Slotul {slot}: scrierea întreruptă se terminase. Nu este nimic de făcut."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Slotul {slot}: conține încă ce conținea înainte. Nu este nimic de făcut."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Slotul {slot}: conținutul său nu este nici cel vechi, nici cel nou. Pentru a-l readuce așa cum era: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "permite mai mult decât citiri pe un firmware neverificat"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "permite o funcție de probă"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "nu cere confirmare"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "numărul slotului, de la 1 la {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Editor Linux pentru pedala NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "folderul de date (implicit: folderul de date XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "deschide fereastra"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "versiunea firmware, presetul și setările"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "cele 23 de sloturi IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "salvează IR-ul unui slot"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "afișează ce trimite pedala"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "secunde de ascultare"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "citește mai întâi starea"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "trimite mai întâi anunțul (probă)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "scrie un WAV într-un slot"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "fișier WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "numele slotului (implicit: numele fișierului)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "exportă un slot ca WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "fișierul WAV de scris"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "rescrie un slot, sau pe toate, dintr-o copie de rezervă"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "folderul copiei de rezervă"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "numărul slotului, de la 1 la {count} (implicit: toate)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "înlocuiește numele salvat"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "salvează cele 23 de sloturi"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "listează copiile de rezervă"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "verifică o scriere întreruptă"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "registrul funcțiilor de probă"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "O scriere în slotul {slot} a rămas neterminată. Pedala este lăsată în pace pentru o vreme; apoi rulați: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Eroare: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Întrerupt."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "octetul {byte} în afara celor 7 biți"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} octeți pe 7 biți lasă {bits} biți de umplere, enc7 nu produce niciodată mai mult de 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "biți de umplere nenuli la sfârșitul unui flux pe 7 biți"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "un bloc are {expected} octeți, s-au primit {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "suma blocului {sum} ({hex}) peste cei 14 biți transmiși (max {max}): niciodată văzută pe pedală, refuzată până la verificare"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "un bloc codificat are {expected} octeți, s-au primit {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "octet în afara celor 7 biți într-un bloc codificat"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "sumă de control a blocului greșită"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "suma de sfârșit de transfer acoperă cel puțin un bloc"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "lungimea {length} nu este multiplu de {block}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "valoarea {value} în afara celor 28 de biți"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "o sumă pe 28 de biți ocupă 4 octeți, s-au primit {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "octetul {byte} în afara celor 7 biți într-o sumă pe 28 de biți"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "O scriere a fost întreruptă: pedala este lăsată în pace încă {seconds} s."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "„{message}”: un mesaj de scriere poate fi trimis doar de o scriere completă a unui slot (copie de rezervă, jurnal, recitire)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Versiunea firmware nu a fost încă citită: sunt permise doar citirile."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Firmware necunoscut {found} (protocol verificat pe {verified}): sunt permise doar citirile."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "„{message}” este o funcție de probă („{function}”), încă nevalidată pe pedală."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "„{message}”: doar o citire poate fi retrimisă."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Niciun răspuns al pedalei la „{message}” după {count} încercări."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedala trimite SysEx fără pauză."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Nu se poate citi slotul {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Două citiri ale slotului {slot} dau date diferite."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "O scriere în slotul {slot} a fost întreruptă: așteptați încă {seconds} s înainte de a trimite orice."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "O scriere în slotul {slot} a fost întreruptă: până când acel slot este pus în ordine, el este singurul care poate fi scris."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Scriere refuzată: firmware-ul nu a fost citit sau nu este cel pe care a fost verificat protocolul."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "După scriere, slotul {slot} nu conține ce a fost trimis."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedala raportează o eroare la scrierea IR-ului."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Confirmare de bloc neașteptată: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{count} confirmare de bloc primită în loc de {expected}."
+msgstr[1] "{count} confirmări de bloc primite în loc de {expected}."
+msgstr[2] "{count} de confirmări de bloc primite în loc de {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Confirmările de antet și de subsol lipsesc sau sunt neașteptate."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "După scriere, ecoul numelui a venit {count} dată în loc de o singură dată."
+msgstr[1] "După scriere, ecoul numelui a venit de {count} ori în loc de o singură dată."
+msgstr[2] "După scriere, ecoul numelui a venit de {count} de ori în loc de o singură dată."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "După scriere, ecoul numelui nu corespunde cu ce a fost trimis."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "După scriere, informațiile slotului au venit {count} dată în loc de o singură dată."
+msgstr[1] "După scriere, informațiile slotului au venit de {count} ori în loc de o singură dată."
+msgstr[2] "După scriere, informațiile slotului au venit de {count} de ori în loc de o singură dată."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "După scriere, informațiile slotului nu corespund cu ce a fost trimis."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Copia de rezervă {backup} nu conține niciun slot."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Comparare"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Slotul {slot} din copia de rezervă {backup} diferă de pedală, dar nu poate fi rescris așa cum este ({error}). Nu s-a scris nimic."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Restaurare"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedala anunță slotul {announced} după ce a fost cerut slotul {requested}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Niciun ecou de la pedală la scrierea tabelului {table}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Ecoul tabelului {table} diferă de ce a fost trimis."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "este o legătură simbolică"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "nu este un fișier obișnuit"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} octeți în loc de {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} octeți, mai mult decât cei {allowed} permiși"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "dimensiunea s-a schimbat în timpul citirii"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Nu se poate crea blocajul {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "cheie duplicată „{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} nu este JSON standard"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "nu este JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "câmpul „{field}” lipsește"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "format necunoscut {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "câmp necunoscut „{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Nu se poate sincroniza folderul {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Nu se poate crea folderul {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Nu se poate crea folderul {folder}: {path} nu este un folder"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Nu se poate pune {file} la locul său: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "înainte de o scriere"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "citirea unui slot"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "copie de rezervă completă"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "import"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "slot deteriorat"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Încarcă un WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Suprascrieți slotul <b>{slot}</b> „{name}” cu <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Conținutul actual al slotului va fi salvat înainte de scriere."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Numele slotului"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Anulează"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Scrie pe pedală"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Copii de rezervă"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Restaurează acest slot"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Restaurează toată copia de rezervă"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Închide"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Încă nicio copie de rezervă."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: slotul {slot} „{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} slot"
+msgstr[1] "{backup}: {count} sloturi"
+msgstr[2] "{backup}: {count} de sloturi"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: ilizibilă"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Această copie de rezervă nu poate fi folosită: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Readuceți {count} slot al pedalei la starea acestei copii de rezervă?"
+msgstr[1] "Readuceți {count} sloturi ale pedalei la starea acestei copii de rezervă?"
+msgstr[2] "Readuceți {count} de sloturi ale pedalei la starea acestei copii de rezervă?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Readuceți slotul {slot} al pedalei la starea acestei copii de rezervă („{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nDoar un slot care diferă de copia de rezervă este rescris, iar conținutul său actual este salvat chiar înainte."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Restaurează"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Albastru electric"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Cyan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Verde"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Galben"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Portocaliu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Roșu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Roz"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Mov"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Alb murdar"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Culoarea interfeței"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Cod de culoare, de exemplu #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Așteptat: # și șase cifre hexazecimale"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Se caută pedala…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Restaurează starea anterioară"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Salvează tot"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Copii de rezervă…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Încarcă un WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Exportă ca WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "Fișiere WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Alegeți un fișier WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Un singur fișier odată: un slot conține un singur IR."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Exportă ca WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Restaurare terminată. Sloturi rescrise și recitite identic: {rewritten}. Doar setări: {settings}. Deja identice cu copia de rezervă: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Slotul {slot}: după scrierea întreruptă, conține încă ce conținea înainte. Nu este nimic de făcut."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Slotul {slot}: după scrierea întreruptă, nu conține nici conținutul vechi, nici pe cel nou. Până când este pus în ordine, este singurul slot care poate fi scris."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Slotul {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Slotul {slot}: „{name}” scris și recitit identic. Conținutul anterior salvat în {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Se scrie slotul {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Scrierea slotului {slot} a eșuat: {reason} Pedala este lăsată în pace timp de {seconds} s, apoi starea slotului va fi verificată."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Copia de rezervă a eșuat: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Restaurarea s-a oprit: {reason} Sloturile deja tratate sunt în ordine; starea pedalei va fi citită din nou."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Conectat, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Deconectat: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Atenție: identificatorul anunțat de pedală nu corespunde datelor citite."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Oprire cerută."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Copie de rezervă"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "interval de frecvențe sau număr de puncte invalid"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Fișier audio ilizibil: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Fișierul are {count} canale: se păstrează doar primul."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Fișier audio gol: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Fișierul conține eșantioane nefinite: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Frecvență de eșantionare de {rate} Hz: fișierul a fost reeșantionat la {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Fișierul durează {duration} ms: se păstrează doar primele {count} eșantioane ({limit} ms)."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedala redă doar primele {count} eșantioane ({limit} ms): restul acestui IR va fi stocat, dar nu va fi auzit."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Nu se poate normaliza {file}: niciun semnal între 400 Hz și 3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Normalizarea lui {file} depășește intervalul numerelor în virgulă mobilă."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "După normalizare, IR-ul atinge un vârf de {peak} (IR-urile obișnuite rămân sub 10): fișierul are o scădere foarte adâncă între 400 Hz și 3 kHz, iar nivelul de ieșire poate fi foarte mare."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "o dată din jurnal trebuie să poarte un fus orar"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "slot în afara intervalului"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: se aștepta o dată ISO cu fus orar"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: se aștepta o dată ISO cu fus orar, sau null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: se aștepta un nume de folder de copie de rezervă"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: se aștepta 64 de cifre hexazecimale"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: se aștepta 32 de octeți în hexazecimal"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "identificator în afara intervalului"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: se aștepta o valoare booleană"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Jurnal de scriere ilizibil: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Nu se poate șterge jurnalul {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 de {size} octeți în loc de {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "bloc codificat de {size} octeți în loc de {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "mesajul „{message}”: Control Change malformat"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "mesajul „{message}”: un Control Change este o setare"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "mesajul „{message}”: Control Change care nu este în lista închisă"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "mesajul „{message}”: valoarea {value} peste {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "mesajul „{message}” prost încadrat"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "mesajul „{message}”: octet în afara celor 7 biți"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "mesajul „{message}” nu este în lista închisă"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "mesajul „{message}”: {size} octeți în loc de {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "mesajul „{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "cerere de versiune neașteptată"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "doar anunțul 70 05 01, în probă, este permis"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "doar citirea 70 26 7F este permisă"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "cerere de tabel cu corp nenul"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "scriere de tabel: se aștepta o setare, valori de la 0 la 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "cerere de citire malformată"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "slot în afara intervalului sau corp nenul"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "comanda {command} fără regulă de conținut"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "mesaj de încărcare în afara categoriei de scriere"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "comanda de scriere {command} fără regulă de conținut"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "nume de slot malformat"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "identificator cu bitul 31 setat (IR din fabrică): funcție încă nedeschisă"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "antet de încărcare: slot în afara intervalului"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "antet de încărcare: MD5 cu alte caractere decât cifre hexazecimale cu litere mici"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "antet de încărcare în afara formei observate"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "subsol de încărcare: octet nenul după indicator"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "bloc final: slot în afara intervalului"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "bloc final în afara formei observate"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "bloc de date: adresă sau contor în afara intervalului"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "bloc de date: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "bloc de date: sarcină utilă în afara formei produse de enc_msb"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "bloc de date: umplere nenulă dincolo de cei {size} octeți ai IR-ului"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "identificatorul {value} în afara intervalului 0..{max}: bitul 31 este rezervat IR-urilor din fabrică, o funcție încă nedeschisă"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "nume de {size} octeți, cel mult {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "corp de {size} octeți în loc de {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "informațiile slotului {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "tabelul {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "starea curentă"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR-ul slotului {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "activarea slotului {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "un tabel are {count} valori, s-au primit {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "tabelul {table}: valoarea {value!r} în afara intervalului 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "scrierea tabelului {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "setare necunoscută „{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "setarea „{name}”: valoarea {value!r} în afara intervalului 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "setarea lui {name} la {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "anunț de conexiune"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "un nume de slot are de la 1 la {max} caractere"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "un nume de slot conține doar caractere ASCII imprimabile"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR-ul conține un eșantion nefinit"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "încărcarea slotului {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "antet"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "blocul {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "sfârșit"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "subsol"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "nume"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "informații"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "sumă finală de {size} octeți în loc de {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "nume de slot gol sau în afara ASCII imprimabil"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "octeți nenuli după sfârșitul numelui slotului"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "antetul SysEx NUX lipsește"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "lipsește F7 final"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "octet în afara celor 7 biți"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "tip {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "comanda {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "confirmare de încărcare neașteptată"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "stare de confirmare necunoscută: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "răspuns de versiune neașteptat: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "comanda {command}: doar 0x5c (citire informații) și 0x5b (ecoul numelui) poartă informațiile slotului"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "lungime codificată {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "răspuns neașteptat cu informațiile slotului: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "informații de slot ilizibile: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedala anunță slotul {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "răspuns neașteptat pentru tabelul {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "tabelul {table}: valoarea {value} peste 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "răspuns de stare neașteptat: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "antet de citire: comanda {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "antetul de citire poartă indicatorul de sfârșit"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "antet de citire nenul, niciodată văzut în această formă"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "blocul {block}: comanda {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "blocul {block}: indicator nenul {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "blocul {block}: adresa {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "blocul {block}: contorul {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "blocul {block} ilizibil: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "bloc final: comanda {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "bloc final fără indicator"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "bloc final: contorul {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "bloc final: octet străin în afara indicatorului, a sumei și a contorului"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "sumă finală ilizibilă: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "sumă de sfârșit de citire greșită"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "subsol: comanda {found} în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "subsol fără indicator"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "subsol: octet străin după indicator"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{count} mesaje primite în loc de {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "mesajul {number} străin de o citire IR: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "culoarea {colour!r}: se aștepta „#rrggbb” cu litere mici"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Funcție necunoscută „{name}”. Cunoscute: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "se aștepta o listă sortată de funcții cunoscute, fără dubluri"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Registru de probă ilizibil: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Registru de probă blocat de un alt proces ({file}): reîncercați după ce cealaltă comandă s-a terminat."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Nu se poate bloca {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Pedala nu a fost găsită: nicio placă de sunet „NAI5”. Verificați cablul USB."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR nu este definită: blocajul nu poate fi luat."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Nu se poate lua blocajul {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedala este deja folosită de o altă instanță optima-air."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Blocajul a fost deja eliberat: nu mai poate fi dat unui port."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Acest blocaj aparține deja unui port: nu poate fi dat unui al doilea."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Nu se poate elibera blocajul: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedala nu mai răspunde: deconectată sau blocată."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Nu se poate configura portul {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Nu se poate arma intrarea portului {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Portul {port} nu există."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Acces refuzat la {port}. Verificați că faceți parte din grupul „audio” (comandă: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Portul {port} este deja folosit de un alt program."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Portul {port} nu mai este disponibil."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Nu se poate deschide portul {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Nu se poate scrie: portul este închis."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Scrierea pe portul {port} a eșuat: niciun octet acceptat."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Scrierea pe portul {port} a eșuat: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Golirea portului {port} a fost întreruptă de {count} ori la rând: mesajul este predat nucleului, dar plecarea lui nu a putut fi așteptată."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Așteptare în afara intervalului: {wait} s (cel mult {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Nu se poate citi: portul este închis."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Citirea de pe portul {port} a eșuat: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Portul {port} nu raportează starea intrării sale ({error}): pierderea de octeți nu poate fi detectată, oprire aici."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Citirea stării portului {port} a eșuat: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Închiderea portului {port} a eșuat: {error}"

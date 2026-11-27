@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: am\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "የ{bits} ቢት"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: ኢንቲጀር ይጠበቅ ነበር፣ {type} ደረሰ"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: ኢንቲጀር ወይም ምንም ይጠበቅ ነበር፣ {type} ደረሰ"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "የቦታ ስም: ባይቶች ይጠበቁ ነበር፣ {type} ደረሰ"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: ጽሑፍ ይጠበቅ ነበር፣ {type} ደረሰ"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "ቦታ {slot} ከ1..{count} ክልል ውጭ ነው"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "የ{size} ባይት የቦታ ስም በ{expected} ፈንታ"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "መለያ {value} ከ0..{max} ክልል ውጭ ነው"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} ከ0..{max} ክልል ውጭ ነው"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "ያልታወቀ የምትኬ ምክንያት “{reason}”።"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "ፈርምዌር የለም: የሚፈቅደው ምክንያት “{reason}” ብቻ ነው"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "የተበላሸ የምትኬ ስም “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "ምክንያት “{reason}” ከምትኬ {name} ምክንያት “{expected}” ይለያል"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "የማይነበብ ቀን {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "ቀን {date!r} ያለ የሰዓት ክልል"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "መደበኛ ያልሆነ ቀን {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "ቀን {date!r} ከምትኬ {name} ጊዜ ይለያል"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: ቀን ይጠበቅ ነበር፣ {type} ደረሰ"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} የሰዓት ክልል መያዝ አለበት (ለምሳሌ datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "በአቃፊ {file} ውስጥ መጻፍ አልተቻለም: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "አቃፊ አይደለም"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "{file}ን ማረጋገጥ አልተቻለም: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "ምትኬ {backup}ን መፍጠር አልተቻለም: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "ውሂብ: ባይቶች ይጠበቁ ነበር፣ {type} ደረሰ"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR {expected} ባይት ነው፣ {got} ደረሰ"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "ቦታ {slot} አስቀድሞ በ{backup} ውስጥ ተምትኳል: ምትኬ የሚጻፈው አንድ ጊዜ ብቻ ነው፣ አዲስ ምትኬ ይስሩ።"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "የማይነበብ የቦታ መዝገብ: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "የJSON ነገር ይጠበቅ ነበር፣ {type} ደረሰ"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "መስክ “{field}” የለም ወይም ጽሑፍ አይደለም"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "ማኅተሙን ማስላት አልተቻለም: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "የቦታ መዝገብ ተለውጧል ወይም ተበላሽቷል: {file} (የተሳሳተ ማኅተም)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "መስክ “{field}”: ኢንቲጀር ይጠበቅ ነበር"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "መስክ “{field}”: ጽሑፍ ይጠበቅ ነበር"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "መስክ “{field}”: ኢንቲጀር ወይም null ይጠበቅ ነበር"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "የቦታ {record} መዝገብ በቦታ {slot} ስር ተመዝግቧል"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: በትናንሽ ሆሄያት የሄክሳዴሲማል ቁጥር ይጠበቅ ነበር"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "የምትኬ “{record}” መዝገብ በ“{backup}” ውስጥ ተገኝቷል"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "{file}ን ማንበብ አልተቻለም: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "የማይነበብ ምትኬ: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "የለም"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "የማይጣጣም የቦታ መዝገብ: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "የማይነበብ ውሂብ: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "የተሳሳተ የጣት አሻራ: {file} ጥቅም ላይ አይውልም።"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "መለያው በድጋሚ {computed} ተብሎ ተሰልቷል፣ መዝገቡ {recorded} ይላል"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "ንቁ ቦታ"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR አብራ/አጥፋ"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamp አብራ/አጥፋ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” የቦታ ቁጥር አይደለም"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "ወደ ቦታ {slot} መጻፍ ተቋርጧል: ፔዳሉ ለተጨማሪ {seconds} ሰከንድ ብቻውን ይተዋል። ከዚያ ያሂዱ: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "ያልታወቀ ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "ያልታወቀ ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "ፈርምዌር {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "ቅድመ ዝግጅት: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "ቦታ {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "ያልታወቀ ቦታ ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: በርቷል፣ {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: ጠፍቷል፣ {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamp: በርቷል"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamp: ጠፍቷል"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "ስም"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "መለያ"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "ድምፅ"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "ዝቅተኛ መቁረጥ"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "ከፍተኛ መቁረጥ"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "ማስጠንቀቂያ: ፔዳሉ ያወጀው መለያ ({announced}) ከተነበበው ውሂብ ({computed}) ጋር አይዛመድም፣ እንደገና ከተነበበ በኋላም ቢሆን። ምትኬው ቢሆንም ይሠራል።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "ቦታ {slot} “{name}” በ{backup} ውስጥ ተምትኳል"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} ባይት: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change ቻናል {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[ቻናል {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}፣ ማለትም ከ100 ውስጥ {converted}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: ዝቅተኛ {min} ከፍተኛ {max} ({count} መልዕክት)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "ደረጃዎች"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "ማስጠንቀቂያ: በመቀበል ወቅት {count} SysEx ጠፍቷል።"
+msgstr[1] "ማስጠንቀቂያ: በመቀበል ወቅት {count} SysEx ጠፍተዋል።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "ማስጠንቀቂያ: የግቤት ቋት {count} ጊዜ ሞልቶ ፈሰሰ፣ ባይቶች ጠፍተዋል።"
+msgstr[1] "ማስጠንቀቂያ: የግቤት ቋት {count} ጊዜ ሞልቶ ፈሰሰ፣ ባይቶች ጠፍተዋል።"
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "y"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "yes"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [y/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "ተሰርዟል: ምንም አልተጻፈም።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "የግንኙነት ማስታወቂያ፣ የሙከራ ተግባር “{name}” ይላክ?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "ተሰርዟል: ምንም አልተላከም።"
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "ማስታወቂያው አስቀድሞ በግንኙነት ቅደም ተከተል ተልኳል: ሁለት ጊዜ አይላክም።"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "ማስታወቂያ ተልኳል: መልስ ደርሷል"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "ማስታወቂያ ተልኳል: መልስ የለም"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: ተረጋግጧል"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: በሙከራ ላይ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” የአንድ ተግባር ስም ይጠብቃል።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "ስም “{name}” ውድቅ ተደርጓል ({error})። በ--name ስም ይስጡ።"
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "ማስጠንቀቂያ: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "ቦታ {slot} “{current}” በ“{name}” ({file}) ይተካ?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "ቦታ {slot}: “{name}” ተጻፈ እና እንደገና ሲነበብ ተመሳሳይ ሆነ።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "ቀዳሚው ይዘት (“{name}”) በ{backup} ውስጥ ተምትኳል"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} አስቀድሞ አለ። ለመተካት --yes ያክሉ።"
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "{file}ን መጻፍ አልተቻለም: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "ቦታ {slot} “{name}” ወደ {file} ተልኳል"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "በማንበብ ላይ: {done} ከ{total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "ማስጠንቀቂያ: ለቦታ {slot} የታወጀው መለያ ከተነበበው ውሂብ ጋር አይዛመድም፣ እንደገና ከተነበበ በኋላም ቢሆን። ቢሆንም ምትኬ ይወሰዳል።"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "ሁሉም 23 ቦታዎች በ{backup} ውስጥ ተምትኳል"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "ምንም ምትኬ የለም።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} ቦታ"
+msgstr[1] "{count} ቦታዎች"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "ተበላሽቷል ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "ምንም"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name የሚሠራው አንድ ቦታ ሲመለስ ብቻ ነው።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "ፔዳሉ ወደ ምትኬ {backup} ሁኔታ ({count} ቦታ) ይመለስ? የሚለዩት ቦታዎች ብቻ ይጻፋሉ፣ ይዘታቸው ከተምትኮ በኋላ።"
+msgstr[1] "ፔዳሉ ወደ ምትኬ {backup} ሁኔታ ({count} ቦታዎች) ይመለስ? የሚለዩት ቦታዎች ብቻ ይጻፋሉ፣ ይዘታቸው ከተምትኮ በኋላ።"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} ከ{total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "የተጻፉ እና እንደገና ሲነበቡ ተመሳሳይ የሆኑ ቦታዎች: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "ቅንብሮቻቸው ብቻ የተመለሱ ቦታዎች: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "አስቀድመው ከምትኬው ጋር ተመሳሳይ የሆኑ ቦታዎች: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "ቦታ {slot} “{current}” ከምትኬ {backup} (“{name}”) ይጻፍ?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "ቦታ {slot} ከ{backup} ተመልሷል፣ ከዚያ እንደገና ሲነበብ ተመሳሳይ ሆነ።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "የተተካው ይዘት (“{name}”) በ{backup} ውስጥ ተምትኳል"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "የተቋረጠ መጻፍ የለም።"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "ቦታ {slot}: የተቋረጠው መጻፍ ተጠናቅቆ ነበር። ምንም የሚደረግ ነገር የለም።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "ቦታ {slot}: አሁንም ከዚህ በፊት የያዘውን ይዟል። ምንም የሚደረግ ነገር የለም።"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "ቦታ {slot}: ይዘቱ አሮጌውም አዲሱም አይደለም። ወደነበረበት ለመመለስ: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "ባልተረጋገጠ ፈርምዌር ላይ ከማንበብ በላይ መፍቀድ"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "የሙከራ ተግባር መፍቀድ"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "ማረጋገጫ አለመጠየቅ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "የቦታ ቁጥር፣ ከ1 እስከ {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "ለNUX Optima Air ፔዳል የሊኑክስ አርታዒ።"
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "የውሂብ አቃፊ (ነባሪ: የXDG ውሂብ አቃፊ)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "መስኮቱን ክፈት"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "የፈርምዌር ስሪት፣ ቅድመ ዝግጅት እና ቅንብሮች"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23ቱ የIR ቦታዎች"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "የአንድ ቦታ IR ምትኬ ውሰድ"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "ፔዳሉ የሚልከውን አትም"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "የማዳመጥ ሰከንዶች"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "መጀመሪያ ሁኔታውን አንብብ"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "መጀመሪያ ማስታወቂያውን ላክ (ሙከራ)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "WAV ወደ አንድ ቦታ ጻፍ"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "የWAV ፋይል"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "የቦታው ስም (ነባሪ: የፋይሉ ስም)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "አንድ ቦታ እንደ WAV ላክ"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "የሚጻፍ የWAV ፋይል"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "አንድ ቦታ ወይም ሁሉንም ከምትኬ እንደገና ጻፍ"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "የምትኬ አቃፊ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "የቦታ ቁጥር፣ ከ1 እስከ {count} (ነባሪ: ሁሉም)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "የተምትኮውን ስም ተካ"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "23ቱን ቦታዎች ምትኬ ውሰድ"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "ምትኬዎችን ዘርዝር"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "የተቋረጠ መጻፍን አረጋግጥ"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "የሙከራ ተግባራት መዝገብ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "ወደ ቦታ {slot} መጻፍ ሳይጠናቀቅ ቀርቷል። ፔዳሉ ለተወሰነ ጊዜ ብቻውን ይተዋል፤ ከዚያ ያሂዱ: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "ስህተት: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "ተቋርጧል።"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "ባይት {byte} ከ7 ቢት ውጭ ነው"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} ባለ7 ቢት ባይቶች {bits} የመሙያ ቢቶችን ይተዋሉ፣ enc7 ከ6 በላይ ፈጽሞ አያመርትም"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "በባለ7 ቢት ዥረት መጨረሻ ላይ ዜሮ ያልሆኑ የመሙያ ቢቶች"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "አንድ ብሎክ {expected} ባይት ነው፣ {got} ደረሰ"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "የብሎክ ድምር {sum} ({hex}) ከተላለፉት 14 ቢቶች ይበልጣል (ከፍተኛ {max}): በፔዳሉ ላይ ፈጽሞ አልታየም፣ እስኪረጋገጥ ድረስ ውድቅ ተደርጓል"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "የተመሰጠረ ብሎክ {expected} ባይት ነው፣ {got} ደረሰ"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "በተመሰጠረ ብሎክ ውስጥ ከ7 ቢት ውጭ የሆነ ባይት"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "የተሳሳተ የብሎክ የማረጋገጫ ድምር"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "የማስተላለፊያ መጨረሻ ድምር ቢያንስ አንድ ብሎክን ይሸፍናል"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "ርዝመት {length} የ{block} ብዜት አይደለም"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "እሴት {value} ከ28 ቢት ውጭ ነው"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "ባለ28 ቢት ድምር 4 ባይት ይወስዳል፣ {got} ደረሰ"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "ባይት {byte} በባለ28 ቢት ድምር ውስጥ ከ7 ቢት ውጭ ነው"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "መጻፍ ተቋርጧል: ፔዳሉ ለተጨማሪ {seconds} ሰከንድ ብቻውን ይተዋል።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: የመጻፍ መልዕክት ሊላክ የሚችለው በተሟላ የቦታ መጻፍ (ምትኬ፣ መዝገብ፣ መልሶ ማንበብ) ብቻ ነው።"
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "የፈርምዌር ስሪት ገና አልተነበበም: ማንበብ ብቻ ተፈቅዷል።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "ያልታወቀ ፈርምዌር {found} (ፕሮቶኮሉ በ{verified} ላይ ተረጋግጧል): ማንበብ ብቻ ተፈቅዷል።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” የሙከራ ተግባር (“{function}”) ነው፣ በፔዳሉ ላይ ገና አልተረጋገጠም።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: እንደገና ሊላክ የሚችለው ማንበብ ብቻ ነው።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "ከ{count} ሙከራዎች በኋላ ፔዳሉ ለ“{message}” መልስ አልሰጠም።"
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "ፔዳሉ SysEx ያለ እረፍት መላኩን ቀጥሏል።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "ቦታ {slot}ን ማንበብ አልተቻለም: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "የቦታ {slot} ሁለት ንባቦች የተለያየ ውሂብ ይሰጣሉ።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "ወደ ቦታ {slot} መጻፍ ተቋርጧል: ማንኛውንም ነገር ከመላክዎ በፊት ተጨማሪ {seconds} ሰከንድ ይጠብቁ።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "ወደ ቦታ {slot} መጻፍ ተቋርጧል: ያ ቦታ እስኪስተካከል ድረስ፣ መጻፍ የሚቻልበት ብቸኛው ቦታ እሱ ነው።"
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "መጻፍ ውድቅ ተደርጓል: ፈርምዌሩ አልተነበበም፣ ወይም ፕሮቶኮሉ የተረጋገጠበት አይደለም።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "ከመጻፍ በኋላ፣ ቦታ {slot} የተላከውን አልያዘም።"
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "ፔዳሉ IRን ሲጽፍ ስህተት ሪፖርት ያደርጋል።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "ያልተጠበቀ የብሎክ ማረጋገጫ: {status}።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "በ{expected} ፈንታ {count} የብሎክ ማረጋገጫ ደረሰ።"
+msgstr[1] "በ{expected} ፈንታ {count} የብሎክ ማረጋገጫዎች ደረሱ።"
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "የራስጌ እና የግርጌ ማረጋገጫዎች ጠፍተዋል ወይም ያልተጠበቁ ናቸው።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "ከመጻፍ በኋላ፣ የስሙ ማሚቶ ከአንድ ጊዜ ፈንታ {count} ጊዜ መጣ።"
+msgstr[1] "ከመጻፍ በኋላ፣ የስሙ ማሚቶ ከአንድ ጊዜ ፈንታ {count} ጊዜ መጣ።"
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "ከመጻፍ በኋላ፣ የስሙ ማሚቶ ከተላከው ጋር አይዛመድም።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "ከመጻፍ በኋላ፣ የቦታው መረጃ ከአንድ ጊዜ ፈንታ {count} ጊዜ መጣ።"
+msgstr[1] "ከመጻፍ በኋላ፣ የቦታው መረጃ ከአንድ ጊዜ ፈንታ {count} ጊዜ መጣ።"
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "ከመጻፍ በኋላ፣ የቦታው መረጃ ከተላከው ጋር አይዛመድም።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "ምትኬ {backup} ምንም ቦታ አልያዘም።"
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "በማወዳደር ላይ"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "የምትኬ {backup} ቦታ {slot} ከፔዳሉ ይለያል ነገር ግን እንዳለ መጻፍ አይቻልም ({error})። ምንም አልተጻፈም።"
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "በመመለስ ላይ"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "ቦታ {requested} ከተጠየቀ በኋላ ፔዳሉ ቦታ {announced}ን ያውጃል።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "ለሠንጠረዥ {table} መጻፍ ከፔዳሉ ምንም ማሚቶ የለም።"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "የሠንጠረዥ {table} ማሚቶ ከተላከው ይለያል።"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "ተምሳሌታዊ አገናኝ ነው"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "መደበኛ ፋይል አይደለም"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "በ{expected} ፈንታ {size} ባይት"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} ባይት፣ ከተፈቀደው {allowed} በላይ"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "በሚነበብበት ጊዜ መጠኑ ተቀይሯል"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "መቆለፊያ {file}ን መፍጠር አልተቻለም: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "የተደገመ ቁልፍ “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} መደበኛ JSON አይደለም"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "JSON አይደለም: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "መስክ “{field}” የለም"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "ያልታወቀ ቅርጸት {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "ያልታወቀ መስክ “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "አቃፊ {file}ን ማመሳሰል አልተቻለም: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "አቃፊ {folder}ን መፍጠር አልተቻለም: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "አቃፊ {folder}ን መፍጠር አልተቻለም: {path} አቃፊ አይደለም"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "{file}ን በቦታው ማስቀመጥ አልተቻለም: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "ከመጻፍ በፊት"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "የቦታ ንባብ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "ሙሉ ምትኬ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "ማስመጣት"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "የተበላሸ ቦታ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "WAV ጫን"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "ቦታ <b>{slot}</b> “{name}” በ<b>{file}</b> ይተካ?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "የቦታው የአሁኑ ይዘት ከመጻፉ በፊት ምትኬ ይወሰዳል።"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "የቦታ ስም"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "ሰርዝ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "ወደ ፔዳሉ ጻፍ"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}፣ {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "ምትኬዎች"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "ይህን ቦታ መልስ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "ሙሉውን ምትኬ መልስ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "ዝጋ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "እስካሁን ምንም ምትኬ የለም።"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: ቦታ {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} ቦታ"
+msgstr[1] "{backup}: {count} ቦታዎች"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: የማይነበብ"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "ይህ ምትኬ ጥቅም ላይ ሊውል አይችልም: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "የፔዳሉ {count} ቦታ ወደዚህ ምትኬ ሁኔታ ይመለስ?"
+msgstr[1] "የፔዳሉ {count} ቦታዎች ወደዚህ ምትኬ ሁኔታ ይመለሱ?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "የፔዳሉ ቦታ {slot} ወደዚህ ምትኬ (“{name}”) ሁኔታ ይመለስ?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}።\n\nከምትኬው የሚለየው ቦታ ብቻ ይጻፋል፣ የአሁኑ ይዘቱም ልክ ከዚያ በፊት ምትኬ ይወሰድለታል።"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "መልስ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "ኤሌክትሪክ ሰማያዊ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "ሲያን"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "አረንጓዴ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "ቢጫ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "ብርቱካናማ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "ቀይ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "ሮዝ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "ሐምራዊ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "ከነጭ የደበዘዘ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "የበይነገጽ ቀለም"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "የቀለም ኮድ፣ ለምሳሌ #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "የሚጠበቀው: # እና ስድስት የሄክሳዴሲማል አሃዞች"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "ፔዳሉን በመፈለግ ላይ…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "ቀዳሚውን ሁኔታ መልስ"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "ሁሉንም ምትኬ ውሰድ"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "ምትኬዎች…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "WAV ጫን…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "እንደ WAV ላክ…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "የWAV ፋይሎች"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "የWAV ፋይል ይምረጡ"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "በአንድ ጊዜ አንድ ፋይል: አንድ ቦታ አንድ IR ብቻ ይይዛል።"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "እንደ WAV ላክ"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "መልሶ ማግኘት ተጠናቋል። የተጻፉ እና እንደገና ሲነበቡ ተመሳሳይ የሆኑ ቦታዎች: {rewritten}። ቅንብሮች ብቻ: {settings}። አስቀድሞ ከምትኬው ጋር ተመሳሳይ የሆኑ: {unchanged}።"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "ቦታ {slot}: ከተቋረጠው መጻፍ በኋላ፣ አሁንም ከዚህ በፊት የያዘውን ይዟል። ምንም የሚደረግ ነገር የለም።"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "ቦታ {slot}: ከተቋረጠው መጻፍ በኋላ፣ አሮጌውንም አዲሱንም ይዘት አልያዘም። እስኪስተካከል ድረስ፣ መጻፍ የሚቻልበት ብቸኛው ቦታ እሱ ነው።"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "ቦታ {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "ቦታ {slot}: “{name}” ተጻፈ እና እንደገና ሲነበብ ተመሳሳይ ሆነ። ቀዳሚው ይዘት በ{backup} ውስጥ ተምትኳል"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "ቦታ {slot}ን በመጻፍ ላይ…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "ቦታ {slot}ን መጻፍ አልተሳካም: {reason} ፔዳሉ ለ{seconds} ሰከንድ ብቻውን ይተዋል፣ ከዚያ የቦታው ሁኔታ ይረጋገጣል።"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "ምትኬው አልተሳካም: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "መልሶ ማግኘት ቆሟል: {reason} ቀደም ሲል የተስተናገዱት ቦታዎች ሥርዓት ላይ ናቸው፤ የፔዳሉ ሁኔታ እንደገና ይነበባል።"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "ተገናኝቷል፣ ፈርምዌር {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "ተቋርጧል: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "ማስጠንቀቂያ: ፔዳሉ ያወጀው መለያ ከተነበበው ውሂብ ጋር አይዛመድም።"
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "ማቆም ተጠይቋል።"
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "ምትኬ"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "ልክ ያልሆነ የድግግሞሽ ክልል ወይም የነጥቦች ብዛት"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "የማይነበብ የድምፅ ፋይል: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "ፋይሉ {count} ቻናሎች አሉት: የመጀመሪያው ብቻ ይቀራል።"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "ባዶ የድምፅ ፋይል: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "ፋይሉ ገደብ የለሽ ናሙናዎችን ይዟል: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "የ{rate} Hz የናሙና መጠን: ፋይሉ ወደ {target} kHz በድጋሚ ተናሙኗል።"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "የፋይሉ ርዝመት {duration} ms ነው: የመጀመሪያዎቹ {count} ናሙናዎች ({limit} ms) ብቻ ይቀራሉ።"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "ፔዳሉ የመጀመሪያዎቹን {count} ናሙናዎች ({limit} ms) ብቻ ያጫውታል: የዚህ IR ቀሪ ክፍል ይቀመጣል ግን አይሰማም።"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "{file}ን መመጠን አልተቻለም: በ400 Hz እና 3 kHz መካከል ምልክት የለም።"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "{file}ን መመጠን ከተንሳፋፊ ነጥብ ቁጥሮች ክልል ይበልጣል።"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "ከመመጠን በኋላ፣ IR ወደ {peak} ከፍታ ይደርሳል (የተለመዱ IRዎች ከ10 በታች ይቆያሉ): ፋይሉ በ400 Hz እና 3 kHz መካከል በጣም ጥልቅ ጉድጓድ አለው፣ የውጤቱ ደረጃም በጣም ከፍተኛ ሊሆን ይችላል።"
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "የመዝገብ ቀን የሰዓት ክልል መያዝ አለበት"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "ቦታ ከክልል ውጭ ነው"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: የሰዓት ክልል ያለው የISO ቀን ይጠበቅ ነበር"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: የሰዓት ክልል ያለው የISO ቀን፣ ወይም null፣ ይጠበቅ ነበር"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: የምትኬ አቃፊ ስም ይጠበቅ ነበር"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: 64 የሄክሳዴሲማል አሃዞች ይጠበቁ ነበር"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: በሄክሳዴሲማል 32 ባይቶች ይጠበቁ ነበር"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "መለያ ከክልል ውጭ ነው"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: ቡሊያን ይጠበቅ ነበር"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "የማይነበብ የመጻፍ መዝገብ: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "መዝገብ {file}ን ማስወገድ አልተቻለም: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "የ{size} ባይት MD5 በ{expected} ፈንታ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "የ{size} ባይት የተመሰጠረ ብሎክ በ{expected} ፈንታ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "መልዕክት “{message}”: የተበላሸ Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "መልዕክት “{message}”: Control Change ቅንብር ነው"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "መልዕክት “{message}”: Control Change በተዘጋው ዝርዝር ውስጥ የለም"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "መልዕክት “{message}”: እሴት {value} ከ{max} ይበልጣል"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "መልዕክት “{message}” በትክክል አልተቀረጸም"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "መልዕክት “{message}”: ከ7 ቢት ውጭ የሆነ ባይት"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "መልዕክት “{message}” በተዘጋው ዝርዝር ውስጥ የለም"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "መልዕክት “{message}”: በ{expected} ፈንታ {size} ባይት"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "መልዕክት “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "ያልተጠበቀ የስሪት ጥያቄ"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "በሙከራ ላይ ያለው ማስታወቂያ 70 05 01 ብቻ ተፈቅዷል"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "ንባብ 70 26 7F ብቻ ተፈቅዷል"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "ዜሮ ያልሆነ አካል ያለው የሠንጠረዥ ጥያቄ"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "የሠንጠረዥ መጻፍ: ቅንብር ይጠበቅ ነበር፣ እሴቶች ከ0 እስከ 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "የተበላሸ የንባብ ጥያቄ"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "ቦታ ከክልል ውጭ ነው ወይም አካሉ ዜሮ አይደለም"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "ትዕዛዝ {command} ያለ የይዘት ደንብ"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "ከመጻፍ ምድብ ውጭ የሆነ የመጫን መልዕክት"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "የመጻፍ ትዕዛዝ {command} ያለ የይዘት ደንብ"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "የተበላሸ የቦታ ስም"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "ቢት 31 የተቀመጠበት መለያ (የፋብሪካ IR): ተግባሩ ገና አልተከፈተም"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "የመጫን ራስጌ: ቦታ ከክልል ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "የመጫን ራስጌ: MD5 ከትናንሽ የሄክሳዴሲማል አሃዞች ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "የመጫን ራስጌ ከታየው ቅርጽ ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "የመጫን ግርጌ: ከባንዲራው በኋላ ዜሮ ያልሆነ ባይት"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "የመጨረሻ ብሎክ: ቦታ ከክልል ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "የመጨረሻ ብሎክ ከታየው ቅርጽ ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "የውሂብ ብሎክ: አድራሻ ወይም ቆጣሪ ከክልል ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "የውሂብ ብሎክ: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "የውሂብ ብሎክ: ጭነቱ enc_msb ከሚያመርተው ቅርጽ ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "የውሂብ ብሎክ: ከIR {size} ባይቶች ባሻገር ዜሮ ያልሆነ መሙያ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "መለያ {value} ከ0..{max} ውጭ ነው: ቢት 31 ለፋብሪካ IRዎች የተጠበቀ ነው፣ ገና ያልተከፈተ ተግባር"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "የ{size} ባይት ስም፣ ቢበዛ {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "የ{size} ባይት አካል በ{expected} ፈንታ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "የቦታ {slot} መረጃ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "ሠንጠረዥ {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "የአሁኑ ሁኔታ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "የቦታ {slot} IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "የቦታ {slot} ማግበር"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "አንድ ሠንጠረዥ {count} እሴቶች አሉት፣ {got} ደረሰ"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "ሠንጠረዥ {table}: እሴት {value!r} ከ0..{max} ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "የሠንጠረዥ {table} መጻፍ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "ያልታወቀ ቅንብር “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "ቅንብር “{name}”: እሴት {value!r} ከ0..{max} ውጭ ነው"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "{name}ን ወደ {value} ማቀናበር"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "የግንኙነት ማስታወቂያ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "የቦታ ስም ከ1 እስከ {max} ቁምፊዎች አሉት"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "የቦታ ስም የሚታተሙ የASCII ቁምፊዎችን ብቻ ይይዛል"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR ገደብ የለሽ ናሙና ይዟል"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "የቦታ {slot} መጫን፣ {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "ራስጌ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "ብሎክ {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "መጨረሻ"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "ግርጌ"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "ስም"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "መረጃ"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "በ{expected} ፈንታ የ{size} ባይት የመጨረሻ ድምር"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "የቦታ ስም ባዶ ነው ወይም ከሚታተመው ASCII ውጭ ነው"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "ከቦታ ስም መጨረሻ በኋላ ዜሮ ያልሆኑ ባይቶች"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "የNUX SysEx ራስጌ ጠፍቷል"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "የመጨረሻ F7 የለም"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "ከ7 ቢት ውጭ የሆነ ባይት"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "በ{expected} ፈንታ ዓይነት {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "በ{expected} ፈንታ ትዕዛዝ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "ያልተጠበቀ የመጫን ማረጋገጫ"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "ያልታወቀ የማረጋገጫ ሁኔታ: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "ያልተጠበቀ የስሪት መልስ: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "ትዕዛዝ {command}: የቦታ መረጃ የሚይዙት 0x5c (የመረጃ ንባብ) እና 0x5b (የስም ማሚቶ) ብቻ ናቸው"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "በ{expected} ፈንታ የተመሰጠረ ርዝመት {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "ያልተጠበቀ የቦታ መረጃ መልስ: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "የማይነበብ የቦታ መረጃ: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "ፔዳሉ ቦታ {slot}ን ያውጃል"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "ለሠንጠረዥ {table} ያልተጠበቀ መልስ: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "ሠንጠረዥ {table}: እሴት {value} ከ100 ይበልጣል"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "ያልተጠበቀ የሁኔታ መልስ: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "የንባብ ራስጌ: በ{expected} ፈንታ ትዕዛዝ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "የንባብ ራስጌ የመጨረሻ ባንዲራ ይዟል"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "ዜሮ ያልሆነ የንባብ ራስጌ፣ በዚህ ቅርጽ ፈጽሞ አልታየም"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "ብሎክ {block}: በ{expected} ፈንታ ትዕዛዝ {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "ብሎክ {block}: ዜሮ ያልሆነ ባንዲራ {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "ብሎክ {block}: በ{expected} ፈንታ አድራሻ {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "ብሎክ {block}: በ{expected} ፈንታ ቆጣሪ {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "ብሎክ {block} የማይነበብ: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "የመጨረሻ ብሎክ: በ{expected} ፈንታ ትዕዛዝ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "ያለ ባንዲራ የመጨረሻ ብሎክ"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "የመጨረሻ ብሎክ: በ{expected} ፈንታ ቆጣሪ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "የመጨረሻ ብሎክ: ከባንዲራው፣ ከድምሩ እና ከቆጣሪው ውጭ የባዘነ ባይት"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "የማይነበብ የመጨረሻ ድምር: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "የተሳሳተ የንባብ መጨረሻ ድምር"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "ግርጌ: በ{expected} ፈንታ ትዕዛዝ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "ያለ ባንዲራ ግርጌ"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "ግርጌ: ከባንዲራው በኋላ የባዘነ ባይት"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "በ{expected} ፈንታ {count} መልዕክቶች ደረሱ"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "መልዕክት {number} ለIR ንባብ እንግዳ ነው: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "ቀለም {colour!r}: በትናንሽ ሆሄያት “#rrggbb” ይጠበቅ ነበር"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "ያልታወቀ ተግባር “{name}”። የሚታወቁት: {known}።"
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "ያለ መደጋገም የተደረደረ የታወቁ ተግባራት ዝርዝር ይጠበቅ ነበር"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "የማይነበብ የሙከራ መዝገብ: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "የሙከራ መዝገቡ በሌላ ሂደት ተቆልፏል ({file}): ሌላኛው ትዕዛዝ ከተጠናቀቀ በኋላ እንደገና ይሞክሩ።"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "{file}ን መቆለፍ አልተቻለም: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "ፔዳሉ አልተገኘም: “NAI5” የድምፅ ካርድ የለም። የUSB ገመዱን ያረጋግጡ።"
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR አልተዘጋጀም: መቆለፊያውን መውሰድ አይቻልም።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "መቆለፊያ {file}ን መውሰድ አልተቻለም: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "ፔዳሉ አስቀድሞ በሌላ የoptima-air ምሳሌ ጥቅም ላይ ነው።"
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "መቆለፊያው አስቀድሞ ተለቋል: ከአሁን በኋላ ለወደብ ሊሰጥ አይችልም።"
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "ይህ መቆለፊያ አስቀድሞ የአንድ ወደብ ነው: ለሁለተኛ ወደብ ሊሰጥ አይችልም።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "መቆለፊያውን መልቀቅ አልተቻለም: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "ፔዳሉ ከአሁን በኋላ አይመልስም: ተነቅሏል ወይም ተጣብቋል።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "ወደብ {port}ን ማዋቀር አልተቻለም: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "የወደብ {port} ግቤትን ማዘጋጀት አልተቻለም: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "ወደብ {port} የለም።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "ወደ {port} መድረስ ተከልክሏል። በ“audio” ቡድን ውስጥ መሆንዎን ያረጋግጡ (ትዕዛዝ: id)።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "ወደብ {port} አስቀድሞ በሌላ ፕሮግራም ጥቅም ላይ ነው።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "ወደብ {port} ከአሁን በኋላ አይገኝም።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "ወደብ {port}ን መክፈት አልተቻለም: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "መጻፍ አልተቻለም: ወደቡ ተዘግቷል።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "ወደ ወደብ {port} መጻፍ አልተሳካም: ምንም ባይት አልተቀበለም።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "ወደ ወደብ {port} መጻፍ አልተሳካም: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "ወደብ {port}ን ማጽዳት በተከታታይ {count} ጊዜ ተቋርጧል: መልዕክቱ ለከርነሉ ተሰጥቷል፣ ግን መውጣቱን መጠበቅ አልተቻለም።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "ከክልል ውጭ መጠበቅ: {wait} ሰከንድ (ቢበዛ {max} ሰከንድ)።"
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "ማንበብ አልተቻለም: ወደቡ ተዘግቷል።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "ከወደብ {port} ማንበብ አልተሳካም: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "ወደብ {port} የግቤቱን ሁኔታ አያሳውቅም ({error}): የባይት መጥፋትን መለየት አይቻልም፣ እዚህ ላይ ይቆማል።"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "የወደብ {port} ሁኔታን ማንበብ አልተሳካም: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "ወደብ {port}ን መዝጋት አልተሳካም: {error}"

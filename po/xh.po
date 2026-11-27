@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "ye-{bits} ibhithi"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: kulindeleke inani elipheleleyo, kufunyenwe {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: kulindeleke inani elipheleleyo okanye akukho nto, kufunyenwe {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "igama lesilothi: kulindeleke ii-byte, kufunyenwe {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: kulindeleke isicatshulwa, kufunyenwe {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "isilothi {slot} siphandle kwi-1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "igama lesilothi le-byte ezi-{size} endaweni ye-{expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "isikhombisi {value} siphandle kwi-0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} siphandle kwi-0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Isizathu esingaziwayo sekopi yogcino “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "i-firmware ayikho: sisizathu “{reason}” kuphela esiyivumelayo"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "igama lekopi yogcino elonakeleyo “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "isizathu “{reason}” sahlukile kwesekopi yogcino {name}, esithi “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "umhla ongafundekiyo {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "umhla {date!r} ongenasithuba sexesha"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "umhla ongeyonqubo {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "umhla {date!r} wahlukile kwixesha lekopi yogcino {name}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: kulindeleke umhla, kufunyenwe {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} kufuneka ibe nesithuba sexesha (umzekelo datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Ayikwazi ukubhala kwifolda {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ayifolda"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Ayikwazi ukujonga {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Ayikwazi ukwenza ikopi yogcino {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data: kulindeleke ii-byte, kufunyenwe {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "i-IR yi-{expected} ye-byte, kufunyenwe {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "Isilothi {slot} sele sigciniwe kwi-{backup}: ikopi yogcino ibhalwa kube kanye kuphela, yenza enye entsha."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Irekhodi yesilothi engafundekiyo: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "kulindeleke into ye-JSON, kufunyenwe {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "intsimi “{field}” ayikho okanye ayisosicatshulwa"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "Ayikwazi ukubala uphawu: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Irekhodi yesilothi itshintshiwe okanye yonakele: {file} (uphawu olungeyonyani)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "intsimi “{field}”: kulindeleke inani elipheleleyo"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "intsimi “{field}”: kulindeleke isicatshulwa"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "intsimi “{field}”: kulindeleke inani elipheleleyo okanye null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "irekhodi yesilothi {record} ifayilwe phantsi kwesilothi {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: kulindeleke i-hexadecimal ngoonobumba abancinci"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "irekhodi yekopi yogcino “{record}” ifunyenwe kwi-“{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Ayikwazi ukufunda {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Ikopi yogcino engafundekiyo: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "ayikho"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Irekhodi yesilothi engahambelaniyo: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Idatha engafundekiyo: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Iminwe engeyiyo: {file} ayizukusetyenziswa."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "isikhombisi siphinde sabalwa njenge-{computed}, irekhodi ithi {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Isilothi esisebenzayo"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "I-IR iyakhanya/icinyiwe"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "I-Preamp iyakhanya/icinyiwe"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” ayiyonombolo yesilothi"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Ukubhalwa kwisilothi {slot} kuphazanyisiwe: ipedali iyashiywa yodwa enye i-{seconds} s. Emva koko qhuba: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "akwaziwa ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "akwaziwa ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "I-firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "I-preset: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "isilothi {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "isilothi esingaziwayo ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "I-IR: iyakhanya, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "I-IR: icinyiwe, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "I-Preamp: iyakhanya"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "I-Preamp: icinyiwe"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Igama"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Isikh."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Ivolumu"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Ukusika okuphantsi"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Ukusika okuphezulu"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Isilumkiso: isikhombisi esibhengezwe yipedali ({announced}) asihambelani nedatha efundiweyo ({computed}), nasemva kokufunda kwakhona. Ikopi yogcino yenziwa noko."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Isilothi {slot} “{name}” sigcinwe kwi-{backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx i-{size} ye-byte: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change itshaneli {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[itshaneli {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, oko kukuthi {converted} kwi-100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: ubuncinane {min} ubukhulu {max} (imiyalezo engu-{count})"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "amanqanaba"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Isilumkiso: i-SysEx {count} ilahlekile ngexesha lokwamkelwa."
+msgstr[1] "Isilumkiso: ii-SysEx ezi-{count} zilahlekile ngexesha lokwamkelwa."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Isilumkiso: ukuphuphuma kwebhafa yokungena kwenzeke amaxesha angama-{count}, ii-byte zilahlekile."
+msgstr[1] "Isilumkiso: ukuphuphuma kwebhafa yokungena kwenzeke amaxesha angama-{count}, ii-byte zilahlekile."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "e"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "ewe"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [e/H] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Kurhoxisiwe: akukho nto ibhaliweyo."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Thumela isibhengezo soqhagamshelo, umsebenzi wovavanyo “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Kurhoxisiwe: akukho nto ithunyelweyo."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Isibhengezo sele sithunyelwe luthotho loqhagamshelo: asithunyelwa kabini."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Isibhengezo sithunyelwe: impendulo yamkelwe"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Isibhengezo sithunyelwe: akukho mpendulo"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: iqinisekisiwe"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: ikuvavanyo"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” ilindele igama lomsebenzi."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Igama “{name}” liliwe ({error}). Nika elinye usebenzisa --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Isilumkiso: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Bhala ngaphezulu kwesilothi {slot} “{current}” nge-“{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Isilothi {slot}: “{name}” sibhaliwe kwaye siyafana xa sifundwa kwakhona."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Umxholo wangaphambili (“{name}”) ugcinwe kwi-{backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "I-{file} sele ikhona. Yongeza --yes ukuyibhala ngaphezulu."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Ayikwazi ukubhala {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Isilothi {slot} “{name}” sithunyelwe ngaphandle kwi-{file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Ukufunda: {done} kwi-{total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Isilumkiso: isikhombisi esibhengeziweyo sesilothi {slot} asihambelani nedatha efundiweyo, nasemva kokufunda kwakhona. Sigcinwe noko."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Zonke izilothi ezingama-23 zigcinwe kwi-{backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Akukho kopi zogcino."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} isilothi"
+msgstr[1] "{count} izilothi"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "YONAKELE ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "akukho"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "Inketho ethi --name isebenza kuphela ekubuyiseleni isilothi esinye."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Buyisela ipedali kwimeko yekopi yogcino {backup} ({count} isilothi)? Izilothi ezahlukileyo kuphela ziza kubhalwa kwakhona, emva kokugcina umxholo wazo."
+msgstr[1] "Buyisela ipedali kwimeko yekopi yogcino {backup} ({count} izilothi)? Izilothi ezahlukileyo kuphela ziza kubhalwa kwakhona, emva kokugcina umxholo wazo."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} kwi-{total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Izilothi ezibhalwe kwakhona kwaye ziyafana xa zifundwa kwakhona: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Izilothi eziseto zazo kuphela ezibuyiselweyo: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Izilothi esele ziyafana nekopi yogcino: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Bhala kwakhona isilothi {slot} “{current}” kwikopi yogcino {backup} (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Isilothi {slot} sibuyiselwe kwi-{backup}, emva koko siyafana xa sifundwa kwakhona."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Umxholo ongeniswe kwenye indawo (“{name}”) ugcinwe kwi-{backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Akukho kubhala okuphazanyisiweyo."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Isilothi {slot}: ukubhala okuphazanyisiweyo bekugqityiwe. Akukho nto ekufuneka yenziwe."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Isilothi {slot}: sisenawo umxholo esasinawo ngaphambili. Akukho nto ekufuneka yenziwe."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Isilothi {slot}: umxholo waso awuwomdala kwaye awuwomtsha. Ukusibuyisela kwimeko yaso yangaphambili: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "vumela ngaphezu kokufunda kwi-firmware engaqinisekiswanga"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "vumela umsebenzi wovavanyo"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "musa ukucela uqinisekiso"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "inombolo yesilothi, ukusuka kwi-1 ukuya kwi-{count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Umhleli weLinux wepedali ye-NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "ifolda yedatha (okuzenzekelayo: ifolda yedatha ye-XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "vula ifestile"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "uguqulelo lwe-firmware, i-preset neeseto"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "izilothi ezingama-23 ze-IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "gcina i-IR yesilothi"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "shicilela oko ipedali ikuthumelayo"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "imizuzwana yokumamela"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "funda imeko kuqala"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "thumela isibhengezo kuqala (uvavanyo)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "bhala i-WAV kwisilothi"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "ifayile ye-WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "igama lesilothi (okuzenzekelayo: igama lefayile)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "thumela isilothi njenge-WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "ifayile ye-WAV ekufuneka ibhalwe"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "bhala kwakhona isilothi, okanye zonke, kwikopi yogcino"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "ifolda yekopi yogcino"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "inombolo yesilothi, ukusuka kwi-1 ukuya kwi-{count} (okuzenzekelayo: zonke)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "tshintsha igama eligciniweyo"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "gcina izilothi ezingama-23"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "bhala uluhlu lweekopi zogcino"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "jonga ukubhala okuphazanyisiweyo"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "irejista yemisebenzi yovavanyo"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Ukubhalwa kwisilothi {slot} kushiywe kungagqitywanga. Ipedali iyashiywa yodwa ixesha elithile; emva koko qhuba: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Impazamo: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Kuphazanyisiwe."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "i-byte {byte} iphandle kwii-bhithi ezi-7"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "ii-byte ezi-7-bhithi ezi-{count} zishiya ii-bhithi zokuzalisa ezi-{bits}, i-enc7 ayize ivelise ngaphezu kwe-6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "ii-bhithi zokuzalisa ezingezizo zero ekupheleni komsinga we-7-bhithi"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "ibhloko yi-{expected} ye-byte, kufunyenwe {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "isixa sebhloko {sum} ({hex}) singaphaya kwee-bhithi ezi-14 ezithunyelweyo (ubukhulu {max}): asizange sibonwe kwipedali, siyaliwe kude kuqinisekiswe"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "ibhloko efakwe ikhowudi yi-{expected} ye-byte, kufunyenwe {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "i-byte ephandle kwii-bhithi ezi-7 kwibhloko efakwe ikhowudi"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "isixa sokujonga sebhloko esingeso"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "isixa sasekupheleni kokuthunyelwa sigubungela ibhloko enye ubuncinane"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "ubude {length} abuzizo iziphindaphindo ze-{block}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "ixabiso {value} liphandle kwii-bhithi ezingama-28"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "isixa se-28-bhithi sithatha ii-byte ezi-4, kufunyenwe {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "i-byte {byte} iphandle kwii-bhithi ezi-7 kwisixa se-28-bhithi"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Ukubhalwa kuphazanyisiwe: ipedali iyashiywa yodwa enye i-{seconds} s."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: umyalezo wokubhala unokuthunyelwa kuphela kukubhalwa kwesilothi okuzeleyo (ikopi yogcino, ijenali, ukufunda kwakhona)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Uguqulelo lwe-firmware alukafundwa: kuvunyelwe ukufunda kuphela."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "I-firmware engaziwayo {found} (iprotokholi iqinisekiswe kwi-{verified}): kuvunyelwe ukufunda kuphela."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” ngumsebenzi wovavanyo (“{function}”), ongekaqinisekiswa kwipedali."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: ukufunda kuphela okunokuthunyelwa kwakhona."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Ipedali ayizange iphendule “{message}” emva kweenzame ezi-{count}."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Ipedali iyaqhubeka ithumela i-SysEx ngaphandle kokuphumla."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Ayikwazi ukufunda isilothi {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Ukufunda kabini kwesilothi {slot} kunika idatha eyahlukileyo."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Ukubhalwa kwisilothi {slot} kuphazanyisiwe: linda enye i-{seconds} s ngaphambi kokuthumela nantoni na."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Ukubhalwa kwisilothi {slot} kuphazanyisiwe: kude kulungiswe lo silothi, ngoyena kuphela unokubhalwa."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Ukubhala kuliwe: i-firmware ayifundwanga, okanye ayisiyiyo leyo iprotokholi eqinisekiswe kuyo."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Emva kokubhala, isilothi {slot} asinalo oko kuthunyelweyo."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Ipedali ixela impazamo ngelixa ibhala i-IR."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Isiqinisekiso sebhloko esingalindelekanga: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "Kwamkelwe isiqinisekiso sebhloko esi-{count} endaweni ye-{expected}."
+msgstr[1] "Kwamkelwe iziqinisekiso zebhloko ezi-{count} endaweni ye-{expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Iziqinisekiso zentloko nezinyawo azikho okanye azilindelekanga."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Emva kokubhala, isiphindiso segama safika amaxesha angama-{count} endaweni yokuba kube kanye."
+msgstr[1] "Emva kokubhala, isiphindiso segama safika amaxesha angama-{count} endaweni yokuba kube kanye."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Emva kokubhala, isiphindiso segama asihambelani noko kuthunyelweyo."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Emva kokubhala, ulwazi lwesilothi lufike amaxesha angama-{count} endaweni yokuba kube kanye."
+msgstr[1] "Emva kokubhala, ulwazi lwesilothi lufike amaxesha angama-{count} endaweni yokuba kube kanye."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Emva kokubhala, ulwazi lwesilothi aluhambelani noko kuthunyelweyo."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Ikopi yogcino {backup} ayinasilothi."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Ukuthelekisa"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Isilothi {slot} sekopi yogcino {backup} sahlukile kwipedali kodwa asinakubhalwa kwakhona kanye njengoko sinjalo ({error}). Akukho nto ibhaliweyo."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Ukubuyisela"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Ipedali ibhengeza isilothi {announced} emva kokucelwa kwesilothi {requested}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Akukho siphindiso kwipedali ekubhaleni kwetafile {table}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Isiphindiso setafile {table} sahlukile koko kuthunyelweyo."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "yikhonkco lophawu"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "ayiyifayile eqhelekileyo"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "i-{size} ye-byte endaweni ye-{expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "i-{size} ye-byte, ngaphezu kwe-{allowed} evunyelweyo"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "ubungakanani butshintshile ngexesha lokufunda"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Ayikwazi ukwenza ukhuselo {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "isitshixo esiphindiweyo “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} ayiyiyo i-JSON esemgangathweni"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "ayiyiyo i-JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "intsimi “{field}” ayikho"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "ifomathi engaziwayo {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "intsimi engaziwayo “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Ayikwazi ukuvumelanisa ifolda {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Ayikwazi ukwenza ifolda {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Ayikwazi ukwenza ifolda {folder}: i-{path} ayifolda"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Ayikwazi ukubeka {file} endaweni: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "phambi kokubhala"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "ukufunda isilothi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "ikopi yogcino epheleleyo"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "ukungenisa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "isilothi esonakeleyo"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Layisha i-WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Bhala ngaphezulu kwesilothi <b>{slot}</b> “{name}” nge-<b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Umxholo wangoku wesilothi uya kugcinwa phambi kokubhala."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Igama lesilothi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Rhoxisa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Bhala kwipedali"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Iikopi zogcino"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Buyisela esi silothi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Buyisela ikopi yogcino yonke"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Vala"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Akukabikho kopi zogcino."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: isilothi {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} isilothi"
+msgstr[1] "{backup}: {count} izilothi"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: ayifundekiyo"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Le kopi yogcino ayinakusetyenziswa: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Buyisela isilothi esi-{count} sepedali kwimeko yale kopi yogcino?"
+msgstr[1] "Buyisela izilothi ezi-{count} zepedali kwimeko yale kopi yogcino?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Buyisela isilothi {slot} sepedali kwimeko yale kopi yogcino (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nIsilothi esahlukileyo kwikopi yogcino kuphela esibhalwa kwakhona, kwaye umxholo waso wangoku ugcinwa ngaphambi kokuba."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Buyisela"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Luhlaza okwesibhakabhaka sombane"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Cyan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Luhlaza"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Mthubi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Orenji"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Bomvu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Pinki"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Mfusa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Mhlophe omdaka"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Umbala wesikhokelo"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Ikhowudi yombala, umzekelo #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Kulindeleke: # kunye needijithi ezintandathu ze-hexadecimal"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Kufunwa ipedali…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Buyisela imeko yangaphambili"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Gcina yonke into"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Iikopi zogcino…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Layisha i-WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Thumela njenge-WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "Iifayile ze-WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Khetha ifayile ye-WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Ifayile enye ngexesha: isilothi sibamba i-IR enye kuphela."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Thumela njenge-WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Ukubuyisela kugqityiwe. Izilothi ezibhalwe kwakhona kwaye ziyafana xa zifundwa kwakhona: {rewritten}. Iseto kuphela: {settings}. Sele ziyafana nekopi yogcino: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Isilothi {slot}: emva kokubhala okuphazanyisiweyo, sisenawo umxholo esasinawo ngaphambili. Akukho nto ekufuneka yenziwe."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Isilothi {slot}: emva kokubhala okuphazanyisiweyo, umxholo waso awuwomdala kwaye awuwomtsha. Kude kulungiswe, ngoyena silothi sinokubhalwa kuphela."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Isilothi {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Isilothi {slot}: “{name}” sibhaliwe kwaye siyafana xa sifundwa kwakhona. Umxholo wangaphambili ugcinwe kwi-{backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Kubhalwa isilothi {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Ukubhala isilothi {slot} akuphumelelanga: {reason} Ipedali iyashiywa yodwa i-{seconds} s, emva koko kuza kujongwa imeko yesilothi."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Ukugcina akuphumelelanga: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Ukubuyisela kume: {reason} Izilothi esele zisetyenzisiwe ziphangaleleyo; imeko yepedali iza kufundwa kwakhona."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Iqhagamshelwe, i-firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Ayiqhagamshelanga: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Isilumkiso: isikhombisi esibhengezwe yipedali asihambelani nedatha efundiweyo."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Kucelwe ukumisa."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Ikopi yogcino"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "uluhlu lweempawu okanye inani lamanqaku elingasebenziyo"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Ifayile yesandi engafundekiyo: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Ifayile inamatshaneli angama-{count}: eyokuqala kuphela igcinwayo."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Ifayile yesandi engenanto: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Ifayile iqulathe iisampulu ezingapheliyo: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Umgangatho wesampulu {rate} Hz: ifayile ihlaziywe kwi-{target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Ifayile ihlala i-{duration} ms: iisampulu zokuqala ezi-{count} kuphela ({limit} ms) ezigciniweyo."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Ipedali idlala iisampulu zokuqala ezi-{count} kuphela ({limit} ms): intsalela yale IR iya kugcinwa kodwa ayiyi kuviwa."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Ayikwazi ukwenza i-{file} ibe yinqanaba eliqhelekileyo: akukho msindo phakathi kwe-400 Hz ne-3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Ukwenza i-{file} ibe yinqanaba eliqhelekileyo kugqitha uluhlu lwamanani e-floating-point."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Emva kokwenza ibe yinqanaba eliqhelekileyo, i-IR ifikelela kwincopho ye-{peak} (ii-IR eziqhelekileyo zihlala ngaphantsi kwe-10): ifayile inomsantsa onzulu kakhulu phakathi kwe-400 Hz ne-3 kHz, kwaye inqanaba lemveliso lingaphezulu kakhulu."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "umhla wejenali kufuneka ube nesithuba sexesha"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "isilothi siphandle koluhlu"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: kulindeleke umhla we-ISO onesithuba sexesha"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: kulindeleke umhla we-ISO onesithuba sexesha, okanye null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: kulindeleke igama lefolda yekopi yogcino"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: kulindeleke iidijithi ezingama-64 ze-hexadecimal"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: kulindeleke ii-byte ezingama-32 kwi-hexadecimal"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "isikhombisi siphandle koluhlu"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: kulindeleke ixabiso le-boolean"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Ijenali yokubhala engafundekiyo: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Ayikwazi ukukhupha ijenali {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "i-MD5 ye-{size} ye-byte endaweni ye-{expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "ibhloko efakwe ikhowudi ye-{size} ye-byte endaweni ye-{expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "umyalezo “{message}”: Control Change eyonakeleyo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "umyalezo “{message}”: i-Control Change yiseto"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "umyalezo “{message}”: i-Control Change ayikho kuluhlu oluvaliweyo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "umyalezo “{message}”: ixabiso {value} ngaphezu kwe-{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "umyalezo “{message}” ugcwaliswe kakubi"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "umyalezo “{message}”: i-byte ephandle kwii-bhithi ezi-7"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "umyalezo “{message}” awukho kuluhlu oluvaliweyo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "umyalezo “{message}”: i-{size} ye-byte endaweni ye-{expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "umyalezo “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "isicelo soguqulelo esingalindelekanga"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "isibhengezo 70 05 01 kuphela, kuvavanyo, esivunyelweyo"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "ukufunda 70 26 7F kuphela okuvunyelweyo"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "isicelo setafile esinomzimba ongezizo zero"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "ukubhala itafile: kulindeleke iseto, amaxabiso asuka kwi-0 ukuya kwi-100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "isicelo sokufunda esonakeleyo"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "isilothi siphandle koluhlu okanye umzimba ongezizo zero"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "umyalelo {command} ngaphandle komgaqo womxholo"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "umyalezo wokulayisha ophandle kweqela lokubhala"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "umyalelo wokubhala {command} ngaphandle komgaqo womxholo"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "igama lesilothi elonakeleyo"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "isikhombisi esine-bhithi 31 esisetiweyo (i-IR yasefektri): umsebenzi ongekavulwa"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "intloko yokulayisha: isilothi siphandle koluhlu"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "intloko yokulayisha: i-MD5 iphandle kwiidijithi ze-hexadecimal ezincinci"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "intloko yokulayisha iphandle kwefom ebonwayo"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "inyawo lokulayisha: i-byte engeyiyo zero emva kweflegi"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "ibhloko yokugqibela: isilothi siphandle koluhlu"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "ibhloko yokugqibela iphandle kwefom ebonwayo"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "ibhloko yedatha: idilesi okanye ikhawuntari iphandle koluhlu"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "ibhloko yedatha: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "ibhloko yedatha: umthwalo uphandle kwefom evelisa yi-enc_msb"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "ibhloko yedatha: ukuzalisa okungeyiyo zero ngaphaya kwee-byte ezi-{size} ze-IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "isikhombisi {value} siphandle kwi-0..{max}: i-bhithi 31 igcinelwe ii-IR zasefektri, umsebenzi ongekavulwa"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "igama le-{size} ye-byte, i-{max} ubuninzi"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "umzimba we-{size} ye-byte endaweni ye-{expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "ulwazi lwesilothi {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "itafile {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "imeko yangoku"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "i-IR yesilothi {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "ukuvuselelwa kwesilothi {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "itafile inamaxabiso angama-{count}, kufunyenwe {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "itafile {table}: ixabiso {value!r} liphandle kwi-0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "ukubhalwa kwetafile {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "iseto engaziwayo “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "iseto “{name}”: ixabiso {value!r} liphandle kwi-0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "ukubeka {name} kwi-{value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "isibhengezo soqhagamshelo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "igama lesilothi linoonobumba abangu-1 ukuya kwi-{max}"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "igama lesilothi liqulathe oonobumba be-ASCII abashicilelekayo kuphela"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "i-IR iqulathe isampulu engapheliyo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "ukulayishwa kwesilothi {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "intloko"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "ibhloko {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "isiphelo"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "inyawo"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "igama"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "ulwazi"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "isixa sesiphelo se-{size} ye-byte endaweni ye-{expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "igama lesilothi alinanto okanye liphandle kwe-ASCII eshicilelekayo"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "ii-byte ezingezizo zero emva kokuphela kwegama lesilothi"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "intloko ye-NUX SysEx ayikho"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "akukho F7 yokugqibela"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "i-byte ephandle kwii-bhithi ezi-7"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "uhlobo {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "umyalelo {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "isiqinisekiso sokulayisha esingalindelekanga"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "imeko yesiqinisekiso engaziwayo: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "impendulo yoguqulelo engalindelekanga: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "umyalelo {command}: ngu-0x5c (ukufunda ulwazi) kunye no-0x5b (isiphindiso segama) kuphela abathwala ulwazi lwesilothi"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "ubude obufakwe ikhowudi {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "impendulo yolwazi lwesilothi engalindelekanga: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "ulwazi lwesilothi olungafundekiyo: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "ipedali ibhengeza isilothi {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "impendulo engalindelekanga yetafile {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "itafile {table}: ixabiso {value} ngaphezu kwe-100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "impendulo yemeko engalindelekanga: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "intloko yokufunda: umyalelo {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "intloko yokufunda ithwele iflegi yesiphelo"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "intloko yokufunda engeyiyo zero, engazange ibonwe kule fom"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "ibhloko {block}: umyalelo {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "ibhloko {block}: iflegi engeyiyo zero {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "ibhloko {block}: idilesi {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "ibhloko {block}: ikhawuntari {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "ibhloko {block} ayifundekiyo: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "ibhloko yokugqibela: umyalelo {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "ibhloko yokugqibela ngaphandle kweflegi"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "ibhloko yokugqibela: ikhawuntari {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "ibhloko yokugqibela: i-byte ephambukileyo ngaphandle kweflegi, isixa nekhawuntari"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "isixa sesiphelo esingafundekiyo: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "isixa sesiphelo sokufunda esingeso"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "inyawo: umyalelo {found} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "inyawo ngaphandle kweflegi"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "inyawo: i-byte ephambukileyo emva kweflegi"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "kwamkelwe imiyalezo emi-{count} endaweni ye-{expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "umyalezo {number} ungowasemzini kukufunda kwe-IR: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "umbala {colour!r}: kulindeleke “#rrggbb” ngoonobumba abancinci"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Umsebenzi ongaziwayo “{name}”. Eziwayo: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "kulindeleke uluhlu olulungiswe ngokwamalungiselelo lwemisebenzi eyaziwayo, ngaphandle kokuphindaphinda"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Irejista yovavanyo engafundekiyo: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Irejista yovavanyo ikhiyiwe yenye inkqubo ({file}): zama kwakhona xa omnye umyalelo ugqityiwe."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Ayikwazi ukukhiya {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Ipedali ayifunyenwanga: akukho khadi yesandi “NAI5”. Jonga intambo ye-USB."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "I-XDG_RUNTIME_DIR ayisetiwe: ayikwazi ukuthatha ukhiye."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Ayikwazi ukuthatha ukhiye {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Ipedali sele isetyenziswa linye ilungu le-optima-air."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Ukhiye sele ukhutshiwe: akusakwazi ukunikwa iphothi."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Olu khiye selungowephothi: alunakunikwa iphothi yesibini."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Ayikwazi ukukhupha ukhiye: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Ipedali ayisaphenduli: ikhutshiwe okanye iqinile."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Ayikwazi ukulungiselela iphothi {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Ayikwazi ukulungiselela ukungena kwephothi {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Iphothi {port} ayikho."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Ukufikelela kwi-{port} kuliwe. Jonga ukuba ukwiqela le-“audio” (umyalelo: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Iphothi {port} sele isetyenziswa yenye inkqubo."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Iphothi {port} ayisafumaneki."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Ayikwazi ukuvula iphothi {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Ayikwazi ukubhala: iphothi ivaliwe."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Ukubhala kwiphothi {port} akuphumelelanga: akukho byte yamkelweyo."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Ukubhala kwiphothi {port} akuphumelelanga: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Ukuthulula iphothi {port} kuphazanyisiwe amaxesha angama-{count} ilandelelana: umyalezo unikwe i-kernel, kodwa ukumka kwawo akunakulindwa."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Ukulinda kuphandle koluhlu: {wait} s (ubuninzi be-{max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Ayikwazi ukufunda: iphothi ivaliwe."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Ukufunda kwiphothi {port} akuphumelelanga: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Iphothi {port} ayixeli imeko yokungena kwayo ({error}): ukulahleka kwee-byte akunakubonwa, kuyema apha."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Ukufunda imeko yephothi {port} akuphumelelanga: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Ukuvala iphothi {port} akuphumelelanga: {error}"

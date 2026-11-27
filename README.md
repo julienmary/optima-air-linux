@@ -7,7 +7,8 @@ responses, backups and restore, from a GTK 4 window or the command line.
 > Technology. "NUX" and "Optima Air" are their trademarks, used here only to say which
 > hardware this tool works with.
 
-The interface is in English and French, following the language of your desktop.
+The interface follows the language of your desktop: English, French, and 75 other languages
+(see [Language](#language)).
 
 ![The main window](screenshots/window.jpg)
 
@@ -46,7 +47,7 @@ Download `optima-air_<version>_all.deb` from the
 [releases](https://github.com/julienmary/optima-air-linux/releases), then:
 
 ```sh
-sudo apt install ./optima-air_0.1.0-1_all.deb
+sudo apt install ./optima-air_0.2.0-1_all.deb
 ```
 
 Double-clicking the file opens it in the software centre, which does the same. "Optima Air"
@@ -110,6 +111,13 @@ Backups live in `~/.local/share/optima-air/sauvegardes/`, preferences in
 
 The interface follows the usual locale variables. To force a language for one run:
 `LANGUAGE=fr optima-air window`, or `LANGUAGE=en` for English.
+
+English is the source language and French is maintained by hand. The other 75 catalogues
+(`po/*.po`, the languages of the Debian installer) are **machine translations that no native
+speaker has reviewed**. If a text looks wrong, especially in a dialog that writes to the
+pedal, switch to English (`LANGUAGE=en`) and trust that one. The least reliable ones are
+Tibetan (`bo`), Dzongkha (`dz`), Wolof (`wo`) and Northern Sami (`se`). Corrections are very
+welcome: edit the matching `po/<language>.po` and open a pull request, or open an issue.
 
 ### Loading a WAV
 

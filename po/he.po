@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "של {bits} ביט"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: צפוי מספר שלם, התקבל {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: צפוי מספר שלם או כלום, התקבל {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "שם חריץ: צפויים בתים, התקבל {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: צפוי טקסט, התקבל {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "חריץ {slot} מחוץ לטווח 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "שם חריץ של {size} בתים במקום {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "המזהה {value} מחוץ לטווח 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} מחוץ לטווח 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "סיבת גיבוי לא ידועה “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "הקושחה חסרה: רק הסיבה “{reason}” מתירה זאת"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "שם גיבוי פגום “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "הסיבה “{reason}” שונה מזו של הגיבוי {name}, הסיבה “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "תאריך לא קריא {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "התאריך {date!r} ללא אזור זמן"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "תאריך לא קנוני {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "התאריך {date!r} שונה מזמן הגיבוי {name}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: צפוי תאריך, התקבל {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} חייב לשאת אזור זמן (למשל datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "לא ניתן לכתוב בתיקייה {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "לא תיקייה"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "לא ניתן לבדוק את {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "לא ניתן ליצור את הגיבוי {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "נתונים: צפויים בתים, התקבל {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR הוא {expected} בתים, התקבלו {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "החריץ {slot} כבר גובה ב-{backup}: גיבוי נכתב פעם אחת בלבד, צור גיבוי חדש."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "רשומת חריץ לא קריאה: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "צפוי אובייקט JSON, התקבל {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "השדה “{field}” חסר או אינו טקסט"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "לא ניתן לחשב את החותם: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "רשומת חריץ שונתה או ניזוקה: {file} (חותם שגוי)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "השדה “{field}”: צפוי מספר שלם"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "השדה “{field}”: צפוי טקסט"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "השדה “{field}”: צפוי מספר שלם או null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "רשומת החריץ {record} מתויקת תחת החריץ {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: צפוי הקסדצימלי באותיות קטנות"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "רשומת הגיבוי “{record}” נמצאה ב-“{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "לא ניתן לקרוא את {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "גיבוי לא קריא: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "חסר"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "רשומת חריץ לא עקבית: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "נתונים לא קריאים: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "טביעת אצבע שגויה: {file} לא ישמש."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "המזהה חושב מחדש כ-{computed}, הרשומה אומרת {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "החריץ הפעיל"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR פועל/כבוי"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamp פועל/כבוי"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” אינו מספר חריץ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "כתיבה לחריץ {slot} נקטעה: הפדאל נשאר לנפשו למשך {seconds} שניות נוספות. לאחר מכן הרץ: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "לא ידוע ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "לא ידוע ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "קושחה {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "פריסט: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "חריץ {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "חריץ לא ידוע ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: פועל, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: כבוי, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamp: פועל"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamp: כבוי"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "שם"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "מזהה"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "עוצמת קול"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "חיתוך נמוך"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "חיתוך גבוה"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "אזהרה: המזהה שהפדאל הכריז עליו ({announced}) אינו תואם לנתונים שנקראו ({computed}), גם לאחר קריאה חוזרת. הגיבוי מתבצע בכל זאת."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "החריץ {slot} “{name}” גובה ב-{backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx של {size} בתים: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change ערוץ {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[ערוץ {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, כלומר {converted} מתוך 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: מינימום {min} מקסימום {max} ({count} הודעות)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "רמות"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "אזהרה: הודעת SysEx אחת אבדה בזמן הקבלה."
+msgstr[1] "אזהרה: {count} הודעות SysEx אבדו בזמן הקבלה."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "אזהרה: גלישה אחת של מאגר הקלט, בתים אבדו."
+msgstr[1] "אזהרה: {count} גלישות של מאגר הקלט, בתים אבדו."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "כ"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "כן"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [כ/ל] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "בוטל: דבר לא נכתב."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "לשלוח את הכרזת החיבור, פונקציית הניסוי “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "בוטל: דבר לא נשלח."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "ההכרזה כבר נשלחה על ידי רצף החיבור: היא לא נשלחת פעמיים."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "ההכרזה נשלחה: התקבלה תשובה"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "ההכרזה נשלחה: אין תשובה"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: מאומתת"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: בניסוי"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” מצפה לשם של פונקציה."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "השם “{name}” נדחה ({error}). ציין שם באמצעות --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "אזהרה: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "לדרוס את החריץ {slot} “{current}” ב-“{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "חריץ {slot}: “{name}” נכתב ונקרא בחזרה זהה."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "התוכן הקודם (“{name}”) גובה ב-{backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} כבר קיים. הוסף --yes כדי לדרוס אותו."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "לא ניתן לכתוב את {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "החריץ {slot} “{name}” יוצא אל {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "קריאה: {done} מתוך {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "אזהרה: המזהה שהוכרז עבור החריץ {slot} אינו תואם לנתונים שנקראו, גם לאחר קריאה חוזרת. הגיבוי מתבצע בכל זאת."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "כל 23 החריצים גובו ב-{backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "אין גיבויים."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "חריץ אחד"
+msgstr[1] "{count} חריצים"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "פגום ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "אין"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name חל רק על שחזור חריץ בודד."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "להחזיר את הפדאל למצב הגיבוי {backup} (חריץ אחד)? רק החריצים השונים ייכתבו מחדש, לאחר גיבוי תוכנם."
+msgstr[1] "להחזיר את הפדאל למצב הגיבוי {backup} ({count} חריצים)? רק החריצים השונים ייכתבו מחדש, לאחר גיבוי תוכנם."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} מתוך {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "חריצים שנכתבו מחדש ונקראו בחזרה זהים: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "חריצים ששוחזרו הגדרותיהם בלבד: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "חריצים שכבר זהים לגיבוי: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "לכתוב מחדש את החריץ {slot} “{current}” מהגיבוי {backup} (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "החריץ {slot} שוחזר מ-{backup}, ואז נקרא בחזרה זהה."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "התוכן שהוחלף (“{name}”) גובה ב-{backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "אין כתיבה שנקטעה."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "חריץ {slot}: הכתיבה שנקטעה הושלמה. אין מה לעשות."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "חריץ {slot}: הוא עדיין מכיל את מה שהכיל קודם. אין מה לעשות."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "חריץ {slot}: תוכנו אינו הישן ואינו החדש. כדי להחזירו למצבו הקודם: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "לאפשר יותר מקריאה בקושחה שלא אומתה"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "לאפשר פונקציית ניסוי"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "לא לבקש אישור"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "מספר חריץ, מ-1 עד {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "עורך Linux לפדאל NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "תיקיית נתונים (ברירת מחדל: תיקיית הנתונים של XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "פתיחת החלון"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "גרסת קושחה, פריסט והגדרות"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 חריצי ה-IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "גיבוי ה-IR של חריץ"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "הדפסת מה שהפדאל שולח"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "שניות האזנה"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "קריאת המצב תחילה"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "שליחת ההכרזה תחילה (ניסוי)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "כתיבת WAV לחריץ"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "קובץ WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "שם החריץ (ברירת מחדל: שם הקובץ)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "ייצוא חריץ כ-WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "קובץ WAV לכתיבה"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "כתיבה מחדש של חריץ, או של כולם, מגיבוי"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "תיקיית גיבוי"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "מספר חריץ, מ-1 עד {count} (ברירת מחדל: כולם)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "החלפת השם שגובה"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "גיבוי 23 החריצים"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "רשימת הגיבויים"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "בדיקת כתיבה שנקטעה"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "רישום פונקציות הניסוי"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "כתיבה לחריץ {slot} נשארה לא גמורה. הפדאל נשאר לנפשו לזמן מה; לאחר מכן הרץ: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "שגיאה: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "הופסק."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "הבית {byte} מחוץ ל-7 ביט"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} בתים של 7 ביט משאירים {bits} ביטי ריפוד, enc7 אינו מפיק לעולם יותר מ-6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "ביטי ריפוד שאינם אפס בסוף זרם של 7 ביט"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "בלוק הוא {expected} בתים, התקבלו {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "סכום הבלוק {sum} ({hex}) חורג מ-14 הביטים המועברים (מקסימום {max}): לא נראה מעולם על הפדאל, נדחה עד לאימות"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "בלוק מקודד הוא {expected} בתים, התקבלו {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "בית מחוץ ל-7 ביט בבלוק מקודד"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "סכום ביקורת שגוי של הבלוק"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "סכום סוף ההעברה מכסה לפחות בלוק אחד"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "האורך {length} אינו כפולה של {block}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "הערך {value} מחוץ ל-28 ביט"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "סכום של 28 ביט תופס 4 בתים, התקבלו {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "הבית {byte} מחוץ ל-7 ביט בסכום של 28 ביט"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "כתיבה נקטעה: הפדאל נשאר לנפשו למשך {seconds} שניות נוספות."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: הודעת כתיבה יכולה להישלח רק על ידי כתיבה מלאה של חריץ (גיבוי, יומן, קריאה בחזרה)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "גרסת הקושחה טרם נקראה: מותרות קריאות בלבד."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "קושחה לא ידועה {found} (הפרוטוקול אומת על {verified}): מותרות קריאות בלבד."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” היא פונקציית ניסוי (“{function}”), שטרם אומתה על הפדאל."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: ניתן לשלוח שוב רק קריאה."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "אין תשובה מהפדאל ל-“{message}” לאחר {count} ניסיונות."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "הפדאל שולח SysEx ללא הפסקה."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "לא ניתן לקרוא את החריץ {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "שתי קריאות של החריץ {slot} נותנות נתונים שונים."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "כתיבה לחריץ {slot} נקטעה: המתן עוד {seconds} שניות לפני שליחת כל דבר."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "כתיבה לחריץ {slot} נקטעה: עד שהחריץ הזה יתוקן, הוא היחיד שאפשר לכתוב אליו."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "הכתיבה נדחתה: הקושחה לא נקראה, או שאינה זו שהפרוטוקול אומת עליה."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "לאחר הכתיבה, החריץ {slot} אינו מכיל את מה שנשלח."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "הפדאל מדווח על שגיאה בכתיבת ה-IR."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "אישור בלוק לא צפוי: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "התקבל אישור בלוק אחד במקום {expected}."
+msgstr[1] "התקבלו {count} אישורי בלוק במקום {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "אישורי הכותרת והסיום חסרים או לא צפויים."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "לאחר הכתיבה, הד השם הגיע פעם אחת במקום פעם אחת."
+msgstr[1] "לאחר הכתיבה, הד השם הגיע {count} פעמים במקום פעם אחת."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "לאחר הכתיבה, הד השם אינו תואם למה שנשלח."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "לאחר הכתיבה, מידע החריץ הגיע פעם אחת במקום פעם אחת."
+msgstr[1] "לאחר הכתיבה, מידע החריץ הגיע {count} פעמים במקום פעם אחת."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "לאחר הכתיבה, מידע החריץ אינו תואם למה שנשלח."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "הגיבוי {backup} אינו מכיל אף חריץ."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "משווה"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "החריץ {slot} של הגיבוי {backup} שונה מהפדאל אך לא ניתן לכתוב אותו מחדש כפי שהוא ({error}). דבר לא נכתב."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "משחזר"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "הפדאל מכריז על החריץ {announced} לאחר שהתבקש החריץ {requested}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "אין הד מהפדאל לכתיבת הטבלה {table}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "ההד של הטבלה {table} שונה ממה שנשלח."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "הוא קישור סמלי"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "אינו קובץ רגיל"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} בתים במקום {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} בתים, יותר מ-{allowed} המותרים"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "הגודל השתנה בזמן הקריאה"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "לא ניתן ליצור את הנעילה {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "מפתח כפול “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} אינו JSON תקני"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "אינו JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "השדה “{field}” חסר"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "פורמט לא ידוע {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "שדה לא ידוע “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "לא ניתן לסנכרן את התיקייה {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "לא ניתן ליצור את התיקייה {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "לא ניתן ליצור את התיקייה {folder}: {path} אינו תיקייה"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "לא ניתן להציב את {file} במקומו: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "לפני כתיבה"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "קריאת חריץ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "גיבוי מלא"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "ייבוא"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "חריץ פגום"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "טעינת WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "לדרוס את החריץ <b>{slot}</b> “{name}” ב-<b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "התוכן הנוכחי של החריץ יגובה לפני הכתיבה."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "שם החריץ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "ביטול"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "כתיבה לפדאל"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "גיבויים"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "שחזור החריץ הזה"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "שחזור הגיבוי כולו"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "סגירה"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "עדיין אין גיבויים."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: חריץ {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: חריץ אחד"
+msgstr[1] "{backup}: {count} חריצים"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: לא קריא"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "לא ניתן להשתמש בגיבוי הזה: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "להחזיר את חריץ הפדאל למצב הגיבוי הזה?"
+msgstr[1] "להחזיר את {count} חריצי הפדאל למצב הגיבוי הזה?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "להחזיר את החריץ {slot} של הפדאל למצב הגיבוי הזה (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nרק חריץ השונה מהגיבוי נכתב מחדש, ותוכנו הנוכחי מגובה מיד לפני כן."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "שחזור"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "כחול חשמלי"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "ציאן"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "ירוק"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "צהוב"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "כתום"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "אדום"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "ורוד"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "סגול"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "לבן עכור"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "צבע הממשק"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "קוד צבע, למשל #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "צפוי: # ושש ספרות הקסדצימליות"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "מחפש את הפדאל…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "שחזור המצב הקודם"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "גיבוי הכול"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "גיבויים…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "טעינת WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "ייצוא כ-WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "קבצי WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "בחירת קובץ WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "קובץ אחד בכל פעם: חריץ מכיל IR יחיד."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "ייצוא כ-WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "השחזור הסתיים. חריצים שנכתבו מחדש ונקראו בחזרה זהים: {rewritten}. הגדרות בלבד: {settings}. כבר זהים לגיבוי: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "חריץ {slot}: לאחר הכתיבה שנקטעה, הוא עדיין מכיל את מה שהכיל קודם. אין מה לעשות."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "חריץ {slot}: לאחר הכתיבה שנקטעה, הוא אינו מכיל לא את התוכן הישן ולא את החדש. עד שיתוקן, הוא החריץ היחיד שאפשר לכתוב אליו."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "חריץ {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "חריץ {slot}: “{name}” נכתב ונקרא בחזרה זהה. התוכן הקודם גובה ב-{backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "כותב לחריץ {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "הכתיבה לחריץ {slot} נכשלה: {reason} הפדאל נשאר לנפשו למשך {seconds} שניות, ואז ייבדק מצב החריץ."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "הגיבוי נכשל: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "השחזור נעצר: {reason} החריצים שכבר טופלו תקינים; מצב הפדאל ייקרא מחדש."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "מחובר, קושחה {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "מנותק: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "אזהרה: המזהה שהפדאל הכריז עליו אינו תואם לנתונים שנקראו."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "התבקשה עצירה."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "גיבוי"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "טווח תדרים או מספר נקודות לא תקין"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "קובץ שמע לא קריא: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "לקובץ יש {count} ערוצים: רק הראשון נשמר."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "קובץ שמע ריק: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "הקובץ מכיל דגימות לא סופיות: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "קצב דגימה של {rate} Hz: הקובץ נדגם מחדש ל-{target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "אורך הקובץ {duration} ms: רק {count} הדגימות הראשונות ({limit} ms) נשמרות."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "הפדאל מנגן רק את {count} הדגימות הראשונות ({limit} ms): שאר ה-IR הזה יישמר אך לא יישמע."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "לא ניתן לנרמל את {file}: אין אות בין 400 Hz ל-3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "נרמול {file} חורג מטווח מספרי הנקודה הצפה."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "לאחר הנרמול, ה-IR מגיע לשיא של {peak} (IR רגילים נשארים מתחת ל-10): בקובץ שקע עמוק מאוד בין 400 Hz ל-3 kHz, ורמת הפלט עלולה להיות גבוהה מאוד."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "תאריך ביומן חייב לשאת אזור זמן"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "חריץ מחוץ לטווח"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: צפוי תאריך ISO עם אזור זמן"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: צפוי תאריך ISO עם אזור זמן, או null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: צפוי שם תיקיית גיבוי"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: צפויות 64 ספרות הקסדצימליות"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: צפויים 32 בתים בהקסדצימלי"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "מזהה מחוץ לטווח"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: צפוי ערך בוליאני"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "יומן כתיבה לא קריא: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "לא ניתן להסיר את היומן {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 של {size} בתים במקום {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "בלוק מקודד של {size} בתים במקום {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "הודעה “{message}”: Control Change פגום"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "הודעה “{message}”: Control Change הוא הגדרה"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "הודעה “{message}”: Control Change אינו ברשימה הסגורה"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "הודעה “{message}”: הערך {value} גבוה מ-{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "הודעה “{message}” עם מסגור פגום"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "הודעה “{message}”: בית מחוץ ל-7 ביט"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "הודעה “{message}” אינה ברשימה הסגורה"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "הודעה “{message}”: {size} בתים במקום {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "הודעה “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "בקשת גרסה לא צפויה"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "רק ההכרזה 70 05 01, בניסוי, מותרת"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "רק הקריאה 70 26 7F מותרת"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "בקשת טבלה עם גוף שאינו אפס"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "כתיבת טבלה: צפויה הגדרה, ערכים מ-0 עד 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "בקשת קריאה פגומה"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "חריץ מחוץ לטווח או גוף שאינו אפס"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "פקודה {command} ללא כלל תוכן"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "הודעת העלאה מחוץ לקטגוריית הכתיבה"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "פקודת כתיבה {command} ללא כלל תוכן"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "שם חריץ פגום"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "מזהה עם ביט 31 דלוק (IR של היצרן): הפונקציה טרם נפתחה"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "כותרת העלאה: חריץ מחוץ לטווח"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "כותרת העלאה: MD5 מחוץ לספרות הקסדצימליות קטנות"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "כותרת העלאה מחוץ לצורה שנצפתה"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "סיום העלאה: בית שאינו אפס אחרי הדגל"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "בלוק סיום: חריץ מחוץ לטווח"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "בלוק סיום מחוץ לצורה שנצפתה"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "בלוק נתונים: כתובת או מונה מחוץ לטווח"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "בלוק נתונים: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "בלוק נתונים: המטען מחוץ לצורה שמפיק enc_msb"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "בלוק נתונים: ריפוד שאינו אפס מעבר ל-{size} בתי ה-IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "המזהה {value} מחוץ לטווח 0..{max}: ביט 31 שמור ל-IR של היצרן, פונקציה שטרם נפתחה"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "שם של {size} בתים, {max} לכל היותר"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "גוף של {size} בתים במקום {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "מידע על החריץ {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "טבלה {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "המצב הנוכחי"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR של החריץ {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "הפעלת החריץ {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "לטבלה יש {count} ערכים, התקבלו {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "טבלה {table}: הערך {value!r} מחוץ לטווח 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "כתיבת הטבלה {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "הגדרה לא ידועה “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "הגדרה “{name}”: הערך {value!r} מחוץ לטווח 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "הגדרת {name} ל-{value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "הכרזת חיבור"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "שם חריץ הוא בין 1 ל-{max} תווים"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "שם חריץ מכיל רק תווי ASCII הניתנים להדפסה"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "ה-IR מכיל דגימה לא סופית"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "העלאת החריץ {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "כותרת"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "בלוק {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "סיום"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "סיומת"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "שם"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "מידע"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "סכום סיום של {size} בתים במקום {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "שם החריץ ריק או מחוץ ל-ASCII הניתן להדפסה"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "בתים שאינם אפס אחרי סוף שם החריץ"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "כותרת NUX SysEx חסרה"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "אין F7 סופי"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "בית מחוץ ל-7 ביט"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "סוג {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "פקודה {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "אישור העלאה לא צפוי"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "סטטוס אישור לא ידוע: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "תשובת גרסה לא צפויה: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "פקודה {command}: רק 0x5c (קריאת מידע) ו-0x5b (הד שם) נושאות מידע על חריץ"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "אורך מקודד {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "תשובת מידע על חריץ לא צפויה: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "מידע על חריץ לא קריא: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "הפדאל מכריז על החריץ {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "תשובה לא צפויה לטבלה {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "טבלה {table}: הערך {value} גבוה מ-100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "תשובת מצב לא צפויה: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "כותרת קריאה: פקודה {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "כותרת הקריאה נושאת את דגל הסיום"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "כותרת קריאה שאינה אפס, שלא נראתה מעולם בצורה זו"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "בלוק {block}: פקודה {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "בלוק {block}: דגל שאינו אפס {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "בלוק {block}: כתובת {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "בלוק {block}: מונה {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "בלוק {block} לא קריא: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "בלוק סיום: פקודה {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "בלוק סיום ללא דגל"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "בלוק סיום: מונה {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "בלוק סיום: בית תועה מחוץ לדגל, לסכום ולמונה"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "סכום סיום לא קריא: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "סכום סוף הקריאה שגוי"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "סיומת: פקודה {found} במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "סיומת ללא דגל"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "סיומת: בית תועה אחרי הדגל"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "התקבלו {count} הודעות במקום {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "הודעה {number} זרה לקריאת IR: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "צבע {colour!r}: צפוי “#rrggbb” באותיות קטנות"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "פונקציה לא ידועה “{name}”. ידועות: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "צפויה רשימה ממוינת של פונקציות ידועות, ללא כפילויות"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "רישום הניסויים לא קריא: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "רישום הניסויים נעול על ידי תהליך אחר ({file}): נסה שוב לאחר שהפקודה האחרת תסתיים."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "לא ניתן לנעול את {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "הפדאל לא נמצא: אין כרטיס קול “NAI5”. בדוק את כבל ה-USB."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR אינו מוגדר: לא ניתן לקחת את הנעילה."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "לא ניתן לקחת את הנעילה {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "הפדאל כבר בשימוש על ידי מופע אחר של optima-air."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "הנעילה כבר שוחררה: אי אפשר עוד למסור אותה ליציאה."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "נעילה זו כבר שייכת ליציאה: אי אפשר למסור אותה ליציאה שנייה."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "לא ניתן לשחרר את הנעילה: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "הפדאל כבר אינו עונה: נותק או נתקע."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "לא ניתן להגדיר את היציאה {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "לא ניתן לדרוך את הקלט של היציאה {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "היציאה {port} אינה קיימת."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "הגישה אל {port} נדחתה. בדוק שאתה בקבוצה “audio” (פקודה: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "היציאה {port} כבר בשימוש על ידי תוכנה אחרת."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "היציאה {port} אינה זמינה עוד."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "לא ניתן לפתוח את היציאה {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "לא ניתן לכתוב: היציאה סגורה."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "הכתיבה ליציאה {port} נכשלה: אף בית לא התקבל."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "הכתיבה ליציאה {port} נכשלה: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "ריקון היציאה {port} נקטע {count} פעמים ברציפות: ההודעה נמסרה לליבה, אך לא ניתן היה להמתין ליציאתה."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "המתנה מחוץ לטווח: {wait} שניות (לכל היותר {max} שניות)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "לא ניתן לקרוא: היציאה סגורה."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "הקריאה מהיציאה {port} נכשלה: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "היציאה {port} אינה מדווחת על מצב הקלט שלה ({error}): לא ניתן לזהות אובדן בתים, עוצר כאן."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "קריאת מצב היציאה {port} נכשלה: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "סגירת היציאה {port} נכשלה: {error}"

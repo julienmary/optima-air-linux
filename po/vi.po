@@ -1,0 +1,1938 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "số dài {bits} bit"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: cần số nguyên, nhận được {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: cần số nguyên hoặc không có giá trị, nhận được {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "tên ô nhớ: cần byte, nhận được {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: cần văn bản, nhận được {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "ô nhớ {slot} nằm ngoài khoảng 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "tên ô nhớ dài {size} byte thay vì {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "mã định danh {value} nằm ngoài khoảng 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} nằm ngoài khoảng 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Lý do sao lưu không xác định “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "thiếu firmware: chỉ lý do “{reason}” mới cho phép điều đó"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "tên bản sao lưu không hợp lệ “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "lý do “{reason}” khác với lý do của bản sao lưu {name}, là “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "không đọc được ngày {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "ngày {date!r} không có múi giờ"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "ngày {date!r} không ở dạng chuẩn"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "ngày {date!r} khác với thời điểm của bản sao lưu {name}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: cần ngày, nhận được {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} phải có múi giờ (ví dụ datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Không thể ghi vào thư mục {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "không phải thư mục"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Không thể kiểm tra {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Không thể tạo bản sao lưu {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data: cần byte, nhận được {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "một IR có {expected} byte, nhận được {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "ô nhớ {slot} đã được sao lưu trong {backup}: một bản sao lưu chỉ được ghi một lần, hãy tạo bản sao lưu mới."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Không đọc được bản ghi ô nhớ: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "cần đối tượng JSON, nhận được {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "trường “{field}” bị thiếu hoặc không phải văn bản"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "không thể tính dấu niêm phong: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Bản ghi ô nhớ đã bị sửa hoặc hỏng: {file} (dấu niêm phong sai)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "trường “{field}”: cần số nguyên"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "trường “{field}”: cần văn bản"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "trường “{field}”: cần số nguyên hoặc null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "bản ghi của ô nhớ {record} được lưu ở ô nhớ {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: cần số thập lục phân viết thường"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "bản ghi của bản sao lưu “{record}” được tìm thấy trong “{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Không thể đọc {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Không đọc được bản sao lưu: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "bị thiếu"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Bản ghi ô nhớ không nhất quán: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Không đọc được dữ liệu: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Dấu vân tay sai: sẽ không dùng {file}."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "mã định danh được tính lại là {computed}, bản ghi ghi là {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Ô nhớ đang dùng"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR bật/tắt"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamp bật/tắt"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” không phải là số ô nhớ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Việc ghi vào ô nhớ {slot} đã bị gián đoạn: pedal sẽ được để yên thêm {seconds} giây. Sau đó chạy: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "không xác định ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "không xác định ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Preset: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "ô nhớ {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "ô nhớ không xác định ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: bật, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: tắt, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamp: bật"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamp: tắt"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Tên"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Mã"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Âm lượng"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Cắt thấp"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Cắt cao"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Cảnh báo: mã định danh do pedal thông báo ({announced}) không khớp với dữ liệu đã đọc ({computed}), kể cả sau khi đọc lại. Bản sao lưu vẫn được thực hiện."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Ô nhớ {slot} “{name}” đã được sao lưu trong {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} byte: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change kênh {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[kênh {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, tức là {converted} trên 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: tối thiểu {min} tối đa {max} ({count} thông điệp)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "mức"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Cảnh báo: {count} SysEx bị loại bỏ trong khi nhận."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Cảnh báo: bộ đệm đầu vào bị tràn {count} lần, đã mất byte."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "c"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "có"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [c/K] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Đã hủy: không có gì được ghi."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Gửi thông báo kết nối, chức năng thử nghiệm “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Đã hủy: không có gì được gửi."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Thông báo đã được gửi bởi chuỗi kết nối: không gửi hai lần."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Đã gửi thông báo: nhận được phản hồi"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Đã gửi thông báo: không có phản hồi"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: đã được xác thực"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: đang thử nghiệm"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” cần tên của một chức năng."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Tên “{name}” bị từ chối ({error}). Hãy đặt tên bằng --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Cảnh báo: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Ghi đè ô nhớ {slot} “{current}” bằng “{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Ô nhớ {slot}: “{name}” đã được ghi và đọc lại thấy giống hệt."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Nội dung trước đó (“{name}”) đã được sao lưu trong {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} đã tồn tại. Thêm --yes để ghi đè."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Không thể ghi {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Ô nhớ {slot} “{name}” đã được xuất ra {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Đang đọc: {done}/{total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Cảnh báo: mã định danh được thông báo cho ô nhớ {slot} không khớp với dữ liệu đã đọc, kể cả sau khi đọc lại. Ô nhớ vẫn được sao lưu."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Cả 23 ô nhớ đã được sao lưu trong {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Không có bản sao lưu."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} ô nhớ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "BỊ HỎNG ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "không có"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name chỉ áp dụng khi khôi phục một ô nhớ duy nhất."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Đưa pedal về trạng thái của bản sao lưu {backup} ({count} ô nhớ)? Chỉ những ô nhớ khác biệt mới được ghi lại, sau khi nội dung của chúng được sao lưu."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done}/{total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Các ô nhớ đã được ghi lại và đọc lại thấy giống hệt: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Các ô nhớ chỉ khôi phục phần cài đặt: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Các ô nhớ đã giống hệt bản sao lưu: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Ghi lại ô nhớ {slot} “{current}” từ bản sao lưu {backup} (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Ô nhớ {slot} đã được khôi phục từ {backup}, rồi đọc lại thấy giống hệt."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Nội dung bị thay thế (“{name}”) đã được sao lưu trong {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Không có lần ghi nào bị gián đoạn."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Ô nhớ {slot}: lần ghi bị gián đoạn đã hoàn tất. Không cần làm gì."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Ô nhớ {slot}: vẫn giữ nội dung như trước. Không cần làm gì."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Ô nhớ {slot}: nội dung không phải bản cũ cũng không phải bản mới. Để đưa về như trước: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "cho phép nhiều thao tác hơn việc đọc trên firmware chưa được xác minh"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "cho phép một chức năng thử nghiệm"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "không hỏi xác nhận"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "số ô nhớ, từ 1 đến {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Trình chỉnh sửa Linux cho pedal NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "thư mục dữ liệu (mặc định: thư mục dữ liệu XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "mở cửa sổ"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "phiên bản firmware, preset và cài đặt"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 ô nhớ IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "sao lưu IR của một ô nhớ"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "in ra những gì pedal gửi"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "số giây lắng nghe"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "đọc trạng thái trước"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "gửi thông báo trước (thử nghiệm)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "ghi một tệp WAV vào một ô nhớ"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "tệp WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "tên của ô nhớ (mặc định: tên của tệp)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "xuất một ô nhớ ra WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "tệp WAV cần ghi"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "ghi lại một ô nhớ, hoặc tất cả, từ một bản sao lưu"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "thư mục sao lưu"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "số ô nhớ, từ 1 đến {count} (mặc định: tất cả)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "thay thế tên đã sao lưu"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "sao lưu 23 ô nhớ"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "liệt kê các bản sao lưu"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "kiểm tra một lần ghi bị gián đoạn"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "sổ đăng ký các chức năng thử nghiệm"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Một lần ghi vào ô nhớ {slot} chưa hoàn tất. Pedal sẽ được để yên một lúc; sau đó chạy: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Lỗi: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Đã bị gián đoạn."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "byte {byte} nằm ngoài 7 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} byte 7 bit để lại {bits} bit đệm, enc7 không bao giờ tạo ra quá 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "bit đệm khác không ở cuối luồng 7 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "một khối có {expected} byte, nhận được {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "tổng khối {sum} ({hex}) vượt quá 14 bit được truyền (tối đa {max}): chưa từng thấy trên pedal, bị từ chối cho đến khi được xác minh"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "một khối đã mã hóa có {expected} byte, nhận được {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "byte nằm ngoài 7 bit trong một khối đã mã hóa"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "tổng kiểm tra của khối sai"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "tổng kết thúc truyền phải bao phủ ít nhất một khối"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "độ dài {length} không phải bội số của {block}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "giá trị {value} nằm ngoài 28 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "một tổng 28 bit chiếm 4 byte, nhận được {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "byte {byte} nằm ngoài 7 bit trong một tổng 28 bit"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Một lần ghi đã bị gián đoạn: pedal sẽ được để yên thêm {seconds} giây."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: một thông điệp ghi chỉ có thể được gửi bởi một lần ghi ô nhớ hoàn chỉnh (sao lưu, nhật ký, đọc lại)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Chưa đọc phiên bản firmware: chỉ được phép đọc."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Firmware không xác định {found} (giao thức đã được xác minh trên {verified}): chỉ được phép đọc."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” là một chức năng thử nghiệm (“{function}”), chưa được xác thực trên pedal."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: chỉ có thao tác đọc mới có thể gửi lại."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Pedal không phản hồi “{message}” sau {count} lần thử."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedal liên tục gửi SysEx không ngừng."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Không thể đọc ô nhớ {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Hai lần đọc ô nhớ {slot} cho dữ liệu khác nhau."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Một lần ghi vào ô nhớ {slot} đã bị gián đoạn: hãy chờ thêm {seconds} giây trước khi gửi bất cứ thứ gì."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Một lần ghi vào ô nhớ {slot} đã bị gián đoạn: cho đến khi ô nhớ đó được xử lý xong, nó là ô nhớ duy nhất có thể ghi."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Ghi bị từ chối: firmware chưa được đọc, hoặc không phải là firmware mà giao thức đã được xác minh."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Sau khi ghi, ô nhớ {slot} không chứa những gì đã gửi."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedal báo lỗi khi ghi IR."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Xác nhận khối không mong đợi: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "Nhận được {count} xác nhận khối thay vì {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Thiếu hoặc không mong đợi các xác nhận phần đầu và phần cuối."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Sau khi ghi, phản hồi tên đến {count} lần thay vì một lần."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Sau khi ghi, phản hồi tên không khớp với những gì đã gửi."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Sau khi ghi, thông tin ô nhớ đến {count} lần thay vì một lần."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Sau khi ghi, thông tin ô nhớ không khớp với những gì đã gửi."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Bản sao lưu {backup} không chứa ô nhớ nào."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Đang so sánh"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Ô nhớ {slot} của bản sao lưu {backup} khác với pedal nhưng không thể ghi lại nguyên trạng ({error}). Không có gì được ghi."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Đang khôi phục"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedal thông báo ô nhớ {announced} sau khi ô nhớ {requested} được yêu cầu."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Pedal không phản hồi lại việc ghi bảng {table}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Phản hồi của bảng {table} khác với những gì đã gửi."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "là liên kết tượng trưng"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "không phải tệp thông thường"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} byte thay vì {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} byte, vượt quá {allowed} cho phép"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "kích thước đã thay đổi trong khi đọc"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Không thể tạo khóa {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "khóa trùng lặp “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} không phải JSON chuẩn"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "không phải JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "thiếu trường “{field}”"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "định dạng không xác định {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "trường không xác định “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Không thể đồng bộ thư mục {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Không thể tạo thư mục {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Không thể tạo thư mục {folder}: {path} không phải thư mục"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Không thể đặt {file} vào đúng chỗ: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "trước khi ghi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "đọc ô nhớ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "sao lưu toàn bộ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "nhập"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "ô nhớ bị hỏng"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Tải tệp WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Ghi đè ô nhớ <b>{slot}</b> “{name}” bằng <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Nội dung hiện tại của ô nhớ sẽ được sao lưu trước khi ghi."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Tên ô nhớ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Hủy"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Ghi vào pedal"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Sao lưu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Khôi phục ô nhớ này"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Khôi phục toàn bộ bản sao lưu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Đóng"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Chưa có bản sao lưu nào."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: ô nhớ {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} ô nhớ"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: không đọc được"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Không thể dùng bản sao lưu này: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Đưa {count} ô nhớ của pedal về trạng thái của bản sao lưu này?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Đưa ô nhớ {slot} của pedal về trạng thái của bản sao lưu này (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nChỉ những ô nhớ khác với bản sao lưu mới được ghi lại, và nội dung hiện tại của chúng được sao lưu ngay trước đó."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Khôi phục"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Xanh điện"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Lục lam"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Xanh lá"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Vàng"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Cam"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Đỏ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Hồng"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Tím"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Trắng ngà"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Màu giao diện"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Mã màu, ví dụ #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Yêu cầu: # và sáu chữ số thập lục phân"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Đang tìm pedal…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Khôi phục trạng thái trước đó"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Sao lưu tất cả"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Sao lưu…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Tải tệp WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Xuất ra WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "Tệp WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Chọn một tệp WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Mỗi lần một tệp: một ô nhớ chỉ chứa một IR."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Xuất ra WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Khôi phục xong. Ô nhớ đã ghi lại và đọc lại thấy giống hệt: {rewritten}. Chỉ phần cài đặt: {settings}. Đã giống hệt bản sao lưu: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Ô nhớ {slot}: sau lần ghi bị gián đoạn, nó vẫn giữ nội dung như trước. Không cần làm gì."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Ô nhớ {slot}: sau lần ghi bị gián đoạn, nó không chứa nội dung cũ cũng không chứa nội dung mới. Cho đến khi được xử lý xong, đây là ô nhớ duy nhất có thể ghi."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Ô nhớ {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Ô nhớ {slot}: “{name}” đã được ghi và đọc lại thấy giống hệt. Nội dung trước đó đã được sao lưu trong {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Đang ghi ô nhớ {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Ghi ô nhớ {slot} thất bại: {reason} Pedal sẽ được để yên trong {seconds} giây, sau đó trạng thái của ô nhớ sẽ được kiểm tra."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Sao lưu thất bại: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Khôi phục đã dừng: {reason} Các ô nhớ đã xử lý đều ổn; trạng thái của pedal sẽ được đọc lại."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Đã kết nối, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Đã ngắt kết nối: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Cảnh báo: mã định danh do pedal thông báo không khớp với dữ liệu đã đọc."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Đã yêu cầu dừng."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Sao lưu"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "khoảng tần số hoặc số điểm không hợp lệ"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Không đọc được tệp âm thanh: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Tệp có {count} kênh: chỉ giữ kênh đầu tiên."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Tệp âm thanh trống: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Tệp chứa các mẫu không hữu hạn: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Tốc độ lấy mẫu {rate} Hz: tệp đã được lấy mẫu lại ở {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Tệp dài {duration} ms: chỉ giữ {count} mẫu đầu tiên ({limit} ms)."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedal chỉ phát {count} mẫu đầu tiên ({limit} ms): phần còn lại của IR này sẽ được lưu nhưng không nghe thấy."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Không thể chuẩn hóa {file}: không có tín hiệu trong khoảng 400 Hz đến 3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Việc chuẩn hóa {file} vượt quá phạm vi của số dấu phẩy động."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Sau khi chuẩn hóa, IR có đỉnh {peak} (IR thông thường dưới 10): tệp có một chỗ lõm rất sâu trong khoảng 400 Hz đến 3 kHz, và mức đầu ra có thể rất cao."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "ngày của nhật ký ghi phải có múi giờ"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "ô nhớ nằm ngoài phạm vi"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: cần ngày ISO có múi giờ"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: cần ngày ISO có múi giờ, hoặc null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: cần tên thư mục sao lưu"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: cần 64 chữ số thập lục phân"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: cần 32 byte ở dạng thập lục phân"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "mã định danh nằm ngoài phạm vi"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: cần giá trị boolean"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Không đọc được nhật ký ghi: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Không thể xóa nhật ký {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 gồm {size} byte thay vì {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "khối đã mã hóa gồm {size} byte thay vì {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "thông điệp “{message}”: Control Change không hợp lệ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "thông điệp “{message}”: một Control Change là một cài đặt"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "thông điệp “{message}”: Control Change không nằm trong danh sách đóng"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "thông điệp “{message}”: giá trị {value} vượt quá {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "thông điệp “{message}” có khung sai"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "thông điệp “{message}”: byte nằm ngoài 7 bit"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "thông điệp “{message}” không nằm trong danh sách đóng"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "thông điệp “{message}”: {size} byte thay vì {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "thông điệp “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "yêu cầu phiên bản không mong đợi"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "chỉ cho phép thông báo 70 05 01, đang thử nghiệm"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "chỉ cho phép lệnh đọc 70 26 7F"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "yêu cầu bảng có phần thân khác không"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "ghi bảng: cần một cài đặt, giá trị từ 0 đến 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "yêu cầu đọc không hợp lệ"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "ô nhớ nằm ngoài phạm vi hoặc phần thân khác không"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "lệnh {command} không có quy tắc nội dung"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "thông điệp tải lên nằm ngoài loại ghi"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "lệnh ghi {command} không có quy tắc nội dung"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "tên ô nhớ không hợp lệ"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "mã định danh có bit 31 được đặt (IR gốc nhà máy): chức năng chưa được mở"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "phần đầu tải lên: ô nhớ nằm ngoài phạm vi"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "phần đầu tải lên: MD5 có ký tự ngoài chữ số thập lục phân viết thường"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "phần đầu tải lên nằm ngoài dạng đã quan sát"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "phần cuối tải lên: byte khác không sau cờ"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "khối kết thúc: ô nhớ nằm ngoài phạm vi"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "khối kết thúc nằm ngoài dạng đã quan sát"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "khối dữ liệu: địa chỉ hoặc bộ đếm nằm ngoài phạm vi"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "khối dữ liệu: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "khối dữ liệu: tải trọng nằm ngoài dạng do enc_msb tạo ra"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "khối dữ liệu: có bit đệm khác không vượt quá {size} byte của IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "mã định danh {value} nằm ngoài khoảng 0..{max}: bit 31 dành riêng cho IR gốc nhà máy, một chức năng chưa được mở"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "tên dài {size} byte, tối đa {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "phần thân dài {size} byte thay vì {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "thông tin của ô nhớ {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "bảng {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "trạng thái hiện tại"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR của ô nhớ {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "kích hoạt ô nhớ {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "một bảng có {count} giá trị, nhận được {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "bảng {table}: giá trị {value!r} nằm ngoài khoảng 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "ghi bảng {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "cài đặt không xác định “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "cài đặt “{name}”: giá trị {value!r} nằm ngoài khoảng 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "đặt {name} thành {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "thông báo kết nối"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "tên ô nhớ có từ 1 đến {max} ký tự"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "tên ô nhớ chỉ chứa các ký tự ASCII in được"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR chứa một mẫu không hữu hạn"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "tải lên ô nhớ {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "phần đầu"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "khối {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "kết thúc"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "phần cuối"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "tên"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "thông tin"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "tổng kết thúc gồm {size} byte thay vì {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "tên ô nhớ trống hoặc ngoài ASCII in được"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "có byte khác không sau phần kết thúc của tên ô nhớ"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "thiếu phần đầu NUX SysEx"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "không có F7 cuối"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "byte nằm ngoài 7 bit"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "loại {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "lệnh {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "xác nhận tải lên không mong đợi"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "trạng thái xác nhận không xác định: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "phản hồi phiên bản không mong đợi: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "lệnh {command}: chỉ 0x5c (đọc thông tin) và 0x5b (phản hồi tên) mang thông tin ô nhớ"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "độ dài mã hóa {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "phản hồi thông tin ô nhớ không mong đợi: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "không đọc được thông tin ô nhớ: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedal thông báo ô nhớ {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "phản hồi không mong đợi cho bảng {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "bảng {table}: giá trị {value} vượt quá 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "phản hồi trạng thái không mong đợi: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "phần đầu đọc: lệnh {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "phần đầu đọc mang cờ kết thúc"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "phần đầu đọc khác không, chưa từng thấy ở dạng này"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "khối {block}: lệnh {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "khối {block}: cờ {flag} khác không"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "khối {block}: địa chỉ {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "khối {block}: bộ đếm {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "khối {block} không đọc được: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "khối kết thúc: lệnh {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "khối kết thúc không có cờ"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "khối kết thúc: bộ đếm {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "khối kết thúc: byte lạ ngoài cờ, tổng và bộ đếm"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "không đọc được tổng kết thúc: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "tổng kết thúc đọc sai"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "phần cuối: lệnh {found} thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "phần cuối không có cờ"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "phần cuối: byte lạ sau cờ"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "nhận được {count} thông điệp thay vì {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "thông điệp {number} không thuộc một lần đọc IR: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "màu {colour!r}: cần “#rrggbb” viết thường"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Chức năng không xác định “{name}”. Đã biết: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "cần một danh sách các chức năng đã biết, đã sắp xếp và không trùng lặp"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Không đọc được sổ đăng ký thử nghiệm: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Sổ đăng ký thử nghiệm đang bị khóa bởi một tiến trình khác ({file}): hãy thử lại khi lệnh kia đã chạy xong."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Không thể khóa {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Không tìm thấy pedal: không có card âm thanh “NAI5”. Hãy kiểm tra cáp USB."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR chưa được đặt: không thể lấy khóa."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Không thể lấy khóa {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedal đang được một phiên bản optima-air khác sử dụng."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Khóa đã được nhả: không thể giao cho một cổng nữa."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Khóa này đã thuộc về một cổng: không thể giao cho cổng thứ hai."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Không thể nhả khóa: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedal không còn phản hồi: bị rút ra hoặc bị treo."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Không thể cấu hình cổng {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Không thể chuẩn bị đầu vào của cổng {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Cổng {port} không tồn tại."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Truy cập {port} bị từ chối. Hãy kiểm tra bạn có thuộc nhóm “audio” không (lệnh: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Cổng {port} đang được chương trình khác sử dụng."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Cổng {port} không còn khả dụng."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Không thể mở cổng {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Không thể ghi: cổng đã đóng."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Ghi vào cổng {port} thất bại: không có byte nào được chấp nhận."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Ghi vào cổng {port} thất bại: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Việc xả cổng {port} bị gián đoạn {count} lần liên tiếp: thông điệp đã được giao cho nhân hệ điều hành, nhưng không thể chờ nó được gửi đi."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Thời gian chờ nằm ngoài phạm vi: {wait} giây (tối đa {max} giây)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Không thể đọc: cổng đã đóng."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Đọc từ cổng {port} thất bại: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Cổng {port} không báo cáo trạng thái đầu vào ({error}): không thể phát hiện mất byte, dừng tại đây."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Đọc trạng thái của cổng {port} thất bại: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Đóng cổng {port} thất bại: {error}"

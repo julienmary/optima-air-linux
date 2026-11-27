@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} биттік"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: бүтін сан күтілді, {type} алынды"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: бүтін сан немесе бос мән күтілді, {type} алынды"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "слот атауы: байттар күтілді, {type} алынды"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: мәтін күтілді, {type} алынды"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "{slot} слоты 1..{count} ауқымынан тыс"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "слот атауы {expected} байттың орнына {size} байт"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "{value} идентификаторы 0..{max} ауқымынан тыс"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value}, 0..{max} ауқымынан тыс"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Сақтық көшірменің белгісіз себебі “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "микробағдарлама жоқ: оған тек “{reason}” себебі рұқсат береді"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "сақтық көшірме атауы бұзылған “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "“{reason}” себебі {name} сақтық көшірмесінің себебінен (“{expected}”) өзгеше"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "оқылмайтын күн {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "уақыт белдеуі жоқ күн {date!r}"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "стандартты емес күн {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "{date!r} күні {name} сақтық көшірмесінің уақытынан өзгеше"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: күн күтілді, {type} алынды"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} уақыт белдеуін қамтуы керек (мысалы, datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "{file} қалтасына жазу мүмкін емес: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "қалта емес"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "{file} тексеру мүмкін емес: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "{backup} сақтық көшірмесін жасау мүмкін емес: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data: байттар күтілді, {type} алынды"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR {expected} байт болуы керек, {got} алынды"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "{slot} слоты {backup} сақтық көшірмесіне бұрын көшірілген: сақтық көшірме бір-ақ рет жазылады, жаңа сақтық көшірме жасаңыз."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Оқылмайтын слот жазбасы: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "JSON нысаны күтілді, {type} алынды"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "“{field}” өрісі жоқ немесе мәтін емес"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "мөрді есептеу мүмкін емес: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Слот жазбасы өзгертілген немесе бүлінген: {file} (мөр қате)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "“{field}” өрісі: бүтін сан күтілді"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "“{field}” өрісі: мәтін күтілді"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "“{field}” өрісі: бүтін сан немесе null күтілді"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "{record} слотының жазбасы {slot} слоты астында тіркелген"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: кіші әріпті он алтылық сан күтілді"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "“{record}” сақтық көшірмесінің жазбасы “{backup}” ішінде табылды"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "{file} оқу мүмкін емес: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Оқылмайтын сақтық көшірме: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "жоқ"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Үйлесімсіз слот жазбасы: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Оқылмайтын деректер: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Саусақ ізі қате: {file} пайдаланылмайды."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "идентификатор {computed} болып қайта есептелді, жазбада {recorded} көрсетілген"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Белсенді слот"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR қосу/өшіру"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Алдын ала күшейткішті қосу/өшіру"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” слот нөмірі емес"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "{slot} слотына жазу үзілді: педальға тағы {seconds} с тиіспейді. Содан кейін мынаны іске қосыңыз: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "белгісіз ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "белгісіз ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Микробағдарлама {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Пресет: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "{slot} слоты “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "белгісіз слот ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: қосулы, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: өшірулі, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Алдын ала күшейткіш: қосулы"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Алдын ала күшейткіш: өшірулі"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Атауы"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Идент."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Дыбыс деңгейі"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Төменгі кесу"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Жоғарғы кесу"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Ескерту: педаль хабарлаған идентификатор ({announced}) қайта оқығанда да оқылған деректермен ({computed}) сәйкес келмейді. Сақтық көшірме бәрібір жасалады."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "{slot} слоты “{name}” {backup} сақтық көшірмесіне көшірілді"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} байт: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change арнасы {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[арна {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, яғни 100-ден {converted}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: мин {min} макс {max} ({count} хабар)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "деңгейлер"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Ескерту: қабылдау кезінде {count} SysEx жоғалды."
+msgstr[1] "Ескерту: қабылдау кезінде {count} SysEx жоғалды."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Ескерту: кіріс буферінің {count} толуы, байттар жоғалды."
+msgstr[1] "Ескерту: кіріс буферінің {count} толуы, байттар жоғалды."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "и"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "иә"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [и/ж] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Бас тартылды: ештеңе жазылмады."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "“{name}” сынақ функциясы үшін қосылу хабарламасы жіберілсін бе?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Бас тартылды: ештеңе жіберілмеді."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Хабарлама қосылу тізбегімен бұрын жіберілген: екі рет жіберілмейді."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Хабарлама жіберілді: жауап алынды"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Хабарлама жіберілді: жауап жоқ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: расталды"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: сынақта"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” функция атауын күтеді."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "“{name}” атауынан бас тартылды ({error}). Оны --name арқылы беріңіз."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Ескерту: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "{slot} слоты “{current}” “{name}” ({file}) арқылы қайта жазылсын ба?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "{slot} слоты: “{name}” жазылды және қайта оқығанда бірдей болды."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Алдыңғы мазмұн (“{name}”) {backup} сақтық көшірмесіне көшірілді"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} бұрыннан бар. Үстінен жазу үшін --yes қосыңыз."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "{file} жазу мүмкін емес: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "{slot} слоты “{name}” {file} файлына экспортталды"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Оқылуда: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Ескерту: {slot} слоты үшін хабарланған идентификатор қайта оқығанда да оқылған деректермен сәйкес келмейді. Бәрібір сақтық көшірмесі жасалды."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Барлық 23 слот {backup} сақтық көшірмесіне көшірілді"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Сақтық көшірмелер жоқ."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} слот"
+msgstr[1] "{count} слот"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "БҮЛІНГЕН ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "жоқ"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name тек бір слотты қалпына келтіруге қолданылады."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Педаль {backup} сақтық көшірмесінің күйіне қайтарылсын ба ({count} слот)? Тек өзгеше слоттар, мазмұны сақтық көшірмеге алынғаннан кейін, қайта жазылады."
+msgstr[1] "Педаль {backup} сақтық көшірмесінің күйіне қайтарылсын ба ({count} слот)? Тек өзгеше слоттар, мазмұны сақтық көшірмеге алынғаннан кейін, қайта жазылады."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Қайта жазылған және қайта оқығанда бірдей болған слоттар: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Тек параметрлері қалпына келтірілген слоттар: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Сақтық көшірмемен бұрыннан бірдей слоттар: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "{slot} слоты “{current}” {backup} сақтық көшірмесінен (“{name}”) қайта жазылсын ба?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "{slot} слоты {backup} сақтық көшірмесінен қалпына келтірілді, содан кейін қайта оқығанда бірдей болды."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Ауыстырылған мазмұн (“{name}”) {backup} сақтық көшірмесіне көшірілді"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Үзілген жазу жоқ."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "{slot} слоты: үзілген жазу аяқталған екен. Істейтін ештеңе жоқ."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "{slot} слоты: ол әлі бұрынғы мазмұнын сақтап тұр. Істейтін ештеңе жоқ."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "{slot} слоты: оның мазмұны ескі де, жаңа да емес. Оны бұрынғы қалпына келтіру үшін: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "расталмаған микробағдарламада оқудан артығына рұқсат ету"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "сынақ функциясына рұқсат ету"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "растауды сұрамау"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "слот нөмірі, 1-ден {count}-ке дейін"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "NUX Optima Air педаліне арналған Linux редакторы."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "деректер қалтасы (әдепкі: XDG деректер қалтасы)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "терезені ашу"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "микробағдарлама нұсқасы, пресет және параметрлер"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 IR слоты"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "слоттың IR-ін сақтық көшірмеге алу"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "педаль жіберетінді басып шығару"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "тыңдау секундтары"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "алдымен күйді оқу"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "алдымен хабарламаны жіберу (сынақ)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "WAV-ты слотқа жазу"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV файлы"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "слоттың атауы (әдепкі: файлдың атауы)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "слотты WAV ретінде экспорттау"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "жазылатын WAV файлы"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "слотты немесе барлығын сақтық көшірмеден қайта жазу"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "сақтық көшірме қалтасы"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "слот нөмірі, 1-ден {count}-ке дейін (әдепкі: барлығы)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "сақтық көшірмеге алынған атауды ауыстыру"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "23 слотты сақтық көшірмеге алу"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "сақтық көшірмелерді тізімдеу"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "үзілген жазуды тексеру"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "сынақ функцияларының тізілімі"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "{slot} слотына жазу аяқталмай қалды. Педальға біраз уақыт тиіспейді; содан кейін мынаны іске қосыңыз: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Қате: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Үзілді."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "{byte} байты 7 биттен тыс"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 7 биттік байт {bits} толтыру битін қалдырады, enc7 6-дан көбін ешқашан шығармайды"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "7 биттік ағынның соңында нөлдік емес толтыру биттері"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "блок {expected} байт болуы керек, {got} алынды"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "{sum} ({hex}) блок қосындысы берілетін 14 биттен асады (макс {max}): педальда ешқашан көрілмеген, расталғанға дейін бас тартылды"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "кодталған блок {expected} байт болуы керек, {got} алынды"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "кодталған блокта 7 биттен тыс байт"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "блоктың бақылау қосындысы қате"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "беру соңының қосындысы кемінде бір блокты қамтиды"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "{length} ұзындығы {block} еселігі емес"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "{value} мәні 28 биттен тыс"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "28 биттік қосынды 4 байт алады, {got} алынды"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "28 биттік қосындыда {byte} байты 7 биттен тыс"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Жазу үзілді: педальға тағы {seconds} с тиіспейді."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: жазу хабарламасын тек толық слот жазуы (сақтық көшірме, журнал, қайта оқу) жібере алады."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Микробағдарлама нұсқасы әлі оқылмаған: тек оқуға рұқсат етіледі."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Белгісіз микробағдарлама {found} (протокол {verified} нұсқасында расталған): тек оқуға рұқсат етіледі."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” сынақ функциясы (“{function}”), педальда әлі расталмаған."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: тек оқуды қайта жіберуге болады."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Педаль “{message}” хабарына {count} әрекеттен кейін жауап бермеді."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Педаль үзіліссіз SysEx жіберуін жалғастырып тұр."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "{slot} слотын оқу мүмкін емес: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "{slot} слотын екі рет оқу әртүрлі деректер береді."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "{slot} слотына жазу үзілді: бірдеңе жібермес бұрын тағы {seconds} с күтіңіз."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "{slot} слотына жазу үзілді: бұл слот түзетілгенге дейін тек сол ғана жазыла алады."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Жазудан бас тартылды: микробағдарлама оқылмаған немесе протокол расталған нұсқа емес."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Жазғаннан кейін {slot} слотында жіберілген деректер жоқ."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Педаль IR жазу кезінде қате туралы хабарлайды."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Блокты растау күтпеген: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{expected} орнына {count} блокты растау алынды."
+msgstr[1] "{expected} орнына {count} блокты растау алынды."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Тақырып пен төменгі деректемені растау жоқ немесе күтпеген."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Жазғаннан кейін атау жаңғырығы бір рет емес, {count} рет келді."
+msgstr[1] "Жазғаннан кейін атау жаңғырығы бір рет емес, {count} рет келді."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Жазғаннан кейін атау жаңғырығы жіберілгенмен сәйкес келмейді."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Жазғаннан кейін слот туралы ақпарат бір рет емес, {count} рет келді."
+msgstr[1] "Жазғаннан кейін слот туралы ақпарат бір рет емес, {count} рет келді."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Жазғаннан кейін слот туралы ақпарат жіберілгенмен сәйкес келмейді."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "{backup} сақтық көшірмесінде слот жоқ."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Салыстыру"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "{backup} сақтық көшірмесінің {slot} слоты педальдікінен өзгеше, бірақ қазіргі қалпында қайта жазылмайды ({error}). Ештеңе жазылмады."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Қалпына келтіру"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "{requested} слоты сұралғаннан кейін педаль {announced} слотын хабарлайды."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Педаль {table} кестесінің жазылуына жаңғырық бермеді."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "{table} кестесінің жаңғырығы жіберілгеннен өзгеше."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "символдық сілтеме"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "кәдімгі файл емес"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{expected} байттың орнына {size} байт"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} байт, рұқсат етілген {allowed} байттан көп"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "оқу кезінде өлшемі өзгерді"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "{file} құлпын жасау мүмкін емес: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "қайталанатын кілт “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} стандартты JSON емес"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "JSON емес: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "“{field}” өрісі жоқ"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "белгісіз пішім {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "белгісіз өріс “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "{file} қалтасын синхрондау мүмкін емес: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "{folder} қалтасын жасау мүмкін емес: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "{folder} қалтасын жасау мүмкін емес: {path} қалта емес"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "{file} орнына қою мүмкін емес: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "жазудан бұрын"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "слотты оқу"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "толық сақтық көшірме"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "импорт"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "бүлінген слот"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "WAV жүктеу"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "<b>{slot}</b> слоты “{name}” <b>{file}</b> арқылы қайта жазылсын ба?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Слоттың ағымдағы мазмұны жазудан бұрын сақтық көшірмеге алынады."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Слот атауы"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Бас тарту"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Педальға жазу"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Сақтық көшірмелер"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Бұл слотты қалпына келтіру"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Бүкіл сақтық көшірмені қалпына келтіру"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Жабу"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Әзірге сақтық көшірмелер жоқ."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: {slot} слоты “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} слот"
+msgstr[1] "{backup}: {count} слот"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: оқылмайды"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Бұл сақтық көшірмені пайдалану мүмкін емес: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Педальдің {count} слоты осы сақтық көшірменің күйіне қайтарылсын ба?"
+msgstr[1] "Педальдің {count} слоты осы сақтық көшірменің күйіне қайтарылсын ба?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Педальдің {slot} слоты осы сақтық көшірменің (“{name}”) күйіне қайтарылсын ба?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nТек сақтық көшірмеден өзгеше слот қайта жазылады, ал оның ағымдағы мазмұны дәл алдында сақтық көшірмеге алынады."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Қалпына келтіру"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Электрлік көк"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Көгілдір"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Жасыл"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Сары"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Қызғылт сары"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Қызыл"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Қызғылт"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Күлгін"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Ақшыл"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Интерфейс түсі"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Түс коды, мысалы #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Күтілгені: # және алты он алтылық цифр"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Педаль ізделуде…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Алдыңғы күйді қалпына келтіру"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Бәрін сақтық көшірмеге алу"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Сақтық көшірмелер…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "WAV жүктеу…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "WAV ретінде экспорттау…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV файлдары"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "WAV файлын таңдаңыз"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Бір мезетте бір файл: слот тек бір IR сақтайды."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "WAV ретінде экспорттау"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Қалпына келтіру аяқталды. Қайта жазылған және қайта оқығанда бірдей болған слоттар: {rewritten}. Тек параметрлер: {settings}. Сақтық көшірмемен бұрыннан бірдей: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "{slot} слоты: үзілген жазудан кейін ол әлі бұрынғы мазмұнын сақтап тұр. Істейтін ештеңе жоқ."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "{slot} слоты: үзілген жазудан кейін оның мазмұны ескі де, жаңа да емес. Ол түзетілгенге дейін тек сол ғана жазыла алады."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "{slot} слоты: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "{slot} слоты: “{name}” жазылды және қайта оқығанда бірдей болды. Алдыңғы мазмұн {backup} сақтық көшірмесіне көшірілді"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "{slot} слоты жазылуда…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "{slot} слотына жазу сәтсіз аяқталды: {reason} Педальға {seconds} с тиіспейді, содан кейін слоттың күйі тексеріледі."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Сақтық көшірме жасау сәтсіз аяқталды: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Қалпына келтіру тоқтады: {reason} Қазірге дейін өңделген слоттар реттелген; педальдің күйі қайта оқылады."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Қосылды, микробағдарлама {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Ажыратылды: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Ескерту: педаль хабарлаған идентификатор оқылған деректермен сәйкес келмейді."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Тоқтату сұралды."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Сақтық көшірме"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "жиілік ауқымы немесе нүктелер саны жарамсыз"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Оқылмайтын аудио файл: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Файлда {count} арна бар: тек біріншісі сақталады."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Бос аудио файл: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Файлда шектеусіз емес үлгілер бар: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Дискреттеу жиілігі {rate} Hz: файл {target} kHz-ке қайта дискреттелді."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Файл {duration} ms созылады: тек алғашқы {count} үлгі ({limit} ms) сақталады."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Педаль тек алғашқы {count} үлгіні ({limit} ms) ойнатады: осы IR-дің қалғаны сақталады, бірақ естілмейді."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "{file} қалыпқа келтіру мүмкін емес: 400 Hz пен 3 kHz арасында сигнал жоқ."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "{file} қалыпқа келтіру өзгермелі үтірлі сандар ауқымынан асады."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Қалыпқа келтіргеннен кейін IR шыңы {peak} (әдеттегі IR-лер 10-нан төмен болады): файлда 400 Hz пен 3 kHz арасында өте терең ойыс бар, шығыс деңгейі өте жоғары болуы мүмкін."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "журнал күні уақыт белдеуін қамтуы керек"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "слот ауқымнан тыс"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: уақыт белдеуі бар ISO күні күтілді"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: уақыт белдеуі бар ISO күні немесе null күтілді"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: сақтық көшірме қалтасының атауы күтілді"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: 64 он алтылық цифр күтілді"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: он алтылық түрде 32 байт күтілді"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "идентификатор ауқымнан тыс"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: логикалық мән күтілді"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Оқылмайтын жазу журналы: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "{file} журналын жою мүмкін емес: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "{expected} байттың орнына {size} байттық MD5"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "{expected} байттың орнына {size} байттық кодталған блок"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "“{message}” хабары: Control Change бұзылған"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "“{message}” хабары: Control Change - бұл параметр"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "“{message}” хабары: Control Change жабық тізімде жоқ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "“{message}” хабары: {value} мәні {max} мәнінен жоғары"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "“{message}” хабары қате жақтауланған"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "“{message}” хабары: 7 биттен тыс байт"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "“{message}” хабары жабық тізімде жоқ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "“{message}” хабары: {expected} байттың орнына {size} байт"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "“{message}” хабары: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "күтпеген нұсқа сұрауы"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "тек 70 05 01 хабарламасына, сынақ ретінде, рұқсат етіледі"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "тек 70 26 7F оқуына рұқсат етіледі"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "денесі нөлдік емес кесте сұрауы"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "кестені жазу: параметр күтілді, мәндер 0-ден 100-ге дейін"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "оқу сұрауы бұзылған"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "слот ауқымнан тыс немесе дене нөлдік емес"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "{command} пәрмені үшін мазмұн ережесі жоқ"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "жазу санатынан тыс жүктеу хабары"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "{command} жазу пәрмені үшін мазмұн ережесі жоқ"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "слот атауы бұзылған"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "31-бит орнатылған идентификатор (зауыттық IR): функция әлі ашық емес"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "жүктеу тақырыбы: слот ауқымнан тыс"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "жүктеу тақырыбы: MD5 кіші әріпті он алтылық цифрлардан тыс"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "жүктеу тақырыбы байқалған пішімнен тыс"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "жүктеу төменгі деректемесі: жалаудан кейін нөлдік емес байт"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "аяқтау блогы: слот ауқымнан тыс"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "аяқтау блогы байқалған пішімнен тыс"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "деректер блогы: мекенжай немесе санауыш ауқымнан тыс"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "деректер блогы: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "деректер блогы: жүк enc_msb шығаратын пішімнен тыс"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "деректер блогы: IR-дің {size} байтынан әрі нөлдік емес толтыру"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "{value} идентификаторы 0..{max} ауқымынан тыс: 31-бит зауыттық IR-лерге резервтелген, функция әлі ашық емес"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "{size} байттық атау, ең көбі {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "{expected} байттың орнына {size} байттық дене"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "{slot} слоты туралы ақпарат"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "кесте {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "ағымдағы күй"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "{slot} слотының IR-і"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "{slot} слотын белсендіру"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "кестеде {count} мән бар, {got} алынды"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "кесте {table}: {value!r} мәні 0..{max} ауқымынан тыс"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "кестені жазу {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "белгісіз параметр “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "“{name}” параметрі: {value!r} мәні 0..{max} ауқымынан тыс"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "{name} параметрін {value} мәніне орнату"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "қосылу хабарламасы"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "слот атауы 1-ден {max} символға дейін болады"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "слот атауында тек басып шығарылатын ASCII таңбалары болады"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR шектеусіз емес үлгіні қамтиды"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "{slot} слотын жүктеу, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "тақырып"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "блок {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "соңы"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "төменгі деректеме"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "атауы"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "ақпарат"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "{expected} байттың орнына {size} байттық аяқтау қосындысы"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "слот атауы бос немесе басып шығарылатын ASCII-ден тыс"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "слот атауының соңынан кейін нөлдік емес байттар"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "NUX SysEx тақырыбы жоқ"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "соңғы F7 жоқ"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "7 биттен тыс байт"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "{expected} орнына {found} түрі"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "{expected} орнына {found} пәрмені"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "жүктеуді күтпеген растау"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "растаудың белгісіз күйі: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "нұсқаның күтпеген жауабы: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "{command} пәрмені: слот туралы ақпаратты тек 0x5c (ақпаратты оқу) және 0x5b (атау жаңғырығы) тасымалдайды"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "кодталған ұзындық {expected} орнына {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "слот туралы ақпараттың күтпеген жауабы: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "оқылмайтын слот туралы ақпарат: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "педаль {slot} слотын хабарлайды"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "{table} кестесі үшін күтпеген жауап: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "кесте {table}: {value} мәні 100-ден жоғары"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "күйдің күтпеген жауабы: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "оқу тақырыбы: {expected} орнына {found} пәрмені"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "оқу тақырыбында аяқтау жалауы бар"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "нөлдік емес оқу тақырыбы, мұндай пішімде ешқашан көрілмеген"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "блок {block}: {expected} орнына {found} пәрмені"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "блок {block}: нөлдік емес жалау {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "блок {block}: {expected} орнына {found} мекенжайы"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "блок {block}: {expected} орнына {found} санауышы"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "блок {block} оқылмайды: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "аяқтау блогы: {expected} орнына {found} пәрмені"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "жалаусыз аяқтау блогы"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "аяқтау блогы: {expected} орнына {found} санауышы"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "аяқтау блогы: жалау, қосынды және санауыштан тыс бөтен байт"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "оқылмайтын аяқтау қосындысы: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "оқу соңының қосындысы қате"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "төменгі деректеме: {expected} орнына {found} пәрмені"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "жалаусыз төменгі деректеме"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "төменгі деректеме: жалаудан кейін бөтен байт"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{expected} орнына {count} хабар алынды"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "{number} хабары IR оқуына жат: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "{colour!r} түсі: кіші әріпті “#rrggbb” күтілді"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Белгісіз функция “{name}”. Белгілілері: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "қайталанбайтын, сұрыпталған белгілі функциялар тізімі күтілді"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Оқылмайтын сынақ тізілімі: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Сынақ тізілімін басқа процесс құлыптаған ({file}): басқа пәрмен аяқталғаннан кейін қайталап көріңіз."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "{file} құлыптау мүмкін емес: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Педаль табылмады: “NAI5” дыбыс картасы жоқ. USB кабелін тексеріңіз."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR орнатылмаған: құлыпты алу мүмкін емес."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "{file} құлпын алу мүмкін емес: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Педальді optima-air-дің басқа данасы пайдаланып жатыр."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Құлып бұрын босатылған: енді оны портқа беру мүмкін емес."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Бұл құлып бұрыннан портқа тиесілі: оны екінші портқа беру мүмкін емес."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Құлыпты босату мүмкін емес: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Педаль енді жауап бермейді: ажыратылған немесе қатып қалған."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "{port} портын баптау мүмкін емес: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "{port} портының кірісін іске қосу мүмкін емес: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "{port} порты жоқ."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "{port} портына кіруге тыйым салынды. “audio” тобында екеніңізді тексеріңіз (пәрмен: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "{port} портын басқа бағдарлама пайдаланып жатыр."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "{port} порты енді қолжетімсіз."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "{port} портын ашу мүмкін емес: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Жазу мүмкін емес: порт жабық."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "{port} портына жазу сәтсіз аяқталды: бірде-бір байт қабылданбады."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "{port} портына жазу сәтсіз аяқталды: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "{port} портын босату қатарынан {count} рет үзілді: хабар ядроға берілді, бірақ оның жөнелтілуін күтуге болмады."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Күту ауқымнан тыс: {wait} с (ең көбі {max} с)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Оқу мүмкін емес: порт жабық."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "{port} портынан оқу сәтсіз аяқталды: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "{port} порты кірісінің күйін хабарламайды ({error}): байттардың жоғалуын анықтау мүмкін емес, осы жерде тоқтатылады."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "{port} портының күйін оқу сәтсіз аяқталды: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "{port} портын жабу сәтсіз аяқталды: {error}"

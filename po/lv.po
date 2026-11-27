@@ -1,0 +1,1956 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} bitu"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: gaidīts vesels skaitlis, saņemts {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: gaidīts vesels skaitlis vai nekas, saņemts {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "sloto nosaukums: gaidīti baiti, saņemts {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: gaidīts teksts, saņemts {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "slots {slot} ārpus diapazona 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "sloto nosaukums ir {size} baitu, nevis {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "identifikators {value} ārpus diapazona 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} ārpus diapazona 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Nezināms dublējuma iemesls “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "programmaparatūra trūkst: to atļauj tikai iemesls “{reason}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "nederīgs dublējuma nosaukums “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "iemesls “{reason}” atšķiras no dublējuma {name} iemesla “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "nelasāms datums {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "datums {date!r} bez laika joslas"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "nekanonisks datums {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "datums {date!r} atšķiras no dublējuma {name} laika"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: gaidīts datums, saņemts {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} jābūt laika joslai (piemēram, datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Nevar rakstīt mapē {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "nav mape"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Nevar pārbaudīt {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Nevar izveidot dublējumu {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "dati: gaidīti baiti, saņemts {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR ir {expected} baitu, saņemts {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "slots {slot} jau ir dublēts mapē {backup}: dublējums tiek rakstīts tikai vienreiz, izveidojiet jaunu dublējumu."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Slota ieraksts nav lasāms: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "gaidīts JSON objekts, saņemts {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "lauks “{field}” trūkst vai nav teksts"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "zīmogu nevar aprēķināt: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Slota ieraksts ir mainīts vai bojāts: {file} (nepareizs zīmogs)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "lauks “{field}”: gaidīts vesels skaitlis"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "lauks “{field}”: gaidīts teksts"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "lauks “{field}”: gaidīts vesels skaitlis vai null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "slota {record} ieraksts glabājas zem slota {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: gaidīts heksadecimāls skaitlis ar mazajiem burtiem"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "dublējuma “{record}” ieraksts atrasts dublējumā “{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Nevar nolasīt {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Dublējums nav lasāms: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "trūkst"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Slota ieraksts ir pretrunīgs: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Dati nav lasāmi: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Nepareizs pirkstu nospiedums: {file} netiks izmantots."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "identifikators pārrēķināts kā {computed}, ierakstā norādīts {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Aktīvais slots"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR ieslēgts/izslēgts"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Pirmspastiprinātājs ieslēgts/izslēgts"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” nav slota numurs"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Slota {slot} rakstīšana tika pārtraukta: pedālis tiek atstāts mierā vēl {seconds} s. Pēc tam palaidiet: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "nezināms ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "nezināms ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Programmaparatūra {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Priekšiestatījums: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "slots {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "nezināms slots ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: ieslēgts, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: izslēgts, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Pirmspastiprinātājs: ieslēgts"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Pirmspastiprinātājs: izslēgts"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Nosaukums"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Ident."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Skaļums"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Zemo frekvenču nogriešana"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Augsto frekvenču nogriešana"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Brīdinājums: pedāļa paziņotais identifikators ({announced}) neatbilst nolasītajiem datiem ({computed}), pat pēc atkārtotas nolasīšanas. Dublējums tāpat tiek izveidots."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Slots {slot} “{name}” dublēts mapē {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} baitu: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change kanāls {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[kanāls {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, t. i., {converted} no 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} max {max} ({count} ziņ.)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "līmeņi"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Brīdinājums: uztveršanas laikā tika izmests {count} SysEx ziņojums."
+msgstr[1] "Brīdinājums: uztveršanas laikā tika izmesti {count} SysEx ziņojumi."
+msgstr[2] "Brīdinājums: uztveršanas laikā netika izmesti SysEx ziņojumi ({count})."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Brīdinājums: {count} ievades bufera pārpildīšanās, baiti tika zaudēti."
+msgstr[1] "Brīdinājums: {count} ievades bufera pārpildīšanās reizes, baiti tika zaudēti."
+msgstr[2] "Brīdinājums: ievades bufera pārpildīšanās reizes ({count}), baiti tika zaudēti."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "j"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "jā"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [j/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Atcelts: nekas netika rakstīts."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Vai nosūtīt savienojuma paziņojumu, izmēģinājuma funkcija “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Atcelts: nekas netika nosūtīts."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Paziņojumu savienojuma secība jau ir nosūtījusi: tas netiek sūtīts divreiz."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Paziņojums nosūtīts: atbilde saņemta"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Paziņojums nosūtīts: atbildes nav"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: apstiprināts"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: izmēģinājumā"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” gaida funkcijas nosaukumu."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Nosaukums “{name}” noraidīts ({error}). Norādiet nosaukumu ar --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Brīdinājums: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Vai pārrakstīt slotu {slot} “{current}” ar “{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Slots {slot}: “{name}” uzrakstīts un nolasīts atpakaļ identisks."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Iepriekšējais saturs (“{name}”) dublēts mapē {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} jau pastāv. Pievienojiet --yes, lai to pārrakstītu."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Nevar rakstīt {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Slots {slot} “{name}” eksportēts uz {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Lasīšana: {done} no {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Brīdinājums: slotam {slot} paziņotais identifikators neatbilst nolasītajiem datiem, pat pēc atkārtotas nolasīšanas. Tas tāpat tiek dublēts."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Visi 23 sloti dublēti mapē {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Nav dublējumu."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} slots"
+msgstr[1] "{count} sloti"
+msgstr[2] "{count} slotu"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "BOJĀTS ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "nav"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name attiecas tikai uz viena slota atjaunošanu."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Vai atjaunot pedāli dublējuma {backup} stāvoklī ({count} slots)? Tiks pārrakstīti tikai atšķirīgie sloti, iepriekš dublējot to saturu."
+msgstr[1] "Vai atjaunot pedāli dublējuma {backup} stāvoklī ({count} sloti)? Tiks pārrakstīti tikai atšķirīgie sloti, iepriekš dublējot to saturu."
+msgstr[2] "Vai atjaunot pedāli dublējuma {backup} stāvoklī ({count} slotu)? Tiks pārrakstīti tikai atšķirīgie sloti, iepriekš dublējot to saturu."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} no {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Pārrakstītie un identiski nolasītie sloti: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Sloti, kuriem atjaunoti tikai iestatījumi: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Sloti, kas jau ir identiski dublējumam: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Vai pārrakstīt slotu {slot} “{current}” no dublējuma {backup} (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Slots {slot} atjaunots no {backup} un nolasīts atpakaļ identisks."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Aizvietotais saturs (“{name}”) dublēts mapē {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Nav pārtrauktas rakstīšanas."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Slots {slot}: pārtrauktā rakstīšana bija pabeigta. Nav ko darīt."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Slots {slot}: tajā joprojām ir tas, kas bija iepriekš. Nav ko darīt."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Slots {slot}: tā saturs nav ne vecais, ne jaunais. Lai to atjaunotu iepriekšējā stāvoklī: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "atļaut ko vairāk par lasīšanu neverificētā programmaparatūrā"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "atļaut izmēģinājuma funkciju"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "neprasīt apstiprinājumu"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "slota numurs no 1 līdz {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Linux redaktors NUX Optima Air pedālim."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "datu mape (noklusējums: XDG datu mape)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "atvērt logu"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "programmaparatūras versija, priekšiestatījums un iestatījumi"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 IR sloti"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "dublēt slota IR"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "izdrukāt, ko pedālis sūta"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "klausīšanās sekundes"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "vispirms nolasīt stāvokli"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "vispirms nosūtīt paziņojumu (izmēģinājums)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "ierakstīt WAV slotā"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV fails"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "slota nosaukums (noklusējums: faila nosaukums)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "eksportēt slotu kā WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "rakstāmais WAV fails"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "pārrakstīt slotu vai visus slotus no dublējuma"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "dublējuma mape"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "slota numurs no 1 līdz {count} (noklusējums: visi)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "aizstāt dublēto nosaukumu"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "dublēt 23 slotus"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "uzskaitīt dublējumus"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "pārbaudīt pārtrauktu rakstīšanu"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "izmēģinājuma funkciju reģistrs"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Slota {slot} rakstīšana palika nepabeigta. Pedālis kādu laiku tiek atstāts mierā; pēc tam palaidiet: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Kļūda: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Pārtraukts."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "baits {byte} pārsniedz 7 bitus"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 7 bitu baiti atstāj {bits} papildbitus, enc7 nekad neveido vairāk par 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "papildbiti, kas nav nulle, 7 bitu plūsmas beigās"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "bloks ir {expected} baitu, saņemts {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "bloka summa {sum} ({hex}) pārsniedz 14 pārraidītos bitus (maks. {max}): pedālī nekad nav redzēta, noraidīta līdz verifikācijai"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "kodēts bloks ir {expected} baitu, saņemts {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "baits ārpus 7 bitiem kodētā blokā"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "nepareiza bloka kontrolsumma"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "pārraides beigu summa aptver vismaz vienu bloku"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "garums {length} nav {block} daudzkārtnis"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "vērtība {value} pārsniedz 28 bitus"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "28 bitu summa aizņem 4 baitus, saņemts {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "baits {byte} pārsniedz 7 bitus 28 bitu summā"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Rakstīšana tika pārtraukta: pedālis tiek atstāts mierā vēl {seconds} s."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: rakstīšanas ziņojumu var nosūtīt tikai pilnīga slota rakstīšana (dublējums, žurnāls, nolasīšana atpakaļ)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Programmaparatūras versija vēl nav nolasīta: atļauta tikai lasīšana."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Nezināma programmaparatūra {found} (protokols verificēts ar {verified}): atļauta tikai lasīšana."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” ir izmēģinājuma funkcija (“{function}”), kas pedālī vēl nav apstiprināta."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: atkārtoti var nosūtīt tikai lasīšanu."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Pedālis neatbild uz “{message}” pēc {count} mēģinājumiem."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedālis bez pārtraukuma sūta SysEx ziņojumus."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Nevar nolasīt slotu {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Divas slota {slot} nolasīšanas dod atšķirīgus datus."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Slota {slot} rakstīšana tika pārtraukta: pagaidiet vēl {seconds} s, pirms kaut ko sūtāt."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Slota {slot} rakstīšana tika pārtraukta: kamēr šis slots nav sakārtots, tas ir vienīgais, kurā var rakstīt."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Rakstīšana noraidīta: programmaparatūra nav nolasīta vai nav tā, ar kuru protokols tika verificēts."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Pēc rakstīšanas slotā {slot} nav tas, kas tika nosūtīts."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedālis ziņo par kļūdu, rakstot IR."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Negaidīts bloka apstiprinājums: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "Saņemts {count} bloka apstiprinājums, nevis {expected}."
+msgstr[1] "Saņemti {count} bloku apstiprinājumi, nevis {expected}."
+msgstr[2] "Saņemti bloku apstiprinājumi ({count}), nevis {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Galvenes un kājenes apstiprinājumi trūkst vai ir negaidīti."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Pēc rakstīšanas nosaukuma atbalss pienāca {count} reizi, nevis vienu reizi."
+msgstr[1] "Pēc rakstīšanas nosaukuma atbalss pienāca {count} reizes, nevis vienu reizi."
+msgstr[2] "Pēc rakstīšanas nosaukuma atbalss pienāca {count} reižu, nevis vienu reizi."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Pēc rakstīšanas nosaukuma atbalss neatbilst nosūtītajam."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Pēc rakstīšanas informācija par slotu pienāca {count} reizi, nevis vienu reizi."
+msgstr[1] "Pēc rakstīšanas informācija par slotu pienāca {count} reizes, nevis vienu reizi."
+msgstr[2] "Pēc rakstīšanas informācija par slotu pienāca {count} reižu, nevis vienu reizi."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Pēc rakstīšanas informācija par slotu neatbilst nosūtītajam."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Dublējumā {backup} nav neviena slota."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Salīdzināšana"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Dublējuma {backup} slots {slot} atšķiras no pedāļa, bet to nevar pārrakstīt tādu, kāds tas ir ({error}). Nekas netika rakstīts."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Atjaunošana"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedālis paziņo slotu {announced} pēc slota {requested} pieprasīšanas."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Pedālis neatbalsojas uz tabulas {table} rakstīšanu."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Tabulas {table} atbalss atšķiras no nosūtītā."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "ir simboliska saite"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "nav parasts fails"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} baitu, nevis {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} baitu, vairāk nekā atļautie {allowed}"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "izmērs mainījās lasīšanas laikā"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Nevar izveidot slēdzeni {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "dublēta atslēga “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} nav standarta JSON"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "nav JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "lauks “{field}” trūkst"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "nezināms formāts {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "nezināms lauks “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Nevar sinhronizēt mapi {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Nevar izveidot mapi {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Nevar izveidot mapi {folder}: {path} nav mape"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Nevar novietot {file} vietā: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "pirms rakstīšanas"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "slota nolasīšana"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "pilns dublējums"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "imports"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "bojāts slots"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Ielādēt WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Vai pārrakstīt slotu <b>{slot}</b> “{name}” ar <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Slota pašreizējais saturs tiks dublēts pirms rakstīšanas."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Slota nosaukums"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Atcelt"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Rakstīt pedālī"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Dublējumi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Atjaunot šo slotu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Atjaunot visu dublējumu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Aizvērt"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Vēl nav dublējumu."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: slots {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} slots"
+msgstr[1] "{backup}: {count} sloti"
+msgstr[2] "{backup}: {count} slotu"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: nav lasāms"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Šo dublējumu nevar izmantot: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Vai atjaunot pedāļa {count} slotu šī dublējuma stāvoklī?"
+msgstr[1] "Vai atjaunot pedāļa {count} slotus šī dublējuma stāvoklī?"
+msgstr[2] "Vai atjaunot pedāļa {count} slotu šī dublējuma stāvoklī?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Vai atjaunot pedāļa slotu {slot} šī dublējuma stāvoklī (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nTiek pārrakstīts tikai slots, kas atšķiras no dublējuma, un tā pašreizējais saturs tiek dublēts tieši pirms tam."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Atjaunot"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Elektriski zils"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Ciāns"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Zaļš"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Dzeltens"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Oranžs"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Sarkans"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Rozā"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Violets"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Netīri balts"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Saskarnes krāsa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Krāsas kods, piemēram, #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Gaidīts: # un seši heksadecimāli cipari"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Meklē pedāli…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Atjaunot iepriekšējo stāvokli"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Dublēt visu"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Dublējumi…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Ielādēt WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Eksportēt kā WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV faili"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Izvēlieties WAV failu"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Pa vienam failam: slotā ir tikai viens IR."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Eksportēt kā WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Atjaunošana pabeigta. Pārrakstītie un identiski nolasītie sloti: {rewritten}. Tikai iestatījumi: {settings}. Jau identiski dublējumam: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Slots {slot}: pēc pārtrauktās rakstīšanas tajā joprojām ir tas, kas bija iepriekš. Nav ko darīt."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Slots {slot}: pēc pārtrauktās rakstīšanas tajā nav ne vecā, ne jaunā satura. Kamēr tas nav sakārtots, tas ir vienīgais slots, kurā var rakstīt."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Slots {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Slots {slot}: “{name}” uzrakstīts un nolasīts atpakaļ identisks. Iepriekšējais saturs dublēts mapē {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Raksta slotu {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Slota {slot} rakstīšana neizdevās: {reason} Pedālis tiek atstāts mierā {seconds} s, pēc tam tiks pārbaudīts slota stāvoklis."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Dublēšana neizdevās: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Atjaunošana apstājās: {reason} Jau apstrādātie sloti ir kārtībā; pedāļa stāvoklis tiks nolasīts vēlreiz."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Savienots, programmaparatūra {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Atvienots: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Brīdinājums: pedāļa paziņotais identifikators neatbilst nolasītajiem datiem."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Apturēšana pieprasīta."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Dublējums"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "nederīgs frekvenču diapazons vai punktu skaits"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Audio fails nav lasāms: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Failā ir {count} kanāli: tiek saglabāts tikai pirmais."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Tukšs audio fails: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Fails satur nebeidzamus paraugus: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Iztveršanas frekvence {rate} Hz: fails tika pārveidots uz {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Faila ilgums ir {duration} ms: tiek saglabāti tikai pirmie {count} paraugi ({limit} ms)."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedālis atskaņo tikai pirmos {count} paraugus ({limit} ms): pārējā šī IR daļa tiks saglabāta, bet netiks dzirdēta."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Nevar normalizēt {file}: nav signāla starp 400 Hz un 3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Faila {file} normalizēšana pārsniedz peldošā punkta skaitļu diapazonu."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Pēc normalizēšanas IR maksimums ir {peak} (parastie IR paliek zem 10): failā ir ļoti dziļa ieplaka starp 400 Hz un 3 kHz, un izejas līmenis var būt ļoti augsts."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "žurnāla datumam jāietver laika josla"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "slots ārpus diapazona"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: gaidīts ISO datums ar laika joslu"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: gaidīts ISO datums ar laika joslu vai null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: gaidīts dublējuma mapes nosaukums"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: gaidīti 64 heksadecimāli cipari"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: gaidīti 32 baiti heksadecimāli"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "identifikators ārpus diapazona"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: gaidīta būla vērtība"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Rakstīšanas žurnāls nav lasāms: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Nevar noņemt žurnālu {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 ir {size} baitu, nevis {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "kodēts bloks ir {size} baitu, nevis {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "ziņojums “{message}”: nederīgs Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "ziņojums “{message}”: Control Change ir iestatījums"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "ziņojums “{message}”: Control Change nav slēgtajā sarakstā"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "ziņojums “{message}”: vērtība {value} pārsniedz {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "ziņojuma “{message}” ietvars ir nederīgs"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "ziņojums “{message}”: baits ārpus 7 bitiem"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "ziņojuma “{message}” nav slēgtajā sarakstā"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "ziņojums “{message}”: {size} baitu, nevis {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "ziņojums “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "negaidīts versijas pieprasījums"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "atļauts tikai paziņojums 70 05 01, izmēģinājumā"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "atļauta tikai lasīšana 70 26 7F"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "tabulas pieprasījums ar pamattekstu, kas nav nulle"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "tabulas rakstīšana: gaidīts iestatījums, vērtības no 0 līdz 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "nederīgs lasīšanas pieprasījums"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "slots ārpus diapazona vai pamatteksts, kas nav nulle"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "komandai {command} nav satura noteikuma"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "augšupielādes ziņojums ārpus rakstīšanas kategorijas"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "rakstīšanas komandai {command} nav satura noteikuma"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "nederīgs sloto nosaukums"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "identifikators ar iestatītu 31. bitu (rūpnīcas IR): funkcija vēl nav atvērta"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "augšupielādes galvene: slots ārpus diapazona"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "augšupielādes galvene: MD5 nav no heksadecimāliem cipariem ar mazajiem burtiem"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "augšupielādes galvene ārpus novērotās formas"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "augšupielādes kājene: baits, kas nav nulle, aiz karoga"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "beigu bloks: slots ārpus diapazona"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "beigu bloks ārpus novērotās formas"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "datu bloks: adrese vai skaitītājs ārpus diapazona"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "datu bloks: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "datu bloks: lietderīgā slodze ārpus enc_msb veidotās formas"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "datu bloks: papildbaiti, kas nav nulle, aiz IR {size} baitiem"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "identifikators {value} ārpus diapazona 0..{max}: 31. bits ir rezervēts rūpnīcas IR, funkcija vēl nav atvērta"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "nosaukums ir {size} baitu, ne vairāk kā {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "pamatteksts ir {size} baitu, nevis {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "slota {slot} informācija"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "tabula {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "pašreizējais stāvoklis"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "slota {slot} IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "slota {slot} aktivizēšana"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "tabulā ir {count} vērtības, saņemts {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "tabula {table}: vērtība {value!r} ārpus diapazona 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "tabulas {table} rakstīšana"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "nezināms iestatījums “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "iestatījums “{name}”: vērtība {value!r} ārpus diapazona 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "iestatījums {name} uz {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "savienojuma paziņojums"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "slota nosaukumā ir no 1 līdz {max} rakstzīmēm"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "slota nosaukumā ir tikai drukājamas ASCII rakstzīmes"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR satur nebeidzamu paraugu"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "slota {slot} augšupielāde, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "galvene"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "bloks {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "beigas"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "kājene"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "nosaukums"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "informācija"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "beigu summa ir {size} baitu, nevis {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "slota nosaukums ir tukšs vai ārpus drukājamā ASCII"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "baiti, kas nav nulle, aiz slota nosaukuma beigām"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "trūkst NUX SysEx galvenes"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "trūkst noslēdzošā F7"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "baits ārpus 7 bitiem"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "tips {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "komanda {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "negaidīts augšupielādes apstiprinājums"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "nezināms apstiprinājuma statuss: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "negaidīta versijas atbilde: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "komanda {command}: slota informāciju nes tikai 0x5c (informācijas lasīšana) un 0x5b (nosaukuma atbalss)"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "kodētais garums {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "negaidīta slota informācijas atbilde: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "slota informācija nav lasāma: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedālis paziņo slotu {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "negaidīta atbilde tabulai {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "tabula {table}: vērtība {value} pārsniedz 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "negaidīta stāvokļa atbilde: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "lasīšanas galvene: komanda {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "lasīšanas galvene satur beigu karogu"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "lasīšanas galvene, kas nav nulle, šādā formā nekad nav redzēta"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "bloks {block}: komanda {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "bloks {block}: karogs, kas nav nulle: {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "bloks {block}: adrese {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "bloks {block}: skaitītājs {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "bloks {block} nav lasāms: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "beigu bloks: komanda {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "beigu bloks bez karoga"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "beigu bloks: skaitītājs {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "beigu bloks: liekais baits ārpus karoga, summas un skaitītāja"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "beigu summa nav lasāma: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "nepareiza lasīšanas beigu summa"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "kājene: komanda {found}, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "kājene bez karoga"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "kājene: liekais baits aiz karoga"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "saņemti {count} ziņojumi, nevis {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "ziņojums {number} nav saistīts ar IR lasīšanu: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "krāsa {colour!r}: gaidīts “#rrggbb” ar mazajiem burtiem"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Nezināma funkcija “{name}”. Zināmās: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "gaidīts zināmo funkciju sakārtots saraksts bez dublikātiem"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Izmēģinājumu reģistrs nav lasāms: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Izmēģinājumu reģistru ir bloķējis cits process ({file}): mēģiniet vēlreiz, kad otra komanda būs pabeigta."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Nevar bloķēt {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Pedālis nav atrasts: nav “NAI5” skaņas kartes. Pārbaudiet USB kabeli."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR nav iestatīts: slēdzeni nevar iegūt."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Nevar iegūt slēdzeni {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedāli jau izmanto cita optima-air instance."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Slēdzene jau ir atbrīvota: to vairs nevar piešķirt portam."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Šī slēdzene jau pieder portam: to nevar piešķirt otram."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Nevar atbrīvot slēdzeni: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedālis vairs neatbild: atvienots vai iesaldēts."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Nevar konfigurēt portu {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Nevar aktivizēt porta {port} ievadi: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Ports {port} nepastāv."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Piekļuve portam {port} liegta. Pārbaudiet, vai esat grupā “audio” (komanda: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Portu {port} jau izmanto cita programma."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Ports {port} vairs nav pieejams."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Nevar atvērt portu {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Nevar rakstīt: ports ir aizvērts."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Rakstīšana portā {port} neizdevās: neviens baits netika pieņemts."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Rakstīšana portā {port} neizdevās: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Porta {port} iztukšošana tika pārtraukta {count} reizes pēc kārtas: ziņojums nodots kodolam, bet tā aizsūtīšanu nevarēja sagaidīt."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Gaidīšana ārpus diapazona: {wait} s (ne vairāk kā {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Nevar lasīt: ports ir aizvērts."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Lasīšana no porta {port} neizdevās: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Ports {port} nepaziņo savas ievades stāvokli ({error}): baitu zudumu nevar noteikt, apstājamies šeit."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Porta {port} stāvokļa lasīšana neizdevās: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Porta {port} aizvēršana neizdevās: {error}"

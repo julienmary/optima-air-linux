@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} బిట్లు"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: పూర్ణాంకం ఆశించబడింది, {type} వచ్చింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: పూర్ణాంకం లేదా ఏమీ లేకపోవడం ఆశించబడింది, {type} వచ్చింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "స్లాట్ పేరు: బైట్లు ఆశించబడ్డాయి, {type} వచ్చింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: వచనం ఆశించబడింది, {type} వచ్చింది"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "స్లాట్ {slot} 1..{count} పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "{expected} బైట్లకు బదులుగా {size} బైట్ల స్లాట్ పేరు"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "ఐడెంటిఫైయర్ {value} 0..{max} పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} 0..{max} పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "తెలియని బ్యాకప్ కారణం “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "ఫర్మ్‌వేర్ లేదు: “{reason}” కారణం మాత్రమే దీన్ని అనుమతిస్తుంది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "బ్యాకప్ పేరు “{name}” తప్పు రూపంలో ఉంది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "కారణం “{reason}” బ్యాకప్ {name} కారణమైన “{expected}” కంటే భిన్నంగా ఉంది"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "చదవలేని తేదీ {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "టైమ్ జోన్ లేని తేదీ {date!r}"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "ప్రామాణికం కాని తేదీ {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "తేదీ {date!r} బ్యాకప్ {name} సమయం కంటే భిన్నంగా ఉంది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: తేదీ ఆశించబడింది, {type} వచ్చింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} టైమ్ జోన్‌ను కలిగి ఉండాలి (ఉదాహరణకు datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "ఫోల్డర్ {file}లో వ్రాయడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ఫోల్డర్ కాదు"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "{file}ను తనిఖీ చేయడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "బ్యాకప్ {backup}ను సృష్టించడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "డేటా: బైట్లు ఆశించబడ్డాయి, {type} వచ్చింది"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "ఒక IR {expected} బైట్లు, {got} వచ్చాయి"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "స్లాట్ {slot} ఇప్పటికే {backup}లో బ్యాకప్ చేయబడింది: బ్యాకప్ ఒక్కసారి మాత్రమే వ్రాయబడుతుంది, కొత్త బ్యాకప్ చేయండి."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "చదవలేని స్లాట్ రికార్డ్: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "JSON ఆబ్జెక్ట్ ఆశించబడింది, {type} వచ్చింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "ఫీల్డ్ “{field}” లేదు లేదా వచనం కాదు"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "సీల్‌ను లెక్కించడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "స్లాట్ రికార్డ్ మార్చబడింది లేదా పాడైంది: {file} (తప్పు సీల్)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "ఫీల్డ్ “{field}”: పూర్ణాంకం ఆశించబడింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "ఫీల్డ్ “{field}”: వచనం ఆశించబడింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "ఫీల్డ్ “{field}”: పూర్ణాంకం లేదా null ఆశించబడింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "స్లాట్ {record} రికార్డ్ స్లాట్ {slot} కింద ఉంచబడింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: చిన్న అక్షరాల హెక్సాడెసిమల్ ఆశించబడింది"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "బ్యాకప్ “{record}” రికార్డ్ “{backup}”లో కనుగొనబడింది"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "{file}ను చదవడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "చదవలేని బ్యాకప్: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "లేదు"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "అసంగతమైన స్లాట్ రికార్డ్: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "చదవలేని డేటా: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "తప్పు వేలిముద్ర: {file} ఉపయోగించబడదు."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "ఐడెంటిఫైయర్ {computed}గా తిరిగి లెక్కించబడింది, రికార్డ్ {recorded} అని చెబుతోంది"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "సక్రియ స్లాట్"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR ఆన్/ఆఫ్"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "ప్రీయాంప్ ఆన్/ఆఫ్"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” స్లాట్ సంఖ్య కాదు"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "స్లాట్ {slot}కు వ్రాయడం అంతరాయం పొందింది: పెడల్ మరో {seconds} సె వరకు ఒంటరిగా వదిలివేయబడుతుంది. ఆ తర్వాత రన్ చేయండి: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "తెలియదు ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "తెలియదు ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "ఫర్మ్‌వేర్ {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "ప్రీసెట్: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "స్లాట్ {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "తెలియని స్లాట్ ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: ఆన్, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: ఆఫ్, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "ప్రీయాంప్: ఆన్"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "ప్రీయాంప్: ఆఫ్"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "పేరు"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "ఐడెంటిఫైయర్"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "వాల్యూమ్"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "లో కట్"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "హై కట్"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "హెచ్చరిక: పెడల్ ప్రకటించిన ఐడెంటిఫైయర్ ({announced}) మళ్లీ చదివిన తర్వాత కూడా చదివిన డేటాతో ({computed}) సరిపోలడం లేదు. అయినప్పటికీ బ్యాకప్ చేయబడుతుంది."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "స్లాట్ {slot} “{name}” {backup}లో బ్యాకప్ చేయబడింది"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} బైట్లు: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change ఛానెల్ {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[ఛానెల్ {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, అంటే 100కి {converted}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: కనిష్ఠం {min} గరిష్ఠం {max} ({count} సందేశం)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "స్థాయిలు"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "హెచ్చరిక: స్వీకరిస్తున్నప్పుడు {count} SysEx వదిలివేయబడింది."
+msgstr[1] "హెచ్చరిక: స్వీకరిస్తున్నప్పుడు {count} SysEx లు వదిలివేయబడ్డాయి."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "హెచ్చరిక: ఇన్‌పుట్ బఫర్ {count} సారి ఓవర్‌ఫ్లో అయింది, బైట్లు పోయాయి."
+msgstr[1] "హెచ్చరిక: ఇన్‌పుట్ బఫర్ {count} సార్లు ఓవర్‌ఫ్లో అయింది, బైట్లు పోయాయి."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "y"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "yes"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [y/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "రద్దు చేయబడింది: ఏదీ వ్రాయబడలేదు."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "కనెక్షన్ ప్రకటనను, ట్రయల్ ఫంక్షన్ “{name}”ను పంపాలా?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "రద్దు చేయబడింది: ఏదీ పంపబడలేదు."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "ప్రకటన ఇప్పటికే కనెక్షన్ క్రమం ద్వారా పంపబడింది: రెండుసార్లు పంపబడదు."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "ప్రకటన పంపబడింది: సమాధానం అందింది"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "ప్రకటన పంపబడింది: సమాధానం లేదు"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: ధ్రువీకరించబడింది"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: ట్రయల్‌లో ఉంది"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” ఒక ఫంక్షన్ పేరును ఆశిస్తుంది."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "పేరు “{name}” తిరస్కరించబడింది ({error}). --name తో ఒకటి ఇవ్వండి."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "హెచ్చరిక: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "స్లాట్ {slot} “{current}”ను “{name}” ({file})తో ఓవర్‌రైట్ చేయాలా?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "స్లాట్ {slot}: “{name}” వ్రాయబడింది మరియు తిరిగి చదివినప్పుడు ఒకేలా ఉంది."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "మునుపటి కంటెంట్ (“{name}”) {backup}లో బ్యాకప్ చేయబడింది"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} ఇప్పటికే ఉంది. దాన్ని ఓవర్‌రైట్ చేయడానికి --yes జోడించండి."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "{file}ను వ్రాయడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "స్లాట్ {slot} “{name}” {file}కు ఎగుమతి చేయబడింది"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "చదువుతోంది: {total}లో {done}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "హెచ్చరిక: స్లాట్ {slot} కోసం ప్రకటించిన ఐడెంటిఫైయర్ మళ్లీ చదివిన తర్వాత కూడా చదివిన డేటాతో సరిపోలడం లేదు. అయినప్పటికీ బ్యాకప్ చేయబడుతుంది."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "మొత్తం 23 స్లాట్లు {backup}లో బ్యాకప్ చేయబడ్డాయి"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "బ్యాకప్‌లు లేవు."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} స్లాట్"
+msgstr[1] "{count} స్లాట్లు"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "పాడైంది ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "ఏదీ లేదు"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name ఒకే స్లాట్‌ను పునరుద్ధరించేటప్పుడు మాత్రమే వర్తిస్తుంది."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "పెడల్‌ను బ్యాకప్ {backup} స్థితికి ({count} స్లాట్) తిరిగి తీసుకురావాలా? భిన్నంగా ఉన్న స్లాట్లు మాత్రమే, వాటి కంటెంట్ బ్యాకప్ చేసిన తర్వాత, తిరిగి వ్రాయబడతాయి."
+msgstr[1] "పెడల్‌ను బ్యాకప్ {backup} స్థితికి ({count} స్లాట్లు) తిరిగి తీసుకురావాలా? భిన్నంగా ఉన్న స్లాట్లు మాత్రమే, వాటి కంటెంట్ బ్యాకప్ చేసిన తర్వాత, తిరిగి వ్రాయబడతాయి."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {total}లో {done}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "తిరిగి వ్రాయబడి, తిరిగి చదివినప్పుడు ఒకేలా ఉన్న స్లాట్లు: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "సెట్టింగ్‌లు మాత్రమే పునరుద్ధరించబడిన స్లాట్లు: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "బ్యాకప్‌తో ఇప్పటికే ఒకేలా ఉన్న స్లాట్లు: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "స్లాట్ {slot} “{current}”ను బ్యాకప్ {backup} (“{name}”) నుండి తిరిగి వ్రాయాలా?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "స్లాట్ {slot} {backup} నుండి పునరుద్ధరించబడింది, ఆ తర్వాత తిరిగి చదివినప్పుడు ఒకేలా ఉంది."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "భర్తీ చేసిన కంటెంట్ (“{name}”) {backup}లో బ్యాకప్ చేయబడింది"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "అంతరాయం పొందిన వ్రాత ఏదీ లేదు."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "స్లాట్ {slot}: అంతరాయం పొందిన వ్రాత పూర్తయింది. చేయాల్సిందేమీ లేదు."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "స్లాట్ {slot}: అది ఇప్పటికీ ఇంతకు ముందు ఉన్నదాన్నే కలిగి ఉంది. చేయాల్సిందేమీ లేదు."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "స్లాట్ {slot}: దాని కంటెంట్ పాతదీ కాదు, కొత్తదీ కాదు. అది ఉన్నట్లుగా తిరిగి ఉంచడానికి: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "ధ్రువీకరించని ఫర్మ్‌వేర్‌లో చదవడం కంటే ఎక్కువ అనుమతించు"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "ట్రయల్ ఫంక్షన్‌ను అనుమతించు"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "నిర్ధారణ అడగవద్దు"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "స్లాట్ సంఖ్య, 1 నుండి {count} వరకు"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "NUX Optima Air పెడల్ కోసం Linux ఎడిటర్."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "డేటా ఫోల్డర్ (డిఫాల్ట్: XDG డేటా ఫోల్డర్)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "విండోను తెరువు"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "ఫర్మ్‌వేర్ వెర్షన్, ప్రీసెట్ మరియు సెట్టింగ్‌లు"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 IR స్లాట్లు"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "ఒక స్లాట్ యొక్క IRను బ్యాకప్ చేయి"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "పెడల్ పంపేదాన్ని ముద్రించు"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "వినే సెకన్లు"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "ముందుగా స్థితిని చదువు"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "ముందుగా ప్రకటనను పంపు (ట్రయల్)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "ఒక స్లాట్‌లో WAVను వ్రాయి"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV ఫైల్"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "స్లాట్ పేరు (డిఫాల్ట్: ఫైల్ పేరు)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "ఒక స్లాట్‌ను WAVగా ఎగుమతి చేయి"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "వ్రాయవలసిన WAV ఫైల్"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "బ్యాకప్ నుండి ఒక స్లాట్‌ను లేదా అన్నింటినీ తిరిగి వ్రాయి"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "బ్యాకప్ ఫోల్డర్"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "స్లాట్ సంఖ్య, 1 నుండి {count} వరకు (డిఫాల్ట్: అన్నీ)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "బ్యాకప్ చేసిన పేరును మార్చు"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "23 స్లాట్లను బ్యాకప్ చేయి"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "బ్యాకప్‌లను జాబితా చేయి"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "అంతరాయం పొందిన వ్రాతను తనిఖీ చేయి"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "ట్రయల్ ఫంక్షన్ల రిజిస్టర్"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "స్లాట్ {slot}కు వ్రాత అసంపూర్తిగా మిగిలిపోయింది. పెడల్ కొంతసేపు ఒంటరిగా వదిలివేయబడుతుంది; ఆ తర్వాత రన్ చేయండి: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "లోపం: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "అంతరాయం కలిగింది."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "బైట్ {byte} 7 బిట్ల వెలుపల ఉంది"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 7-బిట్ బైట్లు {bits} పాడింగ్ బిట్లను వదిలిపెడతాయి, enc7 ఎప్పుడూ 6 కంటే ఎక్కువ ఉత్పత్తి చేయదు"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "7-బిట్ స్ట్రీమ్ చివర సున్నా కాని పాడింగ్ బిట్లు"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "ఒక బ్లాక్ {expected} బైట్లు, {got} వచ్చాయి"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "బ్లాక్ మొత్తం {sum} ({hex}) పంపబడే 14 బిట్లను మించిపోయింది (గరిష్ఠం {max}): పెడల్‌పై ఎప్పుడూ కనిపించలేదు, ధ్రువీకరించే వరకు తిరస్కరించబడుతుంది"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "ఎన్‌కోడ్ చేసిన బ్లాక్ {expected} బైట్లు, {got} వచ్చాయి"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "ఎన్‌కోడ్ చేసిన బ్లాక్‌లో 7 బిట్ల వెలుపల ఉన్న బైట్"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "తప్పు బ్లాక్ చెక్‌సమ్"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "బదిలీ ముగింపు మొత్తం కనీసం ఒక బ్లాక్‌ను కవర్ చేస్తుంది"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "పొడవు {length} {block} యొక్క గుణకం కాదు"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "విలువ {value} 28 బిట్ల వెలుపల ఉంది"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "ఒక 28-బిట్ మొత్తం 4 బైట్లు తీసుకుంటుంది, {got} వచ్చాయి"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "28-బిట్ మొత్తంలో బైట్ {byte} 7 బిట్ల వెలుపల ఉంది"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "ఒక వ్రాత అంతరాయం పొందింది: పెడల్ మరో {seconds} సె వరకు ఒంటరిగా వదిలివేయబడుతుంది."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: వ్రాత సందేశాన్ని పూర్తి స్లాట్ వ్రాత (బ్యాకప్, జర్నల్, తిరిగి చదవడం) మాత్రమే పంపగలదు."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "ఫర్మ్‌వేర్ వెర్షన్ ఇంకా చదవబడలేదు: చదవడం మాత్రమే అనుమతించబడుతుంది."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "తెలియని ఫర్మ్‌వేర్ {found} (ప్రోటోకాల్ {verified}లో ధ్రువీకరించబడింది): చదవడం మాత్రమే అనుమతించబడుతుంది."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” ఒక ట్రయల్ ఫంక్షన్ (“{function}”), పెడల్‌పై ఇంకా ధ్రువీకరించబడలేదు."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: చదవడం మాత్రమే మళ్లీ పంపగలరు."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "“{message}”కు {count} ప్రయత్నాల తర్వాత కూడా పెడల్ నుండి సమాధానం లేదు."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "పెడల్ విరామం లేకుండా SysEx పంపుతూనే ఉంది."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "స్లాట్ {slot}ను చదవడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "స్లాట్ {slot} యొక్క రెండు రీడ్‌లు భిన్నమైన డేటాను ఇస్తున్నాయి."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "స్లాట్ {slot}కు వ్రాత అంతరాయం పొందింది: ఏదైనా పంపే ముందు మరో {seconds} సె వేచి ఉండండి."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "స్లాట్ {slot}కు వ్రాత అంతరాయం పొందింది: ఆ స్లాట్ సరిచేయబడే వరకు, వ్రాయగలిగే ఏకైక స్లాట్ అదే."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "వ్రాత తిరస్కరించబడింది: ఫర్మ్‌వేర్ చదవబడలేదు, లేదా ప్రోటోకాల్ ధ్రువీకరించబడిన ఫర్మ్‌వేర్ కాదు."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "వ్రాసిన తర్వాత, స్లాట్ {slot} పంపినదాన్ని కలిగి లేదు."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "IRను వ్రాసేటప్పుడు పెడల్ లోపాన్ని నివేదిస్తోంది."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "ఊహించని బ్లాక్ అక్నాలెడ్జ్‌మెంట్: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{expected}కు బదులుగా {count} బ్లాక్ అక్నాలెడ్జ్‌మెంట్ అందింది."
+msgstr[1] "{expected}కు బదులుగా {count} బ్లాక్ అక్నాలెడ్జ్‌మెంట్లు అందాయి."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "హెడర్ మరియు ఫుటర్ అక్నాలెడ్జ్‌మెంట్లు లేవు లేదా ఊహించనివి."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "వ్రాసిన తర్వాత, పేరు ఎకో ఒక్కసారికి బదులుగా {count} సారి వచ్చింది."
+msgstr[1] "వ్రాసిన తర్వాత, పేరు ఎకో ఒక్కసారికి బదులుగా {count} సార్లు వచ్చింది."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "వ్రాసిన తర్వాత, పేరు ఎకో పంపినదానితో సరిపోలడం లేదు."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "వ్రాసిన తర్వాత, స్లాట్ సమాచారం ఒక్కసారికి బదులుగా {count} సారి వచ్చింది."
+msgstr[1] "వ్రాసిన తర్వాత, స్లాట్ సమాచారం ఒక్కసారికి బదులుగా {count} సార్లు వచ్చింది."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "వ్రాసిన తర్వాత, స్లాట్ సమాచారం పంపినదానితో సరిపోలడం లేదు."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "బ్యాకప్ {backup}లో స్లాట్ ఏదీ లేదు."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "పోలుస్తోంది"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "బ్యాకప్ {backup} యొక్క స్లాట్ {slot} పెడల్ నుండి భిన్నంగా ఉంది, కానీ ఉన్నది ఉన్నట్లుగా తిరిగి వ్రాయడం సాధ్యం కాదు ({error}). ఏదీ వ్రాయబడలేదు."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "పునరుద్ధరిస్తోంది"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "స్లాట్ {requested} అభ్యర్థించిన తర్వాత పెడల్ స్లాట్ {announced}ను ప్రకటిస్తోంది."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "టేబుల్ {table} వ్రాతకు పెడల్ నుండి ఎకో రాలేదు."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "టేబుల్ {table} ఎకో పంపినదానికి భిన్నంగా ఉంది."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "సింబాలిక్ లింక్"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "సాధారణ ఫైల్ కాదు"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{expected}కు బదులుగా {size} బైట్లు"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} బైట్లు, అనుమతించిన {allowed} కంటే ఎక్కువ"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "చదువుతున్నప్పుడు పరిమాణం మారింది"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "లాక్ {file}ను సృష్టించడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "నకిలీ కీ “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} ప్రామాణిక JSON కాదు"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "JSON కాదు: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "ఫీల్డ్ “{field}” లేదు"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "తెలియని ఫార్మాట్ {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "తెలియని ఫీల్డ్ “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "ఫోల్డర్ {file}ను సింక్రనైజ్ చేయడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "ఫోల్డర్ {folder}ను సృష్టించడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "ఫోల్డర్ {folder}ను సృష్టించడం సాధ్యం కాదు: {path} ఫోల్డర్ కాదు"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "{file}ను స్థానంలో ఉంచడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "వ్రాసే ముందు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "స్లాట్ రీడ్"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "పూర్తి బ్యాకప్"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "దిగుమతి"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "పాడైన స్లాట్"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "WAVను లోడ్ చేయి"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "స్లాట్ <b>{slot}</b> “{name}”ను <b>{file}</b>తో ఓవర్‌రైట్ చేయాలా?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "స్లాట్ ప్రస్తుత కంటెంట్ వ్రాసే ముందు బ్యాకప్ చేయబడుతుంది."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "స్లాట్ పేరు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "రద్దు చేయి"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "పెడల్‌కు వ్రాయి"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "బ్యాకప్‌లు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "ఈ స్లాట్‌ను పునరుద్ధరించు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "మొత్తం బ్యాకప్‌ను పునరుద్ధరించు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "మూసివేయి"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "ఇంకా బ్యాకప్‌లు లేవు."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: స్లాట్ {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} స్లాట్"
+msgstr[1] "{backup}: {count} స్లాట్లు"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: చదవలేనిది"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "ఈ బ్యాకప్‌ను ఉపయోగించడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "పెడల్ యొక్క {count} స్లాట్‌ను ఈ బ్యాకప్ స్థితికి తిరిగి తీసుకురావాలా?"
+msgstr[1] "పెడల్ యొక్క {count} స్లాట్లను ఈ బ్యాకప్ స్థితికి తిరిగి తీసుకురావాలా?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "పెడల్ యొక్క స్లాట్ {slot}ను ఈ బ్యాకప్ (“{name}”) స్థితికి తిరిగి తీసుకురావాలా?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nబ్యాకప్ నుండి భిన్నంగా ఉన్న స్లాట్ మాత్రమే తిరిగి వ్రాయబడుతుంది, దాని ప్రస్తుత కంటెంట్ దానికి ముందే బ్యాకప్ చేయబడుతుంది."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "పునరుద్ధరించు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "ఎలక్ట్రిక్ బ్లూ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "సియాన్"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "ఆకుపచ్చ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "పసుపు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "నారింజ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "ఎరుపు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "గులాబీ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "ఊదా"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "తెలుపు (లేత)"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "ఇంటర్‌ఫేస్ రంగు"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "రంగు కోడ్, ఉదాహరణకు #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "ఆశించినది: # మరియు ఆరు హెక్సాడెసిమల్ అంకెలు"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "పెడల్ కోసం వెతుకుతోంది…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "మునుపటి స్థితిని పునరుద్ధరించు"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "అన్నీ బ్యాకప్ చేయి"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "బ్యాకప్‌లు…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "WAVను లోడ్ చేయి…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "WAVగా ఎగుమతి చేయి…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV ఫైల్‌లు"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "WAV ఫైల్‌ను ఎంచుకోండి"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "ఒకసారికి ఒక ఫైల్: ఒక స్లాట్ ఒకే IRను కలిగి ఉంటుంది."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "WAVగా ఎగుమతి చేయి"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "పునరుద్ధరణ పూర్తయింది. తిరిగి వ్రాయబడి, తిరిగి చదివినప్పుడు ఒకేలా ఉన్న స్లాట్లు: {rewritten}. సెట్టింగ్‌లు మాత్రమే: {settings}. బ్యాకప్‌తో ఇప్పటికే ఒకేలా ఉన్నవి: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "స్లాట్ {slot}: అంతరాయం పొందిన వ్రాత తర్వాత, అది ఇప్పటికీ ఇంతకు ముందు ఉన్నదాన్నే కలిగి ఉంది. చేయాల్సిందేమీ లేదు."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "స్లాట్ {slot}: అంతరాయం పొందిన వ్రాత తర్వాత, అది పాత కంటెంట్‌నూ కొత్త కంటెంట్‌నూ కలిగి లేదు. అది సరిచేయబడే వరకు, వ్రాయగలిగే ఏకైక స్లాట్ అదే."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "స్లాట్ {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "స్లాట్ {slot}: “{name}” వ్రాయబడింది మరియు తిరిగి చదివినప్పుడు ఒకేలా ఉంది. మునుపటి కంటెంట్ {backup}లో బ్యాకప్ చేయబడింది"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "స్లాట్ {slot}ను వ్రాస్తోంది…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "స్లాట్ {slot}ను వ్రాయడం విఫలమైంది: {reason} పెడల్ {seconds} సె వరకు ఒంటరిగా వదిలివేయబడుతుంది, ఆ తర్వాత స్లాట్ స్థితి తనిఖీ చేయబడుతుంది."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "బ్యాకప్ విఫలమైంది: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "పునరుద్ధరణ ఆగిపోయింది: {reason} ఇప్పటికే నిర్వహించిన స్లాట్లు సక్రమంగా ఉన్నాయి; పెడల్ స్థితి మళ్లీ చదవబడుతుంది."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "కనెక్ట్ అయింది, ఫర్మ్‌వేర్ {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "డిస్‌కనెక్ట్ అయింది: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "హెచ్చరిక: పెడల్ ప్రకటించిన ఐడెంటిఫైయర్ చదివిన డేటాతో సరిపోలడం లేదు."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "ఆపమని అభ్యర్థించబడింది."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "బ్యాకప్"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "చెల్లని ఫ్రీక్వెన్సీ పరిధి లేదా పాయింట్ల సంఖ్య"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "చదవలేని ఆడియో ఫైల్: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "ఫైల్‌లో {count} ఛానెల్‌లు ఉన్నాయి: మొదటిది మాత్రమే ఉంచబడుతుంది."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "ఖాళీ ఆడియో ఫైల్: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "ఫైల్‌లో పరిమితం కాని (non-finite) నమూనాలు ఉన్నాయి: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "{rate} Hz నమూనా రేటు: ఫైల్ {target} kHzకు రీశాంపిల్ చేయబడింది."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "ఫైల్ {duration} ms ఉంది: మొదటి {count} నమూనాలు ({limit} ms) మాత్రమే ఉంచబడతాయి."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "పెడల్ మొదటి {count} నమూనాలను ({limit} ms) మాత్రమే ప్లే చేస్తుంది: ఈ IR యొక్క మిగతా భాగం నిల్వ చేయబడుతుంది కానీ వినిపించదు."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "{file}ను నార్మలైజ్ చేయడం సాధ్యం కాదు: 400 Hz మరియు 3 kHz మధ్య సిగ్నల్ లేదు."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "{file}ను నార్మలైజ్ చేయడం ఫ్లోటింగ్-పాయింట్ సంఖ్యల పరిధిని మించిపోతుంది."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "నార్మలైజేషన్ తర్వాత, IR గరిష్ఠం {peak} (సాధారణ IRలు 10 కంటే తక్కువగా ఉంటాయి): ఫైల్‌లో 400 Hz మరియు 3 kHz మధ్య చాలా లోతైన పల్లం ఉంది, అవుట్‌పుట్ స్థాయి చాలా ఎక్కువగా ఉండవచ్చు."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "జర్నల్ తేదీ తప్పనిసరిగా టైమ్ జోన్‌ను కలిగి ఉండాలి"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "స్లాట్ పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: టైమ్ జోన్‌తో ISO తేదీ ఆశించబడింది"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: టైమ్ జోన్‌తో ISO తేదీ, లేదా null, ఆశించబడింది"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: బ్యాకప్ ఫోల్డర్ పేరు ఆశించబడింది"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: 64 హెక్సాడెసిమల్ అంకెలు ఆశించబడ్డాయి"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: హెక్సాడెసిమల్‌లో 32 బైట్లు ఆశించబడ్డాయి"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "ఐడెంటిఫైయర్ పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: బూలియన్ ఆశించబడింది"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "చదవలేని వ్రాత జర్నల్: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "జర్నల్ {file}ను తొలగించడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "{expected}కు బదులుగా {size} బైట్ల MD5"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "{expected}కు బదులుగా {size} బైట్ల ఎన్‌కోడ్ చేసిన బ్లాక్"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "సందేశం “{message}”: తప్పు రూపంలో ఉన్న Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "సందేశం “{message}”: Control Change అనేది ఒక సెట్టింగ్"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "సందేశం “{message}”: Control Change మూసిన జాబితాలో లేదు"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "సందేశం “{message}”: విలువ {value}, {max} కంటే ఎక్కువ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "సందేశం “{message}” సరిగ్గా ఫ్రేమ్ కాలేదు"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "సందేశం “{message}”: 7 బిట్ల వెలుపల ఉన్న బైట్"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "సందేశం “{message}” మూసిన జాబితాలో లేదు"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "సందేశం “{message}”: {expected}కు బదులుగా {size} బైట్లు"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "సందేశం “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "ఊహించని వెర్షన్ అభ్యర్థన"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "ట్రయల్‌లో ఉన్న 70 05 01 ప్రకటన మాత్రమే అనుమతించబడుతుంది"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "70 26 7F రీడ్ మాత్రమే అనుమతించబడుతుంది"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "సున్నా కాని బాడీతో టేబుల్ అభ్యర్థన"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "టేబుల్ వ్రాత: సెట్టింగ్ ఆశించబడింది, విలువలు 0 నుండి 100 వరకు"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "తప్పు రూపంలో ఉన్న రీడ్ అభ్యర్థన"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "స్లాట్ పరిధి వెలుపల ఉంది లేదా బాడీ సున్నా కాదు"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "కమాండ్ {command}కు కంటెంట్ నియమం లేదు"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "వ్రాత వర్గం వెలుపల ఉన్న అప్‌లోడ్ సందేశం"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "వ్రాత కమాండ్ {command}కు కంటెంట్ నియమం లేదు"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "తప్పు రూపంలో ఉన్న స్లాట్ పేరు"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "బిట్ 31 సెట్ చేయబడిన ఐడెంటిఫైయర్ (ఫ్యాక్టరీ IR): ఫంక్షన్ ఇంకా తెరవబడలేదు"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "అప్‌లోడ్ హెడర్: స్లాట్ పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "అప్‌లోడ్ హెడర్: MD5 చిన్న అక్షరాల హెక్సాడెసిమల్ అంకెల వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "అప్‌లోడ్ హెడర్ గమనించిన రూపం వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "అప్‌లోడ్ ఫుటర్: ఫ్లాగ్ తర్వాత సున్నా కాని బైట్"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "ముగింపు బ్లాక్: స్లాట్ పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "ముగింపు బ్లాక్ గమనించిన రూపం వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "డేటా బ్లాక్: చిరునామా లేదా కౌంటర్ పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "డేటా బ్లాక్: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "డేటా బ్లాక్: పేలోడ్ enc_msb ఉత్పత్తి చేసే రూపం వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "డేటా బ్లాక్: IR యొక్క {size} బైట్లకు మించి సున్నా కాని పాడింగ్"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "ఐడెంటిఫైయర్ {value} 0..{max} పరిధి వెలుపల ఉంది: బిట్ 31 ఫ్యాక్టరీ IRల కోసం కేటాయించబడింది, ఇది ఇంకా తెరవబడని ఫంక్షన్"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "{size} బైట్ల పేరు, గరిష్ఠంగా {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "{expected}కు బదులుగా {size} బైట్ల బాడీ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "స్లాట్ {slot} సమాచారం"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "టేబుల్ {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "ప్రస్తుత స్థితి"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "స్లాట్ {slot} యొక్క IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "స్లాట్ {slot} యాక్టివేషన్"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "ఒక టేబుల్‌లో {count} విలువలు ఉంటాయి, {got} వచ్చాయి"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "టేబుల్ {table}: విలువ {value!r} 0..{max} పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "టేబుల్ {table} వ్రాత"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "తెలియని సెట్టింగ్ “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "సెట్టింగ్ “{name}”: విలువ {value!r} 0..{max} పరిధి వెలుపల ఉంది"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "{name}ను {value}కు సెట్ చేయడం"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "కనెక్షన్ ప్రకటన"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "స్లాట్ పేరు 1 నుండి {max} అక్షరాలను కలిగి ఉంటుంది"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "స్లాట్ పేరులో ముద్రించదగిన ASCII అక్షరాలు మాత్రమే ఉంటాయి"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IRలో పరిమితం కాని (non-finite) నమూనా ఉంది"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "స్లాట్ {slot} అప్‌లోడ్, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "హెడర్"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "బ్లాక్ {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "ముగింపు"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "ఫుటర్"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "పేరు"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "సమాచారం"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "{expected}కు బదులుగా {size} బైట్ల ముగింపు మొత్తం"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "స్లాట్ పేరు ఖాళీగా ఉంది లేదా ముద్రించదగిన ASCII వెలుపల ఉంది"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "స్లాట్ పేరు ముగింపు తర్వాత సున్నా కాని బైట్లు"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "NUX SysEx హెడర్ లేదు"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "చివరి F7 లేదు"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "7 బిట్ల వెలుపల ఉన్న బైట్"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "{expected}కు బదులుగా రకం {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "{expected}కు బదులుగా కమాండ్ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "ఊహించని అప్‌లోడ్ అక్నాలెడ్జ్‌మెంట్"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "తెలియని అక్నాలెడ్జ్‌మెంట్ స్థితి: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "ఊహించని వెర్షన్ సమాధానం: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "కమాండ్ {command}: 0x5c (సమాచార రీడ్) మరియు 0x5b (పేరు ఎకో) మాత్రమే స్లాట్ సమాచారాన్ని కలిగి ఉంటాయి"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "{expected}కు బదులుగా ఎన్‌కోడ్ చేసిన పొడవు {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "ఊహించని స్లాట్ సమాచార సమాధానం: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "చదవలేని స్లాట్ సమాచారం: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "పెడల్ స్లాట్ {slot}ను ప్రకటిస్తోంది"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "టేబుల్ {table} కోసం ఊహించని సమాధానం: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "టేబుల్ {table}: విలువ {value}, 100 కంటే ఎక్కువ"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "ఊహించని స్థితి సమాధానం: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "రీడ్ హెడర్: {expected}కు బదులుగా కమాండ్ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "రీడ్ హెడర్ ముగింపు ఫ్లాగ్‌ను కలిగి ఉంది"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "సున్నా కాని రీడ్ హెడర్, ఈ రూపంలో ఎప్పుడూ కనిపించలేదు"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "బ్లాక్ {block}: {expected}కు బదులుగా కమాండ్ {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "బ్లాక్ {block}: సున్నా కాని ఫ్లాగ్ {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "బ్లాక్ {block}: {expected}కు బదులుగా చిరునామా {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "బ్లాక్ {block}: {expected}కు బదులుగా కౌంటర్ {found}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "బ్లాక్ {block} చదవలేనిది: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "ముగింపు బ్లాక్: {expected}కు బదులుగా కమాండ్ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "ఫ్లాగ్ లేని ముగింపు బ్లాక్"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "ముగింపు బ్లాక్: {expected}కు బదులుగా కౌంటర్ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "ముగింపు బ్లాక్: ఫ్లాగ్, మొత్తం మరియు కౌంటర్ వెలుపల అదనపు బైట్"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "చదవలేని ముగింపు మొత్తం: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "తప్పు రీడ్ ముగింపు మొత్తం"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "ఫుటర్: {expected}కు బదులుగా కమాండ్ {found}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "ఫ్లాగ్ లేని ఫుటర్"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "ఫుటర్: ఫ్లాగ్ తర్వాత అదనపు బైట్"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{expected}కు బదులుగా {count} సందేశాలు అందాయి"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "సందేశం {number} IR రీడ్‌కు సంబంధం లేనిది: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "రంగు {colour!r}: చిన్న అక్షరాల “#rrggbb” ఆశించబడింది"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "తెలియని ఫంక్షన్ “{name}”. తెలిసినవి: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "నకిలీలు లేని, తెలిసిన ఫంక్షన్ల క్రమబద్ధీకరించిన జాబితా ఆశించబడింది"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "చదవలేని ట్రయల్ రిజిస్టర్: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "ట్రయల్ రిజిస్టర్ మరొక ప్రాసెస్ ద్వారా లాక్ చేయబడింది ({file}): ఆ కమాండ్ పూర్తయిన తర్వాత మళ్లీ ప్రయత్నించండి."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "{file}ను లాక్ చేయడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "పెడల్ కనిపించలేదు: “NAI5” సౌండ్ కార్డ్ లేదు. USB కేబుల్‌ను తనిఖీ చేయండి."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR సెట్ చేయబడలేదు: లాక్ తీసుకోవడం సాధ్యం కాదు."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "లాక్ {file}ను తీసుకోవడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "పెడల్‌ను optima-air యొక్క మరొక ఇన్‌స్టెన్స్ ఇప్పటికే ఉపయోగిస్తోంది."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "లాక్ ఇప్పటికే విడుదల చేయబడింది: దాన్ని ఇకపై పోర్ట్‌కు ఇవ్వడం సాధ్యం కాదు."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "ఈ లాక్ ఇప్పటికే ఒక పోర్ట్‌కు చెందింది: దాన్ని రెండవ దానికి ఇవ్వడం సాధ్యం కాదు."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "లాక్‌ను విడుదల చేయడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "పెడల్ ఇకపై సమాధానం ఇవ్వడం లేదు: ప్లగ్ తీసివేయబడింది లేదా నిలిచిపోయింది."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "పోర్ట్ {port}ను కాన్ఫిగర్ చేయడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "పోర్ట్ {port} ఇన్‌పుట్‌ను సిద్ధం చేయడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "పోర్ట్ {port} లేదు."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "{port}కు ప్రాప్యత నిరాకరించబడింది. మీరు “audio” గ్రూప్‌లో ఉన్నారో తనిఖీ చేయండి (కమాండ్: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "పోర్ట్ {port}ను మరొక ప్రోగ్రామ్ ఇప్పటికే ఉపయోగిస్తోంది."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "పోర్ట్ {port} ఇకపై అందుబాటులో లేదు."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "పోర్ట్ {port}ను తెరవడం సాధ్యం కాదు: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "వ్రాయడం సాధ్యం కాదు: పోర్ట్ మూసివేయబడింది."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "పోర్ట్ {port}కు వ్రాయడం విఫలమైంది: ఏ బైట్ అంగీకరించబడలేదు."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "పోర్ట్ {port}కు వ్రాయడం విఫలమైంది: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "పోర్ట్ {port}ను డ్రెయిన్ చేయడం వరుసగా {count} సార్లు అంతరాయం పొందింది: సందేశం కెర్నల్‌కు అప్పగించబడింది, కానీ దాని నిష్క్రమణ కోసం వేచి ఉండడం సాధ్యం కాలేదు."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "వేచి ఉండే సమయం పరిధి వెలుపల ఉంది: {wait} సె (గరిష్ఠంగా {max} సె)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "చదవడం సాధ్యం కాదు: పోర్ట్ మూసివేయబడింది."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "పోర్ట్ {port} నుండి చదవడం విఫలమైంది: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "పోర్ట్ {port} తన ఇన్‌పుట్ స్థితిని నివేదించడం లేదు ({error}): బైట్ నష్టాన్ని గుర్తించడం సాధ్యం కాదు, ఇక్కడ ఆపుతోంది."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "పోర్ట్ {port} స్థితిని చదవడం విఫలమైంది: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "పోర్ట్ {port}ను మూసివేయడం విఫలమైంది: {error}"

@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "ji {bits} bîtan"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: hejmara tam hat payîn, {type} hat"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: hejmara tam an tiştek tune hat payîn, {type} hat"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "navê cih: bayt hatin payîn, {type} hat"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: nivîs hat payîn, {type} hat"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "cih {slot} li derveyî 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "navê cih bi {size} bayt, li şûna {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "nasnameya {value} li derveyî 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} li derveyî 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Sedema yedekê ya nenas “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "firmware tune ye: tenê sedema “{reason}” destûr dide"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "navê yedekê şaş “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "sedema “{reason}” ji ya yedeka {name} cuda ye, sedem “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "dîroka nexwendî {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "dîroka {date!r} bê deverê demê"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "dîroka ne-kanonîk {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "dîroka {date!r} ji dema yedeka {name} cuda ye"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: dîrok hat payîn, {type} hat"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} divê deverek demê hebe (mînak datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Nikare di peldanka {file} de binivîse: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ne peldank e"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Nikare {file} kontrol bike: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Nikare yedeka {backup} biafirîne: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "dane: bayt hatin payîn, {type} hat"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR {expected} bayt e, {got} hat"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "cih {slot} berê di {backup} de hatiye yedekirin: yedek tenê carekê tê nivîsandin, yedekeke nû çêbike."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Tomara cih nayê xwendin: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "objeya JSON hat payîn, {type} hat"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "qada “{field}” tune ye an ne nivîs e"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "mohr nayê hesibandin: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Tomara cih hatiye guhertin an xera bûye: {file} (mohra şaş)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "qada “{field}”: hejmara tam hat payîn"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "qada “{field}”: nivîs hat payîn"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "qada “{field}”: hejmara tam an null hat payîn"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "tomara cih {record} di bin cih {slot} de hatiye tomarkirin"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: hexadesîmal bi herfên biçûk hat payîn"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "tomara yedeka “{record}” di “{backup}” de hat dîtin"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Nikare {file} bixwîne: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Yedek nayê xwendin: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "tune ye"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Tomara cih ne-hevgirtî: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Dane nayên xwendin: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Şopa şaş: {file} nayê bikaranîn."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "nasname dîsa wekî {computed} hat hesibandin, tomar dibêje {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Cihê çalak"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR vebû/girtî"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamp vebû/girtî"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” ne hejmara cihekî ye"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Nivîsandina li cih {slot} hat birîn: pedal {seconds} çirkeyên din bi tena serê xwe tê hiştin. Paşê vê bikar bîne: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "nenas ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "nenas ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Pêşsazî: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "cih {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "cihê nenas ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: vekirî, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: girtî, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamp: vekirî"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamp: girtî"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Nav"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Nasname"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Deng"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Birîna nizm"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Birîna bilind"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Hişyarî: nasnameya ku pedalê ragihand ({announced}) bi daneya hatî xwendin ({computed}) re nagire, tevî ku dîsa hat xwendin. Yedek bi her awayî tê girtin."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Cih {slot} “{name}” di {backup} de hat yedekirin"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} bayt: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change kanala {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[kanala {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, ango {converted} ji 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: kêmtirîn {min} herî zêde {max} ({count} peyam)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "astên deng"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Hişyarî: {count} SysEx di dema wergirtinê de winda bû."
+msgstr[1] "Hişyarî: {count} SysEx di dema wergirtinê de winda bûn."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Hişyarî: {count} serrijiya tamponê têketinê çêbû, bayt winda bûn."
+msgstr[1] "Hişyarî: {count} serrijiya tamponê têketinê çêbûn, bayt winda bûn."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "y"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "yes"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [y/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Hat betalkirin: tiştek nehat nivîsandin."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Daxuyaniya girêdanê, fonksiyona ceribandinê “{name}”, bê şandin?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Hat betalkirin: tiştek nehat şandin."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Daxuyanî berê ji aliyê rêza girêdanê ve hatiye şandin: du caran nayê şandin."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Daxuyanî hat şandin: bersiv hat"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Daxuyanî hat şandin: bersiv tune"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: erêkirî"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: di ceribandinê de"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” navê fonksiyonekê dixwaze."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Navê “{name}” hat redkirin ({error}). Bi --name yekî bide."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Hişyarî: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Cih {slot} “{current}” bi “{name}” ({file}) bê serinivîsandin?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Cih {slot}: “{name}” hat nivîsandin û dîsa wekhev hat xwendin."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Naveroka berê (“{name}”) di {backup} de hat yedekirin"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} berê heye. Ji bo serinivîsandinê --yes lê zêde bike."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Nikare {file} binivîse: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Cih {slot} “{name}” ji bo {file} hat derxistin"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Tê xwendin: {done} ji {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Hişyarî: nasnameya ku ji bo cih {slot} hat ragihandin bi daneya hatî xwendin re nagire, tevî ku dîsa hat xwendin. Bi her awayî tê yedekirin."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Hemû 23 cih di {backup} de hatin yedekirin"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Yedek tune ne."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} cih"
+msgstr[1] "{count} cih"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "XERAB ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "tune"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name tenê ji bo vegerandina cihekî tenê derbas dibe."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Pedal bi rewşa yedeka {backup} ({count} cih) ve bê vegerandin? Tenê cihên ku cuda ne dê bên nivîsandin, piştî ku naveroka wan hat yedekirin."
+msgstr[1] "Pedal bi rewşa yedeka {backup} ({count} cih) ve bê vegerandin? Tenê cihên ku cuda ne dê bên nivîsandin, piştî ku naveroka wan hat yedekirin."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} ji {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Cihên ku hatin nivîsandin û dîsa wekhev hatin xwendin: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Cihên ku tenê mîhengên wan hatin vegerandin: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Cihên ku berê bi yedekê re wekhev bûn: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Cih {slot} “{current}” ji yedeka {backup} (“{name}”) bê nivîsandin?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Cih {slot} ji {backup} hat vegerandin, paşê dîsa wekhev hat xwendin."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Naveroka hatî guhertin (“{name}”) di {backup} de hat yedekirin"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Nivîsandineke birrî tune ye."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Cih {slot}: nivîsandina birrî temam bûbû. Tiştek ji bo kirinê tune."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Cih {slot}: hê jî tiştê ku berê dihewand dihewîne. Tiştek ji bo kirinê tune."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Cih {slot}: naveroka wê ne ya kevn e û ne ya nû ye. Ji bo vegerandina wê wekî berê: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "ji xwendinê zêdetir li ser firmwareke nehatî erêkirin destûr bide"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "destûrê bide fonksiyoneke ceribandinê"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "erêkirinê nepirse"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "hejmara cih, ji 1 heta {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Edîtora Linux ji bo pedala NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "peldanka daneyan (bi default: peldanka daneyan a XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "pencereyê veke"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "versiyona firmware, pêşsazî û mîheng"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 cihên IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "IR ya cihekî yedek bike"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "tiştê ku pedal dişîne çap bike"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "çirkeyên guhdarîkirinê"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "pêşî rewşê bixwîne"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "pêşî daxuyaniyê bişîne (ceribandin)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "WAV di cihekî de binivîse"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "pela WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "navê cih (bi default: navê pelê)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "cihekî wekî WAV derxe"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "pela WAV ya ku were nivîsandin"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "cihekî, an hemûyan, ji yedekekê dîsa binivîse"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "peldanka yedekê"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "hejmara cih, ji 1 heta {count} (bi default: hemû)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "navê yedekirî biguherîne"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "23 cihan yedek bike"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "yedekan lîste bike"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "nivîsandineke birrî kontrol bike"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "qeyda fonksiyonên ceribandinê"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Nivîsandina li cih {slot} nîvco ma. Pedal demekê bi tena serê xwe tê hiştin; paşê vê bikar bîne: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Çewtî: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Hat birîn."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "bayta {byte} li derveyî 7 bîtan"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} baytên 7 bîtî {bits} bîtên tijîkirinê dihêlin, enc7 tu carî ji 6 zêdetir çênake"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "bîtên tijîkirinê yên ne-sifir li dawiya herikeke 7 bîtî"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "blokek {expected} bayt e, {got} hat"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "berhevoka blokê {sum} ({hex}) ji 14 bîtên hatî şandin derbas dibe (herî zêde {max}): li ser pedalê tu carî nehatiye dîtin, heta ku were erêkirin tê redkirin"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "blokeke kodkirî {expected} bayt e, {got} hat"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "bayta li derveyî 7 bîtan di blokeke kodkirî de"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "kontrola berhevokê ya blokê şaş e"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "berhevoka dawiya guhastinê herî kêm blokekê digire nav xwe"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "dirêjahiya {length} ne pirkarê {block} e"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "nirxa {value} li derveyî 28 bîtan"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "berhevokeke 28 bîtî 4 bayt digire, {got} hat"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "bayta {byte} li derveyî 7 bîtan di berhevokeke 28 bîtî de"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Nivîsandinek hat birîn: pedal {seconds} çirkeyên din bi tena serê xwe tê hiştin."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: peyama nivîsandinê tenê bi nivîsandina temam a cihekî (yedek, rojnivîsk, xwendina dîsa) dikare were şandin."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Versiyona firmware hê nehatiye xwendin: tenê xwendin destûr e."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Firmware ya nenas {found} (protokol li ser {verified} hatiye erêkirin): tenê xwendin destûr e."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” fonksiyoneke ceribandinê ye (“{function}”), hê li ser pedalê nehatiye erêkirin."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: tenê xwendinek dikare dîsa were şandin."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Piştî {count} hewldanan pedalê bersiv neda “{message}”."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedal bê navber SysEx dişîne."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Nikare cih {slot} bixwîne: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Du xwendinên cih {slot} daneyên cuda didin."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Nivîsandina li cih {slot} hat birîn: berî şandina tiştekî {seconds} çirkeyên din bisekine."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Nivîsandina li cih {slot} hat birîn: heta ku ew cih neyê rastkirin, tenê ew e ku dikare were nivîsandin."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Nivîsandin hat redkirin: firmware nehatiye xwendin, an ne ya ku protokol li ser wê hatiye erêkirin e."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Piştî nivîsandinê, cih {slot} tiştê hatiye şandin nahewîne."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedal di dema nivîsandina IR de çewtiyekê radigihîne."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Pejirandina blokê ya nediyar: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{count} pejirandina blokê li şûna {expected} hat wergirtin."
+msgstr[1] "{count} pejirandinên blokê li şûna {expected} hatin wergirtin."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Pejirandinên sernivîs û binnivîsê tune ne an nediyar in."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Piştî nivîsandinê, dengvedana navê {count} car hat li şûna carekê."
+msgstr[1] "Piştî nivîsandinê, dengvedana navê {count} car hat li şûna carekê."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Piştî nivîsandinê, dengvedana navê bi tiştê hatiye şandin re nagire."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Piştî nivîsandinê, agahiya cih {count} car hat li şûna carekê."
+msgstr[1] "Piştî nivîsandinê, agahiya cih {count} car hat li şûna carekê."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Piştî nivîsandinê, agahiya cih bi tiştê hatiye şandin re nagire."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Yedeka {backup} tu cih nahewîne."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Berhevdan"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Cih {slot} ya yedeka {backup} ji pedalê cuda ye lê nikare wekî ku heye were nivîsandin ({error}). Tiştek nehat nivîsandin."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Vegerandin"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedal piştî ku cih {requested} hat xwestin, cih {announced} radigihîne."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Ji pedalê dengvedan ji nivîsandina tabloya {table} re tune ye."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Dengvedana tabloya {table} ji tiştê hatiye şandin cuda ye."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "girêdaneke sembolîk e"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "pelekî asayî ne"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} bayt li şûna {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} bayt, ji {allowed} yên destûrdayî zêdetir"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "mezinahî di dema xwendinê de hat guhertin"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Nikare qefla {file} biafirîne: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "mifteya dubare “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} JSON a standard nîne"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "ne JSON e: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "qada “{field}” tune ye"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "formata nenas {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "qada nenas “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Nikare peldanka {file} senkronîze bike: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Nikare peldanka {folder} biafirîne: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Nikare peldanka {folder} biafirîne: {path} ne peldank e"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Nikare {file} bi cih bike: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "berî nivîsandinê"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "xwendina cihekî"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "yedeka temam"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "import"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "cihê xerabûyî"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "WAV bar bike"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Cih <b>{slot}</b> “{name}” bi <b>{file}</b> bê serinivîsandin?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Naveroka heyî ya cih berî nivîsandinê dê bê yedekirin."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Navê cih"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Betal"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Li pedalê binivîse"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Yedek"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Vî cihî vegerîne"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Tevahiya yedekê vegerîne"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Bigire"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Hê yedek tune ne."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: cih {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} cih"
+msgstr[1] "{backup}: {count} cih"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: nayê xwendin"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Ev yedek nayê bikaranîn: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "{count} cihên pedalê bi rewşa vê yedekê ve bên vegerandin?"
+msgstr[1] "{count} cihên pedalê bi rewşa vê yedekê ve bên vegerandin?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Cih {slot} ya pedalê bi rewşa vê yedekê (“{name}”) ve bê vegerandin?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nTenê cihê ku ji yedekê cuda ye tê nivîsandin, û naveroka wî ya heyî tam berî wê tê yedekirin."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Vegerîne"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Şînê elektrîkê"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Cyan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Kesk"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Zer"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Porteqalî"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Sor"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Pembe"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Mor"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Spîya şikestî"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Rengê navrûyê"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Koda rengê, mînak #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Tê payîn: # û şeş reqemên hexadesîmal"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Li pedalê digere…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Rewşa berê vegerîne"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Hemûyan yedek bike"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Yedek…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "WAV bar bike…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Wekî WAV derxe…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "Pelên WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Pelekî WAV hilbijêre"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Yek pel di her carekê de: cih tenê IR yekê dihewîne."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Wekî WAV derxe"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Vegerandin qediya. Cihên ku hatin nivîsandin û dîsa wekhev hatin xwendin: {rewritten}. Tenê mîheng: {settings}. Berê bi yedekê re wekhev: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Cih {slot}: piştî nivîsandina birrî, hê jî tiştê ku berê dihewand dihewîne. Tiştek ji bo kirinê tune."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Cih {slot}: piştî nivîsandina birrî, ne naveroka kevn dihewîne û ne ya nû. Heta ku neyê rastkirin, tenê cihê ku dikare were nivîsandin ew e."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Cih {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Cih {slot}: “{name}” hat nivîsandin û dîsa wekhev hat xwendin. Naveroka berê di {backup} de hat yedekirin"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Li cih {slot} tê nivîsandin…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Nivîsandina li cih {slot} têk çû: {reason} Pedal {seconds} çirke bi tena serê xwe tê hiştin, paşê rewşa cih dê bê kontrolkirin."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Yedekirin têk çû: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Vegerandin sekinî: {reason} Cihên ku berê hatine birêvebirin rast in; rewşa pedalê dê dîsa bê xwendin."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Girêdayî ye, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Girêdan qut bû: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Hişyarî: nasnameya ku pedalê ragihand bi daneya hatî xwendin re nagire."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Sekinandin hat xwestin."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Yedek"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "navbera frekansê an hejmara xalan ne derbasdar e"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Pela deng nayê xwendin: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Di pelê de {count} kanal hene: tenê ya yekem tê hiştin."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Pela deng vala ye: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Pel nimûneyên bêdawî dihewîne: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Rêjeya nimûneyê {rate} Hz: pel ji nû ve bo {target} kHz hat nimûnekirin."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Dirêjahiya pelê {duration} ms ye: tenê {count} nimûneyên pêşîn ({limit} ms) tên hiştin."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedal tenê {count} nimûneyên pêşîn ({limit} ms) lê dide: bermayiya vê IR dê were hilanîn lê nayê bihîstin."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Nikare {file} normalîze bike: di navbera 400 Hz û 3 kHz de sînyal tune ye."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Normalîzekirina {file} ji navbera hejmarên xala herikbar derbas dibe."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Piştî normalîzekirinê, IR digihîje lûtkeya {peak} (IRyên asayî di bin 10 de dimînin): pel di navbera 400 Hz û 3 kHz de çalekî pir kûr heye, û asta derketinê dibe ku pir bilind be."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "dîroka rojnivîskê divê deverek demê hebe"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "cih li derveyî navberê"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: dîroka ISO bi deverek demê hat payîn"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: dîroka ISO bi deverek demê, an null, hat payîn"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: navê peldanka yedekê hat payîn"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: 64 reqemên hexadesîmal hatin payîn"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: 32 bayt bi hexadesîmal hatin payîn"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "nasname li derveyî navberê"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: boolean hat payîn"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Rojnivîska nivîsandinê nayê xwendin: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Nikare rojnivîska {file} rake: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 ya {size} bayt li şûna {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "bloka kodkirî ya {size} bayt li şûna {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "peyama “{message}”: Control Change şaş"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "peyama “{message}”: Control Change mîhengek e"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "peyama “{message}”: Control Change ne di lîsteya girtî de ye"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "peyama “{message}”: nirxa {value} ji {max} bilindtir e"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "peyama “{message}” bi şaşî hatiye çarçovekirin"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "peyama “{message}”: bayt li derveyî 7 bîtan"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "peyama “{message}” ne di lîsteya girtî de ye"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "peyama “{message}”: {size} bayt li şûna {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "peyama “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "daxwaza versiyonê ya nediyar"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "tenê daxuyaniya 70 05 01, di ceribandinê de, destûr e"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "tenê xwendina 70 26 7F destûr e"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "daxwaza tabloyê bi laşekî ne-sifir"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "nivîsandina tabloyê: mîheng hat payîn, nirx ji 0 heta 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "daxwaza xwendinê ya şaş"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "cih li derveyî navberê an laşê ne-sifir"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "fermana {command} bê qaîdeya naverokê"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "peyama barkirinê li derveyî kategoriya nivîsandinê"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "fermana nivîsandinê {command} bê qaîdeya naverokê"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "navê cih ê şaş"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "nasname bi bîta 31 ve hatî danîn (IR ya fabrîkayê): fonksiyon hê nehatiye vekirin"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "sernivîsa barkirinê: cih li derveyî navberê"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "sernivîsa barkirinê: MD5 li derveyî reqemên hexadesîmal ên biçûk"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "sernivîsa barkirinê li derveyî formê ya hatî dîtin"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "binnivîsa barkirinê: bayta ne-sifir piştî alayê"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "bloka dawiyê: cih li derveyî navberê"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "bloka dawiyê li derveyî formê ya hatî dîtin"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "bloka daneyê: navnîşan an jimarvan li derveyî navberê"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "bloka daneyê: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "bloka daneyê: barkirin li derveyî forma ku enc_msb çêdike"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "bloka daneyê: tijîkirina ne-sifir li pişt {size} baytên IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "nasnameya {value} li derveyî 0..{max}: bîta 31 ji bo IRyên fabrîkayê hatiye veqetandin, fonksiyoneke hê nehatiye vekirin"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "navê {size} bayt, herî zêde {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "laşê {size} bayt li şûna {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "agahiya cih {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "tabloya {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "rewşa heyî"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR ya cih {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "çalakkirina cih {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "tabloyek {count} nirxan dihewîne, {got} hat"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "tabloya {table}: nirxa {value!r} li derveyî 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "nivîsandina tabloya {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "mîhenga nenas “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "mîhenga “{name}”: nirxa {value!r} li derveyî 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "mîhenga {name} bike {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "daxuyaniya girêdanê"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "navê cih ji 1 heta {max} tîpan pêk tê"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "navê cih tenê tîpên ASCII yên çapkirinê dihewîne"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR nimûneyeke bêdawî dihewîne"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "barkirina cih {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "sernivîs"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "bloka {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "dawî"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "binnivîs"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "nav"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "agahî"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "berhevoka dawiyê ya {size} bayt li şûna {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "navê cih vala ye an li derveyî ASCII ya çapkirinê ye"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "baytên ne-sifir piştî dawiya navê cih"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "sernivîsa NUX SysEx tune ye"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "F7 ya dawiyê tune ye"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "bayt li derveyî 7 bîtan"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "cure {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "ferman {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "pejirandina barkirinê ya nediyar"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "rewşa pejirandinê ya nenas: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "bersiva versiyonê ya nediyar: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "fermana {command}: tenê 0x5c (xwendina agahiyê) û 0x5b (dengvedana navê) agahiya cih digirin"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "dirêjahiya kodkirî {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "bersiva agahiya cih ya nediyar: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "agahiya cih nayê xwendin: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedal cih {slot} radigihîne"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "bersiva nediyar ji bo tabloya {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "tabloya {table}: nirxa {value} ji 100 bilindtir e"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "bersiva rewşê ya nediyar: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "sernivîsa xwendinê: ferman {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "sernivîsa xwendinê alaya dawiyê digire"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "sernivîsa xwendinê ya ne-sifir, bi vê formê tu carî nehatiye dîtin"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "bloka {block}: ferman {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "bloka {block}: alaya ne-sifir {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "bloka {block}: navnîşan {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "bloka {block}: jimarvan {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "bloka {block} nayê xwendin: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "bloka dawiyê: ferman {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "bloka dawiyê bê ala"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "bloka dawiyê: jimarvan {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "bloka dawiyê: bayta serserî li derveyî alê, berhevokê û jimarvanê"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "berhevoka dawiyê nayê xwendin: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "berhevoka dawiya xwendinê şaş e"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "binnivîs: ferman {found} li şûna {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "binnivîs bê ala"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "binnivîs: bayta serserî piştî alayê"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{count} peyam li şûna {expected} hatin wergirtin"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "peyama {number} ji xwendina IR re biyanî ye: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "rengê {colour!r}: “#rrggbb” bi herfên biçûk hat payîn"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Fonksiyona nenas “{name}”. Yên naskirî: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "lîsteyeke rêzkirî ya fonksiyonên naskirî, bê dubarekirin, hat payîn"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Qeyda ceribandinan nayê xwendin: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Qeyda ceribandinan ji aliyê pêvajoyeke din ve hatiye qeflkirin ({file}): piştî ku fermana din qediya dîsa biceribîne."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Nikare {file} qefl bike: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Pedal nehat dîtin: karta dengê “NAI5” tune ye. Kabloya USB kontrol bike."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR nehatiye danîn: qefl nayê girtin."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Nikare qefla {file} bigire: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedal berê ji aliyê mînakeke din a optima-air ve tê bikaranîn."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Qefl berê hatiye berdan: êdî nayê dayîn portekê."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Ev qefl berê aîdî portekê ye: nayê dayîn portek duyemîn."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Nikare qeflê berde: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedal êdî bersiv nade: ji girêdanê qut bûye an asê maye."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Nikare porta {port} mîheng bike: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Nikare têketina porta {port} amade bike: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Porta {port} tune ye."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Gihîştina {port} hat redkirin. Kontrol bike ku tu di komeke “audio” de yî (ferman: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Porta {port} berê ji aliyê bernameyeke din ve tê bikaranîn."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Porta {port} êdî nayê bidestxistin."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Nikare porta {port} veke: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Nikare binivîse: port girtî ye."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Nivîsandina li porta {port} têk çû: tu bayt nehat qebûlkirin."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Nivîsandina li porta {port} têk çû: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Valakirina porta {port} {count} caran li pey hev hat birîn: peyam ji kernelê re hat dayîn, lê nehat çaverêkirin ku derkeve."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Çaverêkirin li derveyî navberê: {wait} çirke (herî zêde {max} çirke)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Nikare bixwîne: port girtî ye."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Xwendina ji porta {port} têk çû: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Porta {port} rewşa têketina xwe nade ({error}): winabûna baytan nayê tespîtkirin, li vir disekine."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Xwendina rewşa porta {port} têk çû: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Girtina porta {port} têk çû: {error}"

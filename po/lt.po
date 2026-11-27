@@ -1,0 +1,1956 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} bitų"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: tikėtasi sveikojo skaičiaus, gauta {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: tikėtasi sveikojo skaičiaus arba nieko, gauta {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "sloto pavadinimas: tikėtasi baitų, gauta {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: tikėtasi teksto, gauta {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "slotas {slot} už ribų 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "sloto pavadinimas yra {size} baitų, o ne {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "identifikatorius {value} už ribų 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} už ribų 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Nežinoma atsarginės kopijos priežastis „{reason}“."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "trūksta programinės aparatinės įrangos: tik priežastis „{reason}“ tai leidžia"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "netinkamas atsarginės kopijos pavadinimas „{name}“"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "priežastis „{reason}“ skiriasi nuo atsarginės kopijos {name} priežasties „{expected}“"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "neįskaitoma data {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "data {date!r} be laiko juostos"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "nekanoninė data {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "data {date!r} skiriasi nuo atsarginės kopijos {name} laiko"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: tikėtasi datos, gauta {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} turi turėti laiko juostą (pavyzdžiui, datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Nepavyksta rašyti į aplanką {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ne aplankas"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Nepavyksta patikrinti {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Nepavyksta sukurti atsarginės kopijos {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "duomenys: tikėtasi baitų, gauta {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR yra {expected} baitų, gauta {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "slotas {slot} jau išsaugotas atsarginėje kopijoje {backup}: atsarginė kopija rašoma tik vieną kartą, sukurkite naują atsarginę kopiją."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Sloto įrašas neįskaitomas: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "tikėtasi JSON objekto, gauta {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "laukelio „{field}“ nėra arba jis ne tekstas"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "antspaudo apskaičiuoti nepavyksta: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Sloto įrašas pakeistas arba sugadintas: {file} (neteisingas antspaudas)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "laukelis „{field}“: tikėtasi sveikojo skaičiaus"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "laukelis „{field}“: tikėtasi teksto"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "laukelis „{field}“: tikėtasi sveikojo skaičiaus arba null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "sloto {record} įrašas saugomas po slotu {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: tikėtasi šešioliktainio skaičiaus mažosiomis raidėmis"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "atsarginės kopijos „{record}“ įrašas rastas atsarginėje kopijoje „{backup}“"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Nepavyksta nuskaityti {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Atsarginė kopija neįskaitoma: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "trūksta"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Sloto įrašas nenuoseklus: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Duomenys neįskaitomi: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Neteisingas pirštų atspaudas: {file} nebus naudojamas."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "identifikatorius perskaičiuotas kaip {computed}, įraše nurodyta {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Aktyvus slotas"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR įjungtas/išjungtas"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Priešstiprintuvis įjungtas/išjungtas"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "„{text}“ nėra sloto numeris"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Sloto {slot} rašymas buvo nutrauktas: pedalas paliekamas ramybėje dar {seconds} s. Tada paleiskite: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "nežinoma ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "nežinoma ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Programinė aparatinė įranga {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Išankstinė nuostata: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "slotas {slot} „{name}“"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "nežinomas slotas ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: įjungtas, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: išjungtas, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Priešstiprintuvis: įjungtas"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Priešstiprintuvis: išjungtas"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Pavadinimas"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Ident."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Garsis"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Žemųjų dažnių nupjovimas"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Aukštųjų dažnių nupjovimas"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Įspėjimas: pedalo paskelbtas identifikatorius ({announced}) neatitinka nuskaitytų duomenų ({computed}), net ir nuskaičius iš naujo. Atsarginė kopija vis tiek sukuriama."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Slotas {slot} „{name}“ išsaugotas atsarginėje kopijoje {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} baitų: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change kanalas {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[kanalas {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, t. y. {converted} iš 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} max {max} ({count} pran.)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "lygiai"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Įspėjimas: gaunant atmestas {count} SysEx pranešimas."
+msgstr[1] "Įspėjimas: gaunant atmesti {count} SysEx pranešimai."
+msgstr[2] "Įspėjimas: gaunant atmesta {count} SysEx pranešimų."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Įspėjimas: {count} įvesties buferio perpildymas, baitai prarasti."
+msgstr[1] "Įspėjimas: {count} įvesties buferio perpildymai, baitai prarasti."
+msgstr[2] "Įspėjimas: {count} įvesties buferio perpildymų, baitai prarasti."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "t"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "taip"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [t/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Atšaukta: niekas nebuvo įrašyta."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Siųsti ryšio paskelbimą, bandomoji funkcija „{name}“?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Atšaukta: niekas nebuvo išsiųsta."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Paskelbimą jau išsiuntė ryšio seka: du kartus nesiunčiama."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Paskelbimas išsiųstas: gautas atsakymas"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Paskelbimas išsiųstas: atsakymo nėra"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: patvirtinta"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: bandoma"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "„trials {action}“ laukia funkcijos pavadinimo."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Pavadinimas „{name}“ atmestas ({error}). Nurodykite jį su --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Įspėjimas: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Perrašyti slotą {slot} „{current}“ pavadinimu „{name}“ ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Slotas {slot}: „{name}“ įrašytas ir nuskaitytas atgal identiškas."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Ankstesnis turinys („{name}“) išsaugotas atsarginėje kopijoje {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} jau yra. Pridėkite --yes, kad jį perrašytumėte."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Nepavyksta rašyti {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Slotas {slot} „{name}“ eksportuotas į {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Skaitoma: {done} iš {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Įspėjimas: sloto {slot} paskelbtas identifikatorius neatitinka nuskaitytų duomenų, net ir nuskaičius iš naujo. Vis tiek sukuriama jo atsarginė kopija."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Visi 23 slotai išsaugoti atsarginėje kopijoje {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Atsarginių kopijų nėra."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} slotas"
+msgstr[1] "{count} slotai"
+msgstr[2] "{count} slotų"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "SUGADINTA ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "nėra"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name taikoma tik vieno sloto atkūrimui."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Grąžinti pedalą į atsarginės kopijos {backup} būseną ({count} slotas)? Bus perrašyti tik besiskiriantys slotai, prieš tai išsaugojus jų turinį."
+msgstr[1] "Grąžinti pedalą į atsarginės kopijos {backup} būseną ({count} slotai)? Bus perrašyti tik besiskiriantys slotai, prieš tai išsaugojus jų turinį."
+msgstr[2] "Grąžinti pedalą į atsarginės kopijos {backup} būseną ({count} slotų)? Bus perrašyti tik besiskiriantys slotai, prieš tai išsaugojus jų turinį."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} iš {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Perrašyti ir identiškai nuskaityti atgal slotai: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Slotai, kurių atkurti tik nustatymai: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Slotai, jau identiški atsarginei kopijai: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Perrašyti slotą {slot} „{current}“ iš atsarginės kopijos {backup} („{name}“)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Slotas {slot} atkurtas iš {backup}, tada nuskaitytas atgal identiškas."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Pakeistas turinys („{name}“) išsaugotas atsarginėje kopijoje {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Nėra nutraukto rašymo."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Slotas {slot}: nutrauktas rašymas buvo baigtas. Nieko daryti nereikia."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Slotas {slot}: jame vis dar yra tai, kas buvo anksčiau. Nieko daryti nereikia."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Slotas {slot}: jo turinys nėra nei senas, nei naujas. Kad grąžintumėte, kaip buvo: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "leisti daugiau nei skaitymą neišbandytoje programinėje aparatinėje įrangoje"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "leisti bandomąją funkciją"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "neprašyti patvirtinimo"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "sloto numeris nuo 1 iki {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "„Linux“ redaktorius NUX Optima Air pedalui."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "duomenų aplankas (numatytasis: XDG duomenų aplankas)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "atidaryti langą"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "programinės aparatinės įrangos versija, išankstinė nuostata ir nustatymai"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 IR slotai"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "sukurti sloto IR atsarginę kopiją"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "spausdinti, ką siunčia pedalas"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "klausymosi sekundės"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "pirmiausia nuskaityti būseną"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "pirmiausia išsiųsti paskelbimą (bandymas)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "įrašyti WAV į slotą"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV failas"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "sloto pavadinimas (numatytasis: failo pavadinimas)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "eksportuoti slotą kaip WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "įrašomas WAV failas"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "perrašyti slotą arba visus slotus iš atsarginės kopijos"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "atsarginės kopijos aplankas"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "sloto numeris nuo 1 iki {count} (numatytasis: visi)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "pakeisti išsaugotą pavadinimą"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "sukurti 23 slotų atsarginę kopiją"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "išvardyti atsargines kopijas"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "patikrinti nutrauktą rašymą"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "bandomųjų funkcijų registras"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Sloto {slot} rašymas liko nebaigtas. Pedalas kurį laiką paliekamas ramybėje; tada paleiskite: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Klaida: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Nutraukta."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "baitas {byte} viršija 7 bitus"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 7 bitų baitai palieka {bits} užpildo bitus, enc7 niekada negamina daugiau kaip 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "nenuliniai užpildo bitai 7 bitų srauto pabaigoje"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "blokas yra {expected} baitų, gauta {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "bloko suma {sum} ({hex}) viršija 14 perduodamų bitų (maks. {max}): pedale niekada nematyta, atmesta, kol nepatikrinta"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "užkoduotas blokas yra {expected} baitų, gauta {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "baitas už 7 bitų užkoduotame bloke"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "neteisinga bloko kontrolinė suma"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "perdavimo pabaigos suma apima bent vieną bloką"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "ilgis {length} nėra {block} kartotinis"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "reikšmė {value} viršija 28 bitus"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "28 bitų suma užima 4 baitus, gauta {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "baitas {byte} viršija 7 bitus 28 bitų sumoje"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Rašymas buvo nutrauktas: pedalas paliekamas ramybėje dar {seconds} s."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "„{message}“: rašymo pranešimą gali išsiųsti tik pilnas sloto rašymas (atsarginė kopija, žurnalas, nuskaitymas atgal)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Programinės aparatinės įrangos versija dar nenuskaityta: leidžiamas tik skaitymas."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Nežinoma programinė aparatinė įranga {found} (protokolas patikrintas su {verified}): leidžiamas tik skaitymas."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "„{message}“ yra bandomoji funkcija („{function}“), dar nepatvirtinta pedale."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "„{message}“: pakartotinai galima siųsti tik skaitymą."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Pedalas neatsako į „{message}“ po {count} bandymų."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedalas be pertraukos siunčia SysEx pranešimus."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Nepavyksta nuskaityti sloto {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Du sloto {slot} nuskaitymai duoda skirtingus duomenis."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Sloto {slot} rašymas buvo nutrauktas: palaukite dar {seconds} s, prieš ką nors siųsdami."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Sloto {slot} rašymas buvo nutrauktas: kol šis slotas nesutvarkytas, tai vienintelis slotas, į kurį galima rašyti."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Rašymas atmestas: programinė aparatinė įranga nenuskaityta arba nėra ta, su kuria buvo patikrintas protokolas."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Po rašymo slote {slot} nėra to, kas buvo išsiųsta."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedalas praneša apie klaidą rašant IR."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Netikėtas bloko patvirtinimas: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "Gautas {count} bloko patvirtinimas, o ne {expected}."
+msgstr[1] "Gauti {count} bloko patvirtinimai, o ne {expected}."
+msgstr[2] "Gauta {count} bloko patvirtinimų, o ne {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Antraštės ir poraštės patvirtinimų trūksta arba jie netikėti."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Po rašymo pavadinimo aidas atėjo {count} kartą, o ne vieną kartą."
+msgstr[1] "Po rašymo pavadinimo aidas atėjo {count} kartus, o ne vieną kartą."
+msgstr[2] "Po rašymo pavadinimo aidas atėjo {count} kartų, o ne vieną kartą."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Po rašymo pavadinimo aidas neatitinka išsiųsto."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Po rašymo sloto informacija atėjo {count} kartą, o ne vieną kartą."
+msgstr[1] "Po rašymo sloto informacija atėjo {count} kartus, o ne vieną kartą."
+msgstr[2] "Po rašymo sloto informacija atėjo {count} kartų, o ne vieną kartą."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Po rašymo sloto informacija neatitinka išsiųsto."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Atsarginėje kopijoje {backup} nėra nė vieno sloto."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Lyginama"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Atsarginės kopijos {backup} slotas {slot} skiriasi nuo pedale esančio, bet jo negalima perrašyti tokio, koks yra ({error}). Niekas nebuvo įrašyta."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Atkuriama"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedalas paskelbia slotą {announced} po to, kai buvo paprašyta sloto {requested}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Pedalas neatsako aidu į lentelės {table} rašymą."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Lentelės {table} aidas skiriasi nuo išsiųsto."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "yra simbolinė nuoroda"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "ne įprastas failas"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} baitų, o ne {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} baitų, daugiau nei leidžiami {allowed}"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "dydis pasikeitė skaitant"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Nepavyksta sukurti užrakto {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "pasikartojantis raktas „{key}“"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} nėra standartinis JSON"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "ne JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "laukelio „{field}“ nėra"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "nežinomas formatas {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "nežinomas laukelis „{field}“"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Nepavyksta sinchronizuoti aplanko {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Nepavyksta sukurti aplanko {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Nepavyksta sukurti aplanko {folder}: {path} nėra aplankas"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Nepavyksta padėti {file} į vietą: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "prieš rašymą"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "sloto nuskaitymas"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "pilna atsarginė kopija"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "importas"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "sugadintas slotas"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Įkelti WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Perrašyti slotą <b>{slot}</b> „{name}“ failu <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Dabartinis sloto turinys bus išsaugotas atsarginėje kopijoje prieš rašymą."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Sloto pavadinimas"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Atšaukti"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Rašyti į pedalą"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Atsarginės kopijos"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Atkurti šį slotą"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Atkurti visą atsarginę kopiją"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Uždaryti"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Atsarginių kopijų dar nėra."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: slotas {slot} „{name}“"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} slotas"
+msgstr[1] "{backup}: {count} slotai"
+msgstr[2] "{backup}: {count} slotų"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: neįskaitoma"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Šios atsarginės kopijos negalima naudoti: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Grąžinti pedalo {count} slotą į šios atsarginės kopijos būseną?"
+msgstr[1] "Grąžinti pedalo {count} slotus į šios atsarginės kopijos būseną?"
+msgstr[2] "Grąžinti pedalo {count} slotų į šios atsarginės kopijos būseną?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Grąžinti pedalo slotą {slot} į šios atsarginės kopijos būseną („{name}“)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nPerrašomas tik nuo atsarginės kopijos besiskiriantis slotas, o jo dabartinis turinys išsaugomas atsarginėje kopijoje prieš pat tai."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Atkurti"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Elektrinė mėlyna"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Žydra"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Žalia"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Geltona"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Oranžinė"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Raudona"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Rožinė"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Violetinė"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Murzinai balta"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Sąsajos spalva"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Spalvos kodas, pavyzdžiui, #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Tikėtasi: # ir šeši šešioliktainiai skaitmenys"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Ieškoma pedalo…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Atkurti ankstesnę būseną"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Sukurti visko atsarginę kopiją"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Atsarginės kopijos…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Įkelti WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Eksportuoti kaip WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV failai"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Pasirinkite WAV failą"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Po vieną failą: slote telpa tik vienas IR."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Eksportuoti kaip WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Atkūrimas baigtas. Perrašyti ir identiškai nuskaityti atgal slotai: {rewritten}. Tik nustatymai: {settings}. Jau identiški atsarginei kopijai: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Slotas {slot}: po nutraukto rašymo jame vis dar yra tai, kas buvo anksčiau. Nieko daryti nereikia."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Slotas {slot}: po nutraukto rašymo jame nėra nei seno, nei naujo turinio. Kol jis nesutvarkytas, tai vienintelis slotas, į kurį galima rašyti."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Slotas {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Slotas {slot}: „{name}“ įrašytas ir nuskaitytas atgal identiškas. Ankstesnis turinys išsaugotas atsarginėje kopijoje {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Rašomas slotas {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Sloto {slot} rašymas nepavyko: {reason} Pedalas paliekamas ramybėje {seconds} s, tada bus patikrinta sloto būsena."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Atsarginės kopijos kūrimas nepavyko: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Atkūrimas sustojo: {reason} Jau apdoroti slotai sutvarkyti; pedalo būsena bus nuskaityta iš naujo."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Prisijungta, programinė aparatinė įranga {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Atsijungta: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Įspėjimas: pedalo paskelbtas identifikatorius neatitinka nuskaitytų duomenų."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Paprašyta sustabdyti."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Atsarginė kopija"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "netinkamas dažnių diapazonas arba taškų skaičius"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Garso failas neįskaitomas: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Faile yra {count} kanalų: išsaugomas tik pirmasis."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Tuščias garso failas: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Faile yra begalinių ar neapibrėžtų atskaitų: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Diskretizavimo dažnis {rate} Hz: failas pakartotinai diskretizuotas iki {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Failo trukmė {duration} ms: išsaugomos tik pirmosios {count} atskaitos ({limit} ms)."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedalas groja tik pirmąsias {count} atskaitų ({limit} ms): likusi šio IR dalis bus išsaugota, bet negirdima."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Nepavyksta normalizuoti {file}: tarp 400 Hz ir 3 kHz nėra signalo."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Failo {file} normalizavimas viršija slankiojo kablelio skaičių diapazoną."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Po normalizavimo IR pikas yra {peak} (įprasti IR išlieka žemiau 10): faile yra labai gili įduba tarp 400 Hz ir 3 kHz, o išėjimo lygis gali būti labai aukštas."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "žurnalo data turi turėti laiko juostą"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "slotas už ribų"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: tikėtasi ISO datos su laiko juosta"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: tikėtasi ISO datos su laiko juosta arba null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: tikėtasi atsarginės kopijos aplanko pavadinimo"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: tikėtasi 64 šešioliktainių skaitmenų"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: tikėtasi 32 baitų šešioliktainiu formatu"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "identifikatorius už ribų"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: tikėtasi loginės reikšmės"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Rašymo žurnalas neįskaitomas: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Nepavyksta pašalinti žurnalo {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 yra {size} baitų, o ne {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "užkoduotas blokas yra {size} baitų, o ne {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "pranešimas „{message}“: netinkamas Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "pranešimas „{message}“: Control Change yra nustatymas"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "pranešimas „{message}“: Control Change nėra uždarame sąraše"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "pranešimas „{message}“: reikšmė {value} viršija {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "pranešimo „{message}“ rėmelis netinkamas"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "pranešimas „{message}“: baitas už 7 bitų"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "pranešimo „{message}“ nėra uždarame sąraše"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "pranešimas „{message}“: {size} baitų, o ne {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "pranešimas „{message}“: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "netikėta versijos užklausa"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "leidžiamas tik paskelbimas 70 05 01, bandomasis"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "leidžiamas tik skaitymas 70 26 7F"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "lentelės užklausa su nenuliniu turiniu"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "lentelės rašymas: tikėtasi nustatymo, reikšmės nuo 0 iki 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "netinkama skaitymo užklausa"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "slotas už ribų arba nenulinis turinys"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "komandai {command} nėra turinio taisyklės"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "įkėlimo pranešimas už rašymo kategorijos ribų"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "rašymo komandai {command} nėra turinio taisyklės"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "netinkamas sloto pavadinimas"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "identifikatorius su nustatytu 31 bitu (gamyklinis IR): funkcija dar neatidaryta"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "įkėlimo antraštė: slotas už ribų"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "įkėlimo antraštė: MD5 nėra iš šešioliktainių skaitmenų mažosiomis raidėmis"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "įkėlimo antraštė už stebėtos formos ribų"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "įkėlimo poraštė: nenulinis baitas po vėliavėlės"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "pabaigos blokas: slotas už ribų"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "pabaigos blokas už stebėtos formos ribų"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "duomenų blokas: adresas arba skaitiklis už ribų"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "duomenų blokas: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "duomenų blokas: naudingasis krovinys ne enc_msb sukurtos formos"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "duomenų blokas: nenulinis užpildas po IR {size} baitų"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "identifikatorius {value} už ribų 0..{max}: 31 bitas rezervuotas gamykliniams IR, funkcija dar neatidaryta"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "pavadinimas yra {size} baitų, daugiausia {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "turinys yra {size} baitų, o ne {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "sloto {slot} informacija"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "lentelė {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "dabartinė būsena"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "sloto {slot} IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "sloto {slot} aktyvinimas"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "lentelėje yra {count} reikšmių, gauta {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "lentelė {table}: reikšmė {value!r} už ribų 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "lentelės {table} rašymas"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "nežinomas nustatymas „{name}“"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "nustatymas „{name}“: reikšmė {value!r} už ribų 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "nustatymas {name} į {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "ryšio paskelbimas"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "sloto pavadinime yra nuo 1 iki {max} simbolių"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "sloto pavadinime yra tik spausdinami ASCII simboliai"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR turi begalinę ar neapibrėžtą atskaitą"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "sloto {slot} įkėlimas, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "antraštė"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "blokas {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "pabaiga"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "poraštė"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "pavadinimas"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "informacija"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "pabaigos suma yra {size} baitų, o ne {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "sloto pavadinimas tuščias arba už spausdinamo ASCII ribų"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "nenuliniai baitai po sloto pavadinimo pabaigos"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "trūksta NUX SysEx antraštės"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "nėra baigiamojo F7"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "baitas už 7 bitų"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "tipas {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "komanda {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "netikėtas įkėlimo patvirtinimas"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "nežinoma patvirtinimo būsena: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "netikėtas versijos atsakymas: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "komanda {command}: sloto informaciją perduoda tik 0x5c (informacijos skaitymas) ir 0x5b (pavadinimo aidas)"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "užkoduotas ilgis {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "netikėtas sloto informacijos atsakymas: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "sloto informacija neįskaitoma: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedalas paskelbia slotą {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "netikėtas atsakymas lentelei {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "lentelė {table}: reikšmė {value} viršija 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "netikėtas būsenos atsakymas: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "skaitymo antraštė: komanda {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "skaitymo antraštėje yra pabaigos vėliavėlė"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "nenulinė skaitymo antraštė, tokios formos niekada nematyta"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "blokas {block}: komanda {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "blokas {block}: nenulinė vėliavėlė {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "blokas {block}: adresas {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "blokas {block}: skaitiklis {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "blokas {block} neįskaitomas: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "pabaigos blokas: komanda {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "pabaigos blokas be vėliavėlės"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "pabaigos blokas: skaitiklis {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "pabaigos blokas: pašalinis baitas už vėliavėlės, sumos ir skaitiklio ribų"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "pabaigos suma neįskaitoma: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "neteisinga skaitymo pabaigos suma"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "poraštė: komanda {found}, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "poraštė be vėliavėlės"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "poraštė: pašalinis baitas po vėliavėlės"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "gauta {count} pranešimų, o ne {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "pranešimas {number} nesusijęs su IR skaitymu: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "spalva {colour!r}: tikėtasi „#rrggbb“ mažosiomis raidėmis"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Nežinoma funkcija „{name}“. Žinomos: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "tikėtasi surūšiuoto žinomų funkcijų sąrašo be dublikatų"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Bandymų registras neįskaitomas: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Bandymų registrą užrakino kitas procesas ({file}): bandykite dar kartą, kai kita komanda baigs darbą."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Nepavyksta užrakinti {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Pedalas nerastas: nėra „NAI5“ garso plokštės. Patikrinkite USB laidą."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR nenustatytas: užrakto paimti negalima."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Nepavyksta paimti užrakto {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedalą jau naudoja kita optima-air kopija."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Užraktas jau atlaisvintas: jo nebegalima perduoti prievadui."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Šis užraktas jau priklauso prievadui: jo negalima perduoti antram."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Nepavyksta atlaisvinti užrakto: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedalas nebeatsako: atjungtas arba užstrigęs."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Nepavyksta sukonfigūruoti prievado {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Nepavyksta paruošti prievado {port} įvesties: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Prievado {port} nėra."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Prieiga prie {port} uždrausta. Patikrinkite, ar priklausote grupei „audio“ (komanda: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Prievadą {port} jau naudoja kita programa."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Prievadas {port} nebepasiekiamas."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Nepavyksta atidaryti prievado {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Negalima rašyti: prievadas uždarytas."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Rašymas į prievadą {port} nepavyko: nepriimtas nė vienas baitas."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Rašymas į prievadą {port} nepavyko: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Prievado {port} ištuštinimas buvo nutrauktas {count} kartų iš eilės: pranešimas perduotas branduoliui, bet jo išsiuntimo nebuvo galima sulaukti."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Laukimas už ribų: {wait} s (daugiausia {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Negalima skaityti: prievadas uždarytas."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Skaitymas iš prievado {port} nepavyko: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Prievadas {port} nepraneša savo įvesties būsenos ({error}): baitų praradimo aptikti negalima, sustojama čia."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Prievado {port} būsenos skaitymas nepavyko: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Prievado {port} uždarymas nepavyko: {error}"

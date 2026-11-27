@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "των {bits} bit"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: αναμενόταν ακέραιος, ελήφθη {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: αναμενόταν ακέραιος ή τίποτα, ελήφθη {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "όνομα θέσης: αναμένονταν byte, ελήφθη {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: αναμενόταν κείμενο, ελήφθη {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "θέση {slot} εκτός του 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "όνομα θέσης {size} byte αντί για {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "αναγνωριστικό {value} εκτός του 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} εκτός του 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Άγνωστος λόγος αντιγράφου ασφαλείας «{reason}»."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "λείπει το firmware: μόνο ο λόγος «{reason}» το επιτρέπει"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "κακοσχηματισμένο όνομα αντιγράφου ασφαλείας «{name}»"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "ο λόγος «{reason}» διαφέρει από αυτόν του αντιγράφου ασφαλείας {name}, λόγος «{expected}»"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "μη αναγνώσιμη ημερομηνία {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "ημερομηνία {date!r} χωρίς ζώνη ώρας"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "μη κανονική ημερομηνία {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "η ημερομηνία {date!r} διαφέρει από την ώρα του αντιγράφου ασφαλείας {name}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: αναμενόταν ημερομηνία, ελήφθη {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "το {field} πρέπει να φέρει ζώνη ώρας (για παράδειγμα datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Αδυναμία εγγραφής στον φάκελο {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "δεν είναι φάκελος"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Αδυναμία ελέγχου του {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Αδυναμία δημιουργίας του αντιγράφου ασφαλείας {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "δεδομένα: αναμένονταν byte, ελήφθη {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "ένα IR έχει {expected} byte, ελήφθησαν {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "η θέση {slot} έχει ήδη αποθηκευτεί στο {backup}: ένα αντίγραφο ασφαλείας γράφεται μόνο μία φορά, δημιουργήστε νέο αντίγραφο ασφαλείας."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Μη αναγνώσιμη καταχώριση θέσης: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "αναμενόταν αντικείμενο JSON, ελήφθη {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "το πεδίο «{field}» λείπει ή δεν είναι κείμενο"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "δεν είναι δυνατός ο υπολογισμός της σφραγίδας: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Η καταχώριση θέσης έχει αλλοιωθεί ή υποστεί βλάβη: {file} (λάθος σφραγίδα)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "πεδίο «{field}»: αναμενόταν ακέραιος"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "πεδίο «{field}»: αναμενόταν κείμενο"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "πεδίο «{field}»: αναμενόταν ακέραιος ή null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "η καταχώριση της θέσης {record} αρχειοθετήθηκε ως θέση {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: αναμενόταν δεκαεξαδικό με πεζά γράμματα"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "η καταχώριση του αντιγράφου ασφαλείας «{record}» βρέθηκε στο «{backup}»"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Αδυναμία ανάγνωσης του {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Μη αναγνώσιμο αντίγραφο ασφαλείας: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "λείπει"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Ασυνεπής καταχώριση θέσης: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Μη αναγνώσιμα δεδομένα: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Λάθος αποτύπωμα: το {file} δεν θα χρησιμοποιηθεί."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "το αναγνωριστικό επανυπολογίστηκε ως {computed}, η καταχώριση αναφέρει {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Ενεργή θέση"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR ενεργό/ανενεργό"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Προενισχυτής ενεργός/ανενεργός"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "«{text}» δεν είναι αριθμός θέσης"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Μια εγγραφή στη θέση {slot} διακόπηκε: το πεντάλ μένει ανενόχλητο για άλλα {seconds} s. Στη συνέχεια εκτελέστε: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "άγνωστο ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "άγνωστο ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Preset: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "θέση {slot} «{name}»"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "άγνωστη θέση ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: ενεργό, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: ανενεργό, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Προενισχυτής: ενεργός"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Προενισχυτής: ανενεργός"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Όνομα"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Αναγν."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Ένταση"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Αποκοπή μπάσων"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Αποκοπή πρίμων"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Προσοχή: το αναγνωριστικό που ανακοίνωσε το πεντάλ ({announced}) δεν ταιριάζει με τα δεδομένα που διαβάστηκαν ({computed}), ακόμη και μετά από νέα ανάγνωση. Το αντίγραφο ασφαλείας γίνεται παρ' όλα αυτά."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Η θέση {slot} «{name}» αποθηκεύτηκε στο {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} byte: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change κανάλι {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[κανάλι {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, δηλαδή {converted} στα 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: ελάχ. {min} μέγ. {max} ({count} μην.)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "επίπεδα"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Προσοχή: {count} SysEx απορρίφθηκε κατά τη λήψη."
+msgstr[1] "Προσοχή: {count} SysEx απορρίφθηκαν κατά τη λήψη."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Προσοχή: {count} υπερχείλιση του ενταμιευτή εισόδου, χάθηκαν byte."
+msgstr[1] "Προσοχή: {count} υπερχειλίσεις του ενταμιευτή εισόδου, χάθηκαν byte."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "ν"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "ναι"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [ν/Ο] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Ακυρώθηκε: δεν γράφτηκε τίποτα."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Αποστολή της ανακοίνωσης σύνδεσης, δοκιμαστική λειτουργία «{name}»;"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Ακυρώθηκε: δεν στάλθηκε τίποτα."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Η ανακοίνωση έχει ήδη σταλεί από την ακολουθία σύνδεσης: δεν στέλνεται δύο φορές."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Η ανακοίνωση στάλθηκε: λήφθηκε απάντηση"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Η ανακοίνωση στάλθηκε: καμία απάντηση"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: επικυρώθηκε"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: υπό δοκιμή"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "το «trials {action}» αναμένει το όνομα μιας λειτουργίας."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Το όνομα «{name}» απορρίφθηκε ({error}). Δώστε ένα με --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Προσοχή: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Αντικατάσταση της θέσης {slot} «{current}» με «{name}» ({file});"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Θέση {slot}: το «{name}» γράφτηκε και διαβάστηκε ξανά πανομοιότυπο."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Το προηγούμενο περιεχόμενο («{name}») αποθηκεύτηκε στο {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "Το {file} υπάρχει ήδη. Προσθέστε --yes για να το αντικαταστήσετε."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Αδυναμία εγγραφής του {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Η θέση {slot} «{name}» εξήχθη στο {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Ανάγνωση: {done} από {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Προσοχή: το αναγνωριστικό που ανακοινώθηκε για τη θέση {slot} δεν ταιριάζει με τα δεδομένα που διαβάστηκαν, ακόμη και μετά από νέα ανάγνωση. Αποθηκεύεται παρ' όλα αυτά."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Και οι 23 θέσεις αποθηκεύτηκαν στο {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Κανένα αντίγραφο ασφαλείας."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} θέση"
+msgstr[1] "{count} θέσεις"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "ΦΘΑΡΜΕΝΟ ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "κανένα"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "Το --name ισχύει μόνο για την επαναφορά μίας θέσης."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Επαναφορά του πεντάλ στην κατάσταση του αντιγράφου ασφαλείας {backup} ({count} θέση); Θα γραφτούν ξανά μόνο οι θέσεις που διαφέρουν, αφού αποθηκευτεί το περιεχόμενό τους."
+msgstr[1] "Επαναφορά του πεντάλ στην κατάσταση του αντιγράφου ασφαλείας {backup} ({count} θέσεις); Θα γραφτούν ξανά μόνο οι θέσεις που διαφέρουν, αφού αποθηκευτεί το περιεχόμενό τους."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} από {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Θέσεις που γράφτηκαν ξανά και διαβάστηκαν πανομοιότυπες: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Θέσεις των οποίων επαναφέρθηκαν μόνο οι ρυθμίσεις: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Θέσεις ήδη πανομοιότυπες με το αντίγραφο ασφαλείας: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Επανεγγραφή της θέσης {slot} «{current}» από το αντίγραφο ασφαλείας {backup} («{name}»);"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Η θέση {slot} επαναφέρθηκε από το {backup} και μετά διαβάστηκε πανομοιότυπη."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Το περιεχόμενο που αντικαταστάθηκε («{name}») αποθηκεύτηκε στο {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Καμία διακοπείσα εγγραφή."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Θέση {slot}: η διακοπείσα εγγραφή είχε ολοκληρωθεί. Δεν χρειάζεται καμία ενέργεια."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Θέση {slot}: περιέχει ακόμη ό,τι περιείχε πριν. Δεν χρειάζεται καμία ενέργεια."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Θέση {slot}: το περιεχόμενό της δεν είναι ούτε το παλιό ούτε το νέο. Για να επανέλθει όπως ήταν: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "επιτρέπει περισσότερα από αναγνώσεις σε firmware που δεν έχει επαληθευτεί"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "επιτρέπει μια δοκιμαστική λειτουργία"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "δεν ζητά επιβεβαίωση"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "αριθμός θέσης, από 1 έως {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Επεξεργαστής Linux για το πεντάλ NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "φάκελος δεδομένων (προεπιλογή: φάκελος δεδομένων XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "ανοίγει το παράθυρο"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "έκδοση firmware, preset και ρυθμίσεις"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "οι 23 θέσεις IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "αποθηκεύει το IR μιας θέσης"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "εμφανίζει ό,τι στέλνει το πεντάλ"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "δευτερόλεπτα ακρόασης"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "διαβάζει πρώτα την κατάσταση"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "στέλνει πρώτα την ανακοίνωση (δοκιμή)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "γράφει ένα WAV σε μια θέση"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "αρχείο WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "όνομα της θέσης (προεπιλογή: το όνομα του αρχείου)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "εξάγει μια θέση ως WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "αρχείο WAV προς εγγραφή"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "γράφει ξανά μια θέση, ή όλες, από ένα αντίγραφο ασφαλείας"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "φάκελος αντιγράφου ασφαλείας"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "αριθμός θέσης, από 1 έως {count} (προεπιλογή: όλες)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "αντικαθιστά το αποθηκευμένο όνομα"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "αποθηκεύει τις 23 θέσεις"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "εμφανίζει τα αντίγραφα ασφαλείας"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "ελέγχει μια διακοπείσα εγγραφή"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "μητρώο των δοκιμαστικών λειτουργιών"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Μια εγγραφή στη θέση {slot} έμεινε ημιτελής. Το πεντάλ μένει ανενόχλητο για λίγο· στη συνέχεια εκτελέστε: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Σφάλμα: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Διακόπηκε."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "byte {byte} εκτός των 7 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} byte των 7 bit αφήνουν {bits} bit συμπλήρωσης, το enc7 δεν παράγει ποτέ περισσότερα από 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "μη μηδενικά bit συμπλήρωσης στο τέλος μιας ροής 7 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "ένα μπλοκ έχει {expected} byte, ελήφθησαν {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "άθροισμα μπλοκ {sum} ({hex}) πέρα από τα 14 bit που μεταδίδονται (μέγ. {max}): δεν έχει εμφανιστεί ποτέ στο πεντάλ, απορρίπτεται μέχρι να επαληθευτεί"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "ένα κωδικοποιημένο μπλοκ έχει {expected} byte, ελήφθησαν {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "byte εκτός των 7 bit σε κωδικοποιημένο μπλοκ"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "λάθος άθροισμα ελέγχου μπλοκ"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "το άθροισμα τέλους μεταφοράς καλύπτει τουλάχιστον ένα μπλοκ"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "το μήκος {length} δεν είναι πολλαπλάσιο του {block}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "τιμή {value} εκτός των 28 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "ένα άθροισμα 28 bit καταλαμβάνει 4 byte, ελήφθησαν {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "byte {byte} εκτός των 7 bit σε άθροισμα 28 bit"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Μια εγγραφή διακόπηκε: το πεντάλ μένει ανενόχλητο για άλλα {seconds} s."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "«{message}»: ένα μήνυμα εγγραφής μπορεί να σταλεί μόνο από μια πλήρη εγγραφή θέσης (αντίγραφο ασφαλείας, ημερολόγιο, επανανάγνωση)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Η έκδοση του firmware δεν έχει διαβαστεί ακόμη: επιτρέπονται μόνο αναγνώσεις."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Άγνωστο firmware {found} (πρωτόκολλο επαληθευμένο στο {verified}): επιτρέπονται μόνο αναγνώσεις."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "το «{message}» είναι δοκιμαστική λειτουργία («{function}»), ακόμη μη επικυρωμένη στο πεντάλ."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "«{message}»: μόνο μια ανάγνωση μπορεί να σταλεί ξανά."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Καμία απάντηση του πεντάλ στο «{message}» μετά από {count} προσπάθειες."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Το πεντάλ στέλνει SysEx χωρίς διακοπή."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Αδυναμία ανάγνωσης της θέσης {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Δύο αναγνώσεις της θέσης {slot} δίνουν διαφορετικά δεδομένα."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Μια εγγραφή στη θέση {slot} διακόπηκε: περιμένετε άλλα {seconds} s πριν στείλετε οτιδήποτε."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Μια εγγραφή στη θέση {slot} διακόπηκε: μέχρι να τακτοποιηθεί αυτή η θέση, είναι η μόνη που μπορεί να γραφτεί."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Η εγγραφή απορρίφθηκε: το firmware δεν έχει διαβαστεί ή δεν είναι αυτό στο οποίο επαληθεύτηκε το πρωτόκολλο."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Μετά την εγγραφή, η θέση {slot} δεν περιέχει ό,τι στάλθηκε."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Το πεντάλ αναφέρει σφάλμα κατά την εγγραφή του IR."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Μη αναμενόμενη επιβεβαίωση μπλοκ: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "Λήφθηκε {count} επιβεβαίωση μπλοκ αντί για {expected}."
+msgstr[1] "Λήφθηκαν {count} επιβεβαιώσεις μπλοκ αντί για {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Οι επιβεβαιώσεις κεφαλίδας και υποσέλιδου λείπουν ή είναι μη αναμενόμενες."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Μετά την εγγραφή, η ηχώ του ονόματος ήρθε {count} φορά αντί για μία."
+msgstr[1] "Μετά την εγγραφή, η ηχώ του ονόματος ήρθε {count} φορές αντί για μία."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Μετά την εγγραφή, η ηχώ του ονόματος δεν ταιριάζει με ό,τι στάλθηκε."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Μετά την εγγραφή, οι πληροφορίες της θέσης ήρθαν {count} φορά αντί για μία."
+msgstr[1] "Μετά την εγγραφή, οι πληροφορίες της θέσης ήρθαν {count} φορές αντί για μία."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Μετά την εγγραφή, οι πληροφορίες της θέσης δεν ταιριάζουν με ό,τι στάλθηκε."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Το αντίγραφο ασφαλείας {backup} δεν περιέχει καμία θέση."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Σύγκριση"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Η θέση {slot} του αντιγράφου ασφαλείας {backup} διαφέρει από το πεντάλ αλλά δεν μπορεί να γραφτεί ξανά όπως είναι ({error}). Δεν γράφτηκε τίποτα."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Επαναφορά"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Το πεντάλ ανακοινώνει τη θέση {announced} ενώ ζητήθηκε η θέση {requested}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Καμία ηχώ από το πεντάλ στην εγγραφή του πίνακα {table}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Η ηχώ του πίνακα {table} διαφέρει από ό,τι στάλθηκε."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "είναι συμβολικός σύνδεσμος"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "δεν είναι κανονικό αρχείο"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} byte αντί για {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} byte, περισσότερα από τα {allowed} που επιτρέπονται"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "το μέγεθος άλλαξε κατά την ανάγνωση"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Αδυναμία δημιουργίας του κλειδώματος {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "διπλότυπο κλειδί «{key}»"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "το {name} δεν είναι τυπικό JSON"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "δεν είναι JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "το πεδίο «{field}» λείπει"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "άγνωστη μορφή {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "άγνωστο πεδίο «{field}»"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Αδυναμία συγχρονισμού του φακέλου {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Αδυναμία δημιουργίας του φακέλου {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Αδυναμία δημιουργίας του φακέλου {folder}: το {path} δεν είναι φάκελος"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Αδυναμία τοποθέτησης του {file} στη θέση του: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "πριν από μια εγγραφή"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "ανάγνωση θέσης"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "πλήρες αντίγραφο ασφαλείας"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "εισαγωγή"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "φθαρμένη θέση"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Φόρτωση WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Αντικατάσταση της θέσης <b>{slot}</b> «{name}» με το <b>{file}</b>;"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Το τρέχον περιεχόμενο της θέσης θα αποθηκευτεί πριν από την εγγραφή."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Όνομα θέσης"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Εγγραφή στο πεντάλ"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Αντίγραφα ασφαλείας"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Επαναφορά αυτής της θέσης"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Επαναφορά ολόκληρου του αντιγράφου ασφαλείας"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Δεν υπάρχουν ακόμη αντίγραφα ασφαλείας."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: θέση {slot} «{name}»"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} θέση"
+msgstr[1] "{backup}: {count} θέσεις"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: μη αναγνώσιμο"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Αυτό το αντίγραφο ασφαλείας δεν μπορεί να χρησιμοποιηθεί: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Επαναφορά {count} θέσης του πεντάλ στην κατάσταση αυτού του αντιγράφου ασφαλείας;"
+msgstr[1] "Επαναφορά {count} θέσεων του πεντάλ στην κατάσταση αυτού του αντιγράφου ασφαλείας;"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Επαναφορά της θέσης {slot} του πεντάλ στην κατάσταση αυτού του αντιγράφου ασφαλείας («{name}»);"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nΜόνο μια θέση που διαφέρει από το αντίγραφο ασφαλείας γράφεται ξανά και το τρέχον περιεχόμενό της αποθηκεύεται αμέσως πριν."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Επαναφορά"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Ηλεκτρικό μπλε"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Κυανό"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Πράσινο"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Κίτρινο"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Πορτοκαλί"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Κόκκινο"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Ροζ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Μοβ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Υπόλευκο"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Χρώμα διεπαφής"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Κωδικός χρώματος, για παράδειγμα #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Αναμενόταν: # και έξι δεκαεξαδικά ψηφία"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Αναζήτηση του πεντάλ…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Επαναφορά της προηγούμενης κατάστασης"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Αντίγραφο ασφαλείας όλων"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Αντίγραφα ασφαλείας…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Φόρτωση WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Εξαγωγή ως WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "Αρχεία WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Επιλογή αρχείου WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Ένα αρχείο τη φορά: μια θέση περιέχει ένα μόνο IR."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Εξαγωγή ως WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Η επαναφορά ολοκληρώθηκε. Θέσεις που γράφτηκαν ξανά και διαβάστηκαν πανομοιότυπες: {rewritten}. Μόνο ρυθμίσεις: {settings}. Ήδη πανομοιότυπες με το αντίγραφο ασφαλείας: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Θέση {slot}: μετά τη διακοπείσα εγγραφή, περιέχει ακόμη ό,τι περιείχε πριν. Δεν χρειάζεται καμία ενέργεια."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Θέση {slot}: μετά τη διακοπείσα εγγραφή, δεν περιέχει ούτε το παλιό ούτε το νέο περιεχόμενο. Μέχρι να τακτοποιηθεί, είναι η μόνη θέση που μπορεί να γραφτεί."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Θέση {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Θέση {slot}: το «{name}» γράφτηκε και διαβάστηκε ξανά πανομοιότυπο. Το προηγούμενο περιεχόμενο αποθηκεύτηκε στο {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Εγγραφή της θέσης {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Η εγγραφή της θέσης {slot} απέτυχε: {reason} Το πεντάλ μένει ανενόχλητο για {seconds} s και μετά θα ελεγχθεί η κατάσταση της θέσης."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Το αντίγραφο ασφαλείας απέτυχε: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Η επαναφορά σταμάτησε: {reason} Οι θέσεις που έχουν ήδη επεξεργαστεί είναι σε τάξη· η κατάσταση του πεντάλ θα διαβαστεί ξανά."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Συνδέθηκε, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Αποσυνδέθηκε: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Προσοχή: το αναγνωριστικό που ανακοίνωσε το πεντάλ δεν ταιριάζει με τα δεδομένα που διαβάστηκαν."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Ζητήθηκε διακοπή."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Αντίγραφο ασφαλείας"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "μη έγκυρο εύρος συχνοτήτων ή αριθμός σημείων"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Μη αναγνώσιμο αρχείο ήχου: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Το αρχείο έχει {count} κανάλια: διατηρείται μόνο το πρώτο."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Κενό αρχείο ήχου: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Το αρχείο περιέχει μη πεπερασμένα δείγματα: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Ρυθμός δειγματοληψίας {rate} Hz: το αρχείο επαναδειγματοληπτήθηκε στα {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Το αρχείο διαρκεί {duration} ms: διατηρούνται μόνο τα πρώτα {count} δείγματα ({limit} ms)."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Το πεντάλ αναπαράγει μόνο τα πρώτα {count} δείγματα ({limit} ms): το υπόλοιπο αυτού του IR θα αποθηκευτεί αλλά δεν θα ακουστεί."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Αδυναμία κανονικοποίησης του {file}: κανένα σήμα μεταξύ 400 Hz και 3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Η κανονικοποίηση του {file} υπερβαίνει το εύρος των αριθμών κινητής υποδιαστολής."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Μετά την κανονικοποίηση, το IR έχει κορυφή {peak} (τα συνηθισμένα IR μένουν κάτω από 10): το αρχείο έχει πολύ βαθιά βύθιση μεταξύ 400 Hz και 3 kHz και η στάθμη εξόδου μπορεί να είναι πολύ υψηλή."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "μια ημερομηνία του ημερολογίου πρέπει να φέρει ζώνη ώρας"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "θέση εκτός εύρους"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: αναμενόταν ημερομηνία ISO με ζώνη ώρας"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: αναμενόταν ημερομηνία ISO με ζώνη ώρας, ή null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: αναμενόταν όνομα φακέλου αντιγράφου ασφαλείας"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: αναμένονταν 64 δεκαεξαδικά ψηφία"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: αναμένονταν 32 byte σε δεκαεξαδικό"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "αναγνωριστικό εκτός εύρους"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: αναμενόταν λογική τιμή"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Μη αναγνώσιμο ημερολόγιο εγγραφής: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Αδυναμία αφαίρεσης του ημερολογίου {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 {size} byte αντί για {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "κωδικοποιημένο μπλοκ {size} byte αντί για {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "μήνυμα «{message}»: κακοσχηματισμένο Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "μήνυμα «{message}»: ένα Control Change είναι ρύθμιση"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "μήνυμα «{message}»: Control Change εκτός της κλειστής λίστας"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "μήνυμα «{message}»: τιμή {value} πάνω από {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "μήνυμα «{message}» με κακό πλαισιωμό"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "μήνυμα «{message}»: byte εκτός των 7 bit"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "μήνυμα «{message}» εκτός της κλειστής λίστας"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "μήνυμα «{message}»: {size} byte αντί για {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "μήνυμα «{message}»: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "μη αναμενόμενο αίτημα έκδοσης"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "επιτρέπεται μόνο η ανακοίνωση 70 05 01, υπό δοκιμή"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "επιτρέπεται μόνο η ανάγνωση 70 26 7F"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "αίτημα πίνακα με μη μηδενικό σώμα"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "εγγραφή πίνακα: αναμενόταν ρύθμιση, τιμές από 0 έως 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "κακοσχηματισμένο αίτημα ανάγνωσης"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "θέση εκτός εύρους ή μη μηδενικό σώμα"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "η εντολή {command} δεν έχει κανόνα περιεχομένου"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "μήνυμα μεταφόρτωσης εκτός της κατηγορίας εγγραφής"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "η εντολή εγγραφής {command} δεν έχει κανόνα περιεχομένου"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "κακοσχηματισμένο όνομα θέσης"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "αναγνωριστικό με ενεργό το bit 31 (IR εργοστασίου): λειτουργία που δεν έχει ακόμη ανοίξει"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "κεφαλίδα μεταφόρτωσης: θέση εκτός εύρους"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "κεφαλίδα μεταφόρτωσης: MD5 εκτός των δεκαεξαδικών ψηφίων με πεζά"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "κεφαλίδα μεταφόρτωσης εκτός της παρατηρημένης μορφής"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "υποσέλιδο μεταφόρτωσης: μη μηδενικό byte μετά τη σημαία"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "μπλοκ τέλους: θέση εκτός εύρους"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "μπλοκ τέλους εκτός της παρατηρημένης μορφής"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "μπλοκ δεδομένων: διεύθυνση ή μετρητής εκτός εύρους"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "μπλοκ δεδομένων: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "μπλοκ δεδομένων: ωφέλιμο φορτίο εκτός της μορφής που παράγει το enc_msb"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "μπλοκ δεδομένων: μη μηδενική συμπλήρωση πέρα από τα {size} byte του IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "αναγνωριστικό {value} εκτός του 0..{max}: το bit 31 είναι δεσμευμένο για τα IR εργοστασίου, λειτουργία που δεν έχει ακόμη ανοίξει"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "όνομα {size} byte, το πολύ {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "σώμα {size} byte αντί για {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "πληροφορίες της θέσης {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "πίνακας {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "τρέχουσα κατάσταση"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR της θέσης {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "ενεργοποίηση της θέσης {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "ένας πίνακας έχει {count} τιμές, ελήφθησαν {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "πίνακας {table}: τιμή {value!r} εκτός του 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "εγγραφή του πίνακα {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "άγνωστη ρύθμιση «{name}»"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "ρύθμιση «{name}»: τιμή {value!r} εκτός του 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "ρύθμιση του {name} στο {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "ανακοίνωση σύνδεσης"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "ένα όνομα θέσης έχει από 1 έως {max} χαρακτήρες"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "ένα όνομα θέσης περιέχει μόνο εκτυπώσιμους χαρακτήρες ASCII"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "το IR περιέχει ένα μη πεπερασμένο δείγμα"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "μεταφόρτωση της θέσης {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "κεφαλίδα"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "μπλοκ {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "τέλος"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "υποσέλιδο"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "όνομα"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "πληροφορίες"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "άθροισμα τέλους {size} byte αντί για {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "όνομα θέσης κενό ή εκτός των εκτυπώσιμων ASCII"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "μη μηδενικά byte μετά το τέλος του ονόματος θέσης"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "λείπει η κεφαλίδα SysEx NUX"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "δεν υπάρχει τελικό F7"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "byte εκτός των 7 bit"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "τύπος {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "εντολή {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "μη αναμενόμενη επιβεβαίωση μεταφόρτωσης"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "άγνωστη κατάσταση επιβεβαίωσης: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "μη αναμενόμενη απάντηση έκδοσης: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "εντολή {command}: μόνο οι 0x5c (ανάγνωση πληροφοριών) και 0x5b (ηχώ ονόματος) φέρουν τις πληροφορίες θέσης"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "κωδικοποιημένο μήκος {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "μη αναμενόμενη απάντηση πληροφοριών θέσης: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "μη αναγνώσιμες πληροφορίες θέσης: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "το πεντάλ ανακοινώνει τη θέση {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "μη αναμενόμενη απάντηση για τον πίνακα {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "πίνακας {table}: τιμή {value} πάνω από 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "μη αναμενόμενη απάντηση κατάστασης: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "κεφαλίδα ανάγνωσης: εντολή {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "η κεφαλίδα ανάγνωσης φέρει τη σημαία τέλους"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "μη μηδενική κεφαλίδα ανάγνωσης, δεν έχει εμφανιστεί ποτέ σε αυτή τη μορφή"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "μπλοκ {block}: εντολή {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "μπλοκ {block}: μη μηδενική σημαία {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "μπλοκ {block}: διεύθυνση {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "μπλοκ {block}: μετρητής {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "μπλοκ {block} μη αναγνώσιμο: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "μπλοκ τέλους: εντολή {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "μπλοκ τέλους χωρίς σημαία"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "μπλοκ τέλους: μετρητής {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "μπλοκ τέλους: περιττό byte εκτός της σημαίας, του αθροίσματος και του μετρητή"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "μη αναγνώσιμο άθροισμα τέλους: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "λάθος άθροισμα τέλους ανάγνωσης"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "υποσέλιδο: εντολή {found} αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "υποσέλιδο χωρίς σημαία"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "υποσέλιδο: περιττό byte μετά τη σημαία"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "ελήφθησαν {count} μηνύματα αντί για {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "το μήνυμα {number} είναι ξένο προς μια ανάγνωση IR: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "χρώμα {colour!r}: αναμενόταν «#rrggbb» με πεζά"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Άγνωστη λειτουργία «{name}». Γνωστές: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "αναμενόταν ταξινομημένη λίστα γνωστών λειτουργιών, χωρίς διπλότυπα"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Μη αναγνώσιμο μητρώο δοκιμών: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Το μητρώο δοκιμών είναι κλειδωμένο από άλλη διεργασία ({file}): δοκιμάστε ξανά όταν τελειώσει η άλλη εντολή."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Αδυναμία κλειδώματος του {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Το πεντάλ δεν βρέθηκε: καμία κάρτα ήχου «NAI5». Ελέγξτε το καλώδιο USB."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "Η XDG_RUNTIME_DIR δεν έχει οριστεί: δεν είναι δυνατή η λήψη του κλειδώματος."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Αδυναμία λήψης του κλειδώματος {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Το πεντάλ χρησιμοποιείται ήδη από άλλο στιγμιότυπο του optima-air."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Το κλείδωμα έχει ήδη απελευθερωθεί: δεν μπορεί πια να δοθεί σε θύρα."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Αυτό το κλείδωμα ανήκει ήδη σε θύρα: δεν μπορεί να δοθεί σε δεύτερη."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Αδυναμία απελευθέρωσης του κλειδώματος: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Το πεντάλ δεν απαντά πια: αποσυνδεδεμένο ή κολλημένο."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Αδυναμία ρύθμισης της θύρας {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Αδυναμία οπλισμού της εισόδου της θύρας {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Η θύρα {port} δεν υπάρχει."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Άρνηση πρόσβασης στο {port}. Ελέγξτε ότι ανήκετε στην ομάδα «audio» (εντολή: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Η θύρα {port} χρησιμοποιείται ήδη από άλλο πρόγραμμα."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Η θύρα {port} δεν είναι πια διαθέσιμη."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Αδυναμία ανοίγματος της θύρας {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Αδυναμία εγγραφής: η θύρα είναι κλειστή."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Η εγγραφή στη θύρα {port} απέτυχε: δεν έγινε δεκτό κανένα byte."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Η εγγραφή στη θύρα {port} απέτυχε: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Η εκκαθάριση της θύρας {port} διακόπηκε {count} φορές στη σειρά: το μήνυμα έχει παραδοθεί στον πυρήνα, αλλά δεν ήταν δυνατή η αναμονή της αναχώρησής του."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Αναμονή εκτός εύρους: {wait} s (το πολύ {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Αδυναμία ανάγνωσης: η θύρα είναι κλειστή."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Η ανάγνωση από τη θύρα {port} απέτυχε: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Η θύρα {port} δεν αναφέρει την κατάσταση της εισόδου της ({error}): η απώλεια byte δεν μπορεί να ανιχνευθεί, διακοπή εδώ."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Η ανάγνωση της κατάστασης της θύρας {port} απέτυχε: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Το κλείσιμο της θύρας {port} απέτυχε: {error}"

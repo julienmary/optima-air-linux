@@ -1,0 +1,1938 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} 位元"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}：應為整數，實際為 {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}：應為整數或空，實際為 {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "槽位名稱：應為位元組串，實際為 {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}：應為文字，實際為 {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "槽位 {slot} 超出 1..{count} 的範圍"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "槽位名稱為 {size} 位元組，應為 {expected} 位元組"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "識別碼 {value} 超出 0..{max} 的範圍"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} 超出 0..{max} 的範圍"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "未知的備份原因「{reason}」。"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "缺少韌體：僅原因「{reason}」允許這種情況"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "備份名稱「{name}」格式錯誤"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "原因「{reason}」與備份 {name} 的原因「{expected}」不一致"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "無法讀取的日期 {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "日期 {date!r} 缺少時區"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "日期 {date!r} 不是規範形式"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "日期 {date!r} 與備份 {name} 的時間不一致"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}：應為日期，實際為 {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} 必須帶有時區（例如 datetime.now().astimezone()）"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "無法寫入資料夾 {file}：{error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "不是資料夾"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "無法檢查 {file}：{error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "無法建立備份 {backup}：{error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data：應為位元組串，實際為 {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR 應為 {expected} 位元組，實際為 {got} 位元組"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "槽位 {slot} 已備份到 {backup}：備份只寫入一次，請新建備份。"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "無法讀取的槽位記錄：{file}（{error}）"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "應為 JSON 物件，實際為 {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "欄位「{field}」缺失或不是文字"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "無法計算封印：{error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "槽位記錄被改動或已損壞：{file}（封印錯誤）"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "欄位「{field}」：應為整數"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "欄位「{field}」：應為文字"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "欄位「{field}」：應為整數或 null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "槽位 {record} 的記錄被歸在槽位 {slot} 下"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}：應為小寫十六進位"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "備份「{record}」的記錄出現在「{backup}」中"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "無法讀取 {file}：{error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "無法讀取的備份：{backup}（{error}）"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "缺失"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "槽位記錄不一致：{file}（{error}）"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "無法讀取的資料：{file}（{error}）"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "指紋錯誤：不會使用 {file}。"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "識別碼重新計算為 {computed}，而記錄中為 {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "目前槽位"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR 開/關"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "前級 開/關"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "「{text}」不是槽位編號"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "對槽位 {slot} 的寫入被中斷：接下來 {seconds} 秒內不會操作踏板。然後請執行：optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "未知（{preset}）"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "未知（{routing}）"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "韌體 {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "預設：{preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "槽位 {slot}「{name}」"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "未知槽位（{slot}）"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR：開，{slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR：關，{slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "前級：開"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "前級：關"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "名稱"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "ID"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "音量"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "低切"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "高切"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "警告：踏板通告的識別碼（{announced}）與讀取的資料（{computed}）不符，重新讀取後仍然如此。仍會進行備份。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "槽位 {slot}「{name}」已備份到 {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} 位元組：{data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change 通道 {channel}：{program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[通道 {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}，即 {converted}（滿值 100）"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}：最小 {min} 最大 {max}（{count} 條訊息）"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "位準"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "警告：接收過程中捨棄了 {count} 條 SysEx。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "警告：輸入緩衝區溢位 {count} 次，有位元組遺失。"
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "是"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "是"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [y/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "已取消：未寫入任何內容。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "傳送連線通告（試驗功能「{name}」）嗎？"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "已取消：未傳送任何內容。"
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "連線流程已傳送通告：不會重複傳送。"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "通告已傳送：已收到回應"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "通告已傳送：無回應"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}：已驗證"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}：試驗中"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "「trials {action}」需要一個功能名稱。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "名稱「{name}」被拒絕（{error}）。請用 --name 指定一個名稱。"
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "警告：{warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "用「{name}」（{file}）覆蓋槽位 {slot}「{current}」嗎？"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "槽位 {slot}：「{name}」已寫入，並已回讀確認一致。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "原有內容（「{name}」）已備份到 {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} 已存在。新增 --yes 以覆蓋。"
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "無法寫入 {file}：{error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "槽位 {slot}「{name}」已匯出到 {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "正在讀取：{done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "警告：槽位 {slot} 通告的識別碼與讀取的資料不符，重新讀取後仍然如此。仍會進行備份。"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "全部 23 個槽位已備份到 {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "沒有備份。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} 個槽位"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "已損壞（{error}）"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "無"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name 僅適用於還原單一槽位。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "將踏板還原到備份 {backup} 的狀態嗎？（{count} 個槽位）只有內容不同的槽位才會被重寫，且會先備份其內容。"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}：{done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "已重寫並回讀確認一致的槽位：{slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "僅還原了設定的槽位：{slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "已與備份一致的槽位：{slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "從備份 {backup}（「{name}」）重寫槽位 {slot}「{current}」嗎？"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "槽位 {slot} 已從 {backup} 還原，並已回讀確認一致。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "被替換的內容（「{name}」）已備份到 {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "沒有被中斷的寫入。"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "槽位 {slot}：被中斷的寫入已經完成。無需處理。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "槽位 {slot}：仍保持寫入前的內容。無需處理。"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "槽位 {slot}：其內容既不是舊內容也不是新內容。要將其還原，請執行：optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "允許在未經驗證的韌體上執行讀取以外的操作"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "允許使用試驗功能"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "不要求確認"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "槽位編號，從 1 到 {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "NUX Optima Air 踏板的 Linux 編輯器。"
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "資料目錄（預設：XDG 資料目錄）"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "開啟視窗"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "韌體版本、預設和設定"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 個 IR 槽位"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "備份某個槽位的 IR"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "列印踏板傳送的內容"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "監聽秒數"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "先讀取狀態"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "先傳送通告（試驗）"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "將 WAV 寫入槽位"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV 檔案"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "槽位名稱（預設：檔名）"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "將槽位匯出為 WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "要寫入的 WAV 檔案"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "從備份重寫一個或全部槽位"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "備份資料夾"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "槽位編號，從 1 到 {count}（預設：全部）"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "替換已備份的名稱"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "備份 23 個槽位"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "列出備份"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "檢查被中斷的寫入"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "試驗功能登記表"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "對槽位 {slot} 的寫入未完成。踏板將被擱置一段時間；然後請執行：optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "錯誤：{error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "已中斷。"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "位元組 {byte} 超出 7 位元"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 個 7 位元的位元組留下 {bits} 個填充位元，enc7 產生的填充位元從不超過 6 個"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "7 位元串流末尾存在非零填充位元"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "一個區塊應為 {expected} 位元組，實際為 {got} 位元組"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "區塊總和 {sum}（{hex}）超出所傳輸的 14 位元（最大 {max}）：踏板上從未出現過，在驗證之前一律拒絕"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "一個編碼區塊應為 {expected} 位元組，實際為 {got} 位元組"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "編碼區塊中有超出 7 位元的位元組"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "區塊校驗和錯誤"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "傳輸結束總和至少涵蓋一個區塊"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "長度 {length} 不是 {block} 的倍數"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "值 {value} 超出 28 位元"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "28 位元總和佔 4 位元組，實際為 {got} 位元組"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "28 位元總和中的位元組 {byte} 超出 7 位元"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "一次寫入被中斷：接下來 {seconds} 秒內不會操作踏板。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "「{message}」：寫入訊息只能由完整的槽位寫入（備份、日誌、回讀）發出。"
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "尚未讀取韌體版本：僅允許讀取。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "未知韌體 {found}（通訊協定已在 {verified} 上驗證）：僅允許讀取。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "「{message}」是試驗功能（「{function}」），尚未在踏板上驗證。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "「{message}」：只有讀取才能重新傳送。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "踏板在嘗試 {count} 次後仍未對「{message}」作出回應。"
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "踏板在不間斷地傳送 SysEx。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "無法讀取槽位 {slot}：{error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "兩次讀取槽位 {slot} 得到的資料不同。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "對槽位 {slot} 的寫入被中斷：傳送任何內容之前，請再等待 {seconds} 秒。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "對槽位 {slot} 的寫入被中斷：在該槽位修復之前，只有它可以寫入。"
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "寫入被拒絕：尚未讀取韌體，或者韌體不是通訊協定所驗證的版本。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "寫入之後，槽位 {slot} 的內容與所傳送的不一致。"
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "寫入 IR 時，踏板報告了錯誤。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "意外的區塊確認回應：{status}。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "收到 {count} 個區塊確認回應，應為 {expected} 個。"
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "標頭和標尾的確認回應缺失或不符合預期。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "寫入之後，名稱回音出現了 {count} 次，而不是 1 次。"
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "寫入之後，名稱回音與所傳送的不一致。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "寫入之後，槽位資訊出現了 {count} 次，而不是 1 次。"
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "寫入之後，槽位資訊與所傳送的不一致。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "備份 {backup} 不含任何槽位。"
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "比較中"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "備份 {backup} 的槽位 {slot} 與踏板不同，但無法按原樣重寫（{error}）。未寫入任何內容。"
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "還原中"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "請求槽位 {requested} 之後，踏板通告的卻是槽位 {announced}。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "踏板對表 {table} 的寫入沒有回音。"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "表 {table} 的回音與所傳送的不一致。"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "是符號連結"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "不是一般檔案"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} 位元組，應為 {expected} 位元組"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} 位元組，超過允許的 {allowed} 位元組"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "讀取過程中大小發生了變化"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "無法建立鎖 {file}：{error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "重複的鍵「{key}」"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} 不是標準 JSON"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "不是 JSON：{error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "欄位「{field}」缺失"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "未知格式 {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "未知欄位「{field}」"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "無法同步資料夾 {file}：{error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "無法建立資料夾 {folder}：{error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "無法建立資料夾 {folder}：{path} 不是資料夾"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "無法將 {file} 放到位：{error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "寫入之前"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "槽位讀取"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "完整備份"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "匯入"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "已損壞的槽位"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "載入 WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "用 <b>{file}</b> 覆蓋槽位 <b>{slot}</b>「{name}」嗎？"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "寫入之前，會先備份該槽位的目前內容。"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "槽位名稱"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "取消"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "寫入踏板"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}，{reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "備份"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "還原此槽位"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "還原整個備份"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "關閉"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "還沒有備份。"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}：槽位 {slot}「{name}」"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}：{count} 個槽位"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}：無法讀取"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "此備份無法使用：{error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "將踏板的 {count} 個槽位還原到此備份的狀態嗎？"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "將踏板的槽位 {slot} 還原到此備份（「{name}」）的狀態嗎？"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}。\n\n只有與備份不同的槽位才會被重寫，且會在此之前先備份其目前內容。"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "還原"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "電光藍"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "青色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "綠色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "黃色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "橙色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "紅色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "粉色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "紫色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "灰白色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "介面顏色"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "顏色程式碼，例如 #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "應為：# 加六個十六進位數字"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "正在尋找踏板…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "還原先前狀態"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "全部備份"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "備份…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "載入 WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "匯出為 WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV 檔案"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "選擇 WAV 檔案"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "一次只能一個檔案：一個槽位只容納一個 IR。"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "匯出為 WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "還原完成。已重寫並回讀確認一致的槽位：{rewritten}。僅設定：{settings}。已與備份一致：{unchanged}。"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "槽位 {slot}：寫入被中斷後，仍保持寫入前的內容。無需處理。"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "槽位 {slot}：寫入被中斷後，其內容既不是舊內容也不是新內容。在修復之前，只有該槽位可以寫入。"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "槽位 {slot}：{name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "槽位 {slot}：「{name}」已寫入，並已回讀確認一致。原有內容已備份到 {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "正在寫入槽位 {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "寫入槽位 {slot} 失敗：{reason} 踏板將被擱置 {seconds} 秒，之後會檢查該槽位的狀態。"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "備份失敗：{reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "還原已停止：{reason} 已處理的槽位狀態正常；將重新讀取踏板的狀態。"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "已連線，韌體 {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "已中斷連線：{reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "警告：踏板通告的識別碼與讀取的資料不符。"
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "已請求停止。"
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "備份"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "頻率範圍或點數無效"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "無法讀取的音訊檔案：{file}（{error}）"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "檔案有 {count} 個聲道：只保留第一個。"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "音訊檔案為空：{file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "檔案包含非有限的取樣值：{file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "取樣率為 {rate} Hz：檔案已重取樣到 {target} kHz。"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "檔案時長為 {duration} ms：只保留前 {count} 個取樣（{limit} ms）。"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "踏板只播放前 {count} 個取樣（{limit} ms）：此 IR 的其餘部分會被儲存，但聽不到。"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "無法對 {file} 正規化：400 Hz 到 3 kHz 之間沒有訊號。"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "對 {file} 正規化會超出浮點數的範圍。"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "正規化之後，IR 的峰值為 {peak}（常見的 IR 低於 10）：檔案在 400 Hz 到 3 kHz 之間有很深的凹陷，輸出位準可能非常高。"
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "日誌日期必須帶有時區"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "槽位超出範圍"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}：應為帶時區的 ISO 日期"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}：應為帶時區的 ISO 日期，或 null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}：應為備份資料夾名稱"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}：應為 64 個十六進位數字"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}：應為十六進位表示的 32 位元組"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "識別碼超出範圍"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}：應為布林值"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "無法讀取的寫入日誌：{file}（{error}）"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "無法刪除日誌 {file}：{error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 為 {size} 位元組，應為 {expected} 位元組"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "編碼區塊為 {size} 位元組，應為 {expected} 位元組"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "訊息「{message}」：Control Change 格式錯誤"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "訊息「{message}」：Control Change 是一項設定"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "訊息「{message}」：Control Change 不在封閉清單中"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "訊息「{message}」：值 {value} 超過 {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "訊息「{message}」框架格式錯誤"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "訊息「{message}」：有超出 7 位元的位元組"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "訊息「{message}」不在封閉清單中"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "訊息「{message}」：{size} 位元組，應為 {expected} 位元組"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "訊息「{message}」：{error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "意外的版本請求"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "只允許試驗中的通告 70 05 01"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "只允許讀取 70 26 7F"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "正文非零的表請求"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "表寫入：應為設定，取值 0 到 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "讀取請求格式錯誤"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "槽位超出範圍或正文非零"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "命令 {command} 沒有內容規則"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "上傳訊息不屬於寫入類別"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "寫入命令 {command} 沒有內容規則"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "槽位名稱格式錯誤"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "識別碼的第 31 位元已設為 1（出廠 IR）：該功能尚未開放"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "上傳標頭：槽位超出範圍"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "上傳標頭：MD5 不是小寫十六進位數字"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "上傳標頭不符合已觀察到的形式"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "上傳標尾：旗標之後有非零位元組"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "結束區塊：槽位超出範圍"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "結束區塊不符合已觀察到的形式"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "資料區塊：位址或計數器超出範圍"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "資料區塊：{error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "資料區塊：酬載不符合 enc_msb 產生的形式"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "資料區塊：超出 IR 的 {size} 位元組之外存在非零填充"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "識別碼 {value} 超出 0..{max} 的範圍：第 31 位元保留給出廠 IR，該功能尚未開放"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "名稱為 {size} 位元組，最多 {max} 位元組"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "正文為 {size} 位元組，應為 {expected} 位元組"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "槽位 {slot} 的資訊"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "表 {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "目前狀態"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "槽位 {slot} 的 IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "槽位 {slot} 的啟用"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "一個表有 {count} 個值，實際為 {got} 個"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "表 {table}：值 {value!r} 超出 0..{max} 的範圍"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "表 {table} 的寫入"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "未知設定「{name}」"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "設定「{name}」：值 {value!r} 超出 0..{max} 的範圍"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "將設定 {name} 設為 {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "連線通告"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "槽位名稱為 1 到 {max} 個字元"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "槽位名稱只能包含可列印的 ASCII 字元"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR 包含非有限的取樣值"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "槽位 {slot} 的上傳，{step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "標頭"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "區塊 {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "結束"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "標尾"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "名稱"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "資訊"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "結束總和為 {size} 位元組，應為 {expected} 位元組"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "槽位名稱為空或超出可列印 ASCII 範圍"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "槽位名稱結束之後有非零位元組"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "缺少 NUX SysEx 標頭"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "沒有結尾的 F7"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "超出 7 位元的位元組"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "型別為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "命令為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "意外的上傳確認回應"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "未知的確認回應狀態：{status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "意外的版本回應：{error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "命令 {command}：只有 0x5c（資訊讀取）和 0x5b（名稱回音）攜帶槽位資訊"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "編碼長度為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "意外的槽位資訊回應：{error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "無法讀取的槽位資訊：{error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "踏板通告槽位 {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "對表 {table} 的意外回應：{error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "表 {table}：值 {value} 超過 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "意外的狀態回應：{error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "讀取標頭：命令為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "讀取標頭帶有結束旗標"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "讀取標頭非零，從未以這種形式出現過"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "區塊 {block}：命令為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "區塊 {block}：非零旗標 {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "區塊 {block}：位址為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "區塊 {block}：計數器為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "無法讀取區塊 {block}：{error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "結束區塊：命令為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "沒有旗標的結束區塊"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "結束區塊：計數器為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "結束區塊：旗標、總和和計數器之外有多餘位元組"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "無法讀取的結束總和：{error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "讀取結束總和錯誤"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "標尾：命令為 {found}，應為 {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "沒有旗標的標尾"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "標尾：旗標之後有多餘位元組"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "收到 {count} 條訊息，應為 {expected} 條"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "訊息 {number} 與 IR 讀取無關：{error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "顏色 {colour!r}：應為小寫的「#rrggbb」"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "未知功能「{name}」。已知功能：{known}。"
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "應為已排序且無重複的已知功能清單"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "無法讀取的試驗登記表：{file}（{error}）"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "試驗登記表被另一個處理程序鎖定（{file}）：請在另一條命令結束後重試。"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "無法鎖定 {file}：{error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "未找到踏板：沒有「NAI5」音效卡。請檢查 USB 纜線。"
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "未設定 XDG_RUNTIME_DIR：無法取得鎖。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "無法取得鎖 {file}：{error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "踏板已被 optima-air 的另一個實例佔用。"
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "該鎖已被釋放：不能再交給連接埠。"
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "該鎖已屬於某個連接埠：不能再交給第二個連接埠。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "無法釋放鎖：{error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "踏板不再回應：已被拔出或卡住。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "無法配置連接埠 {port}：{error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "無法啟用連接埠 {port} 的輸入：{error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "連接埠 {port} 不存在。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "無權存取 {port}。請檢查您是否在「audio」群組中（命令：id）。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "連接埠 {port} 已被另一個程式佔用。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "連接埠 {port} 已不可用。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "無法開啟連接埠 {port}：{error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "無法寫入：連接埠已關閉。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "寫入連接埠 {port} 失敗：沒有位元組被接受。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "寫入連接埠 {port} 失敗：{error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "排空連接埠 {port} 連續 {count} 次被中斷：訊息已交給核心，但無法等待其傳送完畢。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "等待時間超出範圍：{wait} 秒（最多 {max} 秒）。"
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "無法讀取：連接埠已關閉。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "從連接埠 {port} 讀取失敗：{error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "連接埠 {port} 不報告其輸入的狀態（{error}）：無法偵測位元組遺失，在此停止。"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "讀取連接埠 {port} 的狀態失敗：{error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "關閉連接埠 {port} 失敗：{error}"

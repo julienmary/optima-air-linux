@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: se\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} bihtta"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: vuordojuvvui ollislohku, gávnnahuvvui {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: vuordojuvvui ollislohku dahje ii maidege, gávnnahuvvui {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "slot-namma: vuordojuvvojedje bytet, gávnnahuvvui {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: vuordojuvvui teaksta, gávnnahuvvui {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "slot {slot} lea olggobealde 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "slot-nama {size} byte {expected} baikkis"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "identifikáhtor {value} lea olggobealde 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} lea olggobealde 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Dovdameahttun várrekopiija sivva “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "firmware váilu: dan sieđgá dušše sivva “{reason}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "billašuvvan várrekopiija nama “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "sivva “{reason}” ii leat seamma go várrekopiija {name} sivva, “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "lohkemeahttun beaivi {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "beaivi {date!r} ilá áigesullo"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "ii-kanonalaš beaivi {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "beaivi {date!r} ii leat seamma go várrekopiija {name} áigi"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: vuordojuvvui beaivi, gávnnahuvvui {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} ferte sisttisdoallat áigesullo (omd. datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Ii sáhte čállit máhppii {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ii leat máhppa"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Ii sáhte iskat {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Ii sáhte ráhkadit várrekopiija {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data: vuordojuvvojedje bytet, gávnnahuvvui {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR lea {expected} byte, gávnnahuvvui {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "Slot {slot} lea juo várrekopierejuvvon {backup}:i: várrekopiija čállojuvvo dušše oktii, dagat odđa várrekopiija."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Lohkemeahttun slot-čállosa: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "vuordojuvvui JSON-ohjekt, gávnnahuvvui {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "gieddi “{field}” váilu dahje ii leat teaksta"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "Ii sáhte rehkenastit sigelta: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Slot-čállosa lea rievdaduvvon dahje billašuvvan: {file} (boasttu sigel)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "gieddi “{field}”: vuordojuvvui ollislohku"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "gieddi “{field}”: vuordojuvvui teaksta"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "gieddi “{field}”: vuordojuvvui ollislohku dahje null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "slot {record} čállosa lea registrerejuvvon slot {slot} vuollái"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: vuordojuvvui heksadesimála unnitbustávaiguin"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "várrekopiija “{record}” čállosa gávnnahuvvui “{backup}”:s"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Ii sáhte lohkat {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Lohkemeahttun várrekopiija: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "váilu"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Eahpesullii slot-čállosa: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Lohkemeahttun dáhtát: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Boasttu čiehkárbáddi: {file} ii geavahuvvo."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "identifikáhtor rehkenastojuvvui ođđasit {computed}, čállosis lea {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Aktiivvalaš slot"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR mielde/olggos"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamp mielde/olggos"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” ii leat slot-nummir"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Čálus slot {slot}:ii gaskkalduhttojuvvui: pedála báhcá ovtta {seconds} s ain. Dasto ruovdde: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "dovdameahttun ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "dovdameahttun ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Preset: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "slot {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "dovdameahttun slot ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: mielde, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: olggos, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamp: mielde"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamp: olggos"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Namma"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Ident."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Jietnadássi"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Vuolit čuohppan"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Alit čuohppan"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Váruhus: identifikáhtor maid pedála almmuhii ({announced}) ii leat seamma go lohkkojuvvon dáhtát ({computed}), vaikko lohkkojuvvui ođđasit. Várrekopiija dahkko dattetge."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Slot {slot} “{name}” várrekopierejuvvui {backup}:i"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} byte: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change kanála {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[kanála {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, dat lea {converted} 100:s"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} max {max} ({count} reive)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "dássit"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Váruhus: {count} SysEx massojuvvui vuostáiválddi áigge."
+msgstr[1] "Váruhus: {count} SysEx massojuvvui vuostáiválddi áigge."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Váruhus: sisabuffer ollii {count} geardde dievvai, bytet massojuvvojedje."
+msgstr[1] "Váruhus: sisabuffer ollii {count} geardde dievvai, bytet massojuvvojedje."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "j"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "juo"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [j/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Gaskkalduhttojuvvui: ii maidege čállojuvvon."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Sáddet oktavuođa almmuhusa, geahččaleami doaibma “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Gaskkalduhttojuvvui: ii maidege sáddejuvvon."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Almmuhus lea juo sáddejuvvon oktavuođa čuovvusii: ii sáddejuvvo guktii."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Almmuhus sáddejuvvui: vástádus vuostáiváldojuvvui"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Almmuhus sáddejuvvui: ii vástádus"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: dohkkehuvvon"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: geahččalusas"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” vuordá doaimma nama."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Namma “{name}” hilgojuvvui ({error}). Addte nama --name bokte."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Váruhus: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Čállet slot {slot} “{current}” badjel namain “{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Slot {slot}: “{name}” čállojuvvui ja lei seamma ođđasit lohkkodettiin."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Ovddit sisdoallu (“{name}”) várrekopierejuvvui {backup}:i"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} gávdno juo. Lasit --yes čállin dihte badjel."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Ii sáhte čállit {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Slot {slot} “{name}” sáddejuvvui olggos {file}:i"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Lohkan: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Váruhus: slot {slot} identifikáhtor ii leat seamma go lohkkojuvvon dáhtát, vaikko lohkkojuvvui ođđasit. Várrekopierejuvvui dattetge."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Buot 23 slot leat várrekopierejuvvon {backup}:i"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Eai leat várrekopiijat."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} slot"
+msgstr[1] "{count} slot"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "BILLAŠUVVAN ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "ii oktage"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name guoská dušše ovtta slot máhcahit."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Máhcahit pedála várrekopiija {backup} dillái ({count} slot)? Dušše slot mat eai leat seamma čállojuvvojit ođđasit, maŋŋá go sisdoallu lea várrekopierejuvvon."
+msgstr[1] "Máhcahit pedála várrekopiija {backup} dillái ({count} slot)? Dušše slot mat eai leat seamma čállojuvvojit ođđasit, maŋŋá go sisdoallu lea várrekopierejuvvon."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Slot mat čállojuvvojedje ođđasit jaledje seamma lohkkodettiin: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Slot maid dušše heivehusat máhcahuvvojedje: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Slot mat leat juo seamma go várrekopiija: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Čállet slot {slot} “{current}” ođđasit várrekopiijas {backup} (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Slot {slot} máhcahuvvui {backup}:s, ja lei seamma ođđasit lohkkodettiin."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Sirdojuvvon sisdoallu (“{name}”) várrekopierejuvvui {backup}:i"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Ii gaskkalduhttojuvvon čálus."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Slot {slot}: gaskkalduhttojuvvon čálus lei gárvvis. Ii mihkkige dahkat."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Slot {slot}: das lea ain dat mii das lei ovdal. Ii mihkkige dahkat."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Slot {slot}: dan sisdoallu ii leat boares iige ođđa. Máhcahit dan ovddeš dillái: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "sihkkelastit eambbo go lohkama firmware:s mii ii leat dohkkehuvvon"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "sihkkelastit geahččalandoaimma"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "ale bivdde nannema"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "slot-nummir, 1:s {count}:ii"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Linux-doaimmaheaddji NUX Optima Air pedálii."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "dáhtámáhppa (standárda: XDG-dáhtámáhppa)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "rahpat ráiddu"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "firmware-veršuvdna, preset ja heivehusat"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 IR-slot"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "várrekopierit slot IR"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "prentte maid pedála sádde"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "guldalansekunddat"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "lohká vuos dili"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "sádde vuos almmuhusa (geahččaleapmi)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "čále WAV slotii"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV-fiila"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "slot nama (standárda: fiilla namma)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "exporte slot WAV:ran"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "WAV-fiila mii čállojuvvo"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "čále slot, dahje buot, ođđasit várrekopiijas"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "várrekopiijamáhppa"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "slot-nummir, 1:s {count}:ii (standárda: buot)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "molsso várrekopierejuvvon nama"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "várrekopierit 23 slot"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "listte várrekopiijaid"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "iskka gaskkalduhttojuvvon čálusa"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "geahččalandoaimmaid registtar"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Čálus slot {slot}:ii báhtai gárvvihis. Pedála báhcá soames áiggi; dasto ruovdde: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Meattáhus: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Gaskkalduhttojuvvui."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "byte {byte} lea olggobealde 7 bihtta"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 7-bihtta byte guođđá {bits} deaddobihtta, enc7 ii goassige duddjo eambbo go 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "ii-nolla deaddobihtat 7-bihtta čázi loahpas"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "blohkka lea {expected} byte, gávnnahuvvui {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "blohka {sum} ({hex}) summa lea badjel sirdojuvvon 14 bihtta (max {max}): ii goassige oidnon pedálas, hilgojuvvo dassážii go dohkkehuvvo"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "kodejuvvon blohkka lea {expected} byte, gávnnahuvvui {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "byte olggobealde 7 bihtta kodejuvvon blohkkas"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "boasttu blohka dárkkistansumma"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "sirdima loahppasumma gokčá unnimusat ovtta blohka"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "guhkkodat {length} ii leat {block} máŋggaplašuvdna"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "árvu {value} lea olggobealde 28 bihtta"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "28-bihtta summa váldá 4 byte, gávnnahuvvui {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "byte {byte} lea olggobealde 7 bihtta 28-bihtta summas"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Čálus gaskkalduhttojuvvui: pedála báhcá ovtta {seconds} s ain."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: čállinreive sáddejuvvo dušše ollis slot-čállinis (várrekopiija, journála, ođđasit lohkan)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Firmware-veršuvdna ii leat vel lohkkojuvvon: dušše lohkan lea sihkkelastojuvvon."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Dovdameahttun firmware {found} (protokolla dohkkehuvvui {verified}:s): dušše lohkan lea sihkkelastojuvvon."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” lea geahččalandoaibma (“{function}”), mii ii leat vel dohkkehuvvon pedálas."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: dušše lohkan sáddejuvvo ođđasit."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Pedála ii vástidan reivvi “{message}” {count} geahččalusa maŋŋá."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedála joatká sáddemis SysEx-a ilá bottu haga."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Ii sáhte lohkat slot {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Guokte lohkama slot {slot}:s addet iešguđetlágan dáhtá."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Čálus slot {slot}:ii gaskkalduhttojuvvui: vuordde ovtta {seconds} s ain ovdal go sádde maidige."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Čálus slot {slot}:ii gaskkalduhttojuvvui: dassážii go dat slot lea divvojuvvon, dat lea áidna maid sáhttá čállit."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Čálus hilgojuvvui: firmware ii lean lohkkojuvvon, dahje dat ii leat dat veršuvdna masa protokolla dohkkehuvvui."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Čállima maŋŋá slot {slot} ii sisttisdoala dan mii sáddejuvvui."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedála dieđiha meattáhusa go čálla IR:a."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Vuordemeahttun blohka nannen: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{count} blohka nannen vuostáiváldojuvvui {expected} baikkis."
+msgstr[1] "{count} blohka nannen vuostáiváldojuvvui {expected} baikkis."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Bajilčála ja vuolilčála nanneemat váilot dahje eai vuordojuvvon."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Čállima maŋŋá nama ekko bođii {count} geardde ovtta gerddi baikkis."
+msgstr[1] "Čállima maŋŋá nama ekko bođii {count} geardde ovtta gerddi baikkis."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Čállima maŋŋá nama ekko ii leat seamma go dat mii sáddejuvvui."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Čállima maŋŋá slot dieđut bohte {count} geardde ovtta gerddi baikkis."
+msgstr[1] "Čállima maŋŋá slot dieđut bohte {count} geardde ovtta gerddi baikkis."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Čállima maŋŋá slot dieđut eai leat seamma go dat mii sáddejuvvui."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Várrekopiija {backup} ii sisttisdoala ovttage slot."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Veardádallá"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Várrekopiija {backup} slot {slot} lea earálágan go pedála, muhto ii sáhte čállojuvvot ođđasit dego lea ({error}). Ii maidege čállojuvvon."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Máhcaheapmi"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedála almmuha slot {announced} maŋŋá go slot {requested} bivdojuvvui."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Pedála ii addán ekko tabeallaid {table} čállimii."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Tabeallaid {table} ekko lea earálágan go dat mii sáddejuvvui."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "lea symbolalaš liŋka"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "ii leat dábálaš fiila"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} byte {expected} baikkis"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} byte, eambbo go dohkkehuvvon {allowed}"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "sturrodat rievddai lohkama áigge"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Ii sáhte ráhkadit lohkaga {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "guovtti geardde čuoččuhuvvon čoavdda “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} ii leat standárda JSON"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "ii leat JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "gieddi “{field}” váilu"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "dovdameahttun formáhtta {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "dovdameahttun gieddi “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Ii sáhte sihkkarastit máhpa {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Ii sáhte ráhkadit máhpa {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Ii sáhte ráhkadit máhpa {folder}: {path} ii leat máhppa"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Ii sáhte bidjat {file} sadjái: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "ovdal čálusa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "slot lohkan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "devdolaš várrekopiija"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "importa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "billašuvvan slot"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Viečča WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Čállet slot <b>{slot}</b> “{name}” badjel fiillain <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Slot dálá sisdoallu várrekopierejuvvo ovdal čálusa."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Slot namma"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Sihko"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Čále pedálii"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Várrekopiijat"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Máhcat dán slot"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Máhcat olles várrekopiija"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Gidde"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Eai leat vel várrekopiijat."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: slot {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} slot"
+msgstr[1] "{backup}: {count} slot"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: lohkemeahttun"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Dát várrekopiija ii sáhte geavahuvvot: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Máhcahit pedála {count} slot dán várrekopiija dillái?"
+msgstr[1] "Máhcahit pedála {count} slot dán várrekopiija dillái?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Máhcahit pedála slot {slot} dán várrekopiija (“{name}”) dillái?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nDušše slot mii lea earálágan go várrekopiija čállojuvvo ođđasit, ja dan dálá sisdoallu várrekopierejuvvo juste ovdal dan."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Máhcat"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Elektralaš alit"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Cyan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Ruoná"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Fiskes"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Oránša"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Ruoksat"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Rosa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Fiolehtta"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Almmá vielgat"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Gaskavuođa fárba"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Fárbbakoda, omd. #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Vuordojuvvui: # ja guhtta heksadesimála lohku"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Ohcá pedála…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Máhcat ovddit dili"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Várrekopierit buot"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Várrekopiijat…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Viečča WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Exporte WAV:ran…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV-fiillat"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Vállje WAV-fiilla"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Okta fiila ovtta háve: slot doallá dušše ovtta IR:a."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Exporte WAV:ran"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Máhcaheapmi gárvvis. Slot mat čállojuvvojedje ođđasit ja ledje seamma lohkkodettiin: {rewritten}. Dušše heivehusat: {settings}. Juo seamma go várrekopiija: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Slot {slot}: gaskkalduhttojuvvon čállima maŋŋá das lea ain dat mii das lei ovdal. Ii mihkkige dahkat."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Slot {slot}: gaskkalduhttojuvvon čállima maŋŋá dan sisdoallu ii leat boares iige ođđa. Dassážii go dat divvojuvvo, dat lea áidna slot maid sáhttá čállit."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Slot {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Slot {slot}: “{name}” čállojuvvui ja lei seamma ođđasit lohkkodettiin. Ovddit sisdoallu várrekopierejuvvui {backup}:i"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Čállá slot {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Slot {slot} čállin ii lihkostuvvan: {reason} Pedála báhcá {seconds} s, ja dasto iskkahuvvo slot dilli."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Várrekopierem ii lihkostuvvan: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Máhcaheapmi bisánii: {reason} Slot mat leat juo gieldojuvvon leat ortnegis; pedála dilli lohkkojuvvo ođđasit."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Čatnaduvvon, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Čadnojuvvon eret: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Váruhus: identifikáhtor maid pedála almmuhii ii leat seamma go lohkkojuvvon dáhtát."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Bisáneapmi bivdojuvvui."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Várrekopiija"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "boasttu frekveanssaviidodat dahje čuoggáid lohku"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Lohkemeahttun jietnafiila: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Fiillas leat {count} kanála: dušše vuosttaš doalahuvvo."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Guorus jietnafiila: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Fiilla sisttisdoallá ii-ráddjejuvvon sámpalid: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Sámpalanfrekveansa {rate} Hz: fiilla lea ođđasit sámpaluvvon {target} kHz:ii."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Fiilla bistá {duration} ms: dušše vuosttaš {count} sámpala ({limit} ms) doalahuvvojit."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedála čuojaha dušše vuosttaš {count} sámpala ({limit} ms): dán IR:a eará oassi vurkejuvvo muhto ii gullo."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Ii sáhte normaliseret {file}: ii leat sivnnáš 400 Hz ja 3 kHz gaskkas."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "{file} normaliseren joavdá badjel jorgalanlohkuid viidodaga."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Normaliserema maŋŋá IR badjelmearri lea {peak} (dábálaš IR:at orrot vuolil 10): fiillas lea hui čielgas luovva 400 Hz ja 3 kHz gaskkas, ja olggosčuovvaga dássi sáhttá leat hui alit."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "journála beaivvis ferte leat áigesullo"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "slot lea olggobealde viidodaga"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: vuordojuvvui ISO-beaivi áigesulluin"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: vuordojuvvui ISO-beaivi áigesulluin, dahje null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: vuordojuvvui várrekopiijamáhpa namma"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: vuordojuvvojedje 64 heksadesimála ciffara"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: vuordojuvvojedje 32 byte heksadesimálan"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "identifikáhtor lea olggobealde viidodaga"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: vuordojuvvui boolean-árvu"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Lohkemeahttun čállinjournála: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Ii sáhte sihkkut journála {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "{size} byte MD5 {expected} baikkis"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "{size} byte kodejuvvon blohkka {expected} baikkis"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "reive “{message}”: billašuvvan Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "reive “{message}”: Control Change lea heivehus"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "reive “{message}”: Control Change ii leat giddejuvvon listtus"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "reive “{message}”: árvu {value} lea badjel {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "reive “{message}” lea boastut rámmahuvvon"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "reive “{message}”: byte olggobealde 7 bihtta"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "reive “{message}” ii leat giddejuvvon listtus"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "reive “{message}”: {size} byte {expected} baikkis"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "reive “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "vuordemeahttun veršuvdnabivdda"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "dušše almmuhus 70 05 01, geahččalussan, lea sihkkelastojuvvon"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "dušše lohkan 70 26 7F lea sihkkelastojuvvon"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "tabeallabivdda mas lea ii-nolla ruovttu"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "tabeallačálus: vuordojuvvui heivehus, árvvut 0:s 100:ii"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "billašuvvan lohkanbivdda"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "slot lea olggobealde viidodaga dahje ruovttu lea ii-nolla"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "reive {command} sisdoallonjuolggadusa haga"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "sádden reive olggobealde čálusa kategoriija"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "čállinreive {command} sisdoallonjuolggadusa haga"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "billašuvvan slot-namma"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "identifikáhtor mas lea bihtta 31 biddjojuvvon (fabrihkka-IR): doaibma ii leat vel rabas"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "sáddenbajilčála: slot lea olggobealde viidodaga"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "sáddenbajilčála: MD5 lea olggobealde heksadesimála unnitbustávaid"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "sáddenbajilčála lea olggobealde dárkkistuvvon hámi"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "sáddenvuolilčála: ii-nolla byte liphpa maŋŋá"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "loahppablohkka: slot lea olggobealde viidodaga"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "loahppablohkka lea olggobealde dárkkistuvvon hámi"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "dáhtáblohkka: čujuhus dahje lohkki lea olggobealde viidodaga"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "dáhtáblohkka: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "dáhtáblohkka: guoddu lea olggobealde dan hámi maid enc_msb duddjo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "dáhtáblohkka: ii-nolla deaddu IR {size} byte maŋŋá"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "identifikáhtor {value} lea olggobealde 0..{max}: bihtta 31 lea várrejuvvon fabrihkka-IR:aide, doaibma ii leat vel rabas"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "nama {size} byte, eanemus {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "ruoktu {size} byte {expected} baikkis"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "slot {slot} dieđut"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "tabealla {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "dálá dilli"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "slot {slot} IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "slot {slot} aktiveren"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "tabeallas leat {count} árvu, gávnnahuvvui {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "tabealla {table}: árvu {value!r} lea olggobealde 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "tabealla {table} čálus"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "dovdameahttun heivehus “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "heivehus “{name}”: árvu {value!r} lea olggobealde 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "bidjat {name} árvun {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "oktavuođa almmuhus"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "slot namas leat 1:s {max} mearka"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "slot nammii gullet dušše prentehahtti ASCII-mearkkat"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR sisttisdoallá ii-ráddjejuvvon sámpala"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "slot {slot} sádden, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "bajilčála"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "blohkka {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "loahppa"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "vuolilčála"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "namma"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "dieđut"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "loahppasumma {size} byte {expected} baikkis"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "slot-namma lea guorus dahje olggobealde prentehahtti ASCII"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "ii-nolla bytet slot nama loahpa maŋŋá"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "NUX SysEx-bajilčála váilu"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "ii loahppa-F7"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "byte olggobealde 7 bihtta"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "šládja {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "reive {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "vuordemeahttun sádden nannen"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "dovdameahttun nannendilli: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "vuordemeahttun veršuvdnavástádus: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "reive {command}: dušše 0x5c (dieđuid lohkan) ja 0x5b (nama ekko) guddet slot dieđuid"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "kodejuvvon guhkkodat {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "vuordemeahttun slot-dieđuid vástádus: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "lohkemeahttun slot-dieđut: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedála almmuha slot {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "vuordemeahttun vástádus tabeallii {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "tabealla {table}: árvu {value} lea badjel 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "vuordemeahttun dilivástádus: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "lohkanbajilčála: reive {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "lohkanbajilčála guoddá loahppaliphpa"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "ii-nolla lohkanbajilčála, mii ii goassige leat oidnon dán hámis"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "blohkka {block}: reive {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "blohkka {block}: ii-nolla lihppa {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "blohkka {block}: čujuhus {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "blohkka {block}: lohkki {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "blohkka {block} lea lohkemeahttun: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "loahppablohkka: reive {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "loahppablohkka liphpa haga"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "loahppablohkka: lohkki {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "loahppablohkka: johtti byte olggobealde liphpa, summa ja lohkki"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "lohkemeahttun loahppasumma: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "boasttu lohkama loahppasumma"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "vuolilčála: reive {found} {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "vuolilčála liphpa haga"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "vuolilčála: johtti byte maŋŋá liphpa"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{count} reive vuostáiváldojuvvui {expected} baikkis"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "reive {number} lea vieris IR-lohkamii: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "fárba {colour!r}: vuordojuvvui unnitbustávat “#rrggbb”"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Dovdameahttun doaibma “{name}”. Dovddut: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "vuordojuvvui sorterejuvvon lihttu dovdon doaimmain, duppalasaid haga"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Lohkemeahttun geahččalanregisttar: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Geahččalanregisttar lea lohkkaduvvon eará proseassas ({file}): geahččal ođđasit go nubbi reive lea gárvvis."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Ii sáhte lohkkadit {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Pedála ii gávdnon: ii leat jietnakoarta “NAI5”. Iska USB-gaibbi."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR ii leat biddjon: ii sáhte váldit lohkaga."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Ii sáhte váldit lohkaga {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedála lea juo geavahusas optima-air eará veršuvnnas."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Lohkki lea juo luoitojuvvon: ii šat sáhte addit ossui."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Dát lohkki gullá juo ovtta ossui: ii sáhte addit nubbái."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Ii sáhte luoitit lohkaga: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedála ii šat vástit: jerrojuvvon eret dahje roahkkan."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Ii sáhte heivehit osiid {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Ii sáhte válmmaštit osiid {port} sisa: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Ossi {port} ii gávdno."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Beassan biehttaluvvui {port}:i. Iska ahte leat joavkkus “audio” (reive: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Ossi {port} lea juo eará prográmma geavahusas."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Ossi {port} ii leat šat olámuttos."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Ii sáhte rahpat osiid {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Ii sáhte čállit: ossi lea giddejuvvon."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Čálus osi {port}:ii ii lihkostuvvan: ii oktage byte dohkkehuvvon."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Čálus osi {port}:ii ii lihkostuvvan: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Osi {port} gearggusmahttin gaskkalduhttojuvvui {count} geardde čuovvovaččat: reive lea addojuvvon ytimii, muhto dan vuolggaha ii sáhttán vuordit."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Vuordin lea olggobealde viidodaga: {wait} s (eanemus {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Ii sáhte lohkat: ossi lea giddejuvvon."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Lohkan osis {port} ii lihkostuvvan: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Ossi {port} ii dieđit sisa dili ({error}): byte-massin ii sáhte gávdnot, bisána dás."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Osi {port} dili lohkan ii lihkostuvvan: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Osi {port} gidden ii lihkostuvvan: {error}"

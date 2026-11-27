@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "аз {bits} бит"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: адади бутун интизор буд, {type} гирифта шуд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: адади бутун ё холӣ интизор буд, {type} гирифта шуд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "номи слот: байтҳо интизор буданд, {type} гирифта шуд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: матн интизор буд, {type} гирифта шуд"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "слоти {slot} берун аз 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "номи слот аз {size} байт ба ҷои {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "шиносаи {value} берун аз 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} берун аз 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Сабаби номаълуми нусхаи эҳтиётӣ «{reason}»."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "firmware вуҷуд надорад: танҳо сабаби «{reason}» онро иҷозат медиҳад"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "номи нусхаи эҳтиётии нодуруст «{name}»"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "сабаби «{reason}» аз сабаби нусхаи эҳтиётии {name} фарқ мекунад, сабаби «{expected}»"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "санаи нохондашаванда {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "санаи {date!r} бе минтақаи вақт"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "санаи ғайриканонии {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "санаи {date!r} аз вақти нусхаи эҳтиётии {name} фарқ мекунад"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: сана интизор буд, {type} гирифта шуд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} бояд минтақаи вақтро дошта бошад (масалан, datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Дар ҷузвдони {file} сабт кардан имконнопазир аст: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ҷузвдон нест"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "{file}-ро санҷидан имконнопазир аст: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Нусхаи эҳтиётии {backup}-ро эҷод кардан имконнопазир аст: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "маълумот: байтҳо интизор буданд, {type} гирифта шуд"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR аз {expected} байт иборат аст, {got} гирифта шуд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "слоти {slot} аллакай дар {backup} нусхабардорӣ шудааст: нусхаи эҳтиётӣ танҳо як бор сабт мешавад, нусхаи эҳтиётии нав эҷод кунед."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Варақаи слот хонда намешавад: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "объекти JSON интизор буд, {type} гирифта шуд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "майдони «{field}» вуҷуд надорад ё матн нест"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "мӯҳрро ҳисоб кардан имконнопазир аст: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Варақаи слот тағйир дода шудааст ё вайрон аст: {file} (мӯҳри нодуруст)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "майдони «{field}»: адади бутун интизор буд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "майдони «{field}»: матн интизор буд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "майдони «{field}»: адади бутун ё null интизор буд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "варақаи слоти {record} зери слоти {slot} гузошта шудааст"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: рақамҳои шонздаҳӣ бо ҳарфҳои хурд интизор буданд"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "варақаи нусхаи эҳтиётии «{record}» дар «{backup}» ёфт шуд"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "{file}-ро хондан имконнопазир аст: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Нусхаи эҳтиётӣ хонда намешавад: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "вуҷуд надорад"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Варақаи номувофиқи слот: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Маълумот хонда намешавад: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Изи ангушти нодуруст: {file} истифода намешавад."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "шиноса аз нав ҳисоб шуд: {computed}, варақа {recorded} нишон медиҳад"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Слоти фаъол"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR фаъол/ғайрифаъол"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamp фаъол/ғайрифаъол"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "«{text}» рақами слот нест"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Сабт ба слоти {slot} қатъ шуд: педал боз {seconds} с ба ҳоли худ гузошта мешавад. Сипас иҷро кунед: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "номаълум ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "номаълум ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Preset: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "слоти {slot} «{name}»"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "слоти номаълум ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: фаъол, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: ғайрифаъол, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamp: фаъол"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamp: ғайрифаъол"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Ном"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Шиноса"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Баландии садо"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Low cut"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "High cut"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Диққат: шиносае, ки педал эълон кард ({announced}), бо маълумоти хондашуда ({computed}) мувофиқат намекунад, ҳатто баъд аз хондани дубора. Нусхаи эҳтиётӣ ба ҳар ҳол эҷод мешавад."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Слоти {slot} «{name}» дар {backup} нусхабардорӣ шуд"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} байт: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change канали {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[канали {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, яъне {converted} аз 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} max {max} ({count} паём)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "сатҳҳо"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Диққат: {count} SysEx ҳангоми қабул бекор карда шуд."
+msgstr[1] "Диққат: {count} SysEx ҳангоми қабул бекор карда шуданд."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Диққат: {count} саршавии буфери вурудӣ рух дод, байтҳо гум шуданд."
+msgstr[1] "Диққат: {count} саршавии буфери вурудӣ рух дод, байтҳо гум шуданд."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "ҳ"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "ҳа"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [ҳ/Н] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Бекор карда шуд: чизе сабт нашуд."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Эълони пайвастшавӣ фиристода шавад, вазифаи озмоишӣ «{name}»?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Бекор карда шуд: чизе фиристода нашуд."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Эълон аллакай аз тарафи пайдарпайии пайвастшавӣ фиристода шудааст: ду бор фиристода намешавад."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Эълон фиристода шуд: ҷавоб гирифта шуд"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Эълон фиристода шуд: ҷавоб нест"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: тасдиқ шуд"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: дар озмоиш"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "«trials {action}» номи вазифаро интизор аст."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Номи «{name}» рад карда шуд ({error}). Бо --name ном диҳед."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Диққат: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Слоти {slot} «{current}» бо «{name}» ({file}) ба ҷои навишта шавад?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Слоти {slot}: «{name}» сабт ва сипас айнан дубора хонда шуд."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Мундариҷаи пештара («{name}») дар {backup} нусхабардорӣ шуд"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} аллакай вуҷуд дорад. Барои ивази он --yes илова кунед."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "{file}-ро сабт кардан имконнопазир аст: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Слоти {slot} «{name}» ба {file} содир карда шуд"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Хондан: {done} аз {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Диққат: шиносае, ки барои слоти {slot} эълон шуд, бо маълумоти хондашуда мувофиқат намекунад, ҳатто баъд аз хондани дубора. Он ба ҳар ҳол нусхабардорӣ мешавад."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Ҳамаи 23 слот дар {backup} нусхабардорӣ шуданд"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Нусхаи эҳтиётӣ нест."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} слот"
+msgstr[1] "{count} слот"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "ВАЙРОН ШУДАЛАСТ ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "ҳеҷ"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name танҳо ба барқарорсозии як слот дахл дорад."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Педал ба ҳолати нусхаи эҳтиётии {backup} ({count} слот) баргардонида шавад? Танҳо слотҳое, ки фарқ мекунанд, пас аз нусхабардории мундариҷаашон аз нав сабт карда мешаванд."
+msgstr[1] "Педал ба ҳолати нусхаи эҳтиётии {backup} ({count} слот) баргардонида шавад? Танҳо слотҳое, ки фарқ мекунанд, пас аз нусхабардории мундариҷаашон аз нав сабт карда мешаванд."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} аз {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Слотҳое, ки аз нав сабт шуданд ва айнан дубора хонда шуданд: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Слотҳое, ки танҳо танзимоташон барқарор карда шуд: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Слотҳое, ки аллакай бо нусхаи эҳтиётӣ якхелаанд: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Слоти {slot} «{current}» аз нусхаи эҳтиётии {backup} («{name}») аз нав сабт карда шавад?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Слоти {slot} аз {backup} барқарор шуд, сипас айнан дубора хонда шуд."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Мундариҷаи ивазшуда («{name}») дар {backup} нусхабардорӣ шуд"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Сабти қатъшуда нест."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Слоти {slot}: сабти қатъшуда анҷом ёфта буд. Коре лозим нест."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Слоти {slot}: он ҳоло ҳам мундариҷаи пештараашро дорад. Коре лозим нест."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Слоти {slot}: мундариҷааш на кӯҳна аст, на нав. Барои баргардонидани он ба ҳолати пештара: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "иҷозат медиҳад, ки дар firmware-и санҷиданашуда ғайр аз хондан амалҳои дигар иҷро шаванд"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "вазифаи озмоиширо иҷозат медиҳад"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "тасдиқро талаб намекунад"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "рақами слот, аз 1 то {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Муҳаррири Linux барои педали NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "ҷузвдони маълумот (пешфарз: ҷузвдони маълумоти XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "равзанаро мекушояд"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "версияи firmware, preset ва танзимот"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 слоти IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "IR-и слотро нусхабардорӣ мекунад"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "он чиро, ки педал мефиристад, нишон медиҳад"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "сонияҳои гӯш кардан"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "аввал ҳолатро мехонад"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "аввал эълонро мефиристад (озмоиш)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "WAV-ро ба слот сабт мекунад"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "файли WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "номи слот (пешфарз: номи файл)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "слотро ҳамчун WAV содир мекунад"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "файли WAV барои сабт"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "як слот ё ҳамаи слотҳоро аз нусхаи эҳтиётӣ аз нав сабт мекунад"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "ҷузвдони нусхаи эҳтиётӣ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "рақами слот, аз 1 то {count} (пешфарз: ҳама)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "номи нусхабардоришударо иваз мекунад"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "23 слотро нусхабардорӣ мекунад"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "нусхаҳои эҳтиётиро нишон медиҳад"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "сабти қатъшударо месанҷад"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "феҳристи вазифаҳои озмоишӣ"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Сабт ба слоти {slot} ноанҷом монд. Педал як муддат ба ҳоли худ гузошта мешавад; сипас иҷро кунед: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Хато: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Қатъ карда шуд."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "байти {byte} берун аз 7 бит"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} байти 7-битӣ {bits} бити пуркунӣ мегузоранд, enc7 ҳеҷ гоҳ аз 6 зиёд намесозад"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "битҳои пуркунии ғайрисифрӣ дар охири ҷараёни 7-битӣ"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "блок аз {expected} байт иборат аст, {got} гирифта шуд"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "маҷмӯи блок {sum} ({hex}) аз 14 бити интиқолшуда зиёд аст (ҳадди аксар {max}): дар педал ҳеҷ гоҳ дида нашудааст, то санҷида нашавад рад карда мешавад"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "блоки рамзгузоришуда аз {expected} байт иборат аст, {got} гирифта шуд"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "байт берун аз 7 бит дар блоки рамзгузоришуда"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "маҷмӯи санҷишии блок нодуруст аст"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "маҷмӯи охири интиқол ақаллан як блокро дарбар мегирад"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "дарозии {length} ба {block} бахшпазир нест"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "қимати {value} берун аз 28 бит"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "маҷмӯи 28-битӣ ба 4 байт ҷой мешавад, {got} гирифта шуд"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "байти {byte} берун аз 7 бит дар маҷмӯи 28-битӣ"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Сабт қатъ шуд: педал боз {seconds} с ба ҳоли худ гузошта мешавад."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "«{message}»: паёми сабтро танҳо сабти пурраи слот (нусхаи эҳтиётӣ, рӯзнома, хондани дубора) фиристода метавонад."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Версияи firmware ҳанӯз хонда нашудааст: танҳо хондан иҷозат аст."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Firmware-и номаълум {found} (протокол дар {verified} санҷида шудааст): танҳо хондан иҷозат аст."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "«{message}» вазифаи озмоишӣ аст («{function}»), ки дар педал ҳанӯз тасдиқ нашудааст."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "«{message}»: танҳо хондашавандаро дубора фиристодан мумкин аст."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Аз педал ба «{message}» пас аз {count} кӯшиш ҷавоб нест."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Педал SysEx-ро бе танаффус мефиристад."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Слоти {slot}-ро хондан имконнопазир аст: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Ду хондани слоти {slot} маълумоти гуногун медиҳад."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Сабт ба слоти {slot} қатъ шуд: пеш аз фиристодани ҳама гуна чиз боз {seconds} с интизор шавед."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Сабт ба слоти {slot} қатъ шуд: то ин слот ба танзим дароварда нашавад, танҳо он слот сабт шуда метавонад."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Сабт рад карда шуд: firmware хонда нашудааст ё он нест, ки протокол дар он санҷида шудааст."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Пас аз сабт, слоти {slot} он чиро, ки фиристода шуд, надорад."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Педал ҳангоми сабти IR хато хабар медиҳад."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Тасдиқи ғайримунтазири блок: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{count} тасдиқи блок ба ҷои {expected} гирифта шуд."
+msgstr[1] "{count} тасдиқи блок ба ҷои {expected} гирифта шуд."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Тасдиқҳои сарлавҳа ва поя вуҷуд надоранд ё ғайримунтазиранд."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Пас аз сабт, акси садои ном {count} бор ба ҷои як бор омад."
+msgstr[1] "Пас аз сабт, акси садои ном {count} бор ба ҷои як бор омад."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Пас аз сабт, акси садои ном бо он чи фиристода шуд, мувофиқат намекунад."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Пас аз сабт, маълумоти слот {count} бор ба ҷои як бор омад."
+msgstr[1] "Пас аз сабт, маълумоти слот {count} бор ба ҷои як бор омад."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Пас аз сабт, маълумоти слот бо он чи фиристода шуд, мувофиқат намекунад."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Нусхаи эҳтиётии {backup} ягон слот надорад."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Муқоиса"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Слоти {slot}-и нусхаи эҳтиётии {backup} аз педал фарқ мекунад, аммо онро ҳамин тавр аз нав сабт кардан мумкин нест ({error}). Чизе сабт нашуд."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Барқарорсозӣ"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Педал пас аз дархости слоти {requested} слоти {announced}-ро эълон мекунад."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Аз педал ба сабти ҷадвали {table} акс-садо нест."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Акси садои ҷадвали {table} аз он чи фиристода шуд, фарқ мекунад."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "пайванди рамзӣ аст"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "файли оддӣ нест"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} байт ба ҷои {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} байт, зиёда аз {allowed} иҷозатдодашуда"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "андоза ҳангоми хондан тағйир ёфт"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Қуфли {file}-ро эҷод кардан имконнопазир аст: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "калиди такрорӣ «{key}»"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} JSON-и стандартӣ нест"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "JSON нест: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "майдони «{field}» вуҷуд надорад"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "формати номаълум {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "майдони номаълуми «{field}»"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Ҷузвдони {file}-ро ҳамоҳанг кардан имконнопазир аст: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Ҷузвдони {folder}-ро эҷод кардан имконнопазир аст: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Ҷузвдони {folder}-ро эҷод кардан имконнопазир аст: {path} ҷузвдон нест"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "{file}-ро ба ҷои худ гузоштан имконнопазир аст: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "пеш аз сабт"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "хондани слот"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "нусхаи эҳтиётии пурра"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "воридот"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "слоти вайроншуда"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Боркунии WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Слоти <b>{slot}</b> «{name}» бо <b>{file}</b> ба ҷои навишта шавад?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Мундариҷаи ҷории слот пеш аз сабт нусхабардорӣ карда мешавад."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Номи слот"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Бекор кардан"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Сабт ба педал"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Нусхаҳои эҳтиётӣ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Барқарор кардани ин слот"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Барқарор кардани тамоми нусхаи эҳтиётӣ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Пӯшидан"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Ҳанӯз нусхаи эҳтиётӣ нест."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: слоти {slot} «{name}»"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} слот"
+msgstr[1] "{backup}: {count} слот"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: хонда намешавад"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Ин нусхаи эҳтиётиро истифода бурдан мумкин нест: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "{count} слоти педал ба ҳолати ин нусхаи эҳтиётӣ баргардонида шавад?"
+msgstr[1] "{count} слоти педал ба ҳолати ин нусхаи эҳтиётӣ баргардонида шавад?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Слоти {slot}-и педал ба ҳолати ин нусхаи эҳтиётӣ («{name}») баргардонида шавад?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nТанҳо слоте, ки аз нусхаи эҳтиётӣ фарқ мекунад, аз нав сабт карда мешавад ва мундариҷаи ҷории он дарҳол пеш аз ин нусхабардорӣ мешавад."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Барқарор кардан"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Кабуди электрикӣ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Фирӯзагӣ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Сабз"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Зард"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Норинҷӣ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Сурх"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Гулобӣ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Бунафш"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Сафеди хокистарӣ"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Ранги интерфейс"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Рамзи ранг, масалан #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Интизор меравад: # ва шаш рақами шонздаҳӣ"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Педал ҷустуҷӯ мешавад…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Барқарор кардани ҳолати қаблӣ"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Нусхабардории ҳама"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Нусхаҳои эҳтиётӣ…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Боркунии WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Содир кардан ҳамчун WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "Файлҳои WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Файли WAV-ро интихоб кунед"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Дар як вақт як файл: як слот як IR-ро дар бар мегирад."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Содир кардан ҳамчун WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Барқарорсозӣ анҷом ёфт. Слотҳое, ки аз нав сабт шуданд ва айнан дубора хонда шуданд: {rewritten}. Танҳо танзимот: {settings}. Аллакай бо нусхаи эҳтиётӣ якхела: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Слоти {slot}: пас аз сабти қатъшуда он ҳоло ҳам мундариҷаи пештараашро дорад. Коре лозим нест."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Слоти {slot}: пас аз сабти қатъшуда он на мундариҷаи кӯҳна, на навро дорад. То ба танзим дароварда нашавад, он ягона слотест, ки сабт шуда метавонад."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Слоти {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Слоти {slot}: «{name}» сабт ва айнан дубора хонда шуд. Мундариҷаи пештара дар {backup} нусхабардорӣ шуд"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Слоти {slot} сабт мешавад…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Сабти слоти {slot} ноком шуд: {reason} Педал {seconds} с ба ҳоли худ гузошта мешавад, сипас ҳолати слот санҷида мешавад."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Нусхабардорӣ ноком шуд: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Барқарорсозӣ қатъ шуд: {reason} Слотҳое, ки аллакай коркард шудаанд, дар тартибанд; ҳолати педал аз нав хонда мешавад."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Пайваст шуд, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Ҷудо шуд: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Диққат: шиносае, ки педал эълон кард, бо маълумоти хондашуда мувофиқат намекунад."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Қатъкунӣ дархост шуд."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Нусхаи эҳтиётӣ"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "диапазони басомад ё шумораи нуқтаҳо нодуруст аст"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Файли аудио хонда намешавад: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Файл {count} канал дорад: танҳо аввалинаш нигоҳ дошта мешавад."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Файли аудиои холӣ: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Файл намунаҳои ғайриниҳоӣ дорад: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Басомади намунагирӣ {rate} Hz: файл ба {target} kHz аз нав намунагирӣ шуд."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Файл {duration} ms давом мекунад: танҳо {count} намунаи аввал ({limit} ms) нигоҳ дошта мешавад."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Педал танҳо {count} намунаи аввалро ({limit} ms) пахш мекунад: боқимондаи ин IR нигоҳ дошта мешавад, аммо шунида намешавад."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "{file}-ро муқарраркунии сатҳ кардан имконнопазир аст: дар байни 400 Hz ва 3 kHz сигнал нест."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Муқарраркунии сатҳи {file} аз диапазони ададҳои бо нуқтаи шинокунанда мегузарад."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Пас аз муқарраркунии сатҳ, қуллаи IR {peak} аст (IR-ҳои маъмулӣ аз 10 паёнтар мемонанд): файл дар байни 400 Hz ва 3 kHz фурӯравии хеле чуқур дорад ва сатҳи баромад метавонад хеле баланд бошад."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "санаи рӯзнома бояд минтақаи вақтро дошта бошад"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "слот берун аз диапазон"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: санаи ISO бо минтақаи вақт интизор буд"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: санаи ISO бо минтақаи вақт, ё null интизор буд"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: номи ҷузвдони нусхаи эҳтиётӣ интизор буд"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: 64 рақами шонздаҳӣ интизор буд"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: 32 байт дар шакли шонздаҳӣ интизор буд"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "шиноса берун аз диапазон"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: қимати мантиқӣ интизор буд"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Рӯзномаи сабт хонда намешавад: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Рӯзномаи {file}-ро хориҷ кардан имконнопазир аст: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 аз {size} байт ба ҷои {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "блоки рамзгузоришуда аз {size} байт ба ҷои {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "паёми «{message}»: Control Change-и нодуруст"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "паёми «{message}»: Control Change танзимот аст"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "паёми «{message}»: Control Change дар феҳристи басташуда нест"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "паёми «{message}»: қимати {value} аз {max} зиёд аст"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "паёми «{message}» нодуруст чаҳорчӯба шудааст"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "паёми «{message}»: байт берун аз 7 бит"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "паёми «{message}» дар феҳристи басташуда нест"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "паёми «{message}»: {size} байт ба ҷои {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "паёми «{message}»: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "дархости версияи ғайримунтазир"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "танҳо эълони 70 05 01, дар озмоиш, иҷозат аст"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "танҳо хондани 70 26 7F иҷозат аст"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "дархости ҷадвал бо бадани ғайрисифрӣ"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "сабти ҷадвал: танзимот интизор буд, қиматҳо аз 0 то 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "дархости хондани нодуруст"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "слот берун аз диапазон ё бадани ғайрисифрӣ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "фармони {command} бе қоидаи мундариҷа"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "паёми боркунӣ берун аз категорияи сабт"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "фармони сабти {command} бе қоидаи мундариҷа"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "номи слоти нодуруст"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "шиноса бо бити 31-и барқароршуда (IR-и корхона): вазифа ҳанӯз кушода нест"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "сарлавҳаи боркунӣ: слот берун аз диапазон"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "сарлавҳаи боркунӣ: MD5 берун аз рақамҳои шонздаҳӣ бо ҳарфҳои хурд"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "сарлавҳаи боркунӣ берун аз шакли мушоҳидашуда"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "пояи боркунӣ: байти ғайрисифрӣ пас аз нишона"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "блоки охирин: слот берун аз диапазон"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "блоки охирин берун аз шакли мушоҳидашуда"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "блоки маълумот: суроға ё ҳисобкунак берун аз диапазон"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "блоки маълумот: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "блоки маълумот: бор берун аз шаклест, ки enc_msb месозад"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "блоки маълумот: пуркунии ғайрисифрӣ пас аз {size} байти IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "шиносаи {value} берун аз 0..{max}: бити 31 барои IR-ҳои корхона махфуз аст, вазифае, ки ҳанӯз кушода нест"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "ном аз {size} байт, аз {max} зиёд не"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "бадана аз {size} байт ба ҷои {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "маълумоти слоти {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "ҷадвали {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "ҳолати ҷорӣ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR-и слоти {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "фаъолсозии слоти {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "ҷадвал {count} қимат дорад, {got} гирифта шуд"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "ҷадвали {table}: қимати {value!r} берун аз 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "сабти ҷадвали {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "танзимоти номаълум «{name}»"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "танзимоти «{name}»: қимати {value!r} берун аз 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "танзими {name} ба {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "эълони пайвастшавӣ"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "номи слот аз 1 то {max} аломат дорад"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "номи слот танҳо аломатҳои ASCII-и чопшавандаро дар бар мегирад"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR намунаи ғайриниҳоӣ дорад"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "боркунии слоти {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "сарлавҳа"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "блоки {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "охир"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "поя"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "ном"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "маълумот"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "маҷмӯи охирин аз {size} байт ба ҷои {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "номи слот холӣ аст ё берун аз ASCII-и чопшаванда"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "байтҳои ғайрисифрӣ пас аз охири номи слот"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "сарлавҳаи SysEx-и NUX вуҷуд надорад"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "F7-и охирин вуҷуд надорад"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "байт берун аз 7 бит"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "навъи {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "фармони {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "тасдиқи боркунии ғайримунтазир"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "ҳолати тасдиқи номаълум: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "ҷавоби версияи ғайримунтазир: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "фармони {command}: танҳо 0x5c (хондани маълумот) ва 0x5b (акси садои ном) маълумоти слотро дар бар мегиранд"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "дарозии рамзгузоришуда {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "ҷавоби маълумоти слоти ғайримунтазир: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "маълумоти слот хонда намешавад: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "педал слоти {slot}-ро эълон мекунад"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "ҷавоби ғайримунтазир барои ҷадвали {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "ҷадвали {table}: қимати {value} аз 100 зиёд аст"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "ҷавоби ҳолати ғайримунтазир: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "сарлавҳаи хондан: фармони {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "сарлавҳаи хондан нишонаи охирро дорад"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "сарлавҳаи хондани ғайрисифрӣ, ки ҳеҷ гоҳ дар ин шакл дида нашудааст"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "блоки {block}: фармони {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "блоки {block}: нишонаи ғайрисифрии {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "блоки {block}: суроғаи {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "блоки {block}: ҳисобкунаки {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "блоки {block} хонда намешавад: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "блоки охирин: фармони {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "блоки охирин бе нишона"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "блоки охирин: ҳисобкунаки {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "блоки охирин: байти зиёдатӣ берун аз нишона, маҷмӯъ ва ҳисобкунак"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "маҷмӯи охирин хонда намешавад: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "маҷмӯи охири хондан нодуруст аст"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "пояи охирин: фармони {found} ба ҷои {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "поя бе нишона"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "поя: байти зиёдатӣ пас аз нишона"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{count} паём ба ҷои {expected} гирифта шуд"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "паёми {number} ба хондани IR бегона аст: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "ранги {colour!r}: «#rrggbb» бо ҳарфҳои хурд интизор буд"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Вазифаи номаълуми «{name}». Маълум: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "феҳристи мураттабшудаи вазифаҳои маълум, бе такрор, интизор буд"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Феҳристи озмоишҳо хонда намешавад: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Феҳристи озмоишҳо аз ҷониби раванди дигар қуфл шудааст ({file}): баъд аз анҷоми фармони дигар дубора кӯшиш кунед."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "{file}-ро қуфл кардан имконнопазир аст: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Педал ёфт нашуд: корти садоии «NAI5» нест. Кабели USB-ро санҷед."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR муқаррар нашудааст: қуфлро гирифтан имконнопазир аст."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Қуфли {file}-ро гирифтан имконнопазир аст: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Педал аллакай аз ҷониби нусхаи дигари optima-air истифода мешавад."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Қуфл аллакай озод шудааст: онро дигар ба порт додан мумкин нест."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Ин қуфл аллакай ба порт тааллуқ дорад: онро ба порти дуюм додан мумкин нест."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Қуфлро озод кардан имконнопазир аст: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Педал дигар ҷавоб намедиҳад: канда шудааст ё қапидааст."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Порти {port}-ро танзим кардан имконнопазир аст: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Вуруди порти {port}-ро фаъол кардан имконнопазир аст: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Порти {port} вуҷуд надорад."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Дастрасӣ ба {port} рад карда шуд. Санҷед, ки шумо дар гурӯҳи «audio» ҳастед (фармон: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Порти {port} аллакай аз ҷониби барномаи дигар истифода мешавад."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Порти {port} дигар дастрас нест."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Порти {port}-ро кушодан имконнопазир аст: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Сабт имконнопазир аст: порт баста аст."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Сабт ба порти {port} ноком шуд: ягон байт қабул нашуд."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Сабт ба порти {port} ноком шуд: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Холӣ кардани порти {port} пай дар пай {count} бор қатъ карда шуд: паём ба ядро супорида шудааст, аммо рафтани онро интизор шудан имконнопазир буд."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Интизорӣ берун аз диапазон: {wait} с (ҳадди аксар {max} с)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Хондан имконнопазир аст: порт баста аст."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Хондан аз порти {port} ноком шуд: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Порти {port} ҳолати вуруди худро хабар намедиҳад ({error}): гум шудани байтҳоро муайян кардан мумкин нест, дар ин ҷо қатъ мешавад."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Хондани ҳолати порти {port} ноком шуд: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Пӯшидани порти {port} ноком шуд: {error}"

@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} biteko"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: osoko zenbakia espero zen, {type} jaso da"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: osoko zenbakia edo ezer ez espero zen, {type} jaso da"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "slotaren izena: byteak espero ziren, {type} jaso da"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: testua espero zen, {type} jaso da"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "{slot}. slota 1..{count} tartetik kanpo"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "slotaren izenak {size} byte ditu, {expected} beharrean"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "{value} identifikatzailea 0..{max} tartetik kanpo"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} 0..{max} tartetik kanpo"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Babeskopiaren arrazoi ezezaguna: “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "firmwarea falta da: “{reason}” arrazoiak bakarrik onartzen du"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "babeskopiaren izen gaizki osatua: “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "“{reason}” arrazoia ez dator bat {name} babeskopiarenarekin, “{expected}” arrazoia"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "ezin da {date!r} data irakurri"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "{date!r} data ordu-zonarik gabe"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "{date!r} data ez da kanonikoa"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "{date!r} data ez dator bat {name} babeskopiaren orduarekin"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: data espero zen, {type} jaso da"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field}(e)k ordu-zona izan behar du (adibidez datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Ezin da {file} karpetan idatzi: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "ez da karpeta bat"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Ezin da {file} egiaztatu: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Ezin da {backup} babeskopia sortu: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data: byteak espero ziren, {type} jaso da"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "IR batek {expected} byte ditu, {got} jaso dira"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "{slot}. slota dagoeneko {backup} babeskopian gorde da: babeskopia bat behin bakarrik idazten da, egin babeskopia berri bat."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Slot-erregistro irakurezina: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "JSON objektua espero zen, {type} jaso da"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "“{field}” eremua falta da edo ez da testua"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "ezin da zigilua kalkulatu: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Slot-erregistroa aldatuta edo kaltetuta dago: {file} (zigilu okerra)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "“{field}” eremua: osoko zenbakia espero zen"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "“{field}” eremua: testua espero zen"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "“{field}” eremua: osoko zenbakia edo null espero zen"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "{record}. slotaren erregistroa {slot}. slotaren azpian artxibatuta dago"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: hamaseitar zifra xeheak espero ziren"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "“{record}” babeskopiaren erregistroa “{backup}” babeskopian aurkitu da"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Ezin da {file} irakurri: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Babeskopia irakurezina: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "falta da"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Slot-erregistro inkoherentea: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Datu irakurezinak: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Hatz-marka okerra: {file} ez da erabiliko."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "identifikatzailea {computed} gisa birkalkulatu da, erregistroak {recorded} dio"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Slot aktiboa"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR aktibatuta/desaktibatuta"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Aurre-anplifikagailua aktibatuta/desaktibatuta"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” ez da slot-zenbaki bat"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "{slot}. slotean egindako idazketa eten egin da: pedala bakean uzten da {seconds} s gehiagoz. Ondoren, exekutatu: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "ezezaguna ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "ezezaguna ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "{version} firmwarea"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Preset-a: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "{slot}. slota “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "slot ezezaguna ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: aktibo, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: desaktibo, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Aurre-anplifikagailua: aktibo"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Aurre-anplifikagailua: desaktibo"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Izena"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Ident."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Bolumena"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Baxuen ebaketa"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Altuen ebaketa"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Abisua: pedalak iragarritako identifikatzailea ({announced}) ez dator bat irakurritako datuekin ({computed}), berriro irakurrita ere. Babeskopia egiten da halere."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "{slot}. slota “{name}” {backup} babeskopian gorde da"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "{size} byteko SysEx: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change {channel}. kanala: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[{channel}. kanala]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, hau da, {converted} 100etik"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} max {max} ({count} mezu)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "mailak"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Abisua: {count} SysEx baztertu da jasotzean."
+msgstr[1] "Abisua: {count} SysEx baztertu dira jasotzean."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Abisua: sarrerako bufferraren {count} gainezkatze, byteak galdu dira."
+msgstr[1] "Abisua: sarrerako bufferraren {count} gainezkatze, byteak galdu dira."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "b"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "bai"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [b/E] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Utzita: ez da ezer idatzi."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Bidali konexio-iragarpena, “{name}” proba-funtzioa?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Utzita: ez da ezer bidali."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Iragarpena konexio-sekuentziak bidali du dagoeneko: ez da bi aldiz bidaltzen."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Iragarpena bidalita: erantzuna jaso da"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Iragarpena bidalita: erantzunik ez"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: balioztatuta"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: probetan"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” komandoak funtzio baten izena behar du."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "“{name}” izena baztertu da ({error}). Eman bat --name bidez."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Abisua: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "{slot}. slota “{current}” gainidatzi “{name}” ({file}) edukiarekin?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "{slot}. slota: “{name}” idatzi eta berriro irakurrita berdina da."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Aurreko edukia (“{name}”) {backup} babeskopian gorde da"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} badago jada. Gehitu --yes gainidazteko."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Ezin da {file} idatzi: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "{slot}. slota “{name}” {file} fitxategira esportatu da"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Irakurketa: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Abisua: {slot}. slotarentzat iragarritako identifikatzailea ez dator bat irakurritako datuekin, berriro irakurrita ere. Halere gordetzen da."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "23 slotak {backup} babeskopian gorde dira"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Babeskopiarik ez."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} slot"
+msgstr[1] "{count} slot"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "KALTETUTA ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "bat ere ez"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name aukerak slot bakar bat leheneratzeko bakarrik balio du."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Pedala {backup} babeskopiaren egoerara itzuli ({count} slot)? Desberdinak diren slotak bakarrik berridatziko dira, haien edukia gorde ondoren."
+msgstr[1] "Pedala {backup} babeskopiaren egoerara itzuli ({count} slot)? Desberdinak diren slotak bakarrik berridatziko dira, haien edukia gorde ondoren."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Berridatzitako eta berriro irakurrita berdinak diren slotak: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Ezarpenak bakarrik leheneratu zaizkien slotak: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Babeskopiaren berdinak ziren slotak: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "{slot}. slota “{current}” berridatzi {backup} babeskopiatik (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "{slot}. slota {backup} babeskopiatik leheneratu da, gero berriro irakurrita berdina da."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Ordezkatutako edukia (“{name}”) {backup} babeskopian gorde da"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Etenda dagoen idazketarik ez."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "{slot}. slota: etendako idazketa amaituta zegoen. Ez dago ezer egiteko."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "{slot}. slota: lehen zuena du oraindik. Ez dago ezer egiteko."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "{slot}. slota: bere edukia ez da ez zaharra ez berria. Lehen zegoen bezala uzteko: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "egiaztatu gabeko firmware batean irakurketez gain beste ekintzak onartzen ditu"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "proba-funtzio bat onartzen du"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "ez du berrespenik eskatzen"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "slot zenbakia, 1etik {count}ra"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "NUX Optima Air pedalaren Linux editorea."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "datu-karpeta (lehenetsia: XDG datu-karpeta)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "leihoa irekitzen du"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "firmware bertsioa, preset-a eta ezarpenak"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 IR slotak"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "slot baten IR babeskopia egiten du"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "pedalak bidaltzen duena inprimatzen du"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "entzuteko segundoak"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "egoera irakurtzen du lehenik"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "iragarpena bidaltzen du lehenik (proba)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "WAV bat slot batean idazten du"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV fitxategia"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "slotaren izena (lehenetsia: fitxategiaren izena)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "slot bat WAV gisa esportatzen du"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "idatzi beharreko WAV fitxategia"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "slot bat, edo guztiak, babeskopia batetik berridazten ditu"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "babeskopia-karpeta"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "slot zenbakia, 1etik {count}ra (lehenetsia: guztiak)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "babeskopian gordetako izena ordezkatzen du"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "23 slotak babeskopian gordetzen ditu"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "babeskopiak zerrendatzen ditu"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "etendako idazketa bat egiaztatzen du"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "proba-funtzioen erregistroa"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "{slot}. slotean egindako idazketa amaitu gabe geratu da. Pedala bakean uzten da denbora batez; ondoren, exekutatu: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Errorea: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Eten da."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "{byte} byte 7 biteko tartetik kanpo dago"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "7 biteko {count} byteek {bits} betegarri-bit uzten dituzte, enc7-k ez ditu inoiz 6 baino gehiago sortzen"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "zero ez diren betegarri-bitak 7 biteko fluxu baten amaieran"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "bloke batek {expected} byte ditu, {got} jaso dira"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "{sum} ({hex}) bloke-batura transmititutako 14 bitetik gora dago (gehienez {max}): pedalean inoiz ikusi gabea, egiaztatu arte baztertua"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "kodetutako bloke batek {expected} byte ditu, {got} jaso dira"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "7 biteko tartetik kanpoko byte bat kodetutako blokean"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "blokearen kontrol-batura okerra"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "transferentziaren amaierako baturak gutxienez bloke bat hartzen du"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "{length} luzera ez da {block}-ren multiploa"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "{value} balioa 28 biteko tartetik kanpo"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "28 biteko batura batek 4 byte hartzen ditu, {got} jaso dira"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "{byte} byte 7 biteko tartetik kanpo dago 28 biteko batura batean"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Idazketa bat eten da: pedala bakean uzten da {seconds} s gehiagoz."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: idazketa-mezu bat slot baten idazketa osoak bakarrik bidal dezake (babeskopia, egunkaria, berrirakurketa)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Firmwarearen bertsioa ez da oraindik irakurri: irakurketak bakarrik onartzen dira."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Firmware ezezaguna: {found} (protokoloa {verified} bertsioan egiaztatu da): irakurketak bakarrik onartzen dira."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” proba-funtzio bat da (“{function}”), oraindik pedalean balioetsi gabea."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: irakurketa bat bakarrik bidal daiteke berriro."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Pedalak ez dio “{message}” mezuari erantzun {count} saiakeraren ondoren."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedalak etenik gabe bidaltzen ditu SysEx-ak."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Ezin da {slot}. slota irakurri: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "{slot}. slotaren bi irakurketek datu desberdinak ematen dituzte."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "{slot}. slotean egindako idazketa bat eten da: itxaron {seconds} s gehiago ezer bidali aurretik."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "{slot}. slotean egindako idazketa bat eten da: slot hori konpondu arte, hori da idatz daitekeen bakarra."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Idazketa baztertu da: firmwarea ez da irakurri, edo ez da protokoloa egiaztatu zen firmwarea."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Idazketaren ondoren, {slot}. slotak ez dauka bidalitakoa."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedalak errore bat jakinarazten du IR-a idaztean."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Blokearen ustekabeko berrespena: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{count} bloke-berrespen jaso da {expected} beharrean."
+msgstr[1] "{count} bloke-berrespen jaso dira {expected} beharrean."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Goiburuko eta oineko berrespenak falta dira edo ustekabekoak dira."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Idazketaren ondoren, izenaren oihartzuna {count} aldiz iritsi da behin bakarrik beharrean."
+msgstr[1] "Idazketaren ondoren, izenaren oihartzuna {count} aldiz iritsi da behin bakarrik beharrean."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Idazketaren ondoren, izenaren oihartzuna ez dator bat bidalitakoarekin."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Idazketaren ondoren, slotaren informazioa {count} aldiz iritsi da behin bakarrik beharrean."
+msgstr[1] "Idazketaren ondoren, slotaren informazioa {count} aldiz iritsi da behin bakarrik beharrean."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Idazketaren ondoren, slotaren informazioa ez dator bat bidalitakoarekin."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "{backup} babeskopiak ez dauka slotik."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Konparatzen"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "{backup} babeskopiaren {slot}. slota pedalarenaren desberdina da, baina ezin da dagoen bezala berridatzi ({error}). Ez da ezer idatzi."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Leheneratzen"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedalak {announced}. slota iragartzen du {requested}. slota eskatu ondoren."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Pedalak ez du oihartzunik eman {table} taularen idazketari."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "{table} taularen oihartzuna ez dator bat bidalitakoarekin."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "esteka sinbolikoa da"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "ez da fitxategi arrunta"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} byte {expected} beharrean"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} byte, onartutako {allowed} baino gehiago"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "tamaina aldatu da irakurketan zehar"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Ezin da {file} blokeoa sortu: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "gako bikoiztua: “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} ez da JSON estandarra"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "ez da JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "“{field}” eremua falta da"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "formatu ezezaguna: {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "eremu ezezaguna: “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Ezin da {file} karpeta sinkronizatu: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Ezin da {folder} karpeta sortu: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Ezin da {folder} karpeta sortu: {path} ez da karpeta bat"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Ezin da {file} bere lekuan jarri: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "idazketa baten aurretik"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "slot-irakurketa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "babeskopia osoa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "inportazioa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "slot kaltetua"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Kargatu WAV bat"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "<b>{slot}</b>. slota “{name}” gainidatzi <b>{file}</b> fitxategiarekin?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Slotaren egungo edukia gorde egingo da idatzi aurretik."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Slotaren izena"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Utzi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Idatzi pedalean"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Babeskopiak"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Leheneratu slot hau"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Leheneratu babeskopia osoa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Itxi"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Oraindik ez dago babeskopiarik."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: {slot}. slota “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} slot"
+msgstr[1] "{backup}: {count} slot"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: irakurezina"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Babeskopia hau ezin da erabili: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Pedalaren {count} slot babeskopia honen egoerara itzuli?"
+msgstr[1] "Pedalaren {count} slot babeskopia honen egoerara itzuli?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Pedalaren {slot}. slota babeskopia honen egoerara itzuli (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nBabeskopiarekin bat ez datorren slota bakarrik berridazten da, eta bere egungo edukia berehala lehenago gordetzen da."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Leheneratu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Urdin elektrikoa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Ziana"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Berdea"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Horia"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Laranja"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Gorria"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Arrosa"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Morea"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Zuri hautsia"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Interfazearen kolorea"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Kolore-kodea, adibidez #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Espero zen: # eta sei zifra hamaseitar"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Pedala bilatzen…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Leheneratu aurreko egoera"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Egin babeskopia osoa"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Babeskopiak…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Kargatu WAV bat…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Esportatu WAV gisa…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV fitxategiak"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Aukeratu WAV fitxategi bat"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Fitxategi bat aldi bakoitzean: slot batek IR bakarra gordetzen du."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Esportatu WAV gisa"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Leheneratzea amaitu da. Berridatzitako eta berriro irakurrita berdinak diren slotak: {rewritten}. Ezarpenak bakarrik: {settings}. Babeskopiaren berdinak ziren: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "{slot}. slota: etendako idazketaren ondoren, lehen zuena du oraindik. Ez dago ezer egiteko."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "{slot}. slota: etendako idazketaren ondoren, ez dauka ez eduki zaharra ez berria. Konpondu arte, hau da idatz daitekeen slot bakarra."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "{slot}. slota: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "{slot}. slota: “{name}” idatzi eta berriro irakurrita berdina da. Aurreko edukia {backup} babeskopian gorde da"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "{slot}. slota idazten…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "{slot}. slotaren idazketak huts egin du: {reason} Pedala bakean uzten da {seconds} s, eta ondoren slotaren egoera egiaztatuko da."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Babeskopiak huts egin du: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Leheneratzea gelditu da: {reason} Jada tratatutako slotak ordenan daude; pedalaren egoera berriro irakurriko da."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Konektatuta, {version} firmwarea"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Deskonektatuta: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Abisua: pedalak iragarritako identifikatzailea ez dator bat irakurritako datuekin."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Geldiarazteko eskaera egin da."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Babeskopia"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "maiztasun-tarte edo puntu-kopuru baliogabea"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Audio-fitxategi irakurezina: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Fitxategiak {count} kanal ditu: lehena bakarrik mantentzen da."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Audio-fitxategi hutsa: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Fitxategiak lagin ez-finituak ditu: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "{rate} Hz-ko laginketa-maiztasuna: fitxategia {target} kHz-era birlaginketatu da."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Fitxategiak {duration} ms irauten du: lehen {count} laginak ({limit} ms) bakarrik mantentzen dira."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedalak lehen {count} laginak ({limit} ms) bakarrik erreproduzitzen ditu: IR honen gainerakoa gordeko da, baina ez da entzungo."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Ezin da {file} normalizatu: ez dago seinalerik 400 Hz eta 3 kHz artean."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "{file} normalizatzeak koma higikorreko zenbakien tartea gainditzen du."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Normalizatu ondoren, IR-aren gailurra {peak} da (ohiko IR-ak 10etik beherakoak izaten dira): fitxategiak oso sakona den hondoratze bat dauka 400 Hz eta 3 kHz artean, eta irteera-maila oso altua izan daiteke."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "egunkariko data batek ordu-zona izan behar du"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "slota tartetik kanpo"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: ordu-zonadun ISO data espero zen"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: ordu-zonadun ISO data, edo null, espero zen"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: babeskopia-karpetaren izena espero zen"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: 64 zifra hamaseitar espero ziren"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: 32 byte hamaseitarrean espero ziren"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "identifikatzailea tartetik kanpo"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: boolearra espero zen"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Idazketa-egunkari irakurezina: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Ezin da {file} egunkaria kendu: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "{size} byteko MD5 {expected} beharrean"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "{size} byteko kodetutako bloke bat {expected} beharrean"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "“{message}” mezua: Control Change gaizki osatua"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "“{message}” mezua: Control Change bat ezarpen bat da"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "“{message}” mezua: Control Change zerrenda itxian ez dagoena"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "“{message}” mezua: {value} balioa {max} baino handiagoa"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "“{message}” mezua gaizki markatua"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "“{message}” mezua: 7 biteko tartetik kanpoko byte bat"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "“{message}” mezua ez dago zerrenda itxian"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "“{message}” mezua: {size} byte {expected} beharrean"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "“{message}” mezua: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "bertsio-eskaera ustekabekoa"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "70 05 01 iragarpena bakarrik onartzen da, probetan"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "70 26 7F irakurketa bakarrik onartzen da"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "gorputz ez-nulua duen taula-eskaera"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "taula-idazketa: ezarpena espero zen, 0tik 100erako balioak"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "irakurketa-eskaera gaizki osatua"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "slota tartetik kanpo edo gorputz ez-nulua"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "{command} komandoak ez du eduki-araurik"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "igoera-mezua idazketa-kategoriatik kanpo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "{command} idazketa-komandoak ez du eduki-araurik"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "slot-izen gaizki osatua"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "31. bita aktibatuta duen identifikatzailea (fabrikako IR-a): funtzioa oraindik ireki gabe"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "igoeraren goiburua: slota tartetik kanpo"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "igoeraren goiburua: MD5 ez da hamaseitar zifra xeheekin osatua"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "igoeraren goiburua ikusitako formatik kanpo"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "igoeraren oina: zero ez den byte bat bandera ondoren"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "amaierako blokea: slota tartetik kanpo"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "amaierako blokea ikusitako formatik kanpo"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "datu-blokea: helbidea edo kontagailua tartetik kanpo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "datu-blokea: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "datu-blokea: karga-baliagarria enc_msb-k sortutako formatik kanpo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "datu-blokea: zero ez den betegarria IR-aren {size} byteetatik harago"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "{value} identifikatzailea 0..{max} tartetik kanpo: 31. bita fabrikako IR-entzat gordeta dago, oraindik ireki gabeko funtzio bat"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "{size} byteko izena, gehienez {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "{size} byteko gorputza {expected} beharrean"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "{slot}. slotaren informazioa"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "{table} taula"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "uneko egoera"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "{slot}. slotaren IR-a"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "{slot}. slotaren aktibazioa"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "taula batek {count} balio ditu, {got} jaso dira"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "{table} taula: {value!r} balioa 0..{max} tartetik kanpo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "{table} taularen idazketa"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "ezarpen ezezaguna: “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "“{name}” ezarpena: {value!r} balioa 0..{max} tartetik kanpo"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "{name} ezartzea {value} balioari"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "konexio-iragarpena"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "slot-izen batek 1etik {max}ra karaktere ditu"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "slot-izen batek ASCII karaktere inprimagarriak bakarrik ditu"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR-ak lagin ez-finitu bat dauka"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "{slot}. slotaren igoera, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "goiburua"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "{block}. blokea"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "amaiera"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "oina"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "izena"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "informazioa"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "{size} byteko amaierako batura {expected} beharrean"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "slot-izena hutsik dago edo ASCII inprimagarritik kanpo dago"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "zero ez diren byteak slot-izenaren amaieraren ondoren"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "NUX SysEx goiburua falta da"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "ez dago amaierako F7rik"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "7 biteko tartetik kanpoko byte bat"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "{found} mota {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "{found} komandoa {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "igoeraren ustekabeko berrespena"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "berrespen-egoera ezezaguna: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "bertsio-erantzun ustekabekoa: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "{command} komandoa: 0x5c (informazio-irakurketa) eta 0x5b (izenaren oihartzuna) bakarrik daramate slotaren informazioa"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "kodetutako luzera {found} {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "slot-informazioaren erantzun ustekabekoa: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "slot-informazio irakurezina: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedalak {slot}. slota iragartzen du"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "{table} taularen erantzun ustekabekoa: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "{table} taula: {value} balioa 100 baino handiagoa"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "egoera-erantzun ustekabekoa: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "irakurketaren goiburua: {found} komandoa {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "irakurketaren goiburuak amaiera-bandera dauka"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "irakurketaren goiburu ez-nulua, inoiz ikusi gabeko formatua"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "{block}. blokea: {found} komandoa {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "{block}. blokea: zero ez den bandera {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "{block}. blokea: {found} helbidea {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "{block}. blokea: {found} kontagailua {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "{block}. blokea irakurezina: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "amaierako blokea: {found} komandoa {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "amaierako blokea banderarik gabe"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "amaierako blokea: {found} kontagailua {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "amaierako blokea: byte arrotz bat banderatik, baturatik eta kontagailutik kanpo"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "amaierako batura irakurezina: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "irakurketaren amaierako batura okerra"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "oina: {found} komandoa {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "oina banderarik gabe"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "oina: byte arrotz bat banderaren ondoren"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{count} mezu jaso dira {expected} beharrean"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "{number}. mezua arrotza da IR irakurketarako: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "{colour!r} kolorea: “#rrggbb” formatua espero zen, xeheetan"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Funtzio ezezaguna: “{name}”. Ezagunak: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "funtzio ezagunen zerrenda ordenatua espero zen, bikoizketarik gabe"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Proba-erregistro irakurezina: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Proba-erregistroa beste prozesu batek blokeatuta dauka ({file}): saiatu berriro beste komandoa amaitzen denean."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Ezin da {file} blokeatu: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Ez da pedala aurkitu: ez dago “NAI5” soinu-txartelik. Egiaztatu USB kablea."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR ez dago ezarrita: ezin da blokeoa hartu."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Ezin da {file} blokeoa hartu: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedala optima-air-en beste instantzia batek erabiltzen du dagoeneko."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Blokeoa dagoeneko askatu da: ezin zaio gehiago portu bati eman."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Blokeo hau portu bati dagokio dagoeneko: ezin zaio bigarren bati eman."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Ezin da blokeoa askatu: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedalak ez du gehiago erantzuten: deskonektatuta edo trabatuta dago."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Ezin da {port} portua konfiguratu: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Ezin da {port} portuaren sarrera armatu: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "{port} portua ez dago."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "{port} atzitzeko baimena ukatu da. Egiaztatu “audio” taldekoa zarela (komandoa: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "{port} portua beste programa batek erabiltzen du dagoeneko."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "{port} portua ez dago erabilgarri jada."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Ezin da {port} portua ireki: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Ezin da idatzi: portua itxita dago."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "{port} portuan idazteak huts egin du: ez da byterik onartu."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "{port} portuan idazteak huts egin du: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "{port} portua hustea {count} aldiz eten da jarraian: mezua nukleoari eman zaio, baina ezin izan da haren irteera itxaron."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Itxaronaldia tartetik kanpo: {wait} s (gehienez {max} s)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Ezin da irakurri: portua itxita dago."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "{port} portutik irakurtzeak huts egin du: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "{port} portuak ez du bere sarreraren egoera jakinarazten ({error}): byteen galera ezin da detektatu, hemen gelditzen da."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "{port} portuaren egoera irakurtzeak huts egin du: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "{port} portua ixteak huts egin du: {error}"

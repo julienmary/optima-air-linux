@@ -1,0 +1,1938 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "sebesar {bits} bit"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: diharapkan bilangan bulat, diterima {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: diharapkan bilangan bulat atau kosong, diterima {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "nama slot: diharapkan byte, diterima {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: diharapkan teks, diterima {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "slot {slot} di luar rentang 1..{count}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "nama slot sebesar {size} byte, bukan {expected}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "pengenal {value} di luar rentang 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} di luar rentang 0..{max}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Alasan pencadangan tidak dikenal “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "firmware tidak ada: hanya alasan “{reason}” yang mengizinkannya"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "nama cadangan tidak valid “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "alasan “{reason}” berbeda dengan alasan cadangan {name}, yaitu “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "tanggal {date!r} tidak terbaca"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "tanggal {date!r} tanpa zona waktu"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "tanggal {date!r} tidak dalam bentuk baku"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "tanggal {date!r} berbeda dengan waktu cadangan {name}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: diharapkan tanggal, diterima {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field} harus memiliki zona waktu (misalnya datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Tidak dapat menulis di folder {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "bukan folder"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Tidak dapat memeriksa {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Tidak dapat membuat cadangan {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "data: diharapkan byte, diterima {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "sebuah IR berukuran {expected} byte, diterima {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "slot {slot} sudah dicadangkan di {backup}: cadangan hanya ditulis sekali, buat cadangan baru."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Catatan slot tidak terbaca: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "diharapkan objek JSON, diterima {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "kolom “{field}” hilang atau bukan teks"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "segel tidak dapat dihitung: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "Catatan slot diubah atau rusak: {file} (segel salah)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "kolom “{field}”: diharapkan bilangan bulat"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "kolom “{field}”: diharapkan teks"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "kolom “{field}”: diharapkan bilangan bulat atau null"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "catatan slot {record} tersimpan di bawah slot {slot}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: diharapkan heksadesimal huruf kecil"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "catatan cadangan “{record}” ditemukan di “{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Tidak dapat membaca {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Cadangan tidak terbaca: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "hilang"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Catatan slot tidak konsisten: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Data tidak terbaca: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Sidik jari salah: {file} tidak akan digunakan."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "pengenal dihitung ulang sebagai {computed}, catatan menyebutkan {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Slot aktif"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR hidup/mati"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Preamp hidup/mati"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "“{text}” bukan nomor slot"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "Penulisan ke slot {slot} terputus: pedal dibiarkan selama {seconds} detik lagi. Lalu jalankan: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "tidak dikenal ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "tidak dikenal ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Preset: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "slot {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "slot tidak dikenal ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: hidup, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: mati, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Preamp: hidup"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Preamp: mati"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Nama"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Pengenal"
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Volume"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Low cut"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "High cut"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Peringatan: pengenal yang diumumkan pedal ({announced}) tidak cocok dengan data yang dibaca ({computed}), bahkan setelah dibaca ulang. Cadangan tetap dibuat."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Slot {slot} “{name}” dicadangkan di {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} byte: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change kanal {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[kanal {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, yaitu {converted} dari 100"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} maks {max} ({count} pesan)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "level"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Peringatan: {count} SysEx dibuang saat diterima."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Peringatan: buffer masukan meluap {count} kali, byte hilang."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "y"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "ya"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [y/T] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Dibatalkan: tidak ada yang ditulis."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Kirim pengumuman koneksi, fungsi uji coba “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Dibatalkan: tidak ada yang dikirim."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "Pengumuman sudah dikirim oleh urutan koneksi: tidak dikirim dua kali."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Pengumuman terkirim: jawaban diterima"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Pengumuman terkirim: tidak ada jawaban"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: tervalidasi"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: dalam uji coba"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "“trials {action}” membutuhkan nama sebuah fungsi."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "Nama “{name}” ditolak ({error}). Berikan nama dengan --name."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Peringatan: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Timpa slot {slot} “{current}” dengan “{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Slot {slot}: “{name}” ditulis dan dibaca kembali identik."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Isi sebelumnya (“{name}”) dicadangkan di {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "{file} sudah ada. Tambahkan --yes untuk menimpanya."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Tidak dapat menulis {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Slot {slot} “{name}” diekspor ke {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Membaca: {done} dari {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Peringatan: pengenal yang diumumkan untuk slot {slot} tidak cocok dengan data yang dibaca, bahkan setelah dibaca ulang. Slot tetap dicadangkan."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Semua 23 slot dicadangkan di {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Tidak ada cadangan."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} slot"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "RUSAK ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "tidak ada"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "--name hanya berlaku untuk memulihkan satu slot."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Kembalikan pedal ke keadaan cadangan {backup} ({count} slot)? Hanya slot yang berbeda yang akan ditulis ulang, setelah isinya dicadangkan."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} dari {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Slot yang ditulis ulang dan dibaca kembali identik: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Slot yang hanya pengaturannya dipulihkan: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "Slot yang sudah identik dengan cadangan: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Tulis ulang slot {slot} “{current}” dari cadangan {backup} (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "Slot {slot} dipulihkan dari {backup}, lalu dibaca kembali identik."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "Isi yang digantikan (“{name}”) dicadangkan di {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Tidak ada penulisan yang terputus."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Slot {slot}: penulisan yang terputus telah selesai. Tidak ada yang perlu dilakukan."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Slot {slot}: masih berisi seperti sebelumnya. Tidak ada yang perlu dilakukan."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Slot {slot}: isinya bukan yang lama maupun yang baru. Untuk mengembalikannya seperti semula: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "izinkan lebih dari sekadar membaca pada firmware yang belum diverifikasi"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "izinkan fungsi uji coba"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "jangan minta konfirmasi"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "nomor slot, dari 1 sampai {count}"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Editor Linux untuk pedal NUX Optima Air."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "folder data (bawaan: folder data XDG)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "buka jendela"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "versi firmware, preset, dan pengaturan"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "23 slot IR"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "cadangkan IR sebuah slot"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "cetak apa yang dikirim pedal"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "detik mendengarkan"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "baca keadaan terlebih dahulu"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "kirim pengumuman terlebih dahulu (uji coba)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "tulis sebuah WAV ke sebuah slot"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "berkas WAV"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "nama slot (bawaan: nama berkas)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "ekspor sebuah slot sebagai WAV"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "berkas WAV yang akan ditulis"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "tulis ulang sebuah slot, atau semuanya, dari sebuah cadangan"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "folder cadangan"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "nomor slot, dari 1 sampai {count} (bawaan: semua)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "ganti nama yang dicadangkan"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "cadangkan 23 slot"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "daftar cadangan"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "periksa penulisan yang terputus"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "daftar fungsi uji coba"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "Penulisan ke slot {slot} tidak selesai. Pedal dibiarkan untuk sementara; lalu jalankan: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Galat: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Terputus."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "byte {byte} di luar 7 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} byte 7-bit menyisakan {bits} bit pengisi, enc7 tidak pernah menghasilkan lebih dari 6"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "bit pengisi bukan nol di akhir aliran 7-bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "sebuah blok berukuran {expected} byte, diterima {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "jumlah blok {sum} ({hex}) melebihi 14 bit yang dikirim (maks {max}): belum pernah terlihat pada pedal, ditolak sampai diverifikasi"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "sebuah blok terenkode berukuran {expected} byte, diterima {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "byte di luar 7 bit dalam blok terenkode"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "checksum blok salah"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "jumlah akhir transfer mencakup setidaknya satu blok"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "panjang {length} bukan kelipatan {block}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "nilai {value} di luar 28 bit"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "jumlah 28-bit memakai 4 byte, diterima {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "byte {byte} di luar 7 bit dalam jumlah 28-bit"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Sebuah penulisan terputus: pedal dibiarkan selama {seconds} detik lagi."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: pesan tulis hanya dapat dikirim oleh penulisan slot yang lengkap (cadangan, jurnal, baca kembali)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "Versi firmware belum dibaca: hanya pembacaan yang diizinkan."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Firmware tidak dikenal {found} (protokol diverifikasi pada {verified}): hanya pembacaan yang diizinkan."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "“{message}” adalah fungsi uji coba (“{function}”), belum divalidasi pada pedal."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: hanya pembacaan yang dapat dikirim ulang."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "Tidak ada jawaban dari pedal untuk “{message}” setelah {count} percobaan."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "Pedal terus mengirim SysEx tanpa jeda."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "Tidak dapat membaca slot {slot}: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "Dua pembacaan slot {slot} memberikan data yang berbeda."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "Penulisan ke slot {slot} terputus: tunggu {seconds} detik lagi sebelum mengirim apa pun."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "Penulisan ke slot {slot} terputus: sampai slot itu diperbaiki, hanya slot itu yang dapat ditulis."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Penulisan ditolak: firmware belum dibaca, atau bukan firmware yang menjadi dasar verifikasi protokol."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Setelah penulisan, slot {slot} tidak berisi apa yang dikirim."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "Pedal melaporkan galat saat menulis IR."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Konfirmasi blok tak terduga: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "Diterima {count} konfirmasi blok, bukan {expected}."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "Konfirmasi header dan footer hilang atau tak terduga."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Setelah penulisan, gema nama datang {count} kali, bukan sekali."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Setelah penulisan, gema nama tidak cocok dengan yang dikirim."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Setelah penulisan, info slot datang {count} kali, bukan sekali."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Setelah penulisan, info slot tidak cocok dengan yang dikirim."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "Cadangan {backup} tidak berisi slot."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Membandingkan"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "Slot {slot} dari cadangan {backup} berbeda dengan pedal tetapi tidak dapat ditulis ulang apa adanya ({error}). Tidak ada yang ditulis."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Memulihkan"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "Pedal mengumumkan slot {announced} setelah slot {requested} diminta."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "Tidak ada gema dari pedal untuk penulisan tabel {table}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "Gema tabel {table} berbeda dengan yang dikirim."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "adalah tautan simbolik"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "bukan berkas biasa"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} byte, bukan {expected}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} byte, melebihi {allowed} yang diizinkan"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "ukuran berubah saat membaca"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Tidak dapat membuat kunci {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "kunci ganda “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "{name} bukan JSON standar"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "bukan JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "kolom “{field}” hilang"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "format tidak dikenal {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "kolom tidak dikenal “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Tidak dapat menyinkronkan folder {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Tidak dapat membuat folder {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Tidak dapat membuat folder {folder}: {path} bukan folder"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Tidak dapat menempatkan {file}: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "sebelum penulisan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "pembacaan slot"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "cadangan penuh"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "impor"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "slot rusak"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "Muat WAV"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Timpa slot <b>{slot}</b> “{name}” dengan <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "Isi slot saat ini akan dicadangkan sebelum penulisan."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Nama slot"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Batal"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Tulis ke pedal"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Cadangan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Pulihkan slot ini"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Pulihkan seluruh cadangan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Tutup"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Belum ada cadangan."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: slot {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} slot"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: tidak terbaca"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Cadangan ini tidak dapat digunakan: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Kembalikan {count} slot pedal ke keadaan cadangan ini?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Kembalikan slot {slot} pedal ke keadaan cadangan ini (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nHanya slot yang berbeda dari cadangan yang ditulis ulang, dan isinya saat ini dicadangkan tepat sebelumnya."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Pulihkan"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Biru listrik"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Sian"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Hijau"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Kuning"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Oranye"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Merah"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Merah muda"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Ungu"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Putih gading"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Warna antarmuka"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Kode warna, misalnya #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Diharapkan: # dan enam digit heksadesimal"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Mencari pedal…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Pulihkan keadaan sebelumnya"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Cadangkan semua"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Cadangan…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "Muat WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Ekspor sebagai WAV…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "Berkas WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Pilih berkas WAV"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Satu berkas sekali waktu: sebuah slot hanya menyimpan satu IR."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Ekspor sebagai WAV"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "Pemulihan selesai. Slot yang ditulis ulang dan dibaca kembali identik: {rewritten}. Hanya pengaturan: {settings}. Sudah identik dengan cadangan: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Slot {slot}: setelah penulisan yang terputus, slot masih berisi seperti sebelumnya. Tidak ada yang perlu dilakukan."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Slot {slot}: setelah penulisan yang terputus, slot tidak berisi isi yang lama maupun yang baru. Sampai slot ini diperbaiki, hanya slot ini yang dapat ditulis."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Slot {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Slot {slot}: “{name}” ditulis dan dibaca kembali identik. Isi sebelumnya dicadangkan di {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "Menulis slot {slot}…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "Penulisan slot {slot} gagal: {reason} Pedal dibiarkan selama {seconds} detik, lalu keadaan slot akan diperiksa."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "Pencadangan gagal: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "Pemulihan berhenti: {reason} Slot yang sudah ditangani dalam keadaan baik; keadaan pedal akan dibaca ulang."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Terhubung, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Terputus: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Peringatan: pengenal yang diumumkan pedal tidak cocok dengan data yang dibaca."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Penghentian diminta."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Cadangan"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "rentang frekuensi atau jumlah titik tidak valid"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Berkas audio tidak terbaca: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "Berkas memiliki {count} kanal: hanya yang pertama yang dipertahankan."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Berkas audio kosong: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "Berkas berisi sampel yang tidak terhingga: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Laju sampel {rate} Hz: berkas disampel ulang ke {target} kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "Berkas berdurasi {duration} ms: hanya {count} sampel pertama ({limit} ms) yang dipertahankan."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "Pedal hanya memutar {count} sampel pertama ({limit} ms): sisa IR ini akan disimpan tetapi tidak terdengar."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Tidak dapat menormalkan {file}: tidak ada sinyal antara 400 Hz dan 3 kHz."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "Normalisasi {file} melampaui rentang bilangan floating-point."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "Setelah normalisasi, IR memuncak pada {peak} (IR umumnya di bawah 10): berkas memiliki lembah yang sangat dalam antara 400 Hz dan 3 kHz, dan level keluaran bisa sangat tinggi."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "tanggal jurnal harus memiliki zona waktu"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "slot di luar rentang"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: diharapkan tanggal ISO dengan zona waktu"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: diharapkan tanggal ISO dengan zona waktu, atau null"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: diharapkan nama folder cadangan"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: diharapkan 64 digit heksadesimal"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: diharapkan 32 byte dalam heksadesimal"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "pengenal di luar rentang"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: diharapkan boolean"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Jurnal penulisan tidak terbaca: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "Tidak dapat menghapus jurnal {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5 sebesar {size} byte, bukan {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "blok terenkode sebesar {size} byte, bukan {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "pesan “{message}”: Control Change tidak valid"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "pesan “{message}”: sebuah Control Change adalah sebuah pengaturan"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "pesan “{message}”: Control Change tidak ada dalam daftar tertutup"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "pesan “{message}”: nilai {value} di atas {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "pesan “{message}” salah bingkai"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "pesan “{message}”: byte di luar 7 bit"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "pesan “{message}” tidak ada dalam daftar tertutup"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "pesan “{message}”: {size} byte, bukan {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "pesan “{message}”: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "permintaan versi tak terduga"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "hanya pengumuman 70 05 01, dalam uji coba, yang diizinkan"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "hanya pembacaan 70 26 7F yang diizinkan"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "permintaan tabel dengan isi bukan nol"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "penulisan tabel: diharapkan sebuah pengaturan, nilai dari 0 sampai 100"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "permintaan baca salah bentuk"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "slot di luar rentang atau isi bukan nol"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "perintah {command} tanpa aturan isi"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "pesan unggah di luar kategori tulis"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "perintah tulis {command} tanpa aturan isi"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "nama slot salah bentuk"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "pengenal dengan bit 31 aktif (IR pabrik): fungsi belum dibuka"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "header unggah: slot di luar rentang"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "header unggah: MD5 di luar digit heksadesimal huruf kecil"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "header unggah di luar bentuk yang teramati"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "footer unggah: byte bukan nol setelah flag"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "blok akhir: slot di luar rentang"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "blok akhir di luar bentuk yang teramati"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "blok data: alamat atau penghitung di luar rentang"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "blok data: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "blok data: payload di luar bentuk yang dihasilkan enc_msb"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "blok data: pengisi bukan nol melebihi {size} byte IR"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "pengenal {value} di luar rentang 0..{max}: bit 31 dicadangkan untuk IR pabrik, sebuah fungsi yang belum dibuka"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "nama sebesar {size} byte, maksimal {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "isi sebesar {size} byte, bukan {expected}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "info slot {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "tabel {table}"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "keadaan saat ini"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "IR slot {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "aktivasi slot {slot}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "sebuah tabel memiliki {count} nilai, diterima {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "tabel {table}: nilai {value!r} di luar rentang 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "penulisan tabel {table}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "pengaturan tidak dikenal “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "pengaturan “{name}”: nilai {value!r} di luar rentang 0..{max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "atur {name} ke {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "pengumuman koneksi"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "nama slot terdiri dari 1 sampai {max} karakter"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "nama slot hanya berisi karakter ASCII yang dapat dicetak"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "IR berisi sampel yang tidak terhingga"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "unggah slot {slot}, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "header"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "blok {block}"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "akhir"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "footer"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "nama"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "info"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "jumlah akhir sebesar {size} byte, bukan {expected}"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "nama slot kosong atau di luar ASCII yang dapat dicetak"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "byte bukan nol setelah akhir nama slot"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "header NUX SysEx hilang"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "tidak ada F7 akhir"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "byte di luar 7 bit"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "tipe {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "perintah {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "konfirmasi unggah tak terduga"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "status konfirmasi tidak dikenal: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "jawaban versi tak terduga: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "perintah {command}: hanya 0x5c (baca info) dan 0x5b (gema nama) yang membawa info slot"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "panjang terenkode {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "jawaban info slot tak terduga: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "info slot tidak terbaca: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "pedal mengumumkan slot {slot}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "jawaban tak terduga untuk tabel {table}: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "tabel {table}: nilai {value} di atas 100"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "jawaban keadaan tak terduga: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "header baca: perintah {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "header baca membawa flag akhir"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "header baca bukan nol, belum pernah terlihat dalam bentuk ini"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "blok {block}: perintah {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "blok {block}: flag {flag} bukan nol"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "blok {block}: alamat {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "blok {block}: penghitung {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "blok {block} tidak terbaca: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "blok akhir: perintah {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "blok akhir tanpa flag"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "blok akhir: penghitung {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "blok akhir: byte nyasar di luar flag, jumlah, dan penghitung"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "jumlah akhir tidak terbaca: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "jumlah akhir baca salah"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "footer: perintah {found}, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "footer tanpa flag"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "footer: byte nyasar setelah flag"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{count} pesan diterima, bukan {expected}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "pesan {number} asing bagi pembacaan IR: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "warna {colour!r}: diharapkan “#rrggbb” huruf kecil"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Fungsi tidak dikenal “{name}”. Yang dikenal: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "diharapkan daftar fungsi dikenal yang terurut, tanpa duplikat"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Daftar uji coba tidak terbaca: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "Daftar uji coba dikunci oleh proses lain ({file}): coba lagi setelah perintah lain selesai."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Tidak dapat mengunci {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "Pedal tidak ditemukan: tidak ada kartu suara “NAI5”. Periksa kabel USB."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "XDG_RUNTIME_DIR belum diatur: tidak dapat mengambil kunci."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Tidak dapat mengambil kunci {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "Pedal sudah digunakan oleh instans optima-air lain."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "Kunci sudah dilepas: tidak dapat lagi diberikan ke sebuah port."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Kunci ini sudah dimiliki sebuah port: tidak dapat diberikan ke port kedua."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "Tidak dapat melepas kunci: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "Pedal tidak lagi menjawab: tercabut atau macet."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "Tidak dapat mengonfigurasi port {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "Tidak dapat menyiapkan masukan port {port}: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "Port {port} tidak ada."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Akses ke {port} ditolak. Periksa apakah Anda berada dalam grup “audio” (perintah: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "Port {port} sudah digunakan oleh program lain."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "Port {port} tidak lagi tersedia."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "Tidak dapat membuka port {port}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Tidak dapat menulis: port tertutup."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Penulisan ke port {port} gagal: tidak ada byte yang diterima."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Penulisan ke port {port} gagal: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "Pengosongan port {port} terputus {count} kali berturut-turut: pesan sudah diserahkan ke kernel, tetapi pengirimannya tidak dapat ditunggu."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "Waktu tunggu di luar rentang: {wait} detik (maksimal {max} detik)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Tidak dapat membaca: port tertutup."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Pembacaan dari port {port} gagal: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "Port {port} tidak melaporkan keadaan masukannya ({error}): kehilangan byte tidak dapat dideteksi, berhenti di sini."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "Pembacaan keadaan port {port} gagal: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "Penutupan port {port} gagal: {error}"

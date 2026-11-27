@@ -1,0 +1,1947 @@
+# Machine translation of optima-air (not reviewed by a native speaker).
+# Corrections are welcome: https://github.com/julienmary/optima-air-linux/issues
+# This file is distributed under the same license as the optima-air package.
+msgid ""
+msgstr ""
+"Project-Id-Version: optima-air\n"
+"Report-Msgid-Bugs-To: https://github.com/julienmary/optima-air-linux/issues\n"
+"POT-Creation-Date: 2026-11-27 08:32+0100\n"
+"PO-Revision-Date: 2026-11-27 08:32+0100\n"
+"Last-Translator: Machine translation, not reviewed\n"
+"Language-Team: none\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "of {bits} bits"
+msgstr "{bits} bites"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer expected, got {type}"
+msgstr "{field}: egész szám várt, ez érkezett: {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: integer or nothing expected, got {type}"
+msgstr "{field}: egész szám vagy semmi várt, ez érkezett: {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name: bytes expected, got {type}"
+msgstr "memóriahely neve: bájtok várt, ez érkezett: {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: text expected, got {type}"
+msgstr "{field}: szöveg várt, ez érkezett: {type}"
+
+#: src/optima_air/archives.py src/optima_air/cli.py src/optima_air/device.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "slot {slot} out of 1..{count}"
+msgstr "a(z) {slot}. memóriahely kívül esik az 1..{count} tartományon"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot name of {size} bytes instead of {expected}"
+msgstr "a memóriahely neve {size} bájt, {expected} bájt helyett"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}"
+msgstr "a(z) {value} azonosító kívül esik a 0..{max} tartományon"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} {value} out of 0..{max}"
+msgstr "{field} {value} kívül esik a 0..{max} tartományon"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unknown backup reason “{reason}”."
+msgstr "Ismeretlen biztonsági mentési ok: “{reason}”."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "firmware missing: only the reason “{reason}” allows it"
+msgstr "hiányzik a firmware: csak a(z) “{reason}” ok engedi meg"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "malformed backup name “{name}”"
+msgstr "hibás biztonsági mentés neve: “{name}”"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "reason “{reason}” differs from the one of the backup {name}, reason “{expected}”"
+msgstr "a(z) “{reason}” ok eltér a(z) {name} biztonsági mentés okától: “{expected}”"
+
+#: src/optima_air/archives.py
+msgid "unreadable date {date!r}"
+msgstr "olvashatatlan dátum: {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} without time zone"
+msgstr "időzóna nélküli dátum: {date!r}"
+
+#: src/optima_air/archives.py
+msgid "non-canonical date {date!r}"
+msgstr "nem kanonikus dátum: {date!r}"
+
+#: src/optima_air/archives.py
+msgid "date {date!r} differs from the time of the backup {name}"
+msgstr "a(z) {date!r} dátum eltér a(z) {name} biztonsági mentés idejétől"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: date expected, got {type}"
+msgstr "{field}: dátum várt, ez érkezett: {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field} must carry a time zone (for example datetime.now().astimezone())"
+msgstr "{field}: időzóna megadása kötelező (például datetime.now().astimezone())"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot write in the folder {file}: {error}"
+msgstr "Nem lehet írni a mappába: {file}: {error}"
+
+#: src/optima_air/archives.py
+msgid "not a folder"
+msgstr "nem mappa"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot check {file}: {error}"
+msgstr "Nem ellenőrizhető: {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Cannot create the backup {backup}: {error}"
+msgstr "Nem hozható létre a biztonsági mentés: {backup}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "data: bytes expected, got {type}"
+msgstr "adat: bájtok várt, ez érkezett: {type}"
+
+#: src/optima_air/archives.py src/optima_air/codec.py src/optima_air/ir.py
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "an IR is {expected} bytes, got {got}"
+msgstr "egy IR {expected} bájt, ez érkezett: {got}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "slot {slot} already backed up in {backup}: a backup is written only once, make a new backup."
+msgstr "a(z) {slot}. memóriahely már mentve van ide: {backup}: egy biztonsági mentés csak egyszer íródik, készítsen újat."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable slot record: {file} ({error})"
+msgstr "Olvashatatlan memóriahely-rekord: {file} ({error})"
+
+#: src/optima_air/archives.py src/optima_air/journal.py
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "JSON object expected, got {type}"
+msgstr "JSON-objektum várt, ez érkezett: {type}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}” missing or not text"
+msgstr "a(z) “{field}” mező hiányzik vagy nem szöveg"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "seal cannot be computed: {error}"
+msgstr "a pecsét nem számítható ki: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Slot record altered or damaged: {file} (wrong seal)"
+msgstr "A memóriahely-rekordot módosították vagy sérült: {file} (hibás pecsét)"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer expected"
+msgstr "“{field}” mező: egész szám várt"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: text expected"
+msgstr "“{field}” mező: szöveg várt"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "field “{field}”: integer or null expected"
+msgstr "“{field}” mező: egész szám vagy null várt"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of slot {record} filed under slot {slot}"
+msgstr "a(z) {record}. memóriahely rekordja a(z) {slot}. memóriahely alatt van tárolva"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "{field}: lowercase hexadecimal expected"
+msgstr "{field}: kisbetűs hexadecimális szám várt"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "record of the backup “{record}” found in “{backup}”"
+msgstr "a(z) “{record}” biztonsági mentés rekordja ebben található: “{backup}”"
+
+#: src/optima_air/archives.py src/optima_air/cli.py
+#, python-brace-format
+msgid "Cannot read {file}: {error}"
+msgstr "Nem olvasható: {file}: {error}"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable backup: {backup} ({error})"
+msgstr "Olvashatatlan biztonsági mentés: {backup} ({error})"
+
+#: src/optima_air/archives.py
+msgid "missing"
+msgstr "hiányzik"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Inconsistent slot record: {file} ({error})"
+msgstr "Ellentmondásos memóriahely-rekord: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Unreadable data: {file} ({error})"
+msgstr "Olvashatatlan adat: {file} ({error})"
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "Wrong fingerprint: {file} will not be used."
+msgstr "Hibás ujjlenyomat: a(z) {file} nem lesz használva."
+
+#: src/optima_air/archives.py
+#, python-brace-format
+msgid "identifier recomputed as {computed}, the record says {recorded}"
+msgstr "az azonosító újraszámolva: {computed}, a rekordban ez áll: {recorded}"
+
+#: src/optima_air/cli.py
+msgid "Active slot"
+msgstr "Aktív memóriahely"
+
+#: src/optima_air/cli.py
+msgid "IR on/off"
+msgstr "IR be/ki"
+
+#: src/optima_air/cli.py
+msgid "Preamp on/off"
+msgstr "Előerősítő be/ki"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“{text}” is not a slot number"
+msgstr "A(z) “{text}” nem memóriahely-szám"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: the pedal is left alone for another {seconds} s. Then run: optima-air resume"
+msgstr "A(z) {slot}. memóriahely írása megszakadt: a pedált még {seconds} mp-ig békén hagyjuk. Ezután futtassa: optima-air resume"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "unknown ({preset})"
+msgstr "ismeretlen ({preset})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown ({routing})"
+msgstr "ismeretlen ({routing})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Firmware {version}"
+msgstr "Firmware {version}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Preset: {preset}"
+msgstr "Előbeállítás: {preset}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot {slot} “{name}”"
+msgstr "memóriahely {slot} “{name}”"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "unknown slot ({slot})"
+msgstr "ismeretlen memóriahely ({slot})"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: on, {slot}"
+msgstr "IR: be, {slot}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "IR: off, {slot}"
+msgstr "IR: ki, {slot}"
+
+#: src/optima_air/cli.py
+msgid "Preamp: on"
+msgstr "Előerősítő: be"
+
+#: src/optima_air/cli.py
+msgid "Preamp: off"
+msgstr "Előerősítő: ki"
+
+#: src/optima_air/cli.py
+msgid "Name"
+msgstr "Név"
+
+#: src/optima_air/cli.py
+msgid "Ident."
+msgstr "Azon."
+
+#: src/optima_air/cli.py
+msgid "Volume"
+msgstr "Hangerő"
+
+#: src/optima_air/cli.py
+msgid "Low cut"
+msgstr "Mélyvágás"
+
+#: src/optima_air/cli.py
+msgid "High cut"
+msgstr "Magasvágás"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} dB"
+msgstr "{value} dB"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} Hz"
+msgstr "{value} Hz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced by the pedal ({announced}) does not match the data read ({computed}), even after reading again. The backup is made anyway."
+msgstr "Figyelem: a pedál által jelzett azonosító ({announced}) nem egyezik az olvasott adattal ({computed}), újraolvasás után sem. A biztonsági mentés ennek ellenére elkészül."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” backed up in {backup}"
+msgstr "Memóriahely {slot} “{name}” mentve ide: {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "SysEx {size} bytes: {data}"
+msgstr "SysEx {size} bájt: {data}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Program Change channel {channel}: {program}"
+msgstr "Program Change csatorna {channel}: {program}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "[channel {channel}]"
+msgstr "[csatorna {channel}]"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{label} = {value}, that is {converted} out of 100"
+msgstr "{label} = {value}, azaz {converted} a 100-ból"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "CC {number}: min {min} max {max} ({count} msg)"
+msgstr "CC {number}: min {min} max {max} ({count} üzenet)"
+
+#: src/optima_air/cli.py
+msgid "levels"
+msgstr "szintek"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} SysEx dropped while being received."
+msgid_plural "Warning: {count} SysEx dropped while being received."
+msgstr[0] "Figyelem: {count} SysEx üzenet elveszett fogadás közben."
+msgstr[1] "Figyelem: {count} SysEx üzenet elveszett fogadás közben."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: {count} input buffer overflow, bytes were lost."
+msgid_plural "Warning: {count} input buffer overflows, bytes were lost."
+msgstr[0] "Figyelem: {count} bemeneti puffer túlcsordulás, bájtok vesztek el."
+msgstr[1] "Figyelem: {count} bemeneti puffer túlcsordulás, bájtok vesztek el."
+
+#: src/optima_air/cli.py
+msgid "y"
+msgstr "i"
+
+#: src/optima_air/cli.py
+msgid "yes"
+msgstr "igen"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{question} [y/N] "
+msgstr "{question} [i/N] "
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was written."
+msgstr "Megszakítva: semmi sem lett írva."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Send the connection announcement, trial function “{name}”?"
+msgstr "Elküldi a csatlakozási bejelentést, kísérleti funkció: “{name}”?"
+
+#: src/optima_air/cli.py
+msgid "Cancelled: nothing was sent."
+msgstr "Megszakítva: semmi sem lett elküldve."
+
+#: src/optima_air/cli.py
+msgid "Announcement already sent by the connection sequence: not sent twice."
+msgstr "A bejelentést a csatlakozási sorozat már elküldte: nem küldjük el kétszer."
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: answer received"
+msgstr "Bejelentés elküldve: válasz érkezett"
+
+#: src/optima_air/cli.py
+msgid "Announcement sent: no answer"
+msgstr "Bejelentés elküldve: nem érkezett válasz"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: validated"
+msgstr "{name}: jóváhagyva"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{name}: on trial"
+msgstr "{name}: kísérleti"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "“trials {action}” expects the name of a function."
+msgstr "A “trials {action}” egy funkció nevét várja."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Name “{name}” refused ({error}). Give one with --name."
+msgstr "A(z) “{name}” név elutasítva ({error}). Adjon meg egyet a --name kapcsolóval."
+
+#: src/optima_air/cli.py src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Warning: {warning}"
+msgstr "Figyelem: {warning}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Overwrite slot {slot} “{current}” with “{name}” ({file})?"
+msgstr "Felülírja a(z) {slot}. memóriahelyet (“{current}”) ezzel: “{name}” ({file})?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical."
+msgstr "Memóriahely {slot}: “{name}” kiírva és azonosan visszaolvasva."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Previous content (“{name}”) backed up in {backup}"
+msgstr "Az előző tartalom (“{name}”) mentve ide: {backup}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{file} already exists. Add --yes to overwrite it."
+msgstr "A(z) {file} már létezik. A felülíráshoz adja hozzá: --yes."
+
+#: src/optima_air/cli.py src/optima_air/disque.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Cannot write {file}: {error}"
+msgstr "Nem írható: {file}: {error}"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot} “{name}” exported to {file}"
+msgstr "Memóriahely {slot} “{name}” exportálva ide: {file}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Reading: {done} of {total}…"
+msgstr "Olvasás: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Warning: the identifier announced for slot {slot} does not match the data read, even after reading again. It is backed up anyway."
+msgstr "Figyelem: a(z) {slot}. memóriahelyhez jelzett azonosító nem egyezik az olvasott adattal, újraolvasás után sem. Ennek ellenére mentésre kerül."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "All 23 slots are backed up in {backup}"
+msgstr "Mind a 23 memóriahely mentve ide: {backup}"
+
+#: src/optima_air/cli.py
+msgid "No backups."
+msgstr "Nincs biztonsági mentés."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} memóriahely"
+msgstr[1] "{count} memóriahely"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "DAMAGED ({error})"
+msgstr "SÉRÜLT ({error})"
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+msgid "none"
+msgstr "nincs"
+
+#: src/optima_air/cli.py
+msgid "--name only applies to restoring a single slot."
+msgstr "A --name csak egyetlen memóriahely visszaállítására vonatkozik."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Put the pedal back to the state of the backup {backup} ({count} slot)? Only the slots that differ will be rewritten, after their content is backed up."
+msgid_plural "Put the pedal back to the state of the backup {backup} ({count} slots)? Only the slots that differ will be rewritten, after their content is backed up."
+msgstr[0] "Visszaállítja a pedált a(z) {backup} biztonsági mentés állapotára ({count} memóriahely)? Csak az eltérő memóriahelyek íródnak újra, tartalmuk előzetes mentése után."
+msgstr[1] "Visszaállítja a pedált a(z) {backup} biztonsági mentés állapotára ({count} memóriahely)? Csak az eltérő memóriahelyek íródnak újra, tartalmuk előzetes mentése után."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{operation}: {done} of {total}…"
+msgstr "{operation}: {done} / {total}…"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots rewritten and read back identical: {slots}"
+msgstr "Újraírt és azonosan visszaolvasott memóriahelyek: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots whose settings only were restored: {slots}"
+msgstr "Memóriahelyek, amelyeknél csak a beállítások álltak vissza: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slots already identical to the backup: {slots}"
+msgstr "A biztonsági mentéssel már azonos memóriahelyek: {slots}"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Rewrite slot {slot} “{current}” from the backup {backup} (“{name}”)?"
+msgstr "Újraírja a(z) {slot}. memóriahelyet (“{current}”) a(z) {backup} biztonsági mentésből (“{name}”)?"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot} restored from {backup}, then read back identical."
+msgstr "A(z) {slot}. memóriahely visszaállítva innen: {backup}, majd azonosan visszaolvasva."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Replaced content (“{name}”) backed up in {backup}"
+msgstr "A lecserélt tartalom (“{name}”) mentve ide: {backup}"
+
+#: src/optima_air/cli.py
+msgid "No interrupted write."
+msgstr "Nincs megszakadt írás."
+
+#: src/optima_air/cli.py src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: the interrupted write had completed. Nothing to do."
+msgstr "Memóriahely {slot}: a megszakadt írás befejeződött. Nincs teendő."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: it still holds what it held before. Nothing to do."
+msgstr "Memóriahely {slot}: még mindig a korábbi tartalmat őrzi. Nincs teendő."
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Slot {slot}: its content is neither the old nor the new one. To put it back as it was: optima-air restore {backup} {slot}"
+msgstr "Memóriahely {slot}: tartalma sem a régi, sem az új. Az eredeti állapot visszaállításához: optima-air restore {backup} {slot}"
+
+#: src/optima_air/cli.py
+msgid "allow more than reads on a firmware that was not verified"
+msgstr "az olvasáson túli műveletek engedélyezése ellenőrizetlen firmware-en"
+
+#: src/optima_air/cli.py
+msgid "allow a trial function"
+msgstr "kísérleti funkció engedélyezése"
+
+#: src/optima_air/cli.py
+msgid "do not ask for confirmation"
+msgstr "ne kérjen megerősítést"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count}"
+msgstr "memóriahely száma, 1-től {count}-ig"
+
+#: src/optima_air/cli.py
+msgid "Linux editor for the NUX Optima Air pedal."
+msgstr "Linuxos szerkesztő a NUX Optima Air pedálhoz."
+
+#: src/optima_air/cli.py
+msgid "data folder (default: XDG data folder)"
+msgstr "adatmappa (alapértelmezés: XDG adatmappa)"
+
+#: src/optima_air/cli.py
+msgid "open the window"
+msgstr "az ablak megnyitása"
+
+#: src/optima_air/cli.py
+msgid "firmware version, preset and settings"
+msgstr "firmware-verzió, előbeállítás és beállítások"
+
+#: src/optima_air/cli.py
+msgid "the 23 IR slots"
+msgstr "a 23 IR memóriahely"
+
+#: src/optima_air/cli.py
+msgid "back up the IR of a slot"
+msgstr "egy memóriahely IR-jének mentése"
+
+#: src/optima_air/cli.py
+msgid "print what the pedal sends"
+msgstr "a pedál által küldöttek kiírása"
+
+#: src/optima_air/cli.py
+msgid "seconds of listening"
+msgstr "a figyelés másodpercben"
+
+#: src/optima_air/cli.py
+msgid "read the state first"
+msgstr "az állapot előzetes beolvasása"
+
+#: src/optima_air/cli.py
+msgid "send the announcement first (trial)"
+msgstr "a bejelentés előzetes elküldése (kísérleti)"
+
+#: src/optima_air/cli.py
+msgid "write a WAV into a slot"
+msgstr "WAV kiírása egy memóriahelyre"
+
+#: src/optima_air/cli.py
+msgid "WAV file"
+msgstr "WAV-fájl"
+
+#: src/optima_air/cli.py
+msgid "name of the slot (default: the name of the file)"
+msgstr "a memóriahely neve (alapértelmezés: a fájl neve)"
+
+#: src/optima_air/cli.py
+msgid "export a slot as WAV"
+msgstr "memóriahely exportálása WAV-ként"
+
+#: src/optima_air/cli.py
+msgid "WAV file to write"
+msgstr "kiírandó WAV-fájl"
+
+#: src/optima_air/cli.py
+msgid "rewrite a slot, or all of them, from a backup"
+msgstr "egy memóriahely vagy mind újraírása biztonsági mentésből"
+
+#: src/optima_air/cli.py
+msgid "backup folder"
+msgstr "a biztonsági mentés mappája"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "slot number, from 1 to {count} (default: all)"
+msgstr "memóriahely száma, 1-től {count}-ig (alapértelmezés: mind)"
+
+#: src/optima_air/cli.py
+msgid "replace the backed up name"
+msgstr "a mentett név cseréje"
+
+#: src/optima_air/cli.py
+msgid "back up the 23 slots"
+msgstr "a 23 memóriahely mentése"
+
+#: src/optima_air/cli.py
+msgid "list the backups"
+msgstr "a biztonsági mentések listázása"
+
+#: src/optima_air/cli.py
+msgid "check an interrupted write"
+msgstr "megszakadt írás ellenőrzése"
+
+#: src/optima_air/cli.py
+msgid "register of the trial functions"
+msgstr "a kísérleti funkciók nyilvántartása"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "A write to slot {slot} was left unfinished. The pedal is left alone for a while; then run: optima-air resume"
+msgstr "A(z) {slot}. memóriahely írása félbemaradt. A pedált egy ideig békén hagyjuk; ezután futtassa: optima-air resume"
+
+#: src/optima_air/cli.py
+#, python-brace-format
+msgid "Error: {error}"
+msgstr "Hiba: {error}"
+
+#: src/optima_air/cli.py
+msgid "Interrupted."
+msgstr "Megszakítva."
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits"
+msgstr "a(z) {byte} bájt túllépi a 7 bitet"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "{count} 7-bit bytes leave {bits} padding bits, enc7 never produces more than 6"
+msgstr "{count} 7 bites bájt {bits} kitöltő bitet hagy, az enc7 soha nem állít elő 6-nál többet"
+
+#: src/optima_air/codec.py
+msgid "non-zero padding bits at the end of a 7-bit stream"
+msgstr "nem nulla kitöltő bitek egy 7 bites adatfolyam végén"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a block is {expected} bytes, got {got}"
+msgstr "egy blokk {expected} bájt, ez érkezett: {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "block sum {sum} ({hex}) beyond the 14 transmitted bits (max {max}): never seen on the pedal, refused until verified"
+msgstr "a(z) {sum} ({hex}) blokkösszeg meghaladja a 14 átvitt bitet (max {max}): a pedálon sosem látták, ellenőrzésig elutasítva"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "an encoded block is {expected} bytes, got {got}"
+msgstr "egy kódolt blokk {expected} bájt, ez érkezett: {got}"
+
+#: src/optima_air/codec.py
+msgid "byte outside 7 bits in an encoded block"
+msgstr "7 bitet túllépő bájt egy kódolt blokkban"
+
+#: src/optima_air/codec.py
+msgid "wrong block checksum"
+msgstr "hibás blokk-ellenőrzőösszeg"
+
+#: src/optima_air/codec.py
+msgid "the end-of-transfer sum covers at least one block"
+msgstr "az átvitel végi összeg legalább egy blokkot fed le"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "length {length} not a multiple of {block}"
+msgstr "a(z) {length} hossz nem többszöröse ennek: {block}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "value {value} outside 28 bits"
+msgstr "a(z) {value} érték túllépi a 28 bitet"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "a 28-bit sum takes 4 bytes, got {got}"
+msgstr "egy 28 bites összeg 4 bájtot foglal, ez érkezett: {got}"
+
+#: src/optima_air/codec.py
+#, python-brace-format
+msgid "byte {byte} outside 7 bits in a 28-bit sum"
+msgstr "a(z) {byte} bájt túllépi a 7 bitet egy 28 bites összegben"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write was interrupted: the pedal is left alone for another {seconds} s."
+msgstr "Egy írás megszakadt: a pedált még {seconds} mp-ig békén hagyjuk."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: a write message can only be sent by a complete slot write (backup, journal, read back)."
+msgstr "“{message}”: írási üzenetet csak teljes memóriahely-írás küldhet (biztonsági mentés, napló, visszaolvasás)."
+
+#: src/optima_air/device.py
+msgid "The firmware version has not been read yet: only reads are allowed."
+msgstr "A firmware verzióját még nem olvasták be: csak olvasás engedélyezett."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unknown firmware {found} (protocol verified on {verified}): only reads are allowed."
+msgstr "Ismeretlen firmware: {found} (a protokoll ezen ellenőrzött: {verified}): csak olvasás engedélyezett."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}” is a trial function (“{function}”), not yet validated on the pedal."
+msgstr "A(z) “{message}” kísérleti funkció (“{function}”), amelyet a pedálon még nem hagytak jóvá."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "“{message}”: only a read can be sent again."
+msgstr "“{message}”: csak olvasás küldhető el újra."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No answer from the pedal to “{message}” after {count} attempts."
+msgstr "A pedál nem válaszol a(z) “{message}” üzenetre {count} próbálkozás után."
+
+#: src/optima_air/device.py
+msgid "The pedal keeps sending SysEx without a break."
+msgstr "A pedál megállás nélkül SysEx üzeneteket küld."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Cannot read slot {slot}: {error}"
+msgstr "A(z) {slot}. memóriahely nem olvasható: {error}"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Two reads of slot {slot} give different data."
+msgstr "A(z) {slot}. memóriahely két olvasása eltérő adatot ad."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: wait another {seconds} s before sending anything."
+msgstr "A(z) {slot}. memóriahely írása megszakadt: várjon még {seconds} mp-et bármi küldése előtt."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "A write to slot {slot} was interrupted: until that slot is put right, it is the only one that can be written."
+msgstr "A(z) {slot}. memóriahely írása megszakadt: amíg ezt a memóriahelyet nem hozzák rendbe, ez az egyetlen, amelyre írni lehet."
+
+#: src/optima_air/device.py
+msgid "Write refused: the firmware has not been read, or is not the one the protocol was verified on."
+msgstr "Írás elutasítva: a firmware-t nem olvasták be, vagy nem az, amelyen a protokollt ellenőrizték."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, slot {slot} does not hold what was sent."
+msgstr "Az írás után a(z) {slot}. memóriahely nem azt tartalmazza, amit elküldtek."
+
+#: src/optima_air/device.py
+msgid "The pedal reports an error while writing the IR."
+msgstr "A pedál hibát jelez az IR írása közben."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Unexpected block acknowledgement: {status}."
+msgstr "Váratlan blokk-visszaigazolás: {status}."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "{count} block acknowledgement received instead of {expected}."
+msgid_plural "{count} block acknowledgements received instead of {expected}."
+msgstr[0] "{count} blokk-visszaigazolás érkezett {expected} helyett."
+msgstr[1] "{count} blokk-visszaigazolás érkezett {expected} helyett."
+
+#: src/optima_air/device.py
+msgid "Header and footer acknowledgements missing or unexpected."
+msgstr "A fejléc és a lábléc visszaigazolása hiányzik vagy váratlan."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the name echo came {count} time instead of once."
+msgid_plural "After the write, the name echo came {count} times instead of once."
+msgstr[0] "Az írás után a név visszhangja {count} alkalommal érkezett egy helyett."
+msgstr[1] "Az írás után a név visszhangja {count} alkalommal érkezett egy helyett."
+
+#: src/optima_air/device.py
+msgid "After the write, the name echo does not match what was sent."
+msgstr "Az írás után a név visszhangja nem egyezik az elküldöttel."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "After the write, the slot info came {count} time instead of once."
+msgid_plural "After the write, the slot info came {count} times instead of once."
+msgstr[0] "Az írás után a memóriahely-információ {count} alkalommal érkezett egy helyett."
+msgstr[1] "Az írás után a memóriahely-információ {count} alkalommal érkezett egy helyett."
+
+#: src/optima_air/device.py
+msgid "After the write, the slot info does not match what was sent."
+msgstr "Az írás után a memóriahely-információ nem egyezik az elküldöttel."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The backup {backup} holds no slot."
+msgstr "A(z) {backup} biztonsági mentés nem tartalmaz memóriahelyet."
+
+#: src/optima_air/device.py
+msgid "Comparing"
+msgstr "Összehasonlítás"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "Slot {slot} of the backup {backup} differs from the pedal but cannot be rewritten as it is ({error}). Nothing was written."
+msgstr "A(z) {backup} biztonsági mentés {slot}. memóriahelye eltér a pedálétól, de így nem írható újra ({error}). Semmi sem lett írva."
+
+#: src/optima_air/device.py
+msgid "Restoring"
+msgstr "Visszaállítás"
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The pedal announces slot {announced} after slot {requested} was requested."
+msgstr "A pedál a(z) {announced}. memóriahelyet jelzi a(z) {requested}. memóriahely kérése után."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "No echo from the pedal to the write of table {table}."
+msgstr "A pedál nem visszhangozza a(z) {table} tábla írását."
+
+#: src/optima_air/device.py
+#, python-brace-format
+msgid "The echo of table {table} differs from what was sent."
+msgstr "A(z) {table} tábla visszhangja eltér az elküldöttől."
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "is a symbolic link"
+msgstr "szimbolikus hivatkozás"
+
+#: src/optima_air/disque.py src/optima_air/transport.py
+msgid "not a regular file"
+msgstr "nem szabályos fájl"
+
+#: src/optima_air/disque.py src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{size} bytes instead of {expected}"
+msgstr "{size} bájt, {expected} bájt helyett"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{size} bytes, more than the {allowed} allowed"
+msgstr "{size} bájt, több a megengedett {allowed} bájtnál"
+
+#: src/optima_air/disque.py
+msgid "size changed while reading"
+msgstr "a méret olvasás közben megváltozott"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the lock {file}: {error}"
+msgstr "Nem hozható létre a zárolás: {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "duplicate key “{key}”"
+msgstr "ismétlődő kulcs: “{key}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "{name} is not standard JSON"
+msgstr "a(z) {name} nem szabványos JSON"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "not JSON: {error}"
+msgstr "nem JSON: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "field “{field}” missing"
+msgstr "a(z) “{field}” mező hiányzik"
+
+#: src/optima_air/disque.py
+msgid "unknown format {value!r}"
+msgstr "ismeretlen formátum: {value!r}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "unknown field “{field}”"
+msgstr "ismeretlen mező: “{field}”"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot synchronise the folder {file}: {error}"
+msgstr "Nem szinkronizálható a mappa: {file}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {error}"
+msgstr "Nem hozható létre a mappa: {folder}: {error}"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot create the folder {folder}: {path} is not a folder"
+msgstr "Nem hozható létre a mappa: {folder}: a(z) {path} nem mappa"
+
+#: src/optima_air/disque.py
+#, python-brace-format
+msgid "Cannot put {file} in place: {error}"
+msgstr "Nem helyezhető a helyére: {file}: {error}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "before a write"
+msgstr "írás előtt"
+
+#: src/optima_air/gui/dialogues.py
+msgid "slot read"
+msgstr "memóriahely olvasása"
+
+#: src/optima_air/gui/dialogues.py
+msgid "full backup"
+msgstr "teljes biztonsági mentés"
+
+#: src/optima_air/gui/dialogues.py
+msgid "import"
+msgstr "importálás"
+
+#: src/optima_air/gui/dialogues.py
+msgid "damaged slot"
+msgstr "sérült memóriahely"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Load a WAV"
+msgstr "WAV betöltése"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Overwrite slot <b>{slot}</b> “{name}” with <b>{file}</b>?"
+msgstr "Felülírja a(z) <b>{slot}</b>. memóriahelyet (“{name}”) ezzel: <b>{file}</b>?"
+
+#: src/optima_air/gui/dialogues.py
+msgid "The current content of the slot will be backed up before the write."
+msgstr "A memóriahely jelenlegi tartalma az írás előtt mentésre kerül."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Slot name"
+msgstr "Memóriahely neve"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Write to the pedal"
+msgstr "Írás a pedálra"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{date} {time}, {reason}"
+msgstr "{date} {time}, {reason}"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Backups"
+msgstr "Biztonsági mentések"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore this slot"
+msgstr "Memóriahely visszaállítása"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore the whole backup"
+msgstr "Teljes biztonsági mentés visszaállítása"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Close"
+msgstr "Bezárás"
+
+#: src/optima_air/gui/dialogues.py
+msgid "No backups yet."
+msgstr "Még nincs biztonsági mentés."
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: slot {slot} “{name}”"
+msgstr "{backup}: memóriahely {slot} “{name}”"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: {count} slot"
+msgid_plural "{backup}: {count} slots"
+msgstr[0] "{backup}: {count} memóriahely"
+msgstr[1] "{backup}: {count} memóriahely"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "{backup}: unreadable"
+msgstr "{backup}: olvashatatlan"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "This backup cannot be used: {error}"
+msgstr "Ez a biztonsági mentés nem használható: {error}"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put the {count} slot of the pedal back to the state of this backup?"
+msgid_plural "Put the {count} slots of the pedal back to the state of this backup?"
+msgstr[0] "Visszaállítja a pedál {count} memóriahelyét e biztonsági mentés állapotára?"
+msgstr[1] "Visszaállítja a pedál {count} memóriahelyét e biztonsági mentés állapotára?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid "Put slot {slot} of the pedal back to the state of this backup (“{name}”)?"
+msgstr "Visszaállítja a pedál {slot}. memóriahelyét e biztonsági mentés állapotára (“{name}”)?"
+
+#: src/optima_air/gui/dialogues.py
+#, python-brace-format
+msgid ""
+"{backup}.\n"
+"\n"
+"Only a slot that differs from the backup is rewritten, and its current content is backed up just before."
+msgstr "{backup}.\n\nCsak a biztonsági mentéstől eltérő memóriahely íródik újra, és jelenlegi tartalma közvetlenül előtte mentésre kerül."
+
+#: src/optima_air/gui/dialogues.py
+msgid "Restore"
+msgstr "Visszaállítás"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Electric blue"
+msgstr "Elektromos kék"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Cyan"
+msgstr "Ciánkék"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Green"
+msgstr "Zöld"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Yellow"
+msgstr "Sárga"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Orange"
+msgstr "Narancs"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Red"
+msgstr "Piros"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Pink"
+msgstr "Rózsaszín"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Purple"
+msgstr "Lila"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Off-white"
+msgstr "Törtfehér"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Interface colour"
+msgstr "Felület színe"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Colour code, for example #ff8a00"
+msgstr "Színkód, például #ff8a00"
+
+#: src/optima_air/gui/dialogues.py
+msgid "Expected: # and six hexadecimal digits"
+msgstr "Várt: # és hat hexadecimális számjegy"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Looking for the pedal…"
+msgstr "Pedál keresése…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Restore the previous state"
+msgstr "Előző állapot visszaállítása"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Back up everything"
+msgstr "Összes mentése"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Backups…"
+msgstr "Biztonsági mentések…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "{value} kHz"
+msgstr "{value} kHz"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Load a WAV…"
+msgstr "WAV betöltése…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV…"
+msgstr "Exportálás WAV-ként…"
+
+#: src/optima_air/gui/fenetre.py
+msgid "WAV files"
+msgstr "WAV-fájlok"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Choose a WAV file"
+msgstr "Válasszon WAV-fájlt"
+
+#: src/optima_air/gui/fenetre.py
+msgid "One file at a time: a slot holds a single IR."
+msgstr "Egyszerre egy fájl: egy memóriahely csak egy IR-t tartalmaz."
+
+#: src/optima_air/gui/fenetre.py
+msgid "Export as WAV"
+msgstr "Exportálás WAV-ként"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Restore finished. Slots rewritten and read back identical: {rewritten}. Settings only: {settings}. Already identical to the backup: {unchanged}."
+msgstr "A visszaállítás befejeződött. Újraírt és azonosan visszaolvasott memóriahelyek: {rewritten}. Csak beállítások: {settings}. A biztonsági mentéssel már azonosak: {unchanged}."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it still holds what it held before. Nothing to do."
+msgstr "Memóriahely {slot}: a megszakadt írás után még mindig a korábbi tartalmat őrzi. Nincs teendő."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: after the interrupted write, it holds neither the old nor the new content. Until it is put right, it is the only slot that can be written."
+msgstr "Memóriahely {slot}: a megszakadt írás után sem a régi, sem az új tartalmat nem őrzi. Amíg rendbe nem hozzák, ez az egyetlen memóriahely, amelyre írni lehet."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: {name}"
+msgstr "Memóriahely {slot}: {name}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Slot {slot}: “{name}” written and read back identical. Previous content backed up in {backup}"
+msgstr "Memóriahely {slot}: “{name}” kiírva és azonosan visszaolvasva. Az előző tartalom mentve ide: {backup}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot}…"
+msgstr "A(z) {slot}. memóriahely írása…"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Writing slot {slot} failed: {reason} The pedal is left alone for {seconds} s, then the state of the slot will be checked."
+msgstr "A(z) {slot}. memóriahely írása sikertelen: {reason} A pedált {seconds} mp-ig békén hagyjuk, majd ellenőrizzük a memóriahely állapotát."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The backup failed: {reason}"
+msgstr "A biztonsági mentés sikertelen: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "The restore stopped: {reason} The slots already handled are in order; the state of the pedal will be read again."
+msgstr "A visszaállítás leállt: {reason} A már feldolgozott memóriahelyek rendben vannak; a pedál állapotát újra beolvassuk."
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Connected, firmware {version}"
+msgstr "Csatlakoztatva, firmware {version}"
+
+#: src/optima_air/gui/fenetre.py
+#, python-brace-format
+msgid "Disconnected: {reason}"
+msgstr "Leválasztva: {reason}"
+
+#: src/optima_air/gui/fenetre.py
+msgid "Warning: the identifier announced by the pedal does not match the data read."
+msgstr "Figyelem: a pedál által jelzett azonosító nem egyezik az olvasott adattal."
+
+#: src/optima_air/gui/travail.py
+msgid "Stop requested."
+msgstr "Leállítás kérve."
+
+#: src/optima_air/gui/travail.py
+msgid "Backup"
+msgstr "Biztonsági mentés"
+
+#: src/optima_air/ir.py
+msgid "invalid frequency range or number of points"
+msgstr "érvénytelen frekvenciatartomány vagy pontszám"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Unreadable audio file: {file} ({error})"
+msgstr "Olvashatatlan hangfájl: {file} ({error})"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file has {count} channels: only the first one is kept."
+msgstr "A fájl {count} csatornát tartalmaz: csak az első marad meg."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Empty audio file: {file}"
+msgstr "Üres hangfájl: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file contains non-finite samples: {file}"
+msgstr "A fájl nem véges mintákat tartalmaz: {file}"
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Sample rate of {rate} Hz: the file was resampled to {target} kHz."
+msgstr "Mintavételi frekvencia: {rate} Hz: a fájl újramintavételezve {target} kHz-re."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The file lasts {duration} ms: only the first {count} samples ({limit} ms) are kept."
+msgstr "A fájl hossza {duration} ms: csak az első {count} minta ({limit} ms) marad meg."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "The pedal only plays the first {count} samples ({limit} ms): the rest of this IR will be stored but not heard."
+msgstr "A pedál csak az első {count} mintát ({limit} ms) játssza le: az IR többi része tárolásra kerül, de nem hallható."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Cannot normalise {file}: no signal between 400 Hz and 3 kHz."
+msgstr "Nem normalizálható: {file}: nincs jel 400 Hz és 3 kHz között."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "Normalising {file} exceeds the range of floating-point numbers."
+msgstr "A normalizálás túllépi a lebegőpontos számok tartományát: {file}."
+
+#: src/optima_air/ir.py
+#, python-brace-format
+msgid "After normalisation, the IR peaks at {peak} (usual IRs stay below 10): the file has a very deep dip between 400 Hz and 3 kHz, and the output level may be very high."
+msgstr "A normalizálás után az IR csúcsa {peak} (a szokásos IR-ek 10 alatt maradnak): a fájlban nagyon mély bemélyedés van 400 Hz és 3 kHz között, és a kimeneti szint nagyon magas lehet."
+
+#: src/optima_air/journal.py
+msgid "a journal date must carry a time zone"
+msgstr "a napló dátumának időzónát kell tartalmaznia"
+
+#: src/optima_air/journal.py
+msgid "slot out of range"
+msgstr "memóriahely tartományon kívül"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone expected"
+msgstr "{field}: időzónával ellátott ISO-dátum várt"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: ISO date with time zone, or null, expected"
+msgstr "{field}: időzónával ellátott ISO-dátum vagy null várt"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: backup folder name expected"
+msgstr "{field}: biztonsági mentés mappanév várt"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 64 hexadecimal digits expected"
+msgstr "{field}: 64 hexadecimális számjegy várt"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: 32 bytes in hexadecimal expected"
+msgstr "{field}: 32 bájt hexadecimálisan várt"
+
+#: src/optima_air/journal.py
+msgid "identifier out of range"
+msgstr "azonosító tartományon kívül"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "{field}: boolean expected"
+msgstr "{field}: logikai érték várt"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Unreadable write journal: {file} ({error})"
+msgstr "Olvashatatlan írási napló: {file} ({error})"
+
+#: src/optima_air/journal.py
+#, python-brace-format
+msgid "Cannot remove the journal {file}: {error}"
+msgstr "A napló nem távolítható el: {file}: {error}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "MD5 of {size} bytes instead of {expected}"
+msgstr "MD5: {size} bájt, {expected} bájt helyett"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "encoded block of {size} bytes instead of {expected}"
+msgstr "kódolt blokk: {size} bájt, {expected} bájt helyett"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: malformed Control Change"
+msgstr "“{message}” üzenet: hibás Control Change"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: a Control Change is a setting"
+msgstr "“{message}” üzenet: a Control Change egy beállítás"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: Control Change not in the closed list"
+msgstr "“{message}” üzenet: a Control Change nincs a zárt listában"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: value {value} above {max}"
+msgstr "“{message}” üzenet: a(z) {value} érték meghaladja ezt: {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” badly framed"
+msgstr "a(z) “{message}” üzenet kerete hibás"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: byte outside 7 bits"
+msgstr "“{message}” üzenet: 7 bitet túllépő bájt"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}” not in the closed list"
+msgstr "a(z) “{message}” üzenet nincs a zárt listában"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {size} bytes instead of {expected}"
+msgstr "“{message}” üzenet: {size} bájt, {expected} bájt helyett"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "message “{message}”: {error}"
+msgstr "“{message}” üzenet: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "unexpected version request"
+msgstr "váratlan verziókérés"
+
+#: src/optima_air/messages_emission.py
+msgid "only the announcement 70 05 01, on trial, is allowed"
+msgstr "csak a 70 05 01 bejelentés engedélyezett, kísérleti jelleggel"
+
+#: src/optima_air/messages_emission.py
+msgid "only the read 70 26 7F is allowed"
+msgstr "csak a 70 26 7F olvasás engedélyezett"
+
+#: src/optima_air/messages_emission.py
+msgid "table request with a non-zero body"
+msgstr "tábla-kérés nem nulla törzzsel"
+
+#: src/optima_air/messages_emission.py
+msgid "table write: setting expected, values from 0 to 100"
+msgstr "tábla írása: beállítás várt, 0-tól 100-ig terjedő értékek"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed read request"
+msgstr "hibás olvasási kérés"
+
+#: src/optima_air/messages_emission.py
+msgid "slot out of range or non-zero body"
+msgstr "memóriahely tartományon kívül vagy nem nulla törzs"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "command {command} without a content rule"
+msgstr "a(z) {command} parancshoz nincs tartalmi szabály"
+
+#: src/optima_air/messages_emission.py
+msgid "upload message outside the write category"
+msgstr "feltöltési üzenet az írási kategórián kívül"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write command {command} without a content rule"
+msgstr "a(z) {command} írási parancshoz nincs tartalmi szabály"
+
+#: src/optima_air/messages_emission.py
+msgid "malformed slot name"
+msgstr "hibás memóriahely-név"
+
+#: src/optima_air/messages_emission.py
+msgid "identifier with bit 31 set (factory IR): function not yet open"
+msgstr "azonosító beállított 31. bittel (gyári IR): a funkció még nem nyitott"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: slot out of range"
+msgstr "feltöltési fejléc: memóriahely tartományon kívül"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header: MD5 outside lowercase hexadecimal digits"
+msgstr "feltöltési fejléc: az MD5 nem kisbetűs hexadecimális számjegyekből áll"
+
+#: src/optima_air/messages_emission.py
+msgid "upload header outside the observed form"
+msgstr "feltöltési fejléc a megfigyelt formán kívül"
+
+#: src/optima_air/messages_emission.py
+msgid "upload footer: non-zero byte after the flag"
+msgstr "feltöltési lábléc: nem nulla bájt a jelző után"
+
+#: src/optima_air/messages_emission.py
+msgid "end block: slot out of range"
+msgstr "záró blokk: memóriahely tartományon kívül"
+
+#: src/optima_air/messages_emission.py
+msgid "end block outside the observed form"
+msgstr "záró blokk a megfigyelt formán kívül"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: address or counter out of range"
+msgstr "adatblokk: a cím vagy a számláló tartományon kívül"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: {error}"
+msgstr "adatblokk: {error}"
+
+#: src/optima_air/messages_emission.py
+msgid "data block: payload outside the form produced by enc_msb"
+msgstr "adatblokk: a tartalom nem az enc_msb által előállított formában van"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "data block: non-zero padding beyond the {size} bytes of the IR"
+msgstr "adatblokk: nem nulla kitöltés az IR {size} bájtján túl"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "identifier {value} out of 0..{max}: bit 31 is reserved for factory IRs, a function not yet open"
+msgstr "a(z) {value} azonosító kívül esik a 0..{max} tartományon: a 31. bit a gyári IR-ek számára fenntartott, a funkció még nem nyitott"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "name of {size} bytes, {max} at most"
+msgstr "a név {size} bájt, legfeljebb {max}"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "body of {size} bytes instead of {expected}"
+msgstr "a törzs {size} bájt, {expected} bájt helyett"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "info of slot {slot}"
+msgstr "a(z) {slot}. memóriahely információi"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "table {table}"
+msgstr "{table} tábla"
+
+#: src/optima_air/messages_emission.py
+msgid "current state"
+msgstr "jelenlegi állapot"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "IR of slot {slot}"
+msgstr "a(z) {slot}. memóriahely IR-je"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "activation of slot {slot}"
+msgstr "a(z) {slot}. memóriahely aktiválása"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a table has {count} values, got {got}"
+msgstr "egy tábla {count} értéket tartalmaz, ez érkezett: {got}"
+
+#: src/optima_air/messages_emission.py
+msgid "table {table}: value {value!r} out of 0..{max}"
+msgstr "{table} tábla: a(z) {value!r} érték kívül esik a 0..{max} tartományon"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "write of table {table}"
+msgstr "a(z) {table} tábla írása"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "unknown setting “{name}”"
+msgstr "ismeretlen beállítás: “{name}”"
+
+#: src/optima_air/messages_emission.py
+msgid "setting “{name}”: value {value!r} out of 0..{max}"
+msgstr "“{name}” beállítás: a(z) {value!r} érték kívül esik a 0..{max} tartományon"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "setting {name} to {value}"
+msgstr "{name} beállítása erre: {value}"
+
+#: src/optima_air/messages_emission.py
+msgid "connection announcement"
+msgstr "csatlakozási bejelentés"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "a slot name has 1 to {max} characters"
+msgstr "a memóriahely neve 1–{max} karakterből áll"
+
+#: src/optima_air/messages_emission.py
+msgid "a slot name only contains printable ASCII characters"
+msgstr "a memóriahely neve csak nyomtatható ASCII karaktereket tartalmaz"
+
+#: src/optima_air/messages_emission.py
+msgid "the IR contains a non-finite sample"
+msgstr "az IR nem véges mintát tartalmaz"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "upload of slot {slot}, {step}"
+msgstr "a(z) {slot}. memóriahely feltöltése, {step}"
+
+#: src/optima_air/messages_emission.py
+msgid "header"
+msgstr "fejléc"
+
+#: src/optima_air/messages_emission.py
+#, python-brace-format
+msgid "block {block}"
+msgstr "{block}. blokk"
+
+#: src/optima_air/messages_emission.py
+msgid "end"
+msgstr "vég"
+
+#: src/optima_air/messages_emission.py
+msgid "footer"
+msgstr "lábléc"
+
+#: src/optima_air/messages_emission.py
+msgid "name"
+msgstr "név"
+
+#: src/optima_air/messages_emission.py
+msgid "info"
+msgstr "információ"
+
+#: src/optima_air/messages.py
+#, python-brace-format
+msgid "end sum of {size} bytes instead of {expected}"
+msgstr "a záró összeg {size} bájt, {expected} bájt helyett"
+
+#: src/optima_air/messages.py
+msgid "slot name empty or outside printable ASCII"
+msgstr "a memóriahely neve üres vagy nem nyomtatható ASCII"
+
+#: src/optima_air/messages.py
+msgid "non-zero bytes after the end of the slot name"
+msgstr "nem nulla bájtok a memóriahely nevének vége után"
+
+#: src/optima_air/messages_reception.py
+msgid "NUX SysEx header missing"
+msgstr "hiányzik a NUX SysEx fejléc"
+
+#: src/optima_air/messages_reception.py
+msgid "no final F7"
+msgstr "hiányzik a záró F7"
+
+#: src/optima_air/messages_reception.py
+msgid "byte outside 7 bits"
+msgstr "7 bitet túllépő bájt"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "type {found} instead of {expected}"
+msgstr "típus: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {found} instead of {expected}"
+msgstr "parancs: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+msgid "unexpected upload acknowledgement"
+msgstr "váratlan feltöltési visszaigazolás"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unknown acknowledgement status: {status}"
+msgstr "ismeretlen visszaigazolási állapot: {status}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected version answer: {error}"
+msgstr "váratlan verziófelelet: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "command {command}: only 0x5c (info read) and 0x5b (name echo) carry slot info"
+msgstr "{command} parancs: memóriahely-információt csak a 0x5c (információ olvasása) és a 0x5b (név visszhangja) hordoz"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "encoded length {found} instead of {expected}"
+msgstr "kódolt hossz: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected slot info answer: {error}"
+msgstr "váratlan memóriahely-információs válasz: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable slot info: {error}"
+msgstr "olvashatatlan memóriahely-információ: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "the pedal announces slot {slot}"
+msgstr "a pedál a(z) {slot}. memóriahelyet jelzi"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected answer for table {table}: {error}"
+msgstr "váratlan válasz a(z) {table} táblára: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "table {table}: value {value} above 100"
+msgstr "{table} tábla: a(z) {value} érték meghaladja a 100-at"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unexpected state answer: {error}"
+msgstr "váratlan állapotválasz: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "read header: command {found} instead of {expected}"
+msgstr "olvasási fejléc: parancs: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+msgid "read header carries the end flag"
+msgstr "az olvasási fejléc a végjelzőt tartalmazza"
+
+#: src/optima_air/messages_reception.py
+msgid "non-zero read header, never seen in this form"
+msgstr "nem nulla olvasási fejléc, ilyen formában még sosem láttuk"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: command {found} instead of {expected}"
+msgstr "{block}. blokk: parancs: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: non-zero flag {flag}"
+msgstr "{block}. blokk: nem nulla jelző: {flag}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: address {found} instead of {expected}"
+msgstr "{block}. blokk: cím: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block}: counter {found} instead of {expected}"
+msgstr "{block}. blokk: számláló: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "block {block} unreadable: {error}"
+msgstr "a(z) {block}. blokk olvashatatlan: {error}"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: command {found} instead of {expected}"
+msgstr "záró blokk: parancs: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+msgid "end block without flag"
+msgstr "jelző nélküli záró blokk"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "end block: counter {found} instead of {expected}"
+msgstr "záró blokk: számláló: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+msgid "end block: stray byte outside the flag, the sum and the counter"
+msgstr "záró blokk: kóbor bájt a jelzőn, az összegen és a számlálón kívül"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "unreadable end sum: {error}"
+msgstr "olvashatatlan záró összeg: {error}"
+
+#: src/optima_air/messages_reception.py
+msgid "wrong end-of-read sum"
+msgstr "hibás olvasás végi összeg"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "footer: command {found} instead of {expected}"
+msgstr "lábléc: parancs: {found}, {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+msgid "footer without flag"
+msgstr "jelző nélküli lábléc"
+
+#: src/optima_air/messages_reception.py
+msgid "footer: stray byte after the flag"
+msgstr "lábléc: kóbor bájt a jelző után"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "{count} messages received instead of {expected}"
+msgstr "{count} üzenet érkezett {expected} helyett"
+
+#: src/optima_air/messages_reception.py
+#, python-brace-format
+msgid "message {number} foreign to an IR read: {error}"
+msgstr "a(z) {number}. üzenet nem tartozik egy IR olvasásához: {error}"
+
+#: src/optima_air/preferences.py
+msgid "colour {colour!r}: lowercase “#rrggbb” expected"
+msgstr "{colour!r} szín: kisbetűs “#rrggbb” várt"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unknown function “{name}”. Known: {known}."
+msgstr "Ismeretlen funkció: “{name}”. Ismertek: {known}."
+
+#: src/optima_air/registre.py
+msgid "sorted list of known functions, without duplicates, expected"
+msgstr "az ismert funkciók rendezett, duplikátumok nélküli listája várt"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Unreadable trial register: {file} ({error})"
+msgstr "Olvashatatlan kísérleti nyilvántartás: {file} ({error})"
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Trial register locked by another process ({file}): try again once the other command has finished."
+msgstr "A kísérleti nyilvántartást másik folyamat zárolta ({file}): próbálja újra, ha a másik parancs befejeződött."
+
+#: src/optima_air/registre.py
+#, python-brace-format
+msgid "Cannot lock {file}: {error}"
+msgstr "Nem zárolható: {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "Pedal not found: no “NAI5” sound card. Check the USB cable."
+msgstr "A pedál nem található: nincs “NAI5” hangkártya. Ellenőrizze az USB-kábelt."
+
+#: src/optima_air/transport.py
+msgid "XDG_RUNTIME_DIR is not set: cannot take the lock."
+msgstr "Az XDG_RUNTIME_DIR nincs beállítva: a zárolás nem végezhető el."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot take the lock {file}: {error}"
+msgstr "Nem vehető fel a zárolás: {file}: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal is already used by another instance of optima-air."
+msgstr "A pedált már használja az optima-air egy másik példánya."
+
+#: src/optima_air/transport.py
+msgid "The lock has already been released: it can no longer be given to a port."
+msgstr "A zárolást már felszabadították: nem adható oda többé egy portnak."
+
+#: src/optima_air/transport.py
+msgid "This lock already belongs to a port: it cannot be given to a second one."
+msgstr "Ez a zárolás már egy porthoz tartozik: nem adható oda egy másodiknak."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot release the lock: {error}"
+msgstr "A zárolás nem szabadítható fel: {error}"
+
+#: src/optima_air/transport.py
+msgid "The pedal no longer answers: unplugged or stuck."
+msgstr "A pedál már nem válaszol: kihúzták vagy lefagyott."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot configure the port {port}: {error}"
+msgstr "A(z) {port} port nem konfigurálható: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot arm the input of port {port}: {error}"
+msgstr "A(z) {port} port bemenete nem élesíthető: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not exist."
+msgstr "A(z) {port} port nem létezik."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Access denied to {port}. Check that you are in the “audio” group (command: id)."
+msgstr "Hozzáférés megtagadva ehhez: {port}. Ellenőrizze, hogy tagja-e az “audio” csoportnak (parancs: id)."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is already used by another program."
+msgstr "A(z) {port} portot már egy másik program használja."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} is no longer available."
+msgstr "A(z) {port} port már nem érhető el."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Cannot open the port {port}: {error}"
+msgstr "A(z) {port} port nem nyitható meg: {error}"
+
+#: src/optima_air/transport.py
+msgid "Cannot write: the port is closed."
+msgstr "Nem lehet írni: a port le van zárva."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: no byte accepted."
+msgstr "Írás a(z) {port} portra sikertelen: egyetlen bájtot sem fogadott el."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Writing to port {port} failed: {error}"
+msgstr "Írás a(z) {port} portra sikertelen: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Draining the port {port} was interrupted {count} times in a row: the message is handed to the kernel, but its departure could not be awaited."
+msgstr "A(z) {port} port ürítése {count} egymást követő alkalommal megszakadt: az üzenet átkerült a kernelhez, de elküldését nem lehetett kivárni."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Wait out of range: {wait} s (at most {max} s)."
+msgstr "A várakozás tartományon kívül: {wait} mp (legfeljebb {max} mp)."
+
+#: src/optima_air/transport.py
+msgid "Cannot read: the port is closed."
+msgstr "Nem lehet olvasni: a port le van zárva."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading from port {port} failed: {error}"
+msgstr "Olvasás a(z) {port} portról sikertelen: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "The port {port} does not report the state of its input ({error}): byte loss cannot be detected, stopping here."
+msgstr "A(z) {port} port nem jelzi bemenetének állapotát ({error}): a bájtvesztés nem észlelhető, itt megállunk."
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Reading the state of port {port} failed: {error}"
+msgstr "A(z) {port} port állapotának olvasása sikertelen: {error}"
+
+#: src/optima_air/transport.py
+#, python-brace-format
+msgid "Closing the port {port} failed: {error}"
+msgstr "A(z) {port} port lezárása sikertelen: {error}"

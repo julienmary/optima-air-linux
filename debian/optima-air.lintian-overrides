@@ -1,0 +1,3 @@
+# Le paquet est distribué par le projet (release GitHub), pas par l'archive Debian : il n'y
+# a pas de rapport ITP à fermer au premier envoi.
+optima-air: initial-upload-closes-no-bugs

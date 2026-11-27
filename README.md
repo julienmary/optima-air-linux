@@ -30,14 +30,8 @@ What it does not do: firmware updates, presets, writing factory IRs back (see
 
 - The pedal on **firmware 2.3** (the version shown by the official app). Writing is refused
   on any other version.
-- Linux with ALSA, Python 3.13, GTK 4 and PyGObject.
+- Linux with ALSA, Python 3.13 or later, GTK 4.10 or later and PyGObject.
 - Developed and tested on Debian 13 (trixie), GNOME 48.
-
-On Debian or Ubuntu:
-
-```sh
-sudo apt install python3 python3-gi gir1.2-gtk-4.0 python3-numpy python3-scipy python3-soundfile gettext
-```
 
 The pedal appears as the ALSA card `NAI5` and is reached through its MIDI port
 (`/dev/snd/midiC*D0`). No driver, udev rule or root access is needed, but your user must be
@@ -46,7 +40,34 @@ allowed to open `/dev/snd`: desktop sessions usually grant it, otherwise add you
 
 ## Installation
 
-A Debian package is on the way. Until then, run it from a clone:
+### Debian 13, Ubuntu 26.04 and later
+
+Download `optima-air_<version>_all.deb` from the
+[releases](https://github.com/julienmary/optima-air-linux/releases), then:
+
+```sh
+sudo apt install ./optima-air_0.1.0-1_all.deb
+```
+
+Double-clicking the file opens it in the software centre, which does the same. "Optima Air"
+then shows up in the desktop menu, and `optima-air` is available in a terminal.
+`sudo apt remove optima-air` uninstalls it; your backups and preferences are kept.
+
+If you installed from a clone before (see below), run `tools/install-local.sh --remove`
+first: otherwise `~/bin/optima-air` keeps launching the clone instead of the package.
+
+To build the package yourself, from a clone: `dpkg-buildpackage -us -uc -b` (the build
+dependencies are listed in `debian/control`).
+
+### From a clone
+
+On Debian or Ubuntu, the dependencies:
+
+```sh
+sudo apt install python3 python3-gi gir1.2-gtk-4.0 python3-numpy python3-scipy python3-soundfile gettext
+```
+
+Then:
 
 ```sh
 git clone https://github.com/julienmary/optima-air-linux.git

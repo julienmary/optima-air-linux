@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+# Paquet optima-air : le module Python par pybuild (depuis pyproject.toml), puis ce que
+# pybuild ne connaît pas : traductions compilées, entrée de menu, icône, page de manuel.
+
+include /usr/share/dpkg/pkg-info.mk
+
+ID := io.github.julienmary.OptimaAirLinux
+DEST := debian/optima-air
+
+%:
+	dh $@ --buildsystem=pybuild
+
+# Les tests ne sont pas dans l'arbre public : on les lance quand ils sont là (dépôt local).
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	if [ -d tests ]; then \
+		PYTHONDONTWRITEBYTECODE=1 python3 -m pytest -q -p no:cacheprovider tests; \
+	fi
+endif
+
+execute_after_dh_auto_install:
+	for po in po/*.po; do \
+		langue=$$(basename $$po .po); \
+		install -d $(DEST)/usr/share/locale/$$langue/LC_MESSAGES; \
+		msgfmt --check --output-file=$(DEST)/usr/share/locale/$$langue/LC_MESSAGES/optima-air.mo $$po; \
+	done
+	install -d $(DEST)/usr/share/applications
+	sed 's|@LANCEUR@|optima-air|' data/$(ID).desktop > $(DEST)/usr/share/applications/$(ID).desktop
+	install -D -m 644 data/$(ID).svg $(DEST)/usr/share/icons/hicolor/scalable/apps/$(ID).svg
+	install -D -m 644 data/$(ID).metainfo.xml $(DEST)/usr/share/metainfo/$(ID).metainfo.xml
+	install -d $(DEST)/usr/share/man/man1
+	LANGUAGE=C LC_ALL=C.UTF-8 PYTHONDONTWRITEBYTECODE=1 help2man --no-info \
+		--name="editor for the NUX Optima Air pedal" \
+		--version-string="$(DEB_VERSION_UPSTREAM)" \
+		--output=$(DEST)/usr/share/man/man1/optima-air.1 \
+		bin/optima-air

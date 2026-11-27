@@ -1,0 +1,49 @@
+Source: optima-air
+Section: sound
+Priority: optional
+Maintainer: Julien MARY <julien.mary@gmail.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ dh-sequence-python3,
+ gettext,
+ help2man,
+ pybuild-plugin-pyproject,
+ python3,
+ python3-setuptools (>= 77),
+ gir1.2-gtk-4.0 <!nocheck>,
+ python3-gi <!nocheck>,
+ python3-numpy <!nocheck>,
+ python3-pytest <!nocheck>,
+ python3-scipy <!nocheck>,
+ python3-soundfile <!nocheck>,
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+Homepage: https://github.com/julienmary/optima-air-linux
+Vcs-Browser: https://github.com/julienmary/optima-air-linux
+Vcs-Git: https://github.com/julienmary/optima-air-linux.git
+
+Package: optima-air
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ gir1.2-gtk-4.0 (>= 4.10),
+ python3 (>= 3.13),
+ python3-gi,
+ python3-numpy,
+ python3-scipy,
+ python3-soundfile,
+Description: editor for the NUX Optima Air acoustic guitar pedal
+ A native editor for the NUX Optima Air (NAI-5) pedal, from a GTK 4 window
+ or the command line:
+  * live state and settings: active slot, preamp knobs, routing, USB
+    volumes, level meters, volume and filters per slot;
+  * impulse responses: the 23 slots, loading a WAV file into a slot,
+    exporting a slot as WAV;
+  * full backup of the 23 slots and restore of one slot or a whole backup.
+ .
+ Every write is preceded by an archive of the slot and followed by a read
+ back. Firmware updates are not supported.
+ .
+ Independent project, not affiliated with or endorsed by NUX.

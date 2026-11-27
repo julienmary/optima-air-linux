@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.julienmary.OptimaAirLinux</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <name>Optima Air</name>
+  <summary>Editor for the NUX Optima Air guitar pedal</summary>
+  <summary xml:lang="fr">Éditeur pour la pédale NUX Optima Air</summary>
+
+  <developer id="io.github.julienmary">
+    <name>Julien MARY</name>
+  </developer>
+
+  <description>
+    <p>
+      A native Linux editor for the NUX Optima Air (NAI-5) acoustic guitar pedal, from a
+      GTK 4 window or the command line.
+    </p>
+    <p xml:lang="fr">
+      Un éditeur Linux natif pour la pédale de guitare acoustique NUX Optima Air (NAI-5),
+      depuis une fenêtre GTK 4 ou la ligne de commande.
+    </p>
+    <ul>
+      <li>Live state and settings: active slot, preamp knobs, routing, USB volumes, level meters, volume and filters per slot</li>
+      <li xml:lang="fr">État en direct et réglages : slot actif, potards du préampli, routage, volumes USB, vu-mètres, volume et filtres par slot</li>
+      <li>Impulse responses: the 23 slots, loading a WAV file into a slot, exporting a slot as WAV</li>
+      <li xml:lang="fr">Réponses impulsionnelles : les 23 slots, chargement d'un fichier WAV dans un slot, export d'un slot en WAV</li>
+      <li>Full backup of the 23 slots, restore of one slot or a whole backup</li>
+      <li xml:lang="fr">Sauvegarde complète des 23 slots, restauration d'un slot ou d'une sauvegarde entière</li>
+    </ul>
+    <p>
+      Every write is preceded by an archive of the slot and followed by a read back.
+      Firmware updates are not supported. Independent project, not affiliated with or
+      endorsed by NUX.
+    </p>
+    <p xml:lang="fr">
+      Chaque écriture est précédée d'une archive du slot et suivie d'une relecture. La mise
+      à jour du firmware n'est pas prise en charge. Projet indépendant, ni affilié à NUX ni
+      approuvé par NUX.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.julienmary.OptimaAirLinux.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>The main window</caption>
+      <caption xml:lang="fr">La fenêtre principale</caption>
+      <image>https://raw.githubusercontent.com/julienmary/optima-air-linux/main/screenshots/window.jpg</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://github.com/julienmary/optima-air-linux</url>
+  <url type="bugtracker">https://github.com/julienmary/optima-air-linux/issues</url>
+  <url type="vcs-browser">https://github.com/julienmary/optima-air-linux</url>
+
+  <categories>
+    <category>AudioVideo</category>
+    <category>Audio</category>
+    <category>Music</category>
+  </categories>
+
+  <keywords>
+    <keyword>NUX</keyword>
+    <keyword>Optima Air</keyword>
+    <keyword>IR</keyword>
+    <keyword>impulse response</keyword>
+    <keyword>guitar</keyword>
+    <keyword>pedal</keyword>
+  </keywords>
+
+  <provides>
+    <binary>optima-air</binary>
+  </provides>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+
+  <content_rating type="oars-1.1"/>
+
+  <releases>
+    <release version="0.1.0" date="2026-11-27">
+      <description>
+        <p>First release.</p>
+      </description>
+    </release>
+  </releases>
+</component>

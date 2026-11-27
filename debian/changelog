@@ -1,0 +1,6 @@
+optima-air (0.1.0-1) unstable; urgency=medium
+
+  * First release: settings, impulse responses, backups and restore for the
+    NUX Optima Air pedal, from a GTK 4 window or the command line.
+
+ -- Julien MARY <julien.mary@gmail.com>  Fri, 27 Nov 2026 07:50:43 +0100

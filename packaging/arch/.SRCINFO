@@ -1,0 +1,26 @@
+pkgbase = optima-air
+	pkgdesc = Editor for the NUX Optima Air pedal: settings, impulse responses, backups
+	pkgver = 0.2.0
+	pkgrel = 1
+	url = https://github.com/julienmary/optima-air-linux
+	arch = any
+	license = GPL-3.0-or-later
+	makedepends = gettext
+	makedepends = help2man
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-setuptools
+	makedepends = python-wheel
+	depends = glib2
+	depends = gtk4
+	depends = hicolor-icon-theme
+	depends = pango
+	depends = python
+	depends = python-gobject
+	depends = python-numpy
+	depends = python-scipy
+	depends = python-soundfile
+	source = optima-air-0.2.0.tar.gz::https://github.com/julienmary/optima-air-linux/archive/refs/tags/v0.2.0.tar.gz
+	sha256sums = 8be7b3edb25abd39db1699df736527b0a0bad1268835e94c6d0b65a61a4f1d2c
+
+pkgname = optima-air

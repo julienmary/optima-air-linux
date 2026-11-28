@@ -1,0 +1,3 @@
+# glib2 fournit les typelibs GLib, Gio et GObject que la fenêtre charge par PyGObject :
+# aucune dépendance automatique ne les couvre (voir le commentaire du spec).
+addFilter("explicit-lib-dependency glib2")

@@ -1,0 +1,68 @@
+# Maintainer: Julien MARY <julien.mary@gmail.com>
+
+pkgname=optima-air
+pkgver=0.2.0
+pkgrel=1
+pkgdesc='Editor for the NUX Optima Air pedal: settings, impulse responses, backups'
+arch=('any')
+url='https://github.com/julienmary/optima-air-linux'
+license=('GPL-3.0-or-later')
+depends=(
+  'glib2'
+  'gtk4'
+  'hicolor-icon-theme'
+  'pango'
+  'python'
+  'python-gobject'
+  'python-numpy'
+  'python-scipy'
+  'python-soundfile'
+)
+makedepends=(
+  'gettext'
+  'help2man'
+  'python-build'
+  'python-installer'
+  'python-setuptools'
+  'python-wheel'
+)
+source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
+sha256sums=('8be7b3edb25abd39db1699df736527b0a0bad1268835e94c6d0b65a61a4f1d2c')
+
+_id=io.github.julienmary.OptimaAirLinux
+
+build() {
+  cd "optima-air-linux-$pkgver"
+  python -m build --wheel --no-isolation
+
+  # Les tests ne sont pas dans l'archive publique ; --check refuse un catalogue fautif.
+  for po in po/*.po; do
+    msgfmt --check --output-file="${po%.po}.mo" "$po"
+  done
+}
+
+check() {
+  cd "optima-air-linux-$pkgver"
+  LANGUAGE=C PYTHONDONTWRITEBYTECODE=1 bin/optima-air --help > /dev/null
+}
+
+package() {
+  cd "optima-air-linux-$pkgver"
+  python -m installer --destdir="$pkgdir" dist/*.whl
+
+  for mo in po/*.mo; do
+    install -Dm644 "$mo" "$pkgdir/usr/share/locale/$(basename "$mo" .mo)/LC_MESSAGES/optima-air.mo"
+  done
+
+  install -d "$pkgdir/usr/share/applications"
+  sed 's|@LANCEUR@|optima-air|' "data/$_id.desktop" > "$pkgdir/usr/share/applications/$_id.desktop"
+  install -Dm644 "data/$_id.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/$_id.svg"
+  install -Dm644 "data/$_id.metainfo.xml" "$pkgdir/usr/share/metainfo/$_id.metainfo.xml"
+
+  install -d "$pkgdir/usr/share/man/man1"
+  LANGUAGE=C LC_ALL=C.UTF-8 PYTHONDONTWRITEBYTECODE=1 help2man --no-info \
+    --name='editor for the NUX Optima Air pedal' \
+    --version-string="$pkgver" \
+    --output="$pkgdir/usr/share/man/man1/optima-air.1" \
+    bin/optima-air
+}

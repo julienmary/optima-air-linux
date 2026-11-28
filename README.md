@@ -60,6 +60,18 @@ first: otherwise `~/bin/optima-air` keeps launching the clone instead of the pac
 To build the package yourself, from a clone: `dpkg-buildpackage -us -uc -b` (the build
 dependencies are listed in `debian/control`).
 
+### Arch Linux
+
+The package is not on the AUR yet. Its `PKGBUILD` is in `packaging/arch/`; from a clone:
+
+```sh
+cd packaging/arch
+makepkg -si
+```
+
+`makepkg` downloads the release archive, checks its SHA-256, builds the package and installs it
+with pacman. `sudo pacman -R optima-air` uninstalls it; your backups and preferences are kept.
+
 ### From a clone
 
 On Debian or Ubuntu, the dependencies:
